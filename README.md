@@ -97,7 +97,7 @@ The objective of this educational project is the creation of an informative blog
 5. Once the component installations are complete, in a new terminal, run **npm run dev**. Open the **localhost**: that appears.
 
 
-## Next Steps 🔜
+## Next Steps (Coming soon) 🔜
 
 
 
