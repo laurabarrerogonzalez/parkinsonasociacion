@@ -6,22 +6,21 @@
 
 ## Project Description 🚀
 
-SoundTracks Magics is a highly functional and secure audio playback web platform. We employ the Agile methodology to ensure swift adaptation to the project's changing needs. This platform will allow users to access and enjoy a wide variety of audio content, including music, movie soundtracks, series, and more, with a focus on security and user experience.
+The objective of this educational project is the creation of an informative blog for the Extremaduran Parkinson's Association. We have been tasked with creating a website from scratch to provide information about this disease and any related issues. In addition to the informative section, we also provide users with references to our day care center, rehabilitation, stimulation, and home assistance. Likewise, we want to be available to all users who require it, and for this purpose, they will have the option to fill out a form/request to become a part of this association and be informed of any updates to our website.
 
-## Screenshots Desktop 💻
+## Screenshots Desktop (Coming soon) 💻
 
-<img src="images/Home.png" width="auto" height="200"><img src="images/Oscars.png" width="auto" height="200"><img src="images/Terror.png" width="auto" height="200"><img src="images/Animadas.png" width="auto" height="200"><img src="images/Classic.png" width="auto" height="200"><img src="images/Games.png" width="auto" height="200"><img src="images/Login.png" width="auto" height="200"><img src="images/SignUp.png" width="auto" height="200">
+<img src="" width="auto" height="200">
 
-## Screenshots Responsive Mobile 📱
+## Screenshots Responsive Mobile (Coming soon) 📱
 
-<img src="images/ResponsiveHome.png" width="auto" height="150">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="images/ResponsiveOscars.png" width="auto" height="150">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="images/ResponsiveTerror.png" width="auto" height="150">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="images/ResponsiveAnimada.png" width="auto" height="150">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="images/ResponsiveClasic.png" width="auto" height="150">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="images/ResponsiveGames.png" width="auto" height="150">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="images/ResponsiveLogin.png" width="auto" height="150">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="images/ResponsiveSignUp.png" width="auto" height="150">
+<img src="" width="auto" height="150">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="" width="auto" height="150">
 
 ## Stacks 🖥️
 ● Visual Studio Code <br>
 ● React <br>
 ● Frameworks <br>
 ● Bootstrap <br>
-● Material UI <br>
 ● JavaScript <br>
 ● CSS <br>
 ● HTML <br>
@@ -33,6 +32,7 @@ SoundTracks Magics is a highly functional and secure audio playback web platform
 ● Zoom
 
 ## Libraries 📚
+
 <a href="https://getbootstrap.com/" target="_blank"><img style="margin: 10px" src="images/Bootstrap.png" alt="Bootstrap" height="50" /></a>
 <a href="https://emotion.sh/docs/introduction" target="_blank"><img style="margin: 10px" src="images/Emotion.png" alt="Emotion" height="50" /></a>
 <a href="https://jwt.io/" target="_blank"><img style="margin: 10px" src="images/Jwt.png" alt="JWT" height="50" /></a>
