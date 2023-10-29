@@ -1,5 +1,5 @@
 .navbar{
-    background: #000000;
+    background-color:  rgba(0, 0, 0, .5);
     height: 100px;
     width: 100%;
     display: flex;
@@ -34,6 +34,10 @@
 .nav_logo img:hover{
     transform: scale(1.2);
 }
+.nav_items{
+    display: flex;
+    flex-direction: row;
+}
 .nav_items a{
     margin: 25px;
     color: white;
@@ -44,13 +48,30 @@
     
 }
 
+.menu-horizontal{
+    display: flex;
+    flex-direction: row;
+    text-decoration: none;
+}
 
 .nav_toggle{
     display: none;
 }
 
 @media(max-width:768px){
-    .nav_items{
+    .menu-horizontal{
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        
+    }
+    .menu-horizontal a{
+    display: flex;
+        
+        
+    }
+    .nav_items {
         position:absolute;
         top:90px;
         left:0;
@@ -92,4 +113,59 @@
     .nav_toggle.open > span:nth-child(3){
         transform: rotate(-45deg) translate(-5px,1px);
     }
+
+    .menu-vertical{
+        position: absolute;
+        display: none;
+        list-style: none;
+        width: 200px;
+        background-color: rgba(0, 0, 0, .5);
+    
+    }
+
+    .menu-horizontal > li {
+        position: relative;
+      }
+    
+      .menu-horizontal > li:hover .menu-vertical {
+        top: 500%;
+}
+}
+
+.menu-vertical{
+    position: absolute;
+    display: none;
+    list-style: none;
+    width: 200px;
+    background-color: rgba(0, 0, 0, .5);
+    padding-left: 0;
+
+}
+.menu-horizontal > li {
+    position: relative;
+  }
+
+  .menu-horizontal > li:hover .menu-vertical {
+    display: block;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: rgba(0, 0, 0, .5);
+    width: 200px; /* Ajusta el ancho según sea necesario */
+  }
+
+.nav_items li:hover .menu-vertical{
+    display: block;
+}
+
+.menu-vertical li:hover{
+    background-color: black;
+    width: 200px;
+    
+}
+
+.menu-vertical li a{
+    display: block;
+    color: white;
+    padding: 15px 15px 15px 15px;
 }
