@@ -68,6 +68,7 @@
     padding-left: 0;
 
 }
+
 .menu-horizontal > li {
     position: relative;
   }
@@ -77,17 +78,18 @@
     position: absolute;
     top: 100%;
     left: 0;
-    background-color: rgba(0, 0, 0, .5);
+    background-color: black;
     width: 200px; /* Ajusta el ancho según sea necesario */
-  }
+
+}
 
 .nav_items li:hover .menu-vertical{
     display: block;
 }
 
 .menu-vertical li:hover{
-    background-color: black;
     width: 200px;
+    background-color:#FF961A;
     
 }
 
@@ -156,15 +158,14 @@
         transform: rotate(-45deg) translate(-5px,1px);
     }
 
-    .menu-vertical{
+    /* .menu-vertical{
         position: static;
         display: none;
         list-style: none;
         width: auto;
         height: auto;
-        background-color: rgba(255, 255, 255, 0.9);
     
-    }
+    } */
 
     .menu-horizontal > li {
         position: relative;
@@ -176,9 +177,12 @@
         top: auto;
         left: auto;
         width: auto;
+        border: 1px solid rgb(255, 255, 255);
+        list-style: none;
+        
 }
 .menu-vertical li {
-    background-color: rgba(255, 255, 255, 0.9); /* Color blanco con una opacidad del 90% */
+    background-color: rgba(0, 0, 0, 0.9); /* Color blanco con una opacidad del 90% */
     /* Otros estilos... */
 }
 
@@ -190,7 +194,7 @@
 }
 
 .menu-vertical li a {
-    color: rgb(0, 0, 0); /* Cambia el color del texto para que sea visible en el fondo blanco */
+    color: rgb(255, 255, 255); /* Cambia el color del texto para que sea visible en el fondo blanco */
     /* Otros estilos... */
 }
 

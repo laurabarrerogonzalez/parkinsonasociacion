@@ -9,7 +9,7 @@ const Home = () => {
     <div>
       <Navbar />
       <Banner
-        image="https://res.cloudinary.com/dp7lr71t8/image/upload/v1698664674/ai-generated-8273256_1280_dspoq5.jpg"
+        image="https://res.cloudinary.com/dp7lr71t8/image/upload/v1698705642/CALENDARIO_2024_mural_btrnac.png"
         text="Trazando juntos un camino de superación: Acompañando la lucha contra el Parkinson con determinación y esperanza."
         
       />
