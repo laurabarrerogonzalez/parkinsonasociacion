@@ -1,0 +1,65 @@
+.photos {
+  border: 1px rgba(255, 255, 255, 0) solid;
+  height: 310px;
+  margin-top: -6.5%;
+  background-image: url("https://res.cloudinary.com/da7ffijqs/image/upload/v1698681283/20201119_125749_1_lmqez1.jpg");
+  background-size: cover;
+  background-position: 1%;
+}
+
+.question {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 70%;
+  height: 50%;
+  margin: 7% 15%;
+  background-color: rgba(0, 0, 0, 0.491);
+  color: rgb(255, 255, 255);
+}
+
+.text {
+  font-family: "Times New Roman", Times, serif;
+  text-align: center;
+  font-size: 250%;
+}
+
+.box1 {
+  background-color: rgb(236, 117, 14);
+  height: 55%;
+  width: 60%;
+  margin-top: -5%;
+  display: flex;
+  flex-direction: row;
+}
+
+.box2 {
+  background-color: rgb(6, 119, 135);
+  height: 25%;
+  width: 60%;
+  margin-top: 1%;
+  position: absolute;
+  right: 0.1%;
+  display: flex;
+  flex-direction: row;
+}
+
+.text1{
+    margin: 5.5% 5%;
+    text-align: center;
+}
+
+.text2{
+    margin: 3% 5%;
+    text-align: left;
+}
+
+.text3{
+    margin: 3% 5%;
+    text-align: end;
+}
+
+.text4{
+    margin: 7% 5%;
+    text-align: center;
+}
