@@ -1,3 +1,51 @@
-.banner img {
+/* Banner.css */
+
+.banner {
+    position: relative;
+  }
+  
+  .banner img {
     width: 100%;
+  }
+  
+  .banner-text {
+    position: absolute;
+    top: 0px; /* Ajusta la posición vertical del texto */
+    right: 0px; /* Posiciona el texto a 50px del borde derecho */
+    color: white; /* Color del texto */
+    font-size: 35px; /* Tamaño de fuente del texto */
+    width: 50%; /* Ancho del texto */
+    max-height: 4em; /* Altura máxima de 4 líneas */
+    overflow: hidden;
+    text-overflow: ellipsis; /* Agrega puntos suspensivos si el texto se recorta */
+    display: -webkit-box; /* Propiedad específica para navegadores webkit */
+    -webkit-line-clamp: 4; /* Límite de líneas para navegadores webkit */
+    -webkit-box-orient: vertical; /* Orientación vertical del texto */
+    background: rgba(0, 0, 0, 0.5); /* Fondo negro transparente */
+    padding: 365px 40px; 
+
 }
+
+/* .banner-text::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -30%;
+    width: 30%;
+    height: 50%;
+    background: rgba(0, 0, 0, 0.5);
+    transform: skewX(20deg);
+    z-index: -1;
+  }
+
+  .banner-text::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: -30%;
+  width: 30%;
+  height: 50%;
+  background: rgba(0, 0, 0, 0.5);
+  transform: skewX(-20deg);
+  z-index: -1;
+  } */
