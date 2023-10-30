@@ -14,37 +14,43 @@ const Navbar = () => {
                 <li>
                     <a href="#">¿Que es el Parkinson?</a>
                     <ul className="menu-vertical">
-                        <li><a href="#">Descripcion</a></li>
-                        <li><a href="#">Descripcion</a></li>
+                        <li><a href="#">Sintomas y diagnosticos</a></li>
+                        <hr />
+                        <li><a href="#">Evolución y tratamientos</a></li>
+                        <hr />
+                        <li><a href="#">Mitos y verdades</a></li>
                     </ul>
                     </li>
                 <li>
                     <a href="#">Servicios</a>
                     <ul className="menu-vertical">
-                        <li><a href="#">Descripcion</a></li>
-                        <li><a href="#">Descripcion</a></li>
+                        <li><a href="#">Centro de día</a></li>
+                        <hr />
+                        <li><a href="#">Rehabilitación</a></li>
+                        <hr />
+                        <li><a href="#">Estimulación</a></li>
+                        <hr />
+                        <li><a href="#">Ayuda a domicilio</a></li>
                     </ul>
                     </li>
                 <li>
                     <a href="#">Actualidad</a>
                     <ul className="menu-vertical">
-                        <li><a href="#">Descripcion</a></li>
-                        <li><a href="#">Descripcion</a></li>
+                        <li><a href="#">Noticias</a></li>
+                        <li><a href="#">Actividades</a></li>
+                        <li><a href="#">Proyectos</a></li>
                     </ul>
                     </li>
                 <li>
                     <a href="#">Colabora</a>
                     <ul className="menu-vertical">
-                        <li><a href="#">Descripcion</a></li>
-                        <li><a href="#">Descripcion</a></li>
+                        <li><a href="#">Voluntario</a></li>
+                        <li><a href="#">Socios</a></li>
+                        <li><a href="#">Donaciones</a></li>
                     </ul>
                     </li>
                 <li>
                     <a href="#">Trabaja con nosotros</a>
-                    <ul className="menu-vertical">
-                        <li><a href="#">Descripcion</a></li>
-                        <li><a href="#">Descripcion</a></li>
-                    </ul>
                     </li>
                 <li><a href="#">Donde encontrarnos</a></li>
                 </ul>

@@ -1,10 +1,10 @@
 import React from 'react'
 import ReactDOM from 'react-dom/client'
 import './index.css'
-import Navbar from './Components/Navbar/Navbar'
+import Inicio from './Components/pages/Inicio'
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
-    <Navbar />
+    <Inicio/>
   </React.StrictMode>,
 )
