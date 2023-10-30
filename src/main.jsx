@@ -7,7 +7,7 @@ import Home from './View/Home/Home';
 import SymptomsAndDiagnosis from './View/Parkinson/Symptomsanddiagnosis';
 import Evolution from './View/Parkinson/Evolution';
 import Resources from './View/Parkinson/Resources';
-import Myths from './View/Parkinson/Miths';
+import Myths from './View/Parkinson/Myths';
 import Daycarecenter from './View/Services_/Daycarecenter';
 import Revitalization from './View/Services_/Revitalization';
 import Stimulation from './View/Services_/Stimulation';
@@ -20,6 +20,8 @@ import Members from './View/Collaborate/Members';
 import Donations from './View/Collaborate/Donations';
 import Work from './View/Work with us/Work';
 import Find from './View/Find us/Find';
+
+import '../src/View/Parkinson/Myths.css';
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <Router>
