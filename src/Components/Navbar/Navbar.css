@@ -47,6 +47,10 @@
     font-size: 19px;
 }
 
+ul {
+    list-style-type: none;
+ }
+
 .menu-horizontal{
     display: flex;
     flex-direction: row;
