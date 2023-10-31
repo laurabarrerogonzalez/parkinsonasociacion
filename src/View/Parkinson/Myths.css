@@ -1,3 +1,20 @@
+.photobanner {
+    height: 500px;
+    background-image: url("https://res.cloudinary.com/dit2zhtwz/image/upload/v1698744222/pareja-alegre-celebracion-icono-votacion-sentado-sofa_53876-24976_kke7zn.jpg");
+    background-size:cover;  
+}
+
+.question {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 70%;
+  height: 50%;
+  margin: 2% 15%;
+  background-color: rgba(0, 0, 0, 0.491);
+  color: rgb(255, 255, 255);
+}
+
 .card{
     position: relative;
     width: 250px;

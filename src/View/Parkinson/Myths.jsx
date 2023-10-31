@@ -5,7 +5,16 @@ import "../Parkinson/Myths.css";
 const Myths = () => {
   return (
     <>
-      <Navbar />
+
+    <div className="photobanner">
+       <Navbar />
+      <div className="question">
+        <h1>MITOS Y VERDADES</h1>
+      </div>
+
+
+    </div>
+    
 
       <div className="card-container">
         {/* Tarjeta 1 */}
