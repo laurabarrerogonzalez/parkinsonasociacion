@@ -8,7 +8,7 @@ const Myths = () => {
 
     <div className="photobanner">
        <Navbar />
-      <div className="question">
+      <div className="questions">
         <h1>MITOS Y VERDADES</h1>
       </div>
 
