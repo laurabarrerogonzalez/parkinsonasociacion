@@ -1,8 +1,5 @@
 import React from "react";
 import Navbar from "../../Components/Navbar/Navbar";
-// import Find from "../../Components/Find/Find";
-// import"./FindView.css";
-
   
 const Find = () => {
     
