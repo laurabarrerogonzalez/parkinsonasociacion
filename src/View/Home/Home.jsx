@@ -2,6 +2,7 @@ import React from 'react';
 import "../Home/Home.css"
 import Banner from '../../Components/Banner/Banner';
 import Navbar from '../../Components/Navbar/Navbar';
+import Footer from '../../Components/Footer/Footer';
 
 
 const Home = () => {
@@ -33,7 +34,7 @@ const Home = () => {
         </div>
         <div className='services_info'>
           <h1>Centro de día</h1> <br />
-          <p>El Centro de Día ‘CON ALMA’ ofrece una atención integral durante el
+          <p>El Centro de Día CON ALMA ofrece una atención integral durante el
             período diurno a las personas en situación de dependencia, con el objetivo
             de mantener el mayor grado de autonomía posible. Está dirigido a proporcionar
             una intervención especializada al usuario de manera que se contemplen
@@ -100,6 +101,8 @@ const Home = () => {
         </div>
 
       </section>
+
+      <Footer/>
 
 
     </div>
