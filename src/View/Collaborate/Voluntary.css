@@ -1,9 +1,10 @@
 .photos {
   border: 1px rgba(255, 255, 255, 0) solid;
-  height: 350px;
+  height: 400px;
   background-image: url("https://res.cloudinary.com/da7ffijqs/image/upload/v1698681283/20201119_125749_1_lmqez1.jpg");
   background-size: cover;
   background-position: 1%;
+  padding: 0;
 }
 
 .question {
@@ -12,7 +13,7 @@
   justify-content: center;
   width: 70%;
   height: 50%;
-  margin: 2% 15%;
+  margin: 9% 15%;
   background-color: rgba(0, 0, 0, 0.491);
   color: rgb(255, 255, 255);
 }
@@ -25,10 +26,11 @@
 
 .box1 {
   background-color: rgb(236, 117, 14);
-  height: 55%;
+  height: 50%;
   width: 60%;
   display: flex;
   flex-direction: row;
+  margin-top: -7%;
 }
 
 .box2 {
