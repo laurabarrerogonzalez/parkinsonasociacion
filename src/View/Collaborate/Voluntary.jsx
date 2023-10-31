@@ -5,8 +5,8 @@ import Navbar from "../../Components/Navbar/Navbar";
 const Voluntary = () => {
   return (
     <>
-      <Navbar />
       <div className="photos">
+        <Navbar />
         <div className="question">
           <h1 className="text">¿QUIERES SER VOLUNTARIO?</h1>
         </div>
@@ -34,6 +34,11 @@ const Voluntary = () => {
           <div className="text4">
             <h1>Requisitos</h1>
           </div>
+        </div>
+      </div>
+      <div className="form1">
+        <div className="text5">
+          <h1>Solicitud de voluntarios</h1>
         </div>
       </div>
     </>
