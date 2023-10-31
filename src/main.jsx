@@ -20,8 +20,8 @@ import Members from './View/Collaborate/Members';
 import Donations from './View/Collaborate/Donations';
 import Work from './View/Work with us/Work';
 import Find from './View/Find us/Find';
-
 import '../src/View/Parkinson/Myths.css';
+
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <Router>
@@ -47,7 +47,7 @@ ReactDOM.createRoot(document.getElementById('root')).render(
         <Route path="/find" element={<Find/>} />
 
 
-        
+       
       </Routes>
     </React.StrictMode>
   </Router>
