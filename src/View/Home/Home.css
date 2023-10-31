@@ -34,7 +34,7 @@
 
   .title_home h1{
     color: #067787;
-    font-size: 40px;
+    font-size: 35px;
     font-family: 'MiFuentePersonalizada';
   }
 
@@ -62,11 +62,111 @@
       display: flex;
       flex-direction: column;
       justify-content: center;
-
-      
     }
+  }
+
+  .line_home{
+    border-top: 3px solid #FF961A;
+    margin-top: 20px;
+    width: 60%;
+    margin-left: 70px;
+  }
+
+  .services_home{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+  }
+
+  .services_info{
+    width: 40%;
+    margin-top: 70px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: auto;
 
   }
+
+  .services_info img{
+    width: 500px;
+    height: 300px;
+    box-shadow: 8px 0 10px 5px rgba(0, 0, 0, 0.8); /* Desplazamiento en X, desplazamiento en Y, desenfoque, color */
+  }
+
+  .services_info h1{
+    font-size: 50px;
+  }
+
+  .services_info p{
+    font-size: 20px;
+    text-align:justify;
+  }
+
+  @media(max-width:768px){
+
+  
+    .services_home{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .services_info{
+      width: 90%;
+      margin-top: 30px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+  
+    }
+
+    .services_info img{
+      width: 450px;
+      height: 300px;
+    }
+    
+  }
+
+  .btn {
+    color: #FF961A;
+    text-transform: uppercase;
+    text-decoration: none;
+    border: 2px solid #FF961A;
+    padding: 10px 20px;
+    font-size: 17px;
+    font-weight: bold;
+    background: transparent;
+    position: relative;
+    transition: all 1s;
+    overflow: hidden;
+    width: 400px;
+    margin-top: 20px;
+  }
+  
+  .btn:hover {
+    color: white;
+  }
+  
+  .btn::before {
+    content: '';
+    position: absolute;
+    height: 100%;
+    width: 0%;
+    top: 0;
+    left: -40px;
+    transform: skewX(45deg);
+    background-color: #FF961A;
+    z-index: -1;
+    transition: all 1s;
+  }
+  
+  .btn:hover::before {
+    width: 160%;
+  }
+  
 
 
 
