@@ -1,14 +1,17 @@
-import React,{useState} from "react";
-import "../Navbar/Navbar.css"
+import React, { useState } from "react";
+import "../Navbar/Navbar.css";
 import { Link } from "react-router-dom";
-  
+
 const Navbar = () => {
-    const[isOpen,setIsOpen] = useState(false)
-    return(
-        <div className="navbar">
-            <div className="nav_logo"> 
-            <Link to="/">
-          <img src="https://res.cloudinary.com/dp7lr71t8/image/upload/v1698587890/61_sin_t__tulo_20231027173013-removebg-preview_480_xoxrqv.png" alt="Logo de tu empresa" />
+  const [isOpen, setIsOpen] = useState(false);
+  return (
+    <div className="navbar">
+      <div className="nav_logo">
+        <Link to="/">
+          <img
+            src="https://res.cloudinary.com/dp7lr71t8/image/upload/v1698587890/61_sin_t__tulo_20231027173013-removebg-preview_480_xoxrqv.png"
+            alt="Logo de tu empresa"
+          />
         </Link>
             </div>
             <div className={`nav_items ${isOpen && "open"}`}>
@@ -75,11 +78,4 @@ const Navbar = () => {
 }
 
 export default Navbar
-
-
-
-
-
-
-
 
