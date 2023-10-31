@@ -45,9 +45,6 @@ ReactDOM.createRoot(document.getElementById('root')).render(
         <Route path="/donations" element={<Donations/>} />
         <Route path="/work" element={<Work/>} />
         <Route path="/find" element={<Find/>} />
-
-
-        
       </Routes>
     </React.StrictMode>
   </Router>

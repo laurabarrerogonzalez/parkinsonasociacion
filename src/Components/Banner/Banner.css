@@ -1,0 +1,67 @@
+.banner {
+    position: relative;
+  }
+  
+  .banner img {
+    width: 100%;
+  height: 600px;
+   object-fit:fill;
+   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.7);
+  }
+  
+  .banner-text {
+    position: absolute;
+    top: 100px; /* Ajusta la posición vertical del texto */
+    right: 0px; /* Posiciona el texto a 50px del borde derecho */
+    color: white; /* Color del texto */
+    font-size: 30px; /* Tamaño de fuente del texto */
+    width: 30%; /* Ancho del texto */
+    max-height: 4em; /* Altura máxima de 4 líneas */
+    overflow: hidden;
+    text-overflow: ellipsis; /* Agrega puntos suspensivos si el texto se recorta */
+    display: -webkit-box; /* Propiedad específica para navegadores webkit */
+    -webkit-line-clamp: 4; /* Límite de líneas para navegadores webkit */
+    -webkit-box-orient: vertical; /* Orientación vertical del texto */
+    background: rgba(0, 0, 0, 0.7); /* Fondo negro transparente */
+    padding: 200px 10px 180px 60px; 
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.7);
+
+}
+
+@media(max-width:768px){
+    .banner img {
+    height: 500px;}
+
+
+.banner-text {
+    padding: 190px 10px 130px 90px;
+    font-size: 20px;
+    width: 50%;
+}
+}
+
+
+
+/* .banner-text::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -30%;
+    width: 30%;
+    height: 50%;
+    background: rgba(0, 0, 0, 0.5);
+    transform: skewX(20deg);
+    z-index: -1;
+  }
+
+  .banner-text::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: -30%;
+  width: 30%;
+  height: 50%;
+  background: rgba(0, 0, 0, 0.5);
+  transform: skewX(-20deg);
+  z-index: -1;
+  } */
