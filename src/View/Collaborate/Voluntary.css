@@ -1,0 +1,97 @@
+.photos {
+  border: 1px rgba(255, 255, 255, 0) solid;
+  height: 350px;
+  background-image: url("https://res.cloudinary.com/da7ffijqs/image/upload/v1698681283/20201119_125749_1_lmqez1.jpg");
+  background-size: cover;
+  background-position: 1%;
+}
+
+.question {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 70%;
+  height: 50%;
+  margin: 2% 15%;
+  background-color: rgba(0, 0, 0, 0.491);
+  color: rgb(255, 255, 255);
+}
+
+.text {
+  font-family: "Times New Roman", Times, serif;
+  text-align: center;
+  font-size: 250%;
+}
+
+.box1 {
+  background-color: rgb(236, 117, 14);
+  height: 55%;
+  width: 60%;
+  display: flex;
+  flex-direction: row;
+}
+
+.box2 {
+  background-color: rgb(6, 119, 135);
+  height: 25%;
+  width: 60%;
+  margin-top: 1%;
+  position: absolute;
+  right: 0.1%;
+  display: flex;
+  flex-direction: row;
+}
+
+.text1 {
+  margin: 5.5% 5%;
+  text-align: center;
+  color: white;
+}
+
+.text2 {
+  margin: 3% 5%;
+  text-align: left;
+  color: white;
+}
+
+.text3 {
+  margin: 3% 5%;
+  text-align: end;
+  color: white;
+}
+
+.text4 {
+  margin: 7% 5%;
+  text-align: center;
+  color: white;
+}
+
+.form1 {
+  border: 1px red solid;
+  position: relative;
+  width: 80%;
+  height: 550px;
+  margin-top: 27%;
+  margin-left: 10%;
+  background-color: rgba(0, 0, 0, 0.132);
+}
+
+.form1::before {
+  content: "";
+  position: absolute;
+  top: 30%;
+  left: 20%;
+  width: 70%;
+  height: 60%;
+  background-image: url("https://res.cloudinary.com/da7ffijqs/image/upload/v1698742122/image__1___1_-removebg-preview_najm32.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  opacity: 0.5;
+}
+
+.text5 {
+  margin-top: 2%;
+  text-align: center;
+  font-size: larger;
+  color: rgb(168, 83, 10);
+}

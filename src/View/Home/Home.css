@@ -1,0 +1,72 @@
+.navbar {
+    position: absolute;
+    z-index: 3; /* Asegúrate de que el z-index sea mayor que el del Banner */
+  }
+  
+  @font-face {
+    font-family: 'MiFuentePersonalizada';
+    src: url('../../Fonts/Bevan-Regular.ttf') format('truetype');
+    /* Agrega más formatos y rutas para soporte de navegadores diferentes */
+  }
+  .banner {
+    position: relative;
+    z-index: 1;
+    margin-top: 0px;
+  }
+
+  .section_title{
+    margin-top: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: center;
+    justify-content:space-around;
+    
+  }
+  .section_title p{
+    font-size: 20px;
+  }
+
+  .title_home{
+    width: 40%;
+    
+  }
+
+  .title_home h1{
+    color: #067787;
+    font-size: 40px;
+    font-family: 'MiFuentePersonalizada';
+  }
+
+  .title_hometwo{
+    width: 40%;
+    
+  }
+
+  @media(max-width:768px){
+
+    .title_home{
+      width: 100%;
+      margin: 10px;
+      display: flex;
+      flex-direction:row;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: center;
+     
+    }
+
+    .title_hometwo{
+      margin: 10px;
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+
+      
+    }
+
+  }
+
+
+
