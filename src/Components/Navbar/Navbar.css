@@ -104,13 +104,14 @@
 .menu-vertical li:hover{
     width: 200px;
     background-color:#FF961A;
-    
+    padding: 1px 0px 1px 0px;
 }
 
 .menu-vertical li a{
     display: block;
     color: white;
-    padding: 15px 15px 15px 15px;
+    padding: 2px 1px 1px 1px;
+
 }
 
 @media(max-width:768px){

@@ -40,9 +40,7 @@ const Home = () => {
             una intervención especializada al usuario de manera que se contemplen
             y atiendan de un modo integral sus necesidades específicas. Las mismas
             se cubren desde un enfoque biopsicosocial con servicios de asesoramiento,
-            rehabilitación, orientación para la promoción de la autonomía,
-            habilitación y atención asistencial o personal. Disponemos de un Plan
-            de Atención Integral.</p>
+            rehabilitación, orientación para la promoción de la autonomía.</p>
           <button class="btn">
             Leer más
           </button>
