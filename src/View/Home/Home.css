@@ -8,6 +8,21 @@
     src: url('../../Fonts/Bevan-Regular.ttf') format('truetype');
     /* Agrega más formatos y rutas para soporte de navegadores diferentes */
   }
+  @font-face {
+    font-family: 'RozhaOne';
+    src: url('../../Fonts/RozhaOne-Regular.ttf') format('truetype');
+    /* Agrega más formatos y rutas para soporte de navegadores diferentes */
+  }
+  @font-face {
+    font-family: 'Lexend';
+    src: url('../../Fonts/LexendMega-VariableFont_wght.ttf') format('truetype');
+    /* Agrega más formatos y rutas para soporte de navegadores diferentes */
+  }
+  @font-face {
+    font-family: 'Inria';
+    src: url('../../Fonts/InriaSans-Regular.ttf') format('truetype');
+    /* Agrega más formatos y rutas para soporte de navegadores diferentes */
+  }
   .banner {
     position: relative;
     z-index: 1;
@@ -37,9 +52,15 @@
     font-size: 35px;
     font-family: 'MiFuentePersonalizada';
   }
+  .title_home p{
+    color: black;
+    font-size: 20px;
+    font-family: 'Lexend';
+  }
 
   .title_hometwo{
     width: 40%;
+    font-family:'Lexend' ;
     
   }
 
@@ -98,11 +119,14 @@
 
   .services_info h1{
     font-size: 50px;
+    font-family:'RozhaOne';
   }
 
   .services_info p{
-    font-size: 20px;
+    font-size: 15px;
     text-align:justify;
+    font-family:'Lexend' ;
+    
   }
 
   @media(max-width:768px){

@@ -8,6 +8,17 @@
    object-fit:fill;
    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.7);
   }
+
+  @font-face {
+    font-family: 'Inria';
+    src: url('../../Fonts/InriaSans-Regular.ttf') format('truetype');
+    /* Agrega más formatos y rutas para soporte de navegadores diferentes */
+  }
+  @font-face {
+    font-family: 'Single';
+    src: url('../../Fonts/SingleDay-Regular.ttf') format('truetype');
+    /* Agrega más formatos y rutas para soporte de navegadores diferentes */
+  }
   
   .banner-text {
     position: absolute;
@@ -25,7 +36,21 @@
     background: rgba(0, 0, 0, 0.7); /* Fondo negro transparente */
     padding: 200px 10px 180px 60px; 
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.7);
+    font-family: 'Inria';
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.9);
 
+}
+
+.banner-title {
+  position: absolute;
+  top: 190px; /* Posición del título sobre la imagen */
+  right: 0px; /* Ajusta la posición horizontal del título */
+  transform: translateX(-15%);
+  color: white; /* Color del título */
+  font-size: 45px; /* Tamaño de fuente del título */
+  z-index: 1; /* Coloca el título encima de la imagen */
+  font-family: 'Single'; /* Utiliza tu fuente personalizada */
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); /* Sombra para mejorar la legibilidad */
 }
 
 @media(max-width:768px){
