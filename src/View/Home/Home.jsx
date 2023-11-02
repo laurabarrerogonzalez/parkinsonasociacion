@@ -104,6 +104,7 @@ const Home = () => {
       </section>
 
       <Footer/>
+      <button className="donate_button">Donar</button>
 
 
     </div>
