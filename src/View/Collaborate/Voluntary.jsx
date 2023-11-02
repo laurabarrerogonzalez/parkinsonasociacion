@@ -1,6 +1,6 @@
 import "./Voluntary.css";
 import React from "react";
-import swal from 'sweetalert2';
+import swal from "sweetalert2";
 import Navbar from "../../Components/Navbar/Navbar";
 import Stack from "@mui/material/Stack";
 import Button from "@mui/material/Button";
@@ -14,27 +14,26 @@ import { red } from "@mui/material/colors";
 const label = { inputProps: { "aria-label": "Checkbox demo" } };
 
 const Voluntary = () => {
-
-  const customColor = 'rgb(236, 117, 14)';
+  const customColor = "rgb(236, 117, 14)";
 
   const handleEnviarClick = () => {
     swal
       .fire({
-        title: '¿Estás seguro de enviar la información?',
-        text: 'Una vez enviada, no podrás modificarla.',
-        icon: 'question',
+        title: "¿Estás seguro de enviar la información?",
+        text: "Una vez enviada, no podrás modificarla.",
+        icon: "question",
         showCancelButton: true,
         confirmButtonColor: customColor,
-        cancelButtonColor: '#6c757d',
-        confirmButtonText: 'Sí, enviar',
-        cancelButtonText: 'Cancelar',
+        cancelButtonColor: "#6c757d",
+        confirmButtonText: "Sí, enviar",
+        cancelButtonText: "Cancelar",
       })
       .then((result) => {
         if (result.isConfirmed) {
           swal.fire({
-            title: 'Enviado',
-            text: 'La información ha sido enviada.',
-            icon: 'success',
+            title: "Enviado",
+            text: "La información ha sido enviada.",
+            icon: "success",
             confirmButtonColor: customColor, // Configurar el color del botón OK
           });
         }
@@ -85,85 +84,81 @@ const Voluntary = () => {
             <Box
               component="form"
               sx={{
-                "& .MuiTextField-root": { m: 1, width: "60ch" },
+                "& .MuiTextField-root": { m: 1, width: "37ch" },
               }}
               noValidate
               autoComplete="off"
+              className="responsive"
             >
-              <div>
-                <TextField
-                  required
-                  className="White"
-                  id="outlined-required"
-                  label="Nombre y Apellidos"
-                  defaultValue=""
-                />
-              </div>
+              <TextField
+                required
+                className="White"
+                id="outlined-required"
+                label="Nombre y Apellidos"
+                defaultValue=""
+              />
               <br></br>
               <br></br>
-              <div>
-                <TextField
-                  required
-                  className="White"
-                  id="outlined-required"
-                  label="Domicilio"
-                  defaultValue=""
-                />
-              </div>
+
+              <TextField
+                required
+                className="White"
+                id="outlined-required"
+                label="Domicilio"
+                defaultValue=""
+              />
+
               <br></br>
               <br></br>
-              <div>
-                <TextField
-                  required
-                  className="White"
-                  id="outlined-number"
-                  label="Telefono"
-                  defaultValue=""
-                />
-              </div>
+
+              <TextField
+                required
+                className="White"
+                id="outlined-number"
+                label="Telefono"
+                defaultValue=""
+              />
             </Box>
           </div>
           <div className="form2">
             <Box
               component="form"
               sx={{
-                "& .MuiTextField-root": { m: 1, width: "60ch" },
+                "& .MuiTextField-root": { m: 1, width: "37ch" },
               }}
               noValidate
               autoComplete="off"
             >
-              <div>
-                <TextField
-                  required
-                  className="White"
-                  id="outlined-required"
-                  label="Email"
-                  type="email"
-                  defaultValue=""
-                />
-              </div>
+              <TextField
+                required
+                className="White"
+                id="outlined-required"
+                label="Email"
+                type="email"
+                defaultValue=""
+              />
+
               <br></br>
               <br></br>
-              <div>
-                <TextField
-                  required
-                  className="White"
-                  id="outlined-required"
-                  label="Ciudad"
-                  defaultValue=""
-                />
-              </div>
+
+              <TextField
+                required
+                className="White"
+                id="outlined-required"
+                label="Ciudad"
+                defaultValue=""
+              />
+
               <br></br>
               <br></br>
-              <div>
-                <TextField
-                  required
-                  className="White"
-                  id="outlined-number"
-                  label="Provincia"
-                  defaultValue=""
-                />
-              </div>
+
+              <TextField
+                required
+                className="White"
+                id="outlined-number"
+                label="Provincia"
+                defaultValue=""
+              />
             </Box>
             <br />
             <FormGroup>
@@ -188,9 +183,14 @@ const Voluntary = () => {
         </div>
         <div className="buttonAcept">
           <Stack direction="row" spacing={2}>
-          <Button style={{ backgroundColor: customColor, color: '#fff' }} onClick={handleEnviarClick}>ENVIAR</Button>
+            <Button
+              style={{ backgroundColor: customColor, color: "#fff" }}
+              onClick={handleEnviarClick}
+            >
+              ENVIAR
+            </Button>
           </Stack>
-          </div>
+        </div>
       </div>
     </>
   );
