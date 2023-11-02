@@ -2,6 +2,7 @@ import React from "react";
 import Navbar from "../../Components/Navbar/Navbar";
 import "../Parkinson/Myths.css";
 import Footer from '../../assets/Components/Footer/Footer.jsx';
+import BannerViews from "../../Components/BannerViews/BannerViews";
 
 
 
@@ -9,12 +10,13 @@ const Myths = () => {
   return (
     <>
 
-    <div className="photobanner">
-       <Navbar />
-      <div className="questions">
-        <h1>MITOS Y VERDADES</h1>
+<div>
+      <Navbar />
+      <BannerViews
+        image="https://res.cloudinary.com/dit2zhtwz/image/upload/v1698744222/pareja-alegre-celebracion-icono-votacion-sentado-sofa_53876-24976_kke7zn.jpg"
+        title="Mitos y Verdades"
+      />
       </div>
-    </div>
     
   <div className="titlecard">
     <h2 className="myths">MITOS</h2>

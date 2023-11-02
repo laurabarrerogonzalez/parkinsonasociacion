@@ -8,6 +8,21 @@
     src: url('../../Fonts/Bevan-Regular.ttf') format('truetype');
     /* Agrega más formatos y rutas para soporte de navegadores diferentes */
   }
+  @font-face {
+    font-family: 'RozhaOne';
+    src: url('../../Fonts/RozhaOne-Regular.ttf') format('truetype');
+    /* Agrega más formatos y rutas para soporte de navegadores diferentes */
+  }
+  @font-face {
+    font-family: 'Lexend';
+    src: url('../../Fonts/LexendMega-VariableFont_wght.ttf') format('truetype');
+    /* Agrega más formatos y rutas para soporte de navegadores diferentes */
+  }
+  @font-face {
+    font-family: 'Inria';
+    src: url('../../Fonts/InriaSans-Regular.ttf') format('truetype');
+    /* Agrega más formatos y rutas para soporte de navegadores diferentes */
+  }
   .banner {
     position: relative;
     z-index: 1;
@@ -32,12 +47,18 @@
 
   .title_home h1{
     color: #067787;
-    font-size: 40px;
+    font-size: 35px;
     font-family: 'MiFuentePersonalizada';
+  }
+  .title_home p{
+    color: black;
+    font-size: 20px;
+    font-family: 'Lexend';
   }
 
   .title_hometwo{
     width: 40%;
+    font-family:'Lexend' ;
     
   }
 
@@ -60,11 +81,136 @@
       display: flex;
       flex-direction: column;
       justify-content: center;
-
-      
     }
+  }
+
+  .line_home{
+    border-top: 3px solid #FF961A;
+    margin-top: 20px;
+    width: 60%;
+    margin-left: 70px;
+  }
+
+  .services_home{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+  }
+
+  .services_info{
+    width: 40%;
+    margin-top: 90px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: auto;
 
   }
+
+  .services_info img{
+    width: 500px;
+    height: 300px;
+    box-shadow: 8px 0 10px 5px rgba(0, 0, 0, 0.8); /* Desplazamiento en X, desplazamiento en Y, desenfoque, color */
+  }
+
+  .services_info h1{
+    font-size: 50px;
+    font-family:'RozhaOne';
+  }
+
+  .services_info p{
+    font-size: 15px;
+    text-align:justify;
+    font-family:'Lexend' ;
+    
+  }
+
+  @media(max-width:768px){
+
+  
+    .services_home{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .services_info{
+      width: 90%;
+      margin-top: 30px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+  
+    }
+
+    .services_info img{
+      width: 450px;
+      height: 300px;
+    }
+    
+  }
+
+  .btn {
+    color: #FF961A;
+    text-transform: uppercase;
+    text-decoration: none;
+    border: 2px solid #FF961A;
+    padding: 10px 20px;
+    font-size: 17px;
+    font-weight: bold;
+    background: transparent;
+    position: relative;
+    transition: all 1s;
+    overflow: hidden;
+    width: 400px;
+    margin-top: 20px;
+  }
+  
+  .btn:hover {
+    color: white;
+  }
+  
+  .btn::before {
+    content: '';
+    position: absolute;
+    height: 100%;
+    width: 0%;
+    top: 0;
+    left: -40px;
+    transform: skewX(45deg);
+    background-color: #FF961A;
+    z-index: -1;
+    transition: all 1s;
+  }
+  
+  .btn:hover::before {
+    width: 160%;
+  }
+
+  /* Agrega al final del archivo Home.css */
+.donate_button {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  padding: 10px 15px;
+  font-size: 16px;
+  border: 2px solid #E26890;
+  background-color: transparent;
+  color: #E26890;
+  z-index: 999; /* Asegura que esté por encima de otros elementos */
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.donate_button:hover {
+  color: white;
+  background-color: #E26890;
+}
+
+  
+  
 
 
 
