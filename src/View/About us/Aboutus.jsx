@@ -2,6 +2,7 @@ import React from "react";
 import "../About us/Aboutus.css";
 import Navbar from "../../Components/Navbar/Navbar";
 import BannerViews from "../../Components/BannerViews/BannerViews";
+import Footer from "../../Components/Footer/Footer";
 
 
 
@@ -43,7 +44,7 @@ const Aboutus = () => {
                             afectadas con parkinson. Somos un equipo entusiasta,
                             diverso e íntegro que cree en</p>
                     </div>
-                    
+
                 </div>
                 <div className="card_value">
                     <div class="overlay">
@@ -74,6 +75,67 @@ const Aboutus = () => {
                     </div>
                 </div>
             </section>
+
+            <section className="section_workers">
+                <div className="card_worker">
+                    <div className="section_img_worker">
+                        <img className="img_worker" src="https://res.cloudinary.com/dp7lr71t8/image/upload/v1698965836/descarga_2_nltw4k.jpg" alt="" />
+                    </div>
+                    <div className="section_content_worker">
+                        <h4>"En cada paso que damos juntos, encontramos la fuerza para superar los desafíos del Parkinson.
+                            ¡Sigamos avanzando con determinación y esperanza!"</h4>
+
+                        <p className="name_worker">Paloma ruiz</p>
+                        <p>Encargada Centro de día</p>
+
+                    </div>
+
+                </div>
+                <div className="card_worker">
+                    <div className="section_img_worker" >
+                        <img className="img_worker" src="https://res.cloudinary.com/dp7lr71t8/image/upload/v1698965749/Angel_zwozbd.png" alt="" />
+                    </div>
+                    <div className="section_content_worker">
+                        <h4>"Nuestro compromiso es más fuerte que cualquier temblor.
+                            ¡Trabajemos unidos, inspirando coraje y alegría en cada momento!"</h4>
+
+                        <p className="name_worker">Angel Serrano</p>
+                        <p>Encargado de rehabilitación</p>
+
+                    </div>
+                </div>
+                <div className="card_worker">
+                    <div className="section_content_worker">
+                        <h4>"En esta asociación, la perseverancia es nuestra bandera. Recordemos siempre: cada logro, grande o pequeño,
+                            es una victoria en la batalla contra el Parkinson."</h4>
+
+                        <p className="name_worker">Celia García</p>
+                        <p>Encargada de estimulación</p>
+
+                    </div>
+                    <div className="section_img_worker">
+                        <img className="img_worker" src="https://res.cloudinary.com/dp7lr71t8/image/upload/v1698965750/celia_gknqcr.png" alt="" />
+                    </div>
+
+
+
+                </div>
+                <div className="card_worker">
+                    <div className="section_content_worker">
+                        <h4>"Con cada sonrisa que compartimos, iluminamos el camino hacia la superación. Juntos,
+                            creamos un espacio de apoyo, empatía y fortaleza para vencer al Parkinson."</h4>
+
+                        <p className="name_worker">Marcos Chotsourian</p>
+                        <p>Encargado ayuda a domicilio</p>
+
+                    </div>
+                    <div className="section_img_worker">
+                        <img className="img_worker" src="https://res.cloudinary.com/dp7lr71t8/image/upload/v1698965857/1696600529245_2_cdnn1v.jpg" alt="" />
+                    </div>
+
+                </div>
+            </section>
+            <Footer />
 
 
         </div>
