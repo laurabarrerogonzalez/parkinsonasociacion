@@ -1,0 +1,6 @@
+.photobanner1 {
+    height: 500px;
+    background-image: url("https://res.cloudinary.com/dit2zhtwz/image/upload/v1698744222/pareja-alegre-celebracion-icono-votacion-sentado-sofa_53876-24976_kke7zn.jpg");
+    background-size:cover; 
+    border: 1px rgba(255, 255, 255, 0) solid; 
+}

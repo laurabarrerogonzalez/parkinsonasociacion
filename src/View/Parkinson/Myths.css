@@ -18,6 +18,28 @@
 
 }
 
+
+
+.titlecard{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 50px;
+    font-size: 25px;
+}
+
+.titlecard .myths{
+background-color: #2C29BD;
+border-radius: 20px;
+width: 130px;
+}
+
+.titlecard .truths{
+    background-color:#DC7000;
+    border-radius: 20px;
+    width: 210px;
+    }
+
+
 .card{
     position: relative;
     width: 250px;

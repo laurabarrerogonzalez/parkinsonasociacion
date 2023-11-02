@@ -16,7 +16,11 @@ const Myths = () => {
       </div>
     </div>
     
-  
+  <div className="titlecard">
+    <h2 className="myths">MITOS</h2>
+    <h2 className="vs">VS</h2>
+    <h2 className="truths">VERDADES</h2>
+  </div>
 
 
 
