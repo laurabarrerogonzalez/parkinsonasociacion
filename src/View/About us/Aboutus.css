@@ -1,8 +1,8 @@
 .intro_Aboutus{
     border: solid 1px black;
     width: 100%;
-    height: 300px;
-    margin-top: 20px;
+    height: auto;
+    margin-top: 40px;
     display: flex;
     flex-direction: column;
     text-align: center;
@@ -12,5 +12,112 @@
     font-size: 20px;
     width: 80%;
     height: auto;
+    line-height: 1.5;
     
 }
+
+.btn_donar_Aboutus {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 25px 20px 22px;
+    box-shadow: rgba(10, 37, 64, 0.7) 0px -2px 6px 0px inset;
+    background-color: #F3266A;
+    border-color: #f32626;
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 20px;
+    font-size: 25px;
+    font-weight: 900;
+    color: white;
+    font-family: monospace;
+    transition: transform 400ms cubic-bezier(.68,-0.55,.27,2.5), 
+    border-color 400ms ease-in-out,
+    background-color 400ms ease-in-out;
+    word-spacing: -2px;
+    margin-top: 20px;
+    cursor:pointer;
+  }
+  
+  @keyframes movingBorders {
+    0% {
+      border-color: #fce4e4;
+    }
+  
+    50% {
+      border-color: #ffd8d8;
+    }
+  
+    90% {
+      border-color: #fce4e4;
+    }
+  }
+  
+  .btn_donar_Aboutus:hover {
+    background-color: #eee;
+    transform: scale(105%);
+    animation: movingBorders 3s infinite;
+    color: black;
+  }
+  
+  .btn_donar_Aboutus svg {
+    margin-right: 11px;
+    fill: rgb(255, 2, 2);
+    transition: opacity 100ms ease-in-out;
+  }
+  
+  .filled {
+    position: absolute;
+    opacity: 0;
+    top: 20px;
+    left: 22px;
+  }
+  
+  @keyframes beatingHeart {
+    0% {
+      transform: scale(1);
+    }
+  
+    15% {
+      transform: scale(1.15);
+    }
+  
+    30% {
+      transform: scale(1);
+    }
+  
+    45% {
+      transform: scale(1.15);
+    }
+  
+    60% {
+      transform: scale(1);
+    }
+  }
+  
+  .btn_donar_Aboutus:hover .empty {
+    opacity: 0;
+  }
+  
+  .btn_donar_Aboutus:hover .filled {
+    opacity: 1;
+    animation: beatingHeart 1.2s infinite;
+  }
+
+  .section_cards_values{
+    border: solid 1px black;
+    width: 100%;
+    height: auto;
+    margin-top: 30px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+  }
+
+  .card_value{
+   border: solid 1px black;
+   margin-top: 5px; 
+   width: 30%;
+   height: 300px;
+  }
