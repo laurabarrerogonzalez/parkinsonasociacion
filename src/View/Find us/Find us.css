@@ -25,6 +25,34 @@
 }
 
 
+/* Find us.css */
+/* ... Otros estilos ... */
+
+.social-band {
+  display: flex;
+  align-items: center;
+  padding: 20px;
+  color: white;
+  margin-top: 30%;
+}
+
+.left-side {
+  flex: 1;
+  text-align: left;
+  background: #FF5733; /* Color naranja de fondo para la mitad izquierda */
+  padding: 20px;
+  position: relative;
+  display: flex;
+  justify-content: flex-end; /* Alinea los contenidos a la derecha en el lado naranja */
+}
+
+.right-side {
+  flex: 1;
+  text-align: right;
+  background: #808080; /* Color gris de fondo para la mitad derecha */
+  padding: 20px;
+  position: relative;
+}
 
 
 
