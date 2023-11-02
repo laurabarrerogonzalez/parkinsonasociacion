@@ -43,7 +43,7 @@ const Footer = () => {
                 </section>
                 <section className="section3">
                     <h2>¿Necesitas ayuda? Podemos asesorarte</h2>
-                    <hr />
+                    <hr className='line_footer'/>
                     <p>PARKINSONEXTREMADURA@GMAIL.COM</p>
                 </section>
             </div>
