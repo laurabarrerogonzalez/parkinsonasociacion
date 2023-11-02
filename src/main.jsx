@@ -20,7 +20,6 @@ import Members from './View/Collaborate/Members';
 import Donations from './View/Collaborate/Donations';
 import Work from './View/Work with us/Work';
 import Find from './View/Find us/Find us';
-
 import '../src/View/Parkinson/Myths.css';
 
 ReactDOM.createRoot(document.getElementById('root')).render(

@@ -1,0 +1,31 @@
+.photobanner {
+  border: 1px rgba(255, 255, 255, 0) solid;
+  height: 450px;
+  background-image: url("https://res.cloudinary.com/doft9ylq1/image/upload/v1698914683/pareja-blanca-wanderlust_1_njqb3r.jpg");
+  background-size: cover;
+  background-position: 1%;
+}
+
+.question1 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 50%;
+  height: 30%;
+  margin: 2% 25%;
+  margin-top: 10%;
+  background-color: rgba(0, 0, 0, 0.5); /* Fondo semitransparente */
+  color: rgb(255, 255, 255);
+}
+
+.textQ {
+  font-family: "Times New Roman", Times, serif;
+  text-align: center;
+  font-size: 250%;
+}
+
+
+
+
+
+
