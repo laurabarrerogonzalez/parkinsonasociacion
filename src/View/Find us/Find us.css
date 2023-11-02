@@ -25,15 +25,10 @@
 }
 
 
-/* Find us.css */
-/* ... Otros estilos ... */
-
 .social-band {
-  display: flex;
-  align-items: center;
+  display: flex; 
   padding: 20px;
   color: white;
-  margin-top: 30%;
 }
 
 .left-side {
@@ -54,6 +49,14 @@
   position: relative;
 }
 
-
+.triangle {
+  width: 0;
+  height: 0;
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+  border-top: 10px solid #FF5733; /* Color naranja para el triángulo */
+  position: absolute;
+  right: 50%; /* Centra el triángulo en la mitad de la cinta */
+}
 
 
