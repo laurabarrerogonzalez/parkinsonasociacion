@@ -21,36 +21,52 @@
   }
   
   .banner-text {
-    position: absolute;
-    top: 100px; /* Ajusta la posición vertical del texto */
-    right: 0px; /* Posiciona el texto a 50px del borde derecho */
+   
+    /* Ajusta la posición vertical del texto */
+     /* Posiciona el texto a 50px del borde derecho */
     color: white; /* Color del texto */
     font-size: 30px; /* Tamaño de fuente del texto */
-    width: 30%; /* Ancho del texto */
-    max-height: 4em; /* Altura máxima de 4 líneas */
-    overflow: hidden;
-    text-overflow: ellipsis; /* Agrega puntos suspensivos si el texto se recorta */
-    display: -webkit-box; /* Propiedad específica para navegadores webkit */
-    -webkit-line-clamp: 4; /* Límite de líneas para navegadores webkit */
-    -webkit-box-orient: vertical; /* Orientación vertical del texto */
-    background: rgba(0, 0, 0, 0.7); /* Fondo negro transparente */
-    padding: 200px 10px 180px 60px; 
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.7);
+     /* Ancho del texto */
+   
+    
+     /* Orientación vertical del texto */
+     /* Fondo negro transparente */
+    /* padding: 10px 10px 10px 10px;  */
+  
     font-family: 'Inria';
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.9);
+    margin: 0;
+   
 
+}
+.text-banneer{
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items:center;
+  top: 100px;
+  right: 0px;
+  width: 600px;
+  height: 500px;
+  z-index: 1;
+  text-align: center;
+  background-color:rgba(0, 0, 0, 0.7) ;
+  
+  
 }
 
 .banner-title {
-  position: absolute;
-  top: 190px; /* Posición del título sobre la imagen */
-  right: 0px; /* Ajusta la posición horizontal del título */
-  transform: translateX(-15%);
+  
+   /* Posición del título sobre la imagen */
+   /* Ajusta la posición horizontal del título */
+  
   color: white; /* Color del título */
   font-size: 45px; /* Tamaño de fuente del título */
-  z-index: 1; /* Coloca el título encima de la imagen */
+  /* Coloca el título encima de la imagen */
   font-family: 'Single'; /* Utiliza tu fuente personalizada */
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); /* Sombra para mejorar la legibilidad */
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.9); /* Sombra para mejorar la legibilidad */
+margin: 0;
 }
 
 
@@ -59,11 +75,21 @@
     height: 500px;}
 
 
-.banner-text {
-    padding: 190px 10px 130px 90px;
+/* .banner-text {
     font-size: 20px;
     width: 50%;
+} */
+.text-banneer{
+  width: 50%;
+  height: 400px;
 }
+.banner-title {
+  font-size: 30px;
+}
+.banner-text {
+  font-size: 20px;
+}
+
 }
 
 
