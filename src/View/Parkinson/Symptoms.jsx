@@ -2,16 +2,18 @@ import React from "react";
 import Navbar from "../../Components/Navbar/Navbar";
 import "../Parkinson/Symptoms.css";
 import Footer from "../../assets/Components/Footer/Footer";
+import BannerViews from "../../Components/BannerViews/BannerViews";
 
 const Symptoms = () => {
   return (
     <>
-      <div className="photobanner1">
-       <Navbar />
-      <div className="questions">
-        <h1>Síntomas Y Diagnóstico</h1>
+      <div>
+      <Navbar />
+      <BannerViews
+        image="https://res.cloudinary.com/dit2zhtwz/image/upload/v1698917550/istockphoto-1434534146-612x612_c5rz28.jpg"
+        title="Síntomas y Diagnóstico"
+      />
       </div>
-    </div>
 
 
     <div className="what">
