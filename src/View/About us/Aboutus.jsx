@@ -18,7 +18,7 @@ const Aboutus = () => {
             />
             <section className="intro_Aboutus">
                 <p>Trabajamos cada día para ayudar y mejorar las condiciones de las personas
-                    afectadas con parkinson. 
+                    afectadas con parkinson.
                     Somos un equipo entusiasta, diverso e íntegro que cree en
                     la capacidad de las personas para cambiar su entorno. Juntas somos imparables. </p>
 
@@ -30,9 +30,49 @@ const Aboutus = () => {
             </section>
 
             <section className="section_cards_values">
-                <div className="card_value"></div>
-                <div className="card_value"></div>
-                <div className="card_value"></div>
+                <div className="card_value">
+                    <div class="overlay">
+                        <p class="overlay-text">Valores</p>
+                    </div>
+
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 5H4V19L13.2923 9.70649C13.6828 9.31595 14.3159 9.31591 14.7065 9.70641L20 15.0104V5ZM2 3.9934C2 3.44476 2.45531 3 2.9918 3H21.0082C21.556 3 22 3.44495 22 3.9934V20.0066C22 20.5552 21.5447 21 21.0082 21H2.9918C2.44405 21 2 20.5551 2 20.0066V3.9934ZM8 11C6.89543 11 6 10.1046 6 9C6 7.89543 6.89543 7 8 7C9.10457 7 10 7.89543 10 9C10 10.1046 9.10457 11 8 11Z"></path></svg>
+                    <img src="https://res.cloudinary.com/dp7lr71t8/image/upload/v1698932414/people-2569234_1280_cufnwo.jpg" alt="Descripción de la imagen" />
+                    <div class="card__content">
+                        <p class="card__title">Valores</p>
+                        <p class="card__description">Trabajamos cada día para ayudar y mejorar las condiciones de las personas
+                            afectadas con parkinson. Somos un equipo entusiasta,
+                            diverso e íntegro que cree en</p>
+                    </div>
+                    
+                </div>
+                <div className="card_value">
+                    <div class="overlay">
+                        <p class="overlay-text">Misión</p>
+                    </div>
+
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 5H4V19L13.2923 9.70649C13.6828 9.31595 14.3159 9.31591 14.7065 9.70641L20 15.0104V5ZM2 3.9934C2 3.44476 2.45531 3 2.9918 3H21.0082C21.556 3 22 3.44495 22 3.9934V20.0066C22 20.5552 21.5447 21 21.0082 21H2.9918C2.44405 21 2 20.5551 2 20.0066V3.9934ZM8 11C6.89543 11 6 10.1046 6 9C6 7.89543 6.89543 7 8 7C9.10457 7 10 7.89543 10 9C10 10.1046 9.10457 11 8 11Z"></path></svg>
+                    <img src="https://res.cloudinary.com/dp7lr71t8/image/upload/v1698961627/110.Definir-la-mision-y-vision-de-una-empresa-1024x494_gxlt5v.jpg" alt="Descripción de la imagen" />
+                    <div class="card__content">
+                        <p class="card__title">Misión</p>
+                        <p class="card__description">Trabajamos cada día para ayudar y mejorar las condiciones de las personas
+                            afectadas con parkinson. Somos un equipo entusiasta,
+                            diverso e íntegro que cree en</p>
+                    </div>
+                </div>
+                <div className="card_value">
+                    <div class="overlay">
+                        <p class="overlay-text">Visión</p>
+                    </div>
+
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 5H4V19L13.2923 9.70649C13.6828 9.31595 14.3159 9.31591 14.7065 9.70641L20 15.0104V5ZM2 3.9934C2 3.44476 2.45531 3 2.9918 3H21.0082C21.556 3 22 3.44495 22 3.9934V20.0066C22 20.5552 21.5447 21 21.0082 21H2.9918C2.44405 21 2 20.5551 2 20.0066V3.9934ZM8 11C6.89543 11 6 10.1046 6 9C6 7.89543 6.89543 7 8 7C9.10457 7 10 7.89543 10 9C10 10.1046 9.10457 11 8 11Z"></path></svg>
+                    <img src="https://res.cloudinary.com/dp7lr71t8/image/upload/v1698961936/mision-y-vision-og_uq75gc.jpg" />
+                    <div class="card__content">
+                        <p class="card__title">Visión</p>
+                        <p class="card__description">Trabajamos cada día para ayudar y mejorar las condiciones de las personas
+                            afectadas con parkinson. Somos un equipo entusiasta,
+                            diverso e íntegro que cree en</p>
+                    </div>
+                </div>
             </section>
 
 
