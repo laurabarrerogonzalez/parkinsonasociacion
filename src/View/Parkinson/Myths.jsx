@@ -1,6 +1,9 @@
 import React from "react";
 import Navbar from "../../Components/Navbar/Navbar";
 import "../Parkinson/Myths.css";
+import Footer from '../../assets/Components/Footer/Footer.jsx';
+
+
 
 const Myths = () => {
   return (
@@ -11,10 +14,11 @@ const Myths = () => {
       <div className="questions">
         <h1>MITOS Y VERDADES</h1>
       </div>
-
-
     </div>
     
+  
+
+
 
       <div className="card-container">
         {/* Tarjeta 1 */}
@@ -162,8 +166,9 @@ const Myths = () => {
           </div>
         </div>
 
-       
+        
       </div>
+<Footer />
     </>
   );
 };

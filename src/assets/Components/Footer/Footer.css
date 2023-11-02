@@ -13,7 +13,7 @@
 
   .footer-content {
     display: flex;
-    width: 100%;
+    width: 99%;
   }
   
   .section1,
@@ -89,12 +89,23 @@
     justify-content: space-between;
   }
 
-  .footer-section .slick-slide {
+  /* .footer-section .slick-slide {
     margin-right: 5px;
-  }
+  } */
   
   .footer-section .slick-slide img {
     height: 100px;
     width: auto;
     object-fit: contain;
+  }
+
+
+
+  .footer-section .slick-slider {
+    /* width: 100%; */
+    overflow: hidden;
+  }
+
+  .footer-section .slick-slide {
+    margin-right: 0; /* Establece el margen en 0 o el valor que mejor funcione para tu diseño */
   }
