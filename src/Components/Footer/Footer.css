@@ -4,7 +4,7 @@
     justify-content: space-between;
     align-items: center;
     flex-wrap: wrap;
-    background-color: #242830;
+    background-color: #323944;
     color: #ffffff;
     font-size: 14px;
     height: auto;
@@ -24,7 +24,8 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin: 1px;
+    margin:1px;
+    
   }
   
   .section1 img {
@@ -74,9 +75,18 @@
   }
   
   .section3 .line_footer {
-    border-color: #ff4500;
+    border-color: #FF961A;
     border-width: 2px;
     width: 100%;
+    margin-right: 5px;
+  }
+  .section3 h2{
+    margin-top: 25px;
+    text-align: center;
+  }
+
+  .section3 p{
+    margin: 4px;
   }
 
   .footer-section {
