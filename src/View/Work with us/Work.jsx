@@ -2,6 +2,7 @@ import React from "react";
 import "../Work with us/Work.css"
 import Navbar from "../../Components/Navbar/Navbar";
 import BannerViews from "../../Components/BannerViews/BannerViews";
+import Footer from "../../Components/Footer/Footer";
 
 
 const Work = () => {
@@ -244,6 +245,8 @@ const Work = () => {
                 </form>
 
             </section>
+
+            <Footer/>
 
 
         </div>
