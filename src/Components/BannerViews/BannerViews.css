@@ -52,7 +52,7 @@
   height: 300px;
   z-index: 1;
   text-align: center;
-  background-color:rgba(0, 0, 0, 0.7) ;
+  
   
   
 }
@@ -63,10 +63,11 @@
    /* Ajusta la posición horizontal del título */
   
   color: white; /* Color del título */
-  font-size: 45px; /* Tamaño de fuente del título */
+  font-weight: bold;
+  font-size: 60px; /* Tamaño de fuente del título */
   /* Coloca el título encima de la imagen */
   font-family: 'Single'; /* Utiliza tu fuente personalizada */
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.9); /* Sombra para mejorar la legibilidad */
+  text-shadow: 4px 4px 4px rgba(0, 0, 0, 1.9); /* Sombra para mejorar la legibilidad */
 margin: 0;
 }
 

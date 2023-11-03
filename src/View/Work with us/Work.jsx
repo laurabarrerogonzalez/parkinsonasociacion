@@ -50,6 +50,10 @@ const Work = () => {
             <div className="text_form_asociation">
                 <p>Si quieres unirte a nuestro reto y formar parte de nuestra comunidad, registrate:</p>
             </div>
+
+            <section className="container_logo_asociation_work">
+        <img className="logo_asociation_work"src="https://res.cloudinary.com/dp7lr71t8/image/upload/v1699013908/descarga-removebg-preview_chico_dzkvgc.png" alt="" />
+            </section>
             <section className="container_form">
 
                 <form className="form">
@@ -238,7 +242,7 @@ const Work = () => {
                     </p>
                     <label className="checkbox-label">
                         <input type="checkbox" className="input" id="check" required />
-                        <span className="ss">Acepto la protección de datos personales</span>
+                        <span className="protect_dates">Acepto la protección de datos personales</span>
                     </label>
                     <button className="submit">Enviar</button>
                     <p className="signin"></p>

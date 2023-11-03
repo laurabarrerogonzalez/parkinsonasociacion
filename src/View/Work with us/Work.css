@@ -4,7 +4,6 @@
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    border: 2px solid black;
     margin-top: 20px;
 }
 
@@ -23,7 +22,7 @@
 .title_person_asociation{
     width: 100%;
     height: 85px;
-    border: 2px solid black;
+
     text-align: center;
     
 }
@@ -31,7 +30,7 @@
 @media(max-width:768px){
 
     .title_person_asociation{
-        margin-bottom: 20px;
+        margin-bottom: 70px;
         
     }
 }
@@ -51,17 +50,18 @@
 .text_person_asociation{
     width: 50%;
     height: 350px;
-    border: 2px solid black;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    text-align:center;
-    font-size: 20px;  
+    text-align:justify;
+    
 }
 
 .text_person_asociation p{
-    width: 90%;   
+    width: 90%; 
+    font-family: 'Lexend';
+    font-size: 15px;   
 }
 @media(max-width:768px){
 
@@ -77,12 +77,11 @@
 .video_person_asociation{
     width: 49.5%;
     height: 350px;
-    border: 2px solid black;
     display: flex;
     flex-direction: row;
     
    justify-content: center;
-    overflow: hidden;
+    
 }
 
 @media(max-width:768px){
@@ -93,15 +92,17 @@
     }
 }
 
-.img_person_work{
+.img_person_work {
     max-width: 100%;
     height: auto;
     display: block;
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.5); /* Agrega una sombra */
+     /* Rota la imagen ligeramente en sentido antihorario */
 }
 
 .line_work{
     border-top: 3px solid #EC750E;
-    margin-top: 20px;
+    margin-top: 100px;
     width: 60%;
     margin-left: 70px;
   }
@@ -117,7 +118,6 @@
 .title_form_asociation{
     width: 100%;
     height: 85px;
-    border: 2px solid black;
     text-align: center;
     margin-top: 20px;
 
@@ -138,12 +138,12 @@
 .text_form_asociation{
     width: 100%;
     height: 50px;
-    border: 1px solid black;
     margin-top: 10px;
 }
 .text_form_asociation p{
     margin-left: 50px;
-    font-size: 20px;
+    font-family: 'Lexend';
+    font-size: 15px;
 }
 
 @media(max-width:768px){
@@ -154,10 +154,25 @@
     }
 }
 
+
+.container_logo_asociation_work{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content:end;
+    align-items:center;
+    margin-top: 20px;
+   
+}
+
+.logo_asociation_work{
+    width: 150px;
+    height: 100px;
+}
 .container_form{
     width: 100%;
     height: auto;
-    border: 2px solid black;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -183,14 +198,14 @@
   }
   
   .title {
-    font-size: 28px;
+    font-size: 30px;
     font-weight: 600;
     letter-spacing: -1px;
     position: relative;
     display: flex;
     align-items: center;
     padding-left: 30px;
-    color: #00bfff;
+    color: #ffffff;
   }
   
   .title::before {
@@ -244,8 +259,8 @@
   }
   
   .form label .input {
-    background-color: #333;
-    color: #fff;
+    background-color: #ffffff;
+    color: #000000;
     width: 100%;
     padding: 20px 02px 05px 02px;
     outline: 0;
@@ -254,7 +269,7 @@
   }
   
   .form label .input + span {
-    color: rgba(255, 255, 255, 0.5);
+    color: rgba(52, 52, 52, 0.5);
     position: absolute;
     left: 10px;
     top: 0px;
@@ -262,6 +277,24 @@
     cursor: text;
     transition: 0.3s ease;
   }
+
+  .protect_dates {
+    color: #ffffff; /* Color rosa */
+    position: absolute;
+    left: 10px;
+    top: 0px;
+    font-size: 0.9em;
+    cursor: text;
+    transition: 0.3s ease;
+  }
+  
+  /* Aplica la clase a ese elemento en particular */
+  .form label .input + span.protect_dates {
+    color: #ffffff; /* Color rosa */
+  }
+  Luego, en 
+
+
   
   .form label .input:placeholder-shown + span {
     top: 12.5px;
