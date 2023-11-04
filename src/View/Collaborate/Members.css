@@ -1,16 +1,35 @@
 .Part1 {
-  border: 1px black solid;
   width: 30%;
   margin-top: 3%;
+  margin-left: 35%;
   text-align: center;
+  display: flex;
+  justify-content: space-around;
 }
-
+.Info{
+  display: flex;
+}
 .container2{
-    border: 1px rgb(255, 0, 195) solid;
+    background-color: rgba(255, 232, 127, 0.731);
+    border-radius: 20px;
     margin-top: 3%;
     margin-left: 5%;
     width: 90%;
     height: auto;
     text-align: center;
 }
-
+.Checkbox2{
+  margin-top: 1%;
+  margin-left: 45%;
+}
+.Checkbox1{
+  margin-top: 1%;
+  margin-left: 5%;
+}
+.buttonAcept2{
+  margin-top: 3%;
+  margin-left: 47%;
+}
+.Select1{
+  margin-top: -1%;
+}
