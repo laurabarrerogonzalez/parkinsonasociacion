@@ -1,7 +1,7 @@
 .scroll-to-top {
     position: fixed;
     bottom: 20px;
-    right: 20px;
+    right: 0px;
     z-index: 1000; /* Asegura que esté por encima de otros elementos */
   }
   
