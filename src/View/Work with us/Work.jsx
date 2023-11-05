@@ -3,6 +3,7 @@ import "../Work with us/Work.css"
 import Navbar from "../../Components/Navbar/Navbar";
 import BannerViews from "../../Components/BannerViews/BannerViews";
 import Footer from "../../Components/Footer/Footer";
+import ScrollArrow from '../../Components/ScrollArrow/ScrollArrow';
 
 const Work = () => {
 
@@ -25,7 +26,7 @@ const Work = () => {
     });
 
     return (
-        <div className="body_work">
+        <div>
             <Navbar />
             <BannerViews
                 image="https://res.cloudinary.com/dp7lr71t8/image/upload/v1699001571/hands-1846428_pxnoco.jpg"
@@ -280,6 +281,7 @@ const Work = () => {
             </section>
 
             <Footer/>
+            <ScrollArrow/>
 
 
         </div>

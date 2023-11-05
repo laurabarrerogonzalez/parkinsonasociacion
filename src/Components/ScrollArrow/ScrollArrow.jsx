@@ -1,4 +1,6 @@
 import React, { useState, useEffect } from 'react';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faArrowAltCircleUp } from '@fortawesome/free-solid-svg-icons';
 import '../ScrollArrow/ScrollArrow.css';
 
 const ScrollArrow = () => {
@@ -27,7 +29,7 @@ const ScrollArrow = () => {
       <div className="scroll-to-top">
         {showScroll && (
           <button onClick={scrollTop}>
-            <i className="fas fa-arrow-up"></i>
+            <FontAwesomeIcon icon={faArrowAltCircleUp} />
           </button>
         )}
       </div>

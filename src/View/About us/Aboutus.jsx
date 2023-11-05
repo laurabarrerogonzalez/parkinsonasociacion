@@ -3,6 +3,7 @@ import "../About us/Aboutus.css";
 import Navbar from "../../Components/Navbar/Navbar";
 import BannerViews from "../../Components/BannerViews/BannerViews";
 import Footer from "../../Components/Footer/Footer";
+import ScrollArrow from '../../Components/ScrollArrow/ScrollArrow';
 
 
 
@@ -140,6 +141,7 @@ const Aboutus = () => {
                 </div>
             </section>
             <Footer />
+            <ScrollArrow/>
 
 
         </div>
