@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import "../Home/Home.css"
 import Banner from '../../Components/Banner/Banner';
 import Navbar from '../../Components/Navbar/Navbar';
@@ -7,6 +7,29 @@ import ScrollArrow from '../../Components/ScrollArrow/ScrollArrow';
 
 
 const Home = () => {
+
+  useEffect(() => {
+    window.addEventListener('scroll', handleScroll);
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, []);
+
+  const handleScroll = () => {
+    const elements = document.querySelectorAll('.services_info');
+    elements.forEach((element) => {
+      const elementTop = element.getBoundingClientRect().top;
+      const elementBottom = element.getBoundingClientRect().bottom;
+
+      const isVisible = elementTop < window.innerHeight && elementBottom >= 0;
+      
+      if (isVisible) {
+        element.classList.add('appear');
+      } else {
+        element.classList.remove('appear');
+      }
+    });
+  };
   return (
     <div>
       <Navbar />
