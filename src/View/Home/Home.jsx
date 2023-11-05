@@ -3,6 +3,7 @@ import "../Home/Home.css"
 import Banner from '../../Components/Banner/Banner';
 import Navbar from '../../Components/Navbar/Navbar';
 import Footer from '../../Components/Footer/Footer';
+import ScrollArrow from '../../Components/ScrollArrow/ScrollArrow';
 
 
 const Home = () => {
@@ -104,7 +105,7 @@ const Home = () => {
       </section>
 
       <Footer/>
-      <button className="donate_button">Donar</button>
+      <ScrollArrow/>
 
 
     </div>

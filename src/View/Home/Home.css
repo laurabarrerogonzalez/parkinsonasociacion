@@ -192,24 +192,7 @@
   }
 
   /* Agrega al final del archivo Home.css */
-.donate_button {
-  position: fixed;
-  bottom: 20px;
-  right: 20px;
-  padding: 10px 15px;
-  font-size: 16px;
-  border: 2px solid #E26890;
-  background-color: transparent;
-  color: #E26890;
-  z-index: 999; /* Asegura que esté por encima de otros elementos */
-  cursor: pointer;
-  transition: all 0.3s;
-}
 
-.donate_button:hover {
-  color: white;
-  background-color: #E26890;
-}
 
   
   
