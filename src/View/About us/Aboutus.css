@@ -300,19 +300,21 @@
     align-items:center;
     text-align: center;
     color: white;
-    font-size: 15px;
-    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+    font-size: 16px;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.7);
     font-family: 'MiFuentePersonalizada';
     
 }
 
 .name_worker{
     margin-top: 20px;
-    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.7);
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+    font-size: 10px;
 }
 
 .name_worker_two{
-    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.7);
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+    font-size: 10px;
 }
 
 .section_content_worker p{

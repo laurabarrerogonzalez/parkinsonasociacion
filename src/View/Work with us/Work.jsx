@@ -4,8 +4,25 @@ import Navbar from "../../Components/Navbar/Navbar";
 import BannerViews from "../../Components/BannerViews/BannerViews";
 import Footer from "../../Components/Footer/Footer";
 
-
 const Work = () => {
+
+
+    window.addEventListener('scroll', function() {
+        var images = document.querySelectorAll('.img_form_work,.video_person_asociation');
+    
+        images.forEach(function(image) {
+            var imagePosition = image.getBoundingClientRect().top;
+            var screenPosition = window.innerHeight;
+    
+            // Verificar si la imagen está en el punto deseado para mostrarla con la animación
+            if (imagePosition < screenPosition) {
+                image.style.opacity = '4';
+            }
+            else {
+                image.style.opacity = '0'; // Si la imagen no está en la posición deseada, ocultarla
+            }
+        });
+    });
 
     return (
         <div className="body_work">
@@ -247,6 +264,18 @@ const Work = () => {
                     <button className="submit">Enviar</button>
                     <p className="signin"></p>
                 </form>
+
+                <div className="img_form">
+                    <div className="img_form_work">
+                    <img className="img_form_people" src="https://res.cloudinary.com/dp7lr71t8/image/upload/v1699017362/20230420_115157_viks1q.jpg" alt="" />
+                    </div>
+                    <div className="img_form_work"></div>
+                    <div className="img_form_work"></div>
+                    <div className="img_form_work">
+                    <img className="img_form_people"src="https://res.cloudinary.com/dp7lr71t8/image/upload/v1699017363/20200415_100037_xcsgqv.jpg" alt="" />
+                    </div>
+
+                </div>
 
             </section>
 
