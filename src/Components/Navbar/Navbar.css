@@ -1,4 +1,9 @@
 .navbar{
+    position: fixed;
+    top: 0; /* Lo fija en la parte superior */
+    left: 0;
+    right: 0;
+    z-index: 6000;
     background-color: rgba(0, 0, 0, .8);
     height: 100px;
     width: 100%;
