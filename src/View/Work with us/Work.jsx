@@ -263,7 +263,7 @@ const Work = () => {
                         <span className="protect_dates">Acepto la protección de datos personales</span>
                     </label>
                     <button className="submit">Enviar</button>
-                    <p className="signin"></p>
+                    
                 </form>
 
                 <div className="img_form">
