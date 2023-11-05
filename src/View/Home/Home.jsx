@@ -34,7 +34,7 @@ const Home = () => {
 
       <section className='services_home'>
         <div className='services_info'>
-          <img src="https://res.cloudinary.com/dp7lr71t8/image/upload/v1698755305/istockphoto-970225212-612x612_swhmoo.jpg" alt="" />
+          <img src="https://res.cloudinary.com/dp7lr71t8/image/upload/v1699190274/20200415_113332_tpeh9f.jpg" alt="" />
         </div>
         <div className='services_info'>
           <h1>Centro de día</h1> <br />
@@ -64,7 +64,7 @@ const Home = () => {
           </button>
         </div>
         <div className='services_info'>
-          <img src="https://res.cloudinary.com/dp7lr71t8/image/upload/v1698787489/istockphoto-1143400998-612x612_phxeqg.jpg" alt="" />
+          <img src="https://res.cloudinary.com/dp7lr71t8/image/upload/v1699190201/IMG_1755_rqep6u.jpg" alt="" />
         </div>
         <div className='services_info'>
           <img src="https://res.cloudinary.com/dp7lr71t8/image/upload/v1698787489/istockphoto-1125540923-612x612_i7fveg.jpg" alt="" />
