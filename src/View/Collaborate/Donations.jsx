@@ -2,7 +2,6 @@ import React from "react";
 import Navbar from "../../Components/Navbar/Navbar";
 import Footer from "../../assets/Components/Footer/Footer";
 import BannerViews from "../../Components/BannerViews/BannerViews";
-import FlipBook from "../../Components/FlipBook/FlipBook";
 
 const Donations = () => {
   return (
@@ -14,7 +13,6 @@ const Donations = () => {
           title="Mitos y Verdades"
         />
       </div>
-      <FlipBook/>
       <Footer />
     </>
   );
