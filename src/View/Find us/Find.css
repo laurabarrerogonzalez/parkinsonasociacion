@@ -1,7 +1,6 @@
 
 
-
-.textQ {
+ .textQ {
   font-family: "Times New Roman", Times, serif;
   text-align: center;
   font-size: 250%;
@@ -16,8 +15,8 @@
 
 .left-side {
   flex: 1;
-  text-align: center; /* Centra el texto horizontalmente */
-  background: #EC750E; /* Color naranja de fondo para la mitad izquierda */
+  text-align: center;
+  background: #EC750E; 
   padding: 10px;
   position: relative;
   display: flex;
@@ -25,18 +24,18 @@
 }
 
 .left-side h2 {
-  font-size: 32px; /* Ajusta el tamaño de la fuente según tus necesidades */
-  margin: 0; /* Elimina el margen para que el texto ocupe más espacio */
+  font-size: 32px; 
+  margin: 0;
  margin-left:95px;
 }
-.triangle {
+.triangleF {
   width: 0;
   height: 0;
   border-left: 40px solid transparent;
   border-right: 40px solid transparent;
-  border-top: 40px solid #EC750E; /* Color naranja para el triángulo */
+  border-top: 40px solid #EC750E; 
   position: absolute;
-  left:48%; /* Centra el triángulo en la mitad de la cinta */
+  left:48%; 
 margin-right: 50px;
 margin-top: 30px;
 transform: rotate(-90deg);
@@ -46,7 +45,7 @@ transform: rotate(-90deg);
 .right-side {
   flex: 1;
   text-align: right;
-  background: #323944; /* Color gris de fondo para la mitad derecha */
+  background: #323944; 
   padding: 10px;
   position: relative;
   display: flex;
@@ -54,9 +53,9 @@ transform: rotate(-90deg);
 
 }
 .right-side img {
-  width:50px; /* Ajusta el ancho según tus necesidades */
-  height: auto; /* Ajusta la altura automáticamente para mantener la proporción */
-  margin: 10px; /* Agrega margen para espaciar los logotipos */
+  width:50px; 
+  height: auto;
+  margin: 10px; 
   margin-left: 500%;
   padding-inline-start: 5px;
 }
@@ -64,10 +63,10 @@ transform: rotate(-90deg);
 .lower-band {
   display: flex;
   align-items: center;
-  background: #E26890; /* Color gris de fondo para la segunda cinta */
-  padding: 10px; /* Ajusta el padding según tus necesidades */
+  background: #E26890; 
+  padding: 10px; 
   position: relative;
-  height: 60px; /* Ajusta la altura según tus necesidades */
+  height: 60px; 
   width: 40%;
   margin-left: 1.5%;
 }
@@ -76,50 +75,36 @@ transform: rotate(-90deg);
   text-align: left;
 }
 
-/* Estilos para el triángulo de la segunda cinta */
+
 .lower-triangle {
   width: 0;
   height: 0;
   border-left:40px solid transparent;
   border-right: 40px solid transparent;
-  border-top: 40px solid #E26890; /* Color gris para el triángulo */
+  border-top: 40px solid #E26890; 
   position: absolute;
-  right: 50%; /* Centra el triángulo en la segunda cinta */
-  bottom: -20px; /* Ajusta la posición vertical del triángulo */
+  right: 50%; 
+  bottom: -20px; 
 }
-/* .lower-left-side h2{ 
-  color: white;
-  display: flex;
-  text-align: center;
-  margin-left: 20%;
-  margin-top: 55px;
-
-
-}
-
-.icon {
-  width: 40px;
-  height: auto; 
-  margin-left: 80%;
-} */
-
 
 .lower-title {
-  text-align: center; /* Centra el texto horizontalmente */
-  color: white; /* Establece el color del texto en blanco */
-  margin: 0; /* Elimina el margen para que el título esté centrado verticalmente */
+  text-align: center; 
+  color: white; 
+  margin: 0; 
 }
 
-/* Estilos para el contenedor de la imagen del ícono */
+
 .lower-right-side {
   display: flex;
-  align-items: center; /* Alinea verticalmente el título y la imagen */
+  align-items: center; 
 }
 
-/* Estilos para la imagen del ícono */
+
 .icon {
-  width: 44px; /* Ajusta el ancho de la imagen según tus necesidades */
-  height: 44px; /* Ajusta la altura de la imagen según tus necesidades */
-  margin-left: 10px; /* Ajusta el margen izquierdo para separar el título y la imagen */
+  width: 44px; 
+  height: 44px; 
+  margin-left: 10px; 
 
-}
+} 
+ 
+@media (max-width: 768px)
