@@ -35,7 +35,6 @@ The objective of this educational project is the creation of an informative blog
 
 <a href="https://getbootstrap.com/" target="_blank"><img style="margin: 10px" src="image/Bootstrap.png" alt="Bootstrap" height="50" /></a>
 <a href="https://emotion.sh/docs/introduction" target="_blank"><img style="margin: 10px" src="image/Emotion.png" alt="Emotion" height="50" /></a>
-<a href="https://jwt.io/" target="_blank"><img style="margin: 10px" src="image/Jwt.png" alt="JWT" height="50" /></a>
 <a href="https://mui.com/" target="_blank"><img style="margin: 10px" src="image/MUI.png" alt="MUI" height="50" /></a>
 <a href="https://www.framer.com/motion/" target="_blank"><img style="margin: 10px" src="image/Motion.png" alt="Frame Motion" height="50" /></a>
 <a href="https://react-hook-form.com/" target="_blank"><img style="margin: 10px" src="image/Reactho.png" alt="React Hook Forms" height="50" /></a>
@@ -45,6 +44,10 @@ The objective of this educational project is the creation of an informative blog
 <a href="https://cloudinary.com" target="_blank"><img style="margin: 10px" src="image/cloudinary.png" alt="Cloudinary" height="50" /></a>
 <a href="https://reactrouter.com/en/main" target="_blank"><img style="margin: 10px" src="image/router.jpg" alt="React Router" height="50" /></a>
 <a href="https://styled-components.com/" target="_blank"><img style="margin: 10px" src="image/styled.png" alt="Styled Components" height="50" /></a>
+<a href="https://headlessui.com/" target="_blank"><img style="margin: 10px" src="image/headless.jpg" alt="Headless UI" height="50" /></a>
+<a href="hhttps://heroicons.com/" target="_blank"><img style="margin: 10px" src="image/hero.png" alt="Hero Icons" height="50" /></a>
+<a href="https://react-pdf.org/" target="_blank"><img style="margin: 10px" src="image/pdf.png" alt="React PDF" height="50" /></a>
+<a href="https://reactrouter.com/en/main" target="_blank"><img style="margin: 10px" src="image/router.jpg" alt="React Router" height="50" /></a>
 
 ## Technologies and Tools 🔨
 <div>  
