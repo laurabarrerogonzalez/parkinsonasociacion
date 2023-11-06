@@ -1,5 +1,5 @@
 import React from "react";
-import "./FlipBook.css";
+import "../FlipBook/FlipBook.css";
 import HTMLFlipBook from "react-pageflip";
 
 const Page = React.forwardRef((props, ref) => {
