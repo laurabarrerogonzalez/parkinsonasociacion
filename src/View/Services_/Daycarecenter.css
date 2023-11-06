@@ -1,0 +1,115 @@
+
+
+
+/* 
+.title-Centro_dia{
+    display: flex;
+    justify-content: center;
+    margin-left: 35px;
+    width: 95%; 
+    border: 1px solid rgba(0, 0, 0, 0.2); 
+    
+}
+
+.text_DC{
+    width: 1100px;
+    margin-top: 20px;
+    margin-left: 200px;
+}
+ */
+ .boxDC1 {
+    background-color: #EC750E;
+    padding: 20px;
+    color: #033239;
+  }
+  
+  .boxDC2 {
+    background-color: white;
+    padding: 20px;
+    margin-left:55px ;
+  }
+  
+  .title-Centro_dia h1 {
+    font-size: 35px;
+    color: #033239;
+    text-align: center;
+    padding: 2%;
+  }
+  
+  .text_DC p {
+    font-size: 18px;
+    line-height: 1.5;
+  }
+  
+  .text-centroD ul {
+    list-style-type: disc;
+    margin-left: 20px;
+  }
+  
+  .text-centroD ul li {
+    margin: 10px 0;
+    font-size: 16px; /* Cambia el tamaño de fuente si es necesario */
+    color: #033239; /* Cambia el color del texto si es necesario */
+  }
+
+  .image-container {
+    display: flex;
+    flex-direction: column; /* Muestra las imágenes en columna en el lado derecho */
+    align-items: center; /* Centra las imágenes verticalmente */
+
+  }
+  
+  /* Estilos para las imágenes */
+
+  .image-container {
+    display: flex;
+
+  }
+  .activity-image {
+
+    position: absolute;
+    top:900px;
+    border-radius: 100%; /* Hace que las imágenes sean circulares */
+    width: 200px; /* Ajusta el tamaño de las imágenes según tus necesidades */
+    height: 200px;
+    margin-right:500px; /* Agrega margen inferior para separar las imágenes */
+    object-fit:cover;
+    border-color: #38929F;
+    border-style:groove;
+  }
+  
+  .activity-image1 {
+    position: absolute;
+    top:900px;
+    border-radius:100%;
+    border-color: #38929F;
+    border-style:groove;
+    width: 200px;
+    height: 200px;
+    margin-right: 20px; /* Agrega margen derecho entre las imágenes */
+    object-fit:cover;
+  }
+
+  .activity-image2{
+    position: absolute;
+    top:900px;
+    border-radius:100%;
+    border-color: #38929F;
+    border-style:groove;
+    width: 200px;
+    height: 200px;
+    margin-left:450px; /* Agrega margen derecho entre las imágenes */
+    object-fit:cover;
+  }
+
+  .activity-image3{
+    position: absolute;
+    top:900px;
+    border-radius:100%;
+    border-color: #38929F;
+    border-style:groove;
+    width: 200px;
+    height: 200px;
+    margin-left:900px; /* Agrega margen derecho entre las imágenes */
+    object-fit:cover;
+  }
