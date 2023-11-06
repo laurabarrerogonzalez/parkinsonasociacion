@@ -50,18 +50,18 @@ const Footer = () => {
             </div>
             <section className="footer-section">
                 <Slider {...settings}>
-                    <img src="https://res.cloudinary.com/duwenv0yr/image/upload/v1698682471/ICONO_RRSS_COMPLETO_fokcvw.png" className="carousel-image" />
-                    <img src="https://res.cloudinary.com/duwenv0yr/image/upload/v1698682834/minsan_xdiovd.png" className="carousel-image" />
-                    <img src="https://res.cloudinary.com/duwenv0yr/image/upload/v1698682469/FUNDACION_ONCE_zydrpz.png" className="carousel-image" />
-                    <img src="https://res.cloudinary.com/duwenv0yr/image/upload/v1698682834/obrasocial_r2pu2y.png" className="carousel-image" />
-                    <img src="https://res.cloudinary.com/duwenv0yr/image/upload/v1698682472/LOGO_DIP_BADAJOZ_mid5ml.png" className="carousel-image" />
-                    <img src="https://res.cloudinary.com/duwenv0yr/image/upload/v1698682471/logococemfe1_cfpmqb.jpg" className="carousel-image" />
-                    <img src="https://res.cloudinary.com/duwenv0yr/image/upload/v1698682471/LOGO_FEP_eff7hl.jpg" className="carousel-image" />
-                    <img src="https://res.cloudinary.com/duwenv0yr/image/upload/v1698682471/Sanidad_y_Politicas_Sociales_1_ijxxde.png" className="carousel-image" />
-                    <img src="https://res.cloudinary.com/duwenv0yr/image/upload/v1698682471/logo-vector-diputacion-caceres_bjh8qe.jpg" className="carousel-image" />
-                    <img src="https://res.cloudinary.com/duwenv0yr/image/upload/v1698682470/descarga_sepad_1_q19xei.png" className="carousel-image" />
-                    <img src="https://res.cloudinary.com/duwenv0yr/image/upload/v1698682470/LogoPar_zmrrvq.png" className="carousel-image" />
-                    <img src="https://res.cloudinary.com/duwenv0yr/image/upload/v1698682470/AYTO_MONTIJO_fzlzkd.jpg" className="carousel-image" />
+                    <img src="https://res.cloudinary.com/duwenv0yr/image/upload/v1698682471/ICONO_RRSS_COMPLETO_fokcvw.png" alt='Ayuntamiento de Mérida' className="carousel-image" />
+                    <img src="https://res.cloudinary.com/duwenv0yr/image/upload/v1698682834/minsan_xdiovd.png" alt='Ministerio de Sanidad Gobierno de España' className="carousel-image" />
+                    <img src="https://res.cloudinary.com/duwenv0yr/image/upload/v1698682469/FUNDACION_ONCE_zydrpz.png" alt='Fundación ONCE' className="carousel-image" />
+                    <img src="https://res.cloudinary.com/duwenv0yr/image/upload/v1698682834/obrasocial_r2pu2y.png"  alt='Fundación "La Caixa" Obra Social' className="carousel-image" />
+                    <img src="https://res.cloudinary.com/duwenv0yr/image/upload/v1698682472/LOGO_DIP_BADAJOZ_mid5ml.png" alt='Diputación de Badajoz' className="carousel-image" />
+                    <img src="https://res.cloudinary.com/duwenv0yr/image/upload/v1698682471/logococemfe1_cfpmqb.jpg" alt='COCEMFE' className="carousel-image" />
+                    <img src="https://res.cloudinary.com/duwenv0yr/image/upload/v1698682471/LOGO_FEP_eff7hl.jpg" alt='Federación Española de Parkinson' className="carousel-image" />
+                    <img src="https://res.cloudinary.com/duwenv0yr/image/upload/v1698682471/Sanidad_y_Politicas_Sociales_1_ijxxde.png" alt='Junta de Extremadura, Consejería de Sanidad y Políticas Sociales' className="carousel-image" />
+                    <img src="https://res.cloudinary.com/duwenv0yr/image/upload/v1698682471/logo-vector-diputacion-caceres_bjh8qe.jpg" alt='Diputación de Cáceres' className="carousel-image" />
+                    <img src="https://res.cloudinary.com/duwenv0yr/image/upload/v1698682470/descarga_sepad_1_q19xei.png" alt='SEPAD, Servicio Extremeño de Promoción de la Autonomía y Atención a la Dependencia' className="carousel-image" />
+                    <img src="https://res.cloudinary.com/duwenv0yr/image/upload/v1698682470/LogoPar_zmrrvq.png" alt='Asociación Regional de Parkinson de Extremadura' className="carousel-image" />
+                    <img src="https://res.cloudinary.com/duwenv0yr/image/upload/v1698682470/AYTO_MONTIJO_fzlzkd.jpg" alt='Ayuntamiento de Montijo' className="carousel-image" />
                 </Slider>
             </section>
         </footer>
