@@ -48,7 +48,6 @@ const Symptoms = () => {
       </div>
     </div>
 
-
     <Footer />
     </>
   );
