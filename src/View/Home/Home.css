@@ -1,218 +1,212 @@
 .navbar {
-    position: absolute;
-    z-index: 3; /* Asegúrate de que el z-index sea mayor que el del Banner */
-  }
-  
-  @font-face {
-    font-family: 'MiFuentePersonalizada';
-    src: url('../../Fonts/Bevan-Regular.ttf') format('truetype');
-    /* Agrega más formatos y rutas para soporte de navegadores diferentes */
-  }
-  @font-face {
-    font-family: 'RozhaOne';
-    src: url('../../Fonts/RozhaOne-Regular.ttf') format('truetype');
-    /* Agrega más formatos y rutas para soporte de navegadores diferentes */
-  }
-  @font-face {
-    font-family: 'Lexend';
-    src: url('../../Fonts/LexendMega-VariableFont_wght.ttf') format('truetype');
-    /* Agrega más formatos y rutas para soporte de navegadores diferentes */
-  }
-  @font-face {
-    font-family: 'Inria';
-    src: url('../../Fonts/InriaSans-Regular.ttf') format('truetype');
-    /* Agrega más formatos y rutas para soporte de navegadores diferentes */
-  }
-  .banner {
-    position: relative;
-    z-index: 1;
-    margin-top: 0px;
-  }
+  z-index: 1000;
+  /* Asegúrate de que el z-index sea mayor que el del Banner */
+}
 
-  .section_title{
-    margin-top: 20px;
+@font-face {
+  font-family: 'MiFuentePersonalizada';
+  src: url('../../Fonts/Bevan-Regular.ttf') format('truetype');
+  /* Agrega más formatos y rutas para soporte de navegadores diferentes */
+}
+
+@font-face {
+  font-family: 'RozhaOne';
+  src: url('../../Fonts/RozhaOne-Regular.ttf') format('truetype');
+  /* Agrega más formatos y rutas para soporte de navegadores diferentes */
+}
+
+@font-face {
+  font-family: 'Lexend';
+  src: url('../../Fonts/LexendMega-VariableFont_wght.ttf') format('truetype');
+  /* Agrega más formatos y rutas para soporte de navegadores diferentes */
+}
+
+@font-face {
+  font-family: 'Inria';
+  src: url('../../Fonts/InriaSans-Regular.ttf') format('truetype');
+  /* Agrega más formatos y rutas para soporte de navegadores diferentes */
+}
+
+.banner {
+  position: relative;
+  z-index: 2;
+  margin-top: 0px;
+}
+
+.section_title {
+  margin-top: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+
+}
+
+.section_title p {
+  font-size: 20px;
+}
+
+.title_home {
+  width: 40%;
+
+}
+
+.title_home h1 {
+  color: #067787;
+  font-size: 35px;
+  font-family: 'MiFuentePersonalizada';
+}
+
+.title_home p {
+  color: black;
+  font-size: 20px;
+  font-family: 'Lexend';
+}
+
+.title_hometwo {
+  width: 40%;
+  font-family: 'Lexend';
+
+}
+
+@media(max-width:768px) {
+
+  .title_home {
+    width: 100%;
+    margin: 10px;
     display: flex;
-    flex-wrap: wrap;
     flex-direction: row;
+    flex-wrap: wrap;
     align-items: center;
-    justify-content:space-around;
-    
-  }
-  .section_title p{
-    font-size: 20px;
+    justify-content: center;
+
   }
 
-  .title_home{
-    width: 40%;
-    
-  }
-
-  .title_home h1{
-    color: #067787;
-    font-size: 35px;
-    font-family: 'MiFuentePersonalizada';
-  }
-  .title_home p{
-    color: black;
-    font-size: 20px;
-    font-family: 'Lexend';
-  }
-
-  .title_hometwo{
-    width: 40%;
-    font-family:'Lexend' ;
-    
-  }
-
-  @media(max-width:768px){
-
-    .title_home{
-      width: 100%;
-      margin: 10px;
-      display: flex;
-      flex-direction:row;
-      flex-wrap: wrap;
-      align-items: center;
-      justify-content: center;
-     
-    }
-
-    .title_hometwo{
-      margin: 10px;
-      width: 100%;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-    }
-  }
-
-  .line_home{
-    border-top: 3px solid #FF961A;
-    margin-top: 20px;
-    width: 60%;
-    margin-left: 70px;
-  }
-
-  .services_home{
+  .title_hometwo {
+    margin: 10px;
     width: 100%;
     display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
   }
+}
 
-  .services_info{
-    width: 40%;
-    margin-top: 90px;
+.line_home {
+  border-top: 3px solid #EC750E;
+  margin-top: 20px;
+  width: 60%;
+  margin-left: 70px;
+}
+
+.services_home {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.services_info {
+  width: 40%;
+  margin-top: 90px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: auto;
+  opacity: 0;
+  /* Empieza con opacidad en 0 para ocultar el elemento inicialmente */
+  transform: translateY(20px);
+  /* Empieza con una ligera traslación hacia abajo */
+  transition: opacity 1.5s ease, transform 1.5s ease;
+  /* Establece una transición suave */
+
+}
+
+.services_info.appear {
+  opacity: 1; /* Al añadir la clase "appear", el elemento aparecerá con una transición */
+  transform: translateY(0); /* Se mueve de vuelta a su posición original */
+}
+
+.services_info img {
+  width: 500px;
+  height: 300px;
+  box-shadow: 8px 0 10px 5px rgba(0, 0, 0, 0.8);
+  /* Desplazamiento en X, desplazamiento en Y, desenfoque, color */
+}
+
+.services_info h1 {
+  font-size: 50px;
+  font-family: 'RozhaOne';
+}
+
+.services_info p {
+  font-size: 15px;
+  text-align: justify;
+  font-family: 'Lexend';
+
+}
+
+@media(max-width:768px) {
+
+
+  .services_home {
     display: flex;
     flex-direction: column;
     align-items: center;
-    height: auto;
+  }
+
+  .services_info {
+    width: 90%;
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 
   }
 
-  .services_info img{
-    width: 500px;
+  .services_info img {
+    width: 450px;
     height: 300px;
-    box-shadow: 8px 0 10px 5px rgba(0, 0, 0, 0.8); /* Desplazamiento en X, desplazamiento en Y, desenfoque, color */
   }
 
-  .services_info h1{
-    font-size: 50px;
-    font-family:'RozhaOne';
-  }
-
-  .services_info p{
-    font-size: 15px;
-    text-align:justify;
-    font-family:'Lexend' ;
-    
-  }
-
-  @media(max-width:768px){
-
-  
-    .services_home{
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-    }
-
-    .services_info{
-      width: 90%;
-      margin-top: 30px;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-  
-    }
-
-    .services_info img{
-      width: 450px;
-      height: 300px;
-    }
-    
-  }
-
-  .btn {
-    color: #FF961A;
-    text-transform: uppercase;
-    text-decoration: none;
-    border: 2px solid #FF961A;
-    padding: 10px 20px;
-    font-size: 17px;
-    font-weight: bold;
-    background: transparent;
-    position: relative;
-    transition: all 1s;
-    overflow: hidden;
-    width: 400px;
-    margin-top: 20px;
-  }
-  
-  .btn:hover {
-    color: white;
-  }
-  
-  .btn::before {
-    content: '';
-    position: absolute;
-    height: 100%;
-    width: 0%;
-    top: 0;
-    left: -40px;
-    transform: skewX(45deg);
-    background-color: #FF961A;
-    z-index: -1;
-    transition: all 1s;
-  }
-  
-  .btn:hover::before {
-    width: 160%;
-  }
-
-  /* Agrega al final del archivo Home.css */
-.donate_button {
-  position: fixed;
-  bottom: 20px;
-  right: 20px;
-  padding: 10px 15px;
-  font-size: 16px;
-  border: 2px solid #E26890;
-  background-color: transparent;
-  color: #E26890;
-  z-index: 999; /* Asegura que esté por encima de otros elementos */
-  cursor: pointer;
-  transition: all 0.3s;
 }
 
-.donate_button:hover {
+.btn {
+  color: #FF961A;
+  text-transform: uppercase;
+  text-decoration: none;
+  border: 2px solid #FF961A;
+  padding: 10px 20px;
+  font-size: 17px;
+  font-weight: bold;
+  background: transparent;
+  position: relative;
+  transition: all 1s;
+  overflow: hidden;
+  width: 400px;
+  margin-top: 20px;
+}
+
+.btn:hover {
   color: white;
-  background-color: #E26890;
 }
 
-  
-  
+.btn::before {
+  content: '';
+  position: absolute;
+  height: 100%;
+  width: 0%;
+  top: 0;
+  left: -40px;
+  transform: skewX(45deg);
+  background-color: #FF961A;
+  z-index: -1;
+  transition: all 1s;
+}
 
+.btn:hover::before {
+  width: 160%;
+}
 
-
+/* Agrega al final del archivo Home.css */

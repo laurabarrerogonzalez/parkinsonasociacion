@@ -1,16 +1,41 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import "../Home/Home.css"
 import Banner from '../../Components/Banner/Banner';
 import Navbar from '../../Components/Navbar/Navbar';
 import Footer from '../../Components/Footer/Footer';
+import ScrollArrow from '../../Components/ScrollArrow/ScrollArrow';
+import ButtonDonate from '../../Components/ButtonDonate/ButtonDonate';
 
 
 const Home = () => {
+
+  useEffect(() => {
+    window.addEventListener('scroll', handleScroll);
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, []);
+
+  const handleScroll = () => {
+    const elements = document.querySelectorAll('.services_info');
+    elements.forEach((element) => {
+      const elementTop = element.getBoundingClientRect().top;
+      const elementBottom = element.getBoundingClientRect().bottom;
+
+      const isVisible = elementTop < window.innerHeight && elementBottom >= 0;
+      
+      if (isVisible) {
+        element.classList.add('appear');
+      } else {
+        element.classList.remove('appear');
+      }
+    });
+  };
   return (
     <div>
       <Navbar />
       <Banner
-        image="https://res.cloudinary.com/dp7lr71t8/image/upload/v1698743700/CALENDARIO_2024png_ysfcbp.png"
+        image="https://res.cloudinary.com/dp7lr71t8/image/upload/v1699219864/zyro-image_wkxrbc.png"
         title="VIVIENDO CON PASIÓN"
         text="Trazando juntos un camino de superación: Acompañando la lucha contra el Parkinson con determinación y esperanza."
       />
@@ -33,7 +58,7 @@ const Home = () => {
 
       <section className='services_home'>
         <div className='services_info'>
-          <img src="https://res.cloudinary.com/dp7lr71t8/image/upload/v1698755305/istockphoto-970225212-612x612_swhmoo.jpg" alt="" />
+          <img src="https://res.cloudinary.com/dp7lr71t8/image/upload/v1699190274/20200415_113332_tpeh9f.jpg" alt="" />
         </div>
         <div className='services_info'>
           <h1>Centro de día</h1> <br />
@@ -63,7 +88,7 @@ const Home = () => {
           </button>
         </div>
         <div className='services_info'>
-          <img src="https://res.cloudinary.com/dp7lr71t8/image/upload/v1698787489/istockphoto-1143400998-612x612_phxeqg.jpg" alt="" />
+          <img src="https://res.cloudinary.com/dp7lr71t8/image/upload/v1699190201/IMG_1755_rqep6u.jpg" alt="" />
         </div>
         <div className='services_info'>
           <img src="https://res.cloudinary.com/dp7lr71t8/image/upload/v1698787489/istockphoto-1125540923-612x612_i7fveg.jpg" alt="" />
@@ -104,7 +129,8 @@ const Home = () => {
       </section>
 
       <Footer/>
-      <button className="donate_button">Donar</button>
+      <ButtonDonate />
+      <ScrollArrow/>
 
 
     </div>
