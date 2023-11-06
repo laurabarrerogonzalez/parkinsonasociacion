@@ -59,9 +59,13 @@ const Members = () => {
         image="https://res.cloudinary.com/da7ffijqs/image/upload/t_Banner 16:9/v1699001271/20200415_111209_1_iacccg.jpg "
         title="¿Quieres ser socio?"
       />
-      <div className="Part1">
+      <div className="spikes">
         <div> <h1>Socio Colavorativo</h1> </div>
         <div> <h1>Socio Afectado</h1> </div>
+      </div>
+      <div className="spikes2">
+        <div> <h1>Transferencia</h1> </div>
+        <div> <h1>Bizum</h1> </div>
       </div>
       <div className="container2">
         <br />
@@ -189,8 +193,8 @@ const Members = () => {
             </FormGroup>
           </div>
         </div>
-        <div className="Select1">
-          <FormControl sx={{ m: 1, minWidth: 120 }} size="small">
+        <div>
+          <FormControl className="Select1" sx={{ m: 1, minWidth: 120 }} size="small">
             <InputLabel id="demo-select-small-label">Tipos de Socios</InputLabel>
             <Select
               labelId="demo-select-small-label"
