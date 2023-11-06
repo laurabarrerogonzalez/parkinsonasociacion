@@ -7,10 +7,6 @@ import "../../Components/FlipBook/FlipBook.css";
 import HTMLFlipBook from "react-pageflip";
 
 
-
-
-
-
 const Page = React.forwardRef((props, ref) => {
   return (
     <div className="demoPage" ref={ref}>
