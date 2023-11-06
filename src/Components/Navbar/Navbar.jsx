@@ -34,7 +34,7 @@ const Navbar = () => {
             </div>
             <div className={`nav_items ${isOpen && "open"}`}>
                 <ul className="menu-horizontal">
-                    <li><Link to="/aboutus">¿Quienes somos?</Link></li>
+                    <li><Link to="/aboutus">¿Quiénes somos?</Link></li>
                     <li>
                         <a href="#">¿Qué es el Parkinson?</a>
                         <ul className="menu-vertical">
