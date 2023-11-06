@@ -4,7 +4,7 @@ import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import './index.css';
 import Aboutus from './View/About us/Aboutus';
 import Home from './View/Home/Home';
-import SymptomsAndDiagnosis from './View/Parkinson/Symptomsanddiagnosis';
+import Symptoms from './View/Parkinson/Symptoms';
 import Evolution from './View/Parkinson/Evolution';
 import Resources from './View/Parkinson/Resources';
 import Myths from './View/Parkinson/Myths';
@@ -20,8 +20,9 @@ import Members from './View/Collaborate/Members';
 import Donations from './View/Collaborate/Donations';
 import Work from './View/Work with us/Work';
 import Find from './View/Find us/Find';
-
 import '../src/View/Parkinson/Myths.css';
+
+
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <Router>
@@ -29,7 +30,7 @@ ReactDOM.createRoot(document.getElementById('root')).render(
       <Routes>
         <Route path="/" element={<Home />} /> 
         <Route path="/aboutus" element={<Aboutus />} />
-        <Route path="/symptoms" element={<SymptomsAndDiagnosis/>} />
+        <Route path="/symptoms" element={<Symptoms/>} />
         <Route path="/evolution" element={<Evolution/>} />
         <Route path="/resources" element={<Resources/>} />
         <Route path="/myths" element={<Myths/>} />
