@@ -1,13 +1,80 @@
 import React from "react";
 import Navbar from "../../Components/Navbar/Navbar";
-
+import"../Services_/Daycarecenter.css";
+// import "../Services/Daycarecenter.css";
+import BannerViews from "../../Components/BannerViews/BannerViews";
+import Footer from '../../Components/Footer/Footer';
   
 const Daycarecenter = () => {
     
     return(
         <>
         <Navbar/>
-       <h1>Centro de día</h1> 
+        <BannerViews
+          image="https://res.cloudinary.com/doft9ylq1/image/upload/v1699005153/e96e5008-5541-4c4c-b02c-140d8e7a1183_jwxyis.jpg"
+          title="CENTRO DE DÍA"
+        />
+     <div className="boxDC1">
+      <div className="title-Centro_dia">
+      <h1>Centro de Día</h1>
+      </div>
+
+      <div className="text_DC">
+        <p>El Centro de Día CON ALMA ofrece una atención integral durante el
+            período diurno a las personas en situación de dependencia, con el objetivo
+            de mantener el mayor grado de autonomía posible. Está dirigido a proporcionar
+            una intervención especializada al usuario de manera que se contemplen
+            y atiendan de un modo integral sus necesidades específicas. Las mismas
+            se cubren desde un enfoque biopsicosocial con servicios de asesoramiento,
+            rehabilitación, orientación para la promoción de la autonomía.
+            en su hogar. <br></br>
+        </p>
+      </div>
+    </div>
+
+    <div className="boxDC2">
+      <div className="title-DC">
+      <h1>Actividades</h1>
+      </div>
+
+      <div className="text-centroD">
+      <ul>
+    <li> <strong>Taller nuevas tecnologías</strong></li>
+    <li> <strong>Deambulación</strong></li>
+    <li> <strong>Hortoterapia</strong></li>
+    <li> <strong>Ludoterapia</strong></li>
+    <li> <strong>Laborterapia</strong></li>
+    <li> <strong>Terapia con perros</strong></li>
+    <li> <strong>Psicomotricidad</strong></li>
+    
+  </ul>
+      </div>
+    </div>
+    <div className="image-container">
+          <img
+            src="https://res.cloudinary.com/doft9ylq1/image/upload/v1699004873/IMG-20231025-WA0001_qku82e.jpg"
+            alt="Imagen 1"
+            className="activity-image"
+          />
+          <img
+            src="https://res.cloudinary.com/doft9ylq1/image/upload/v1699005153/e96e5008-5541-4c4c-b02c-140d8e7a1183_jwxyis.jpg"
+            alt=""
+            className="activity-image1"
+          />
+            <img
+          src="https://res.cloudinary.com/doft9ylq1/image/upload/v1699015076/20221110_114455_nsagal.jpg"
+          alt="Imagen 2"
+          className="activity-image2"
+        />
+        <img
+          src="https://res.cloudinary.com/doft9ylq1/image/upload/v1699015418/20200626_110630_1_qco2pi.jpg"
+          alt="Imagen 2"
+          className="activity-image3"
+        />
+        </div>
+    
+
+       <Footer />
         </>
 
     )
