@@ -1,0 +1,30 @@
+.button-donate {
+    position: fixed;
+    bottom: 100px;
+    right: -24px;
+    background-color: #E26890;
+    color: white;
+    padding: 10px 15px;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    z-index: 1000; /* Asegura que esté por encima de otros elementos */
+    transform: rotate(-90deg);
+    transition: all 0.3s ease;
+  }
+
+  .button-donate:hover {
+    transform: scale(1.05) rotate(-90deg);  /* Hace que el botón crezca un 5% al pasar el cursor sobre él */
+    background-color: #D81B60; /* Cambia el color de fondo al pasar el cursor */
+    
+  }
+  
+  .heart {
+    font-size: 20px;
+    margin-right: 5px;
+  }
+  
+  .donate-text {
+    font-size: 16px;
+  }

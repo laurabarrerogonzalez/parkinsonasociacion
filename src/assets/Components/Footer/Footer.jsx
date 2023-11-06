@@ -1,6 +1,7 @@
 /* Footer.jsx */
 import React from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+
 import { faInstagramSquare, faFacebookSquare } from '@fortawesome/free-brands-svg-icons';
 import Slider from 'react-slick';
 import "slick-carousel/slick/slick.css";
