@@ -1,5 +1,6 @@
 import React from "react";
 import Navbar from "../../Components/Navbar/Navbar";
+import Mapa from "../../Components/Map/Map";
 
   
 const Find = () => {
@@ -7,7 +8,7 @@ const Find = () => {
     return(
         <>
         <Navbar/>
-       <h1>Encuentrame</h1> 
+        <Mapa/> 
         </>
 
     )
