@@ -22,9 +22,11 @@ import Work from './View/Work with us/Work';
 import Find from './View/Find us/Find';
 
 import '../src/View/Parkinson/Myths.css';
+import Navbar from './Components/Navbar/Navbar';
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <Router>
+    <Navbar />
     <React.StrictMode>
       <Routes>
         <Route path="/" element={<Home />} /> 
