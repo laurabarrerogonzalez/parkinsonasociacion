@@ -1,0 +1,75 @@
+.spikes {
+  position: relative;
+  background: rgb(140, 192, 200);
+  height: 40vh;
+  text-align: center;
+  display: flex;
+  justify-content: space-around;
+}
+
+.spikes::after {
+  content: '';
+  position: absolute;
+  right: 0;
+  left: -8%;
+  top: 100%;
+  z-index: 10;
+  display: block;
+  height: 45px;
+  background-size: 45px 100%;
+  background-image: linear-gradient(135deg, rgb(140, 192, 200)25%, transparent 25%), linear-gradient(225deg, rgb(140, 192, 200) 25%, transparent 25%);
+  background-position: 0 0;
+}
+.spikes2 {
+  position: relative;
+  background: rgb(0, 221, 255);
+  height: 40vh;
+  margin-top: 1.5%;
+  text-align: center;
+  display: flex;
+  justify-content: space-around;
+}
+
+.spikes2::after {
+  content: '';
+  width: 100%;
+  position: absolute;
+  right: 0%;
+  left: 0;
+  bottom: 100%;
+  z-index: 10;
+  transform: rotate(180deg);
+  display: block;
+  height: 45px;
+  background-size: 45px 100%;
+  background-image: linear-gradient(135deg, rgb(0, 221, 255)25%, transparent 25%), linear-gradient(225deg, rgb(0, 219, 253) 25%, transparent 25%);
+  background-position: 0 0;
+}
+.Info{
+  display: flex;
+}
+.container2{
+    background-color: rgb(253, 241, 231);
+    border-radius: 20px;
+    margin-top: 3%;
+    margin-left: 5%;
+    width: 90%;
+    height: auto;
+    text-align: center;
+}
+.Checkbox2{
+  margin-top: 1%;
+  margin-left: 45%;
+}
+.Checkbox1{
+  margin-top: 1%;
+  margin-left: 5%;
+}
+.buttonAcept2{
+  margin-top: 3%;
+  margin-left: 47%;
+}
+.Select1{
+  margin-top: -1%;
+  background-color: white;
+}
