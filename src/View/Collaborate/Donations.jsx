@@ -9,8 +9,8 @@ const Donations = () => {
       <div>
         <Navbar />
         <BannerViews
-          image="https://res.cloudinary.com/da7ffijqs/image/upload/t_Banner 16:9/v1699259241/20230208_124105_zdkl9r.jpg"
-        title="¿Quieres donar?"
+          image="https://res.cloudinary.com/da7ffijqs/image/upload/t_Gradient fade/v1699346654/Captura_de_pantalla_2023-11-07_094246_dvxa7d.png"
+          title="¿Quieres donar?"
         />
       </div>
       <Footer />

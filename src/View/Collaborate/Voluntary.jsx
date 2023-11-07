@@ -1,5 +1,5 @@
 import "./Voluntary.css";
-import React from "react";
+import React, { useEffect } from "react";
 import swal from "sweetalert2";
 import Navbar from "../../Components/Navbar/Navbar";
 import Stack from "@mui/material/Stack";
@@ -11,10 +11,36 @@ import FormControlLabel from "@mui/material/FormControlLabel";
 import Checkbox from "@mui/material/Checkbox";
 import { red } from "@mui/material/colors";
 import Footer from "../../Components/Footer/Footer";
+import ButtonDonate from "../../Components/ButtonDonate/ButtonDonate";
+import ScrollArrow from "../../Components/ScrollArrow/ScrollArrow";
 
 const label = { inputProps: { "aria-label": "Checkbox demo" } };
 
 const Voluntary = () => {
+
+  useEffect(() => {
+    window.addEventListener("scroll", handleScroll);
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
+
+  const handleScroll = () => {
+    const elements = document.querySelectorAll(".services_info");
+    elements.forEach((element) => {
+      const elementTop = element.getBoundingClientRect().top;
+      const elementBottom = element.getBoundingClientRect().bottom;
+
+      const isVisible = elementTop < window.innerHeight && elementBottom >= 0;
+
+      if (isVisible) {
+        element.classList.add("appear");
+      } else {
+        element.classList.remove("appear");
+      }
+    });
+  };
+
   const customColor = "rgb(236, 117, 14)";
 
   const handleEnviarClick = () => {
@@ -194,6 +220,8 @@ const Voluntary = () => {
         </div>
       </div>
      <Footer/> 
+     <ButtonDonate />
+     <ScrollArrow />
     </>
   );
 };
