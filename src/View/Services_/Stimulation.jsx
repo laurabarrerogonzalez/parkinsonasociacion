@@ -2,6 +2,9 @@ import React from "react";
 import Navbar from "../../Components/Navbar/Navbar";
 import BannerViews from "../../Components/BannerViews/BannerViews";
 import "../Services_/Stimulation.css"
+import Footer from "../../Components/Footer/Footer";
+import ButtonDonate from "../../Components/ButtonDonate/ButtonDonate";
+import ScrollArrow from "../../Components/ScrollArrow/ScrollArrow";
 
 
 
@@ -38,6 +41,11 @@ const Stimulation = () => {
                     <img src="https://res.cloudinary.com/dp7lr71t8/image/upload/v1699356047/Dise%C3%B1o_sin_t%C3%ADtulo_4_1_yll4l4.png" alt="" />
                 </div>
             </section>
+            <Footer/>
+      <ButtonDonate />
+      <ScrollArrow/>
+
+
         </div>
 
     )
