@@ -40,13 +40,11 @@ const Revitalization = () => {
 
                     <div className="text-activ">
                         <ul>
-                            <li> <strong>Taller nuevas tecnologías</strong></li>
-                            <li> <strong>Deambulación</strong></li>
-                            <li> <strong>Hortoterapia</strong></li>
-                            <li> <strong>Ludoterapia</strong></li>
-                            <li> <strong>Laborterapia</strong></li>
-                            <li> <strong>Terapia con perros</strong></li>
-                            <li> <strong>Psicomotricidad</strong></li>
+                            <li> <strong>Terapia ocupacional</strong></li>
+                            <li> <strong>Fisioterapia</strong></li>
+                            <li> <strong>Logopedia</strong></li>
+                            <li> <strong>Enfermería</strong></li>
+                            <li> <strong>Psicología</strong></li>
 
                         </ul>
                     </div>
@@ -54,22 +52,22 @@ const Revitalization = () => {
 
                 <div className="activ_img_revitalization">
                     <img
-                        src="https://res.cloudinary.com/doft9ylq1/image/upload/v1699004873/IMG-20231025-WA0001_qku82e.jpg"
+                        src="https://res.cloudinary.com/dp7lr71t8/image/upload/v1699350860/descarga_3_vupzcb.jpg"
                         alt="Imagen 1"
                         className="revitaliz-image"
                     />
                     <img
-                        src="https://res.cloudinary.com/doft9ylq1/image/upload/v1699005153/e96e5008-5541-4c4c-b02c-140d8e7a1183_jwxyis.jpg"
+                        src="https://res.cloudinary.com/dp7lr71t8/image/upload/v1699350860/fisioterapia-para-adultos-mayores_rpasun.jpg"
                         alt=""
                         className="revitaliz-image1"
                     />
                     <img
-                        src="https://res.cloudinary.com/doft9ylq1/image/upload/v1699015076/20221110_114455_nsagal.jpg"
+                        src="https://res.cloudinary.com/dp7lr71t8/image/upload/v1699350663/IMG_1036_kpsddc.jpg"
                         alt="Imagen 2"
                         className="revitaliz-image2"
                     />
                     <img
-                        src="https://res.cloudinary.com/doft9ylq1/image/upload/v1699015418/20200626_110630_1_qco2pi.jpg"
+                        src="https://res.cloudinary.com/dp7lr71t8/image/upload/v1699350663/ec0ef53c-1385-4945-b2db-0206a1ce1fbf_rzydi3.jpg"
                         alt="Imagen 2"
                         className="revitaliz-image3"
                     />
