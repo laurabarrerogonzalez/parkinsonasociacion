@@ -1,8 +1,46 @@
 import "./Voluntary.css";
 import React from "react";
+import swal from "sweetalert2";
 import Navbar from "../../Components/Navbar/Navbar";
+import Stack from "@mui/material/Stack";
+import Button from "@mui/material/Button";
+import Box from "@mui/material/Box";
+import TextField from "@mui/material/TextField";
+import FormGroup from "@mui/material/FormGroup";
+import FormControlLabel from "@mui/material/FormControlLabel";
+import Checkbox from "@mui/material/Checkbox";
+import { red } from "@mui/material/colors";
+import Footer from "../../Components/Footer/Footer";
+
+const label = { inputProps: { "aria-label": "Checkbox demo" } };
 
 const Voluntary = () => {
+  const customColor = "rgb(236, 117, 14)";
+
+  const handleEnviarClick = () => {
+    swal
+      .fire({
+        title: "¿Estás seguro de enviar la información?",
+        text: "Una vez enviada, no podrás modificarla.",
+        icon: "question",
+        showCancelButton: true,
+        confirmButtonColor: customColor,
+        cancelButtonColor: "#6c757d",
+        confirmButtonText: "Sí, enviar",
+        cancelButtonText: "Cancelar",
+      })
+      .then((result) => {
+        if (result.isConfirmed) {
+          swal.fire({
+            title: "Enviado",
+            text: "La información ha sido enviada.",
+            icon: "success",
+            confirmButtonColor: customColor, // Configurar el color del botón OK
+          });
+        }
+      });
+  };
+
   return (
     <>
       <div className="photos">
@@ -36,11 +74,126 @@ const Voluntary = () => {
           </div>
         </div>
       </div>
-      <div className="form1">
+      <div className="forms">
         <div className="text5">
+          <br />
+          <br />
           <h1>Solicitud de voluntarios</h1>
         </div>
+        <div className="container1">
+          <div className="form1">
+            <Box
+              component="form"
+              sx={{
+                "& .MuiTextField-root": { m: 1, width: "37ch" },
+              }}
+              noValidate
+              autoComplete="off"
+              className="responsive"
+            >
+              <TextField
+                required
+                className="White"
+                id="outlined-required"
+                label="Nombre y Apellidos"
+                defaultValue=""
+              />
+              <br></br>
+              <br></br>
+
+              <TextField
+                required
+                className="White"
+                id="outlined-required"
+                label="Domicilio"
+                defaultValue=""
+              />
+
+              <br></br>
+              <br></br>
+
+              <TextField
+                required
+                className="White"
+                id="outlined-number"
+                label="Telefono"
+                defaultValue=""
+              />
+            </Box>
+          </div>
+          <div className="form2">
+            <Box
+              component="form"
+              sx={{
+                "& .MuiTextField-root": { m: 1, width: "37ch" },
+              }}
+              noValidate
+              autoComplete="off"
+            >
+              <TextField
+                required
+                className="White"
+                id="outlined-required"
+                label="Email"
+                type="email"
+                defaultValue=""
+              />
+
+              <br></br>
+              <br></br>
+
+              <TextField
+                required
+                className="White"
+                id="outlined-required"
+                label="Ciudad"
+                defaultValue=""
+              />
+
+              <br></br>
+              <br></br>
+
+              <TextField
+                required
+                className="White"
+                id="outlined-number"
+                label="Provincia"
+                defaultValue=""
+              />
+            </Box>
+            <br />
+            <FormGroup>
+              <FormControlLabel
+                required
+                control={
+                  <Checkbox
+                    {...label}
+                    defaultChecked
+                    sx={{
+                      color: red[800],
+                      "&.Mui-checked": {
+                        color: red[600],
+                      },
+                    }}
+                  />
+                }
+                label="Acepto las Conciciones y la Politica de privacidad"
+              />
+            </FormGroup>
+          </div>
+        </div>
+        <div className="buttonAcept">
+          <Stack direction="row" spacing={2}>
+            <Button
+              style={{ backgroundColor: customColor, color: "#fff" }}
+              onClick={handleEnviarClick}
+            >
+              ENVIAR
+            </Button>
+          </Stack>
+        </div>
       </div>
+     <Footer/> 
     </>
   );
 };

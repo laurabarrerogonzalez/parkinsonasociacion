@@ -1,0 +1,16 @@
+.Part1 {
+  border: 1px black solid;
+  width: 30%;
+  margin-top: 3%;
+  text-align: center;
+}
+
+.container2{
+    border: 1px rgb(255, 0, 195) solid;
+    margin-top: 3%;
+    margin-left: 5%;
+    width: 90%;
+    height: auto;
+    text-align: center;
+}
+
