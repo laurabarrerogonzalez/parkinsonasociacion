@@ -48,31 +48,25 @@
   
   .text-centroD ul li {
     margin: 10px 0;
-    font-size: 16px; /* Cambia el tamaño de fuente si es necesario */
-    color: #033239; /* Cambia el color del texto si es necesario */
+    font-size: 16px; 
+    color: #033239; 
   }
 
   .image-container {
     display: flex;
-    flex-direction: column; /* Muestra las imágenes en columna en el lado derecho */
-    align-items: center; /* Centra las imágenes verticalmente */
+    flex-direction: column; 
+    align-items: center; 
 
   }
   
-  /* Estilos para las imágenes */
-
-  .image-container {
-    display: flex;
-
-  }
   .activity-image {
 
     position: absolute;
     top:900px;
-    border-radius: 100%; /* Hace que las imágenes sean circulares */
-    width: 200px; /* Ajusta el tamaño de las imágenes según tus necesidades */
+    border-radius: 100%; 
+    width: 200px; 
     height: 200px;
-    margin-right:500px; /* Agrega margen inferior para separar las imágenes */
+    margin-right:500px; 
     object-fit:cover;
     border-color: #38929F;
     border-style:groove;
@@ -86,7 +80,7 @@
     border-style:groove;
     width: 200px;
     height: 200px;
-    margin-right: 20px; /* Agrega margen derecho entre las imágenes */
+    margin-right: 20px;
     object-fit:cover;
   }
 
@@ -98,7 +92,7 @@
     border-style:groove;
     width: 200px;
     height: 200px;
-    margin-left:450px; /* Agrega margen derecho entre las imágenes */
+    margin-left:450px;
     object-fit:cover;
   }
 
@@ -110,6 +104,53 @@
     border-style:groove;
     width: 200px;
     height: 200px;
-    margin-left:900px; /* Agrega margen derecho entre las imágenes */
+    margin-left:900px; 
     object-fit:cover;
+  }
+  
+  .text_DC3 p {
+    font-size: 18px;
+    line-height: 1.5;
+    text-align:justify ;
+    margin-bottom: 10px;
+  }
+  .boxDC3 {
+    background-color: #067787;
+    padding: 20px;
+    color: #ffffff;
+  }
+  .Centro_dia3 {
+    text-align: center;
+   padding: 2%;
+
+}
+
+.text_DC3 ul {
+    list-style-type: disc;
+    margin-left: 20px;
+  }
+  
+  .text_DC3 ul li {
+    margin: 10px 0;
+    font-size: 16px; 
+    color: #ffffff; 
+  }
+  @media (max-width: 768px) {
+    .activity-image,
+    .activity-image1,
+    .activity-image2,
+    .activity-image3 {
+      width: 15vw; /* Ancho en unidades de viewport */
+      height: 15vw; /* Alto en unidades de viewport */
+    }
+
+    .image-container{
+        position: absolute;
+        top:100px; 
+        left: 51px;
+       /* position: fixed; */
+       flex-wrap: wrap;
+       
+       
+    }
   }

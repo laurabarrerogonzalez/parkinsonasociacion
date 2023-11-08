@@ -72,8 +72,23 @@ const Daycarecenter = () => {
           className="activity-image3"
         />
         </div>
+        <div className="boxDC3">
+      <div className="Centro_dia3">
+      <h1>Servicios Especializados</h1>
+      </div>
+        <div className="text_DC3">
+        <ul>
+    <li> <strong>Taller nuevas tecnologías</strong></li>
+    <li> <strong>Deambulación</strong></li>
+    <li> <strong>Hortoterapia</strong></li>
+    <li> <strong>Ludoterapia</strong></li>
+    <li> <strong>Laborterapia</strong></li>
+    <li> <strong>Terapia con perros</strong></li>
+    <li> <strong>Psicomotricidad</strong></li>
     
-
+  </ul>
+      </div>
+</div>
        <Footer />
         </>
 
