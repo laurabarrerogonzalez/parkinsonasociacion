@@ -56,6 +56,7 @@
     display: flex;
     flex-direction: column; 
     align-items: center; 
+    flex-wrap: wrap;
 
   }
   
@@ -146,6 +147,7 @@
     display: flex;
     flex-direction: column; 
     align-items: center; 
+    flex-wrap: wrap;
 
   }
 
@@ -202,7 +204,7 @@
     object-fit:cover;
   }
 
-  .activity-image:hover,
+.activity-image:hover,
 .activity-image1:hover,
 .activity-image2:hover,
 .activity-image3:hover,
@@ -220,25 +222,16 @@
     .activity-image,
     .activity-image1,
     .activity-image2,
-    .activity-image3 {
+    .activity-image3
+    .activity-image4,
+    .activity-image5,
+    .activity-image6,
+    .activity-image7 {
       width: 15vw; /* Ancho en unidades de viewport */
       height: 15vw; /* Alto en unidades de viewport */
     }
 
-    .image-container{
-        position: absolute;
-        top:100px; 
-        left: 51px;
-       position: fixed;
-
-
-       
-    }
-    .image-container2{
-        position: absolute;
-        top:100px; 
-        left: 51px;
-       position: fixed;
-      
-      }
-  }
+      .image-container {
+        flex-direction: column;
+        position:fixed; 
+  }}
