@@ -123,7 +123,7 @@ const Members = () => {
           </div>
         </div>
       </div>
-      <div className="Carta0">
+      <div className="Carta10">
         <div class="cards2">
           <div class="first-content">
             <span>
@@ -135,8 +135,9 @@ const Members = () => {
             </span>
           </div>
           <div class="second-content">
-            <span>
+            <span className="Text23">
               <h2>Transferencia</h2>
+              <br />
               <p>
                 Puede ser realizada a través de la banca en línea, aplicación
                 móvil o visitando una sucursal bancaria.
@@ -155,8 +156,9 @@ const Members = () => {
             </span>
           </div>
           <div class="second-content">
-            <span>
+            <span className="Text23">
               <h2>Bizum</h2>
+              <br />
               <p>
                 Se lleva a cabo a través de aplicaciones móviles de los bancos
                 asociados a Bizum que permiten realizar pagos instantáneos con
