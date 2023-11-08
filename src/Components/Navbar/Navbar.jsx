@@ -1,11 +1,29 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from 'react';
 import "../Navbar/Navbar.css";
 import { Link } from "react-router-dom";
 
 const Navbar = () => {
     const [isOpen, setIsOpen] = useState(false);
+    const [scrolled, setScrolled] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      const offset = window.scrollY;
+      if (offset > 200) {
+        setScrolled(true); // Cambiar el estado a "true" después de desplazarse más allá de 200px
+      } else {
+        setScrolled(false); // Cambiar el estado a "false" al volver a la parte superior
+      }
+    };
+
+    window.addEventListener('scroll', handleScroll);
+
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, []);
     return (
-        <div className="navbar">
+        <div className={`navbar ${scrolled ? 'scrolled' : ''}`}>
             <div className="nav_logo">
                 <Link to="/">
                     <img
@@ -16,7 +34,7 @@ const Navbar = () => {
             </div>
             <div className={`nav_items ${isOpen && "open"}`}>
                 <ul className="menu-horizontal">
-                    <li><Link to="/aboutus">¿Quienes somos?</Link></li>
+                    <li><Link to="/aboutus">¿Quiénes somos?</Link></li>
                     <li>
                         <a href="#">¿Qué es el Parkinson?</a>
                         <ul className="menu-vertical">

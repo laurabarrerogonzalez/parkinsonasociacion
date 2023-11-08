@@ -16,11 +16,10 @@ import News from './View/CurrentNews/News';
 import Activities from './View/CurrentNews/Activities';
 import Proyects from './View/CurrentNews/Proyects';
 import Voluntary from './View/Collaborate/Voluntary';
-// import Members from './View/Collaborate/Members';
+import Members from './View/Collaborate/Members';
 import Donations from './View/Collaborate/Donations';
 import Work from './View/Work with us/Work';
 import Find from './View/Find us/Find';
-import '../src/View/Parkinson/Myths.css';
 
 
 
@@ -30,22 +29,22 @@ ReactDOM.createRoot(document.getElementById('root')).render(
       <Routes>
         <Route path="/" element={<Home />} /> 
         <Route path="/aboutus" element={<Aboutus />} />
-        <Route path="/symptoms" element={<Symptoms/>} />
-        <Route path="/evolution" element={<Evolution/>} />
-        <Route path="/resources" element={<Resources/>} />
-        <Route path="/myths" element={<Myths/>} />
-        <Route path="/daycarecenter" element={<Daycarecenter/>} />
-        <Route path="/revitalization" element={<Revitalization/>} />
-        <Route path="/stimulation" element={<Stimulation/>} />
-        <Route path="/help" element={<Help/>} />
-        <Route path="/news" element={<News/>} />
-        <Route path="/activities" element={<Activities/>} />
-        <Route path="/proyects" element={<Proyects/>} />
-        <Route path="/voluntary" element={<Voluntary/>} />
-        {/* <Route path="/members" element={<Members/>} /> */}
-        <Route path="/donations" element={<Donations/>} />
-        <Route path="/work" element={<Work/>} />
-        <Route path="/find" element={<Find/>} />
+        <Route path="/symptoms" element={<Symptoms />} />
+        <Route path="/evolution" element={<Evolution />} />
+        <Route path="/resources" element={<Resources />} />
+        <Route path="/myths" element={<Myths />} />
+        <Route path="/daycarecenter" element={<Daycarecenter />} />
+        <Route path="/revitalization" element={<Revitalization />} />
+        <Route path="/stimulation" element={<Stimulation />} />
+        <Route path="/help" element={<Help />} />
+        <Route path="/news" element={<News />} />
+        <Route path="/activities" element={<Activities />} />
+        <Route path="/proyects" element={<Proyects />} />
+        <Route path="/voluntary" element={<Voluntary />} />
+        <Route path="/members" element={<Members />} />
+        <Route path="/donations" element={<Donations />} />
+        <Route path="/work" element={<Work />} />
+        <Route path="/find" element={<Find />} />
       </Routes>
     </React.StrictMode>
   </Router>

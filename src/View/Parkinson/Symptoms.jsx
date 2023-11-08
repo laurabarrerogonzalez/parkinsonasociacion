@@ -7,10 +7,6 @@ import "../../Components/FlipBook/FlipBook.css";
 import HTMLFlipBook from "react-pageflip";
 
 
-
-
-
-
 const Page = React.forwardRef((props, ref) => {
   return (
     <div className="demoPage" ref={ref}>
@@ -104,7 +100,7 @@ const Symptoms = () => {
 
           <Page number="3">
             <h1>Diagnóstico</h1> <br /> <br/> 
-            <img src="https://res.cloudinary.com/dit2zhtwz/image/upload/v1699097744/medical-563427_1280_clghkv.jpg" /><br /> <br/> 
+            <img className="imgs" src="https://res.cloudinary.com/dit2zhtwz/image/upload/v1699097744/medical-563427_1280_clghkv.jpg" /><br /> <br/> 
             El diagnóstico de la enfermedad es fundamentalmente clínico y se basa en:
             <li className="li-symp">La historia clínica del paciente </li>
             <li className="li-symp">La exploración física y neurológica</li>
@@ -134,14 +130,12 @@ const Symptoms = () => {
 
           <Page number="6">
             <h1>No dudes en pedir ayuda</h1> <br /> <br/> 
-            <img src="https://res.cloudinary.com/dit2zhtwz/image/upload/v1699098000/istockphoto-1461330630-612x612_ysetew.jpg" /><br /> <br/>
+            <img className="imgs" src="https://res.cloudinary.com/dit2zhtwz/image/upload/v1699098000/istockphoto-1461330630-612x612_ysetew.jpg" /><br /> <br/>
             Diagnosticar a tiempo es siempre muy importante
           </Page>
 
         </HTMLFlipBook>
       </div>
-
-
 
 
 

@@ -16,15 +16,13 @@
 }
 
 .title-parkinson{
+    background-color: orange;
     display: flex;
     justify-content: center;
     margin-left: 35px;
     width: 95%; 
     box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5); 
     border: 1px solid rgba(0, 0, 0, 0.2);
-    
-
-    
 }
 
 .text-parkinson{

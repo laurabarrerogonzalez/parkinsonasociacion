@@ -7,9 +7,9 @@ const Page = React.forwardRef((props, ref) => {
     <div className="demoPage" ref={ref}>
       <br />
       <br />
-      <p>{props.children}</p>
+      <p className="p-text">{props.children}</p>
       <br />
-      <p>{props.number}</p>
+      <p className="p-text">{props.number}</p>
     </div>
   );
 });
@@ -21,7 +21,7 @@ const FlipBook = () => {
         <HTMLFlipBook width={300} height={500}>
           <Page number="1">
             <h1>Parkinson</h1> <br />{" "}
-            <img src="https://res.cloudinary.com/da7ffijqs/image/upload/v1693932207/download_airetq.jpg" />
+            <img className="imgs" src="https://res.cloudinary.com/da7ffijqs/image/upload/v1693932207/download_airetq.jpg" />
             <br /> El Mal de Parkinson es una enfermedad neurodegenerativa
             crónica que afecta principalmente la coordinación motora. Fue
             descrita por primera vez por el médico británico James Parkinson en
