@@ -49,7 +49,7 @@ The objective of this educational project is the creation of an informative blog
 <a href="https://react-pdf.org/" target="_blank"><img style="margin: 10px" src="image/pdf.png" alt="React PDF" height="50" /></a>
 <a href="https://reactrouter.com/en/main" target="_blank"><img style="margin: 10px" src="image/router.jpg" alt="React Router" height="50" /></a>
 <a href="https://uiverse.io/" target="_blank"><img style="margin: 10px" src="image/Universe.png" alt="Universe.io" height="50" /></a>
-<a href="https://react-leaflet.js.org/" target="_blank"><img style="margin: 10px" src="image/ReactLeaf" alt="React Leaflet" height="50" /></a>
+<a href="https://react-leaflet.js.org/" target="_blank"><img style="margin: 10px" src="image/ReactLeaf.png" alt="React Leaflet" height="50" /></a>
 
 ## Technologies and Tools 🔨
 <div>  
