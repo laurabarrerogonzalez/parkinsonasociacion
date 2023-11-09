@@ -1,5 +1,5 @@
 
-
+/* 
  .textQ {
   font-family: "Times New Roman", Times, serif;
   text-align: center;
@@ -106,7 +106,7 @@ transform: rotate(-90deg);
   height: 44px; 
   margin-left: 10px; 
 
-} 
+}  */
  
 /* @media (max-width: 768px){
   .social-band {display: flex;
@@ -114,3 +114,147 @@ transform: rotate(-90deg);
     align-items: center; }
   
 } */
+.textQ {
+  font-family: "Times New Roman", Times, serif;
+  text-align: center;
+  font-size: 2.5rem;
+}
+
+.social-band {
+  display: flex;
+  padding: 10px;
+  color: white;
+  flex-wrap: wrap; /* Permitirá que los elementos se ajusten en pantallas más pequeñas */
+}
+
+.left-side {
+  flex: 1;
+  text-align: center;
+  background: #EC750E;
+  padding: 10px;
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.left-side h2 {
+  font-size: 1.5rem;
+  margin: 0;
+  text-align: center; /* Alinea el texto al centro */
+}
+
+.triangleF {
+  width: 0;
+  height: 0;
+  border-left: 2vw solid transparent; /* Utiliza unidades relativas para hacerlo responsive */
+  border-right: 2vw solid transparent;
+  border-top: 2vw solid #EC750E;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%); /* Centra el triángulo horizontalmente */
+  margin-top: 25px;
+  transform: rotate(-90deg);
+  margin-left: -20px;
+}
+
+.right-side {
+  flex: 1;
+  text-align: right;
+  background: #323944;
+  padding: 10px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  
+}
+
+.right-side img {
+  width: 2.5rem; /* Utiliza unidades relativas */
+  height: auto;
+  margin: 10px;
+  margin-left: 40px;
+}
+
+.lower-band {
+  display: flex;
+  align-items: center;
+  background: #E26890;
+  padding: 10px;
+  position: relative;
+  width: 50%; /* Ocupará el ancho completo en pantallas pequeñas */
+}
+
+.lower-left-side {
+  flex: 1;
+  text-align: left;
+}
+
+.lower-triangle {
+  width: 0;
+  height: 0;
+  border-left: 4vw solid transparent; /* Utiliza unidades relativas para hacerlo responsive */
+  border-right: 4vw solid transparent;
+  border-top: 4vw solid #E26890;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%); /* Centra el triángulo horizontalmente */
+  bottom: -2rem; /* Ajusta la posición del triángulo */
+}
+
+.lower-title {
+  text-align: center;
+  color: white;
+  margin: 0;
+}
+
+.lower-right-side {
+  display: flex;
+  align-items: center;
+}
+
+.icon {
+  width: 2.75rem; /* Utiliza unidades relativas */
+  height: auto;
+  margin-left: 105px;
+}
+@media(max-width:768px){
+  .triangleF {
+    width: 0;
+    height: 0;
+    border-left: 8vw solid transparent; /* Utiliza unidades relativas para hacerlo responsive */
+    border-right: 8vw solid transparent;
+    border-top: 8vw solid #EC750E;
+    position: absolute;
+    margin-left: -57px;
+    margin-top: 9.5%;
+ 
+
+}
+
+.lower-triangle {
+
+  border-left: 10vw solid transparent; /* Utiliza unidades relativas para hacerlo responsive */
+  border-right: 10vw solid transparent;
+  border-top: 10vw solid #E26890;
+  position: absolute;
+  left: 50%;
+  margin-bottom:8px;
+}
+.lower-title {
+  text-align: left;
+  color: white;
+  font-size: 1rem;
+}
+
+.lower-right-side {
+  display: flex;
+  margin-left: -95px;
+  
+}
+.left-side h2 {
+  font-size: 1.2rem;
+  margin: 0;
+  text-align: center; /* Alinea el texto al centro */
+}
+
+}
