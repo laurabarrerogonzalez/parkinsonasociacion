@@ -13,7 +13,6 @@
    justify-content: center;
    margin-top: 50px;
    
-   
 }
 
 .title-parkinson{
@@ -21,14 +20,15 @@
     display: flex;
     justify-content: center;
     margin-left: 35px;
-    width: 95%; /* Para ocupar todo el ancho de la página */
-    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5); /* Agregar sombra */
-    border: 1px solid rgba(0, 0, 0, 0.2); /* Agregar borde */
-    
+    width: 95%; 
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5); 
+    border: 1px solid rgba(0, 0, 0, 0.2);
 }
 
 .text-parkinson{
     width: 1100px;
     margin-top: 20px;
     margin-left: 200px;
+    font-size: 20px;
+
 }

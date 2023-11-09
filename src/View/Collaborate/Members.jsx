@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import "./Members.css";
 import InputLabel from "@mui/material/InputLabel";
 import MenuItem from "@mui/material/MenuItem";
@@ -15,12 +15,37 @@ import Checkbox from "@mui/material/Checkbox";
 import { red } from "@mui/material/colors";
 import Footer from "../../Components/Footer/Footer";
 import Navbar from "../../Components/Navbar/Navbar";
+import ScrollArrow from "../../Components/ScrollArrow/ScrollArrow";
+import ButtonDonate from "../../Components/ButtonDonate/ButtonDonate";
 import BannerViews from "../../Components/BannerViews/BannerViews";
 
 const label = { inputProps: { "aria-label": "Checkbox demo" } };
 
 const Members = () => {
   const [age, setAge] = React.useState("");
+
+  useEffect(() => {
+    window.addEventListener("scroll", handleScroll);
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
+
+  const handleScroll = () => {
+    const elements = document.querySelectorAll(".services_info");
+    elements.forEach((element) => {
+      const elementTop = element.getBoundingClientRect().top;
+      const elementBottom = element.getBoundingClientRect().bottom;
+
+      const isVisible = elementTop < window.innerHeight && elementBottom >= 0;
+
+      if (isVisible) {
+        element.classList.add("appear");
+      } else {
+        element.classList.remove("appear");
+      }
+    });
+  };
 
   const handleChange = (event) => {
     setAge(event.target.value);
@@ -59,13 +84,87 @@ const Members = () => {
         image="https://res.cloudinary.com/da7ffijqs/image/upload/t_Banner 16:9/v1699001271/20200415_111209_1_iacccg.jpg "
         title="¿Quieres ser socio?"
       />
-      <div className="spikes">
-        <div> <h1>Socio Colavorativo</h1> </div>
-        <div> <h1>Socio Afectado</h1> </div>
+      <div className="Carta0">
+        <div class="cards1">
+          <span></span>
+          <div class="content">
+            <br />
+            <br />
+            <h1>Socio Colavorativo</h1>
+            <br />
+            <p>
+              Esto se refiere a una relación o situación en la que individuos,
+              grupos o entidades trabajan juntos de manera cooperativa para
+              lograr un objetivo común. En el contexto del Parkinson, esto
+              podría referirse a la colaboración entre profesionales de la
+              salud, cuidadores, pacientes y organizaciones para ofrecer un
+              cuidado integral, terapias, apoyo emocional, recursos y
+              tratamientos para mejorar la calidad de vida de quienes viven con
+              la enfermedad de Parkinson.
+            </p>
+          </div>
+        </div>
+        <div class="cards1">
+          <span></span>
+          <div class="content">
+            <br />
+            <br />
+            <h1>Socio Afectado</h1>
+            <br />
+            <p>
+              Esto se refiere a un individuo que se ve directamente impactado
+              por la enfermedad de Parkinson, ya sea como paciente diagnosticado
+              con la enfermedad o como alguien cercano al paciente que
+              experimenta los efectos emocionales, físicos y sociales de la
+              condición. Esto podría incluir a familiares, amigos, cuidadores o
+              personas en roles cercanos que se ven afectados por las
+              dificultades que plantea el Parkinson.
+            </p>
+          </div>
+        </div>
       </div>
-      <div className="spikes2">
-        <div> <h1>Transferencia</h1> </div>
-        <div> <h1>Bizum</h1> </div>
+      <div className="Carta0">
+        <div class="cards2">
+          <div class="first-content">
+            <span>
+              <img
+                class="imagencards"
+                src="https://res.cloudinary.com/da7ffijqs/image/upload/v1699360429/Captura_de_pantalla_2023-11-07_131458-removebg-preview_1_dbu8yz.png"
+                alt=""
+              />
+            </span>
+          </div>
+          <div class="second-content">
+            <span>
+              <h2>Transferencia</h2>
+              <p>
+                Puede ser realizada a través de la banca en línea, aplicación
+                móvil o visitando una sucursal bancaria.
+              </p>
+            </span>
+          </div>
+        </div>
+        <div class="cards2">
+          <div class="first-content">
+            <span>
+              <img
+                class="imagencards1"
+                src="https://res.cloudinary.com/da7ffijqs/image/upload/v1699361121/El_motivo_por_el_que_no_debes_usar_Bizum-removebg-preview_kuqrgj.png"
+                alt=""
+              />
+            </span>
+          </div>
+          <div class="second-content">
+            <span>
+              <h2>Bizum</h2>
+              <p>
+                Se lleva a cabo a través de aplicaciones móviles de los bancos
+                asociados a Bizum que permiten realizar pagos instantáneos con
+                tan solo el número de teléfono móvil del destinatario.
+              </p>
+            </span>
+          </div>
+        </div>
       </div>
       <div className="container2">
         <br />
@@ -194,8 +293,14 @@ const Members = () => {
           </div>
         </div>
         <div>
-          <FormControl className="Select1" sx={{ m: 1, minWidth: 120 }} size="small">
-            <InputLabel id="demo-select-small-label">Tipos de Socios</InputLabel>
+          <FormControl
+            className="Select1"
+            sx={{ m: 1, minWidth: 120 }}
+            size="small"
+          >
+            <InputLabel id="demo-select-small-label">
+              Tipos de Socios
+            </InputLabel>
             <Select
               labelId="demo-select-small-label"
               id="demo-select-small"
@@ -222,6 +327,8 @@ const Members = () => {
         </div>
       </div>
       <Footer />
+      <ButtonDonate />
+      <ScrollArrow />
     </>
   );
 };

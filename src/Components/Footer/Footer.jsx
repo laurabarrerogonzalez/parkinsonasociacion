@@ -30,13 +30,13 @@ const Footer = () => {
                 <section className="section2">
                     <div>
                         <a href="https://www.instagram.com/PARKINSONEX" target="_blank" rel="noopener noreferrer">
-                            <FontAwesomeIcon icon={faInstagramSquare} style={{ color: '#a725b1' }} size="2x" />
+                            <FontAwesomeIcon icon={faInstagramSquare} style={{ color: '#ffff' }} size="2x" />
                             <span>@PARKINSONEX</span>
                         </a>
                     </div>
                     <div>
                         <a href="https://www.facebook.com/AsociaciónRegionalParkinsonExtremadura" target="_blank" rel="noopener noreferrer">
-                            <FontAwesomeIcon icon={faFacebookSquare} style={{ color: '#1950ae' }} size="2x" />
+                            <FontAwesomeIcon icon={faFacebookSquare} style={{ color: '#ffff' }} size="2x" />
                             <span>Asociación Regional Parkinson Extremadura</span>
                         </a>
                     </div>

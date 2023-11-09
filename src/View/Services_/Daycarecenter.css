@@ -1,0 +1,237 @@
+
+
+
+/* 
+.title-Centro_dia{
+    display: flex;
+    justify-content: center;
+    margin-left: 35px;
+    width: 95%; 
+    border: 1px solid rgba(0, 0, 0, 0.2); 
+    
+}
+
+.text_DC{
+    width: 1100px;
+    margin-top: 20px;
+    margin-left: 200px;
+}
+ */
+ .boxDC1 {
+    background-color: #EC750E;
+    padding: 20px;
+    color: #033239;
+  }
+  
+  .boxDC2 {
+    background-color: white;
+    padding: 20px;
+    margin-left:55px ;
+  }
+  
+  .title-Centro_dia h1 {
+    font-size: 35px;
+    color: #033239;
+    text-align: center;
+    padding: 2%;
+  }
+  
+  .text_DC p {
+    font-size: 18px;
+    line-height: 1.5;
+  }
+  
+  .text-centroD ul {
+    list-style-type: disc;
+    margin-left: 20px;
+  }
+  
+  .text-centroD ul li {
+    margin: 10px 0;
+    font-size: 16px; 
+    color: #033239; 
+  }
+
+  .image-container {
+    display: flex;
+    flex-direction: column; 
+    align-items: center; 
+    flex-wrap: wrap;
+
+  }
+  
+  .activity-image {
+
+    position: absolute;
+    top:900px;
+    border-radius: 100%; 
+    width: 200px; 
+    height: 200px;
+    margin-right:500px; 
+    margin-top: -2%;
+    object-fit:cover;
+    border-color: #38929F;
+    border-style:groove;
+  }
+  
+  .activity-image1 {
+    position: absolute;
+    top:900px;
+    border-radius:100%;
+    border-color: #38929F;
+    border-style:groove;
+    width: 200px;
+    height: 200px;
+    margin-right: 20px;
+    margin-top: -2%;
+    object-fit:cover;
+  }
+
+  .activity-image2{
+    position: absolute;
+    top:900px;
+    border-radius:100%;
+    border-color: #38929F;
+    border-style:groove;
+    width: 200px;
+    height: 200px;
+    margin-left:450px;
+    margin-top: -2%;
+    object-fit:cover;
+  }
+
+  .activity-image3{
+    position: absolute;
+    top:900px;
+    border-radius:100%;
+    border-color: #38929F;
+    border-style:groove;
+    width: 200px;
+    height: 200px;
+    margin-left:900px; 
+    margin-top: -2%;
+    object-fit:cover;
+  }
+  
+  .text_DC3 p {
+    font-size: 18px;
+    line-height: 1.5;
+    text-align:justify ;
+    margin-bottom: 10px;
+  }
+  .boxDC3 {
+    background-color: #067787;
+    padding: 20px;
+    color: #ffffff;
+  }
+  .Centro_dia3 {
+    /* text-align: left; */
+   padding: 2%;
+   margin-left: 20px;
+
+}
+
+.text_DC3 ul {
+    list-style-type: disc;
+    margin-left: 20px;
+  }
+  
+  .text_DC3 ul li {
+    margin: 10px 0;
+    font-size: 16px; 
+    color: #ffffff; 
+  }
+
+  
+  .image-container2{
+    display: flex;
+    flex-direction: column; 
+    align-items: center; 
+    flex-wrap: wrap;
+
+  }
+
+  .activity-image4 {
+
+    position: absolute;
+    top:1250px;
+    border-radius: 100%; 
+    width: 200px; 
+    height: 200px;
+    margin-right:500px; 
+    margin-top: -2%;
+    object-fit:cover;
+    border-color: #38929F;
+    border-style:groove;
+  }
+  
+  .activity-image5 {
+    position: absolute;
+    top:1250px;
+    border-radius:100%;
+    border-color: #38929F;
+    border-style:groove;
+    width: 200px;
+    height: 200px;
+    margin-right: 20px;
+    margin-top: -2%;
+    object-fit:cover;
+  }
+
+  .activity-image6{
+    position: absolute;
+    top:1250px;
+    border-radius:100%;
+    border-color: #38929F;
+    border-style:groove;
+    width: 200px;
+    height: 200px;
+    margin-left:450px;
+    margin-top: -2%;
+    object-fit:cover;
+  }
+
+  .activity-image7{
+    position: absolute;
+    top:1250px;
+    border-radius:100%;
+    border-color: #38929F;
+    border-style:groove;
+    width: 200px;
+    height: 200px;
+    margin-left:900px; 
+    margin-top: -2%;
+    object-fit:cover;
+  }
+
+.activity-image:hover,
+.activity-image1:hover,
+.activity-image2:hover,
+.activity-image3:hover,
+.activity-image4:hover,
+.activity-image5:hover,
+.activity-image6:hover,
+.activity-image7:hover {
+  transform: scale(1.1);
+  transition: transform 0.3s;
+}
+
+
+  
+  @media (max-width: 768px) {
+    .activity-image,
+    .activity-image1,
+    .activity-image2,
+    .activity-image3
+    .activity-image4,
+    .activity-image5,
+    .activity-image6,
+    .activity-image7 {
+      width: 15vw; /* Ancho en unidades de viewport */
+      height: 15vw; /* Alto en unidades de viewport */
+    }
+
+      .image-container {
+        flex-direction: column;
+        position:fixed; 
+  }}
