@@ -7,8 +7,6 @@ import ButtonDonate from "../../Components/ButtonDonate/ButtonDonate";
 import ScrollArrow from "../../Components/ScrollArrow/ScrollArrow";
 import BannerViews from "../../Components/BannerViews/BannerViews";
 
-const label = { inputProps: { "aria-label": "Checkbox demo" } };
-
 const Voluntary = () => {
 
   const customColor = "rgb(236, 117, 14)";
