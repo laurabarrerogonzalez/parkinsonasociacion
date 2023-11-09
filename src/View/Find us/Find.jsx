@@ -7,6 +7,7 @@ import Footer from "../../Components/Footer/Footer";
 import ButtonDonate from "../../Components/ButtonDonate/ButtonDonate";
 import ScrollArrow from "../../Components/ScrollArrow/ScrollArrow";
 import Information from "../../Components/Information/Information";
+import CalendarComponent from "../../Components/Calendar/Calendar";
 
 
 
@@ -26,6 +27,7 @@ const Find = () => {
           <Information />
         </div>
       </div>
+      <CalendarComponent />
       <div className="social-band">
         <div className="left-side">
           <h2>Síguenos en redes sociales</h2>
