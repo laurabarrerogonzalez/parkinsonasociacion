@@ -1,5 +1,6 @@
 .Carta0{
   display: flex;
+  margin-top: 2%;
 }
 .cards1 {
   position: relative;
@@ -108,7 +109,7 @@
 .Carta10{
   display: flex;
   justify-content: space-around;
-  margin-top: 1%;
+  margin-top: 2%;
 }
 .cards2 {
   width: 750px;
@@ -172,4 +173,162 @@
 .Text23{
   width: 65%;
   text-align: center;
+}
+
+.form12 {
+  width: 60%;
+  margin-top: 3%;
+  margin-left: 20%;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  background-color: rgba(76, 255, 26, 0.468) ;
+  box-shadow: 6px 6px 6px rgb(0, 0, 0, 0.5);
+  padding: 20px;
+  border-radius: 20px;
+  position: relative;
+}
+.form12 label {
+  position: relative;
+}
+.form12 label .input {
+  width: 100%;
+  padding: 10px 10px 20px 10px;
+  outline: 0;
+  border: 1px solid rgba(255, 5, 5, 0.397);
+  border-radius: 10px;
+}
+.customCheckBoxHolder {
+  margin-top: 10px;
+  margin-left: -5%;
+  display: flex;
+  width: 100%;
+}
+
+.customCheckBox {
+  width: fit-content;
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+  user-select: none;
+  padding: 2px 8px;
+  background-color: white;
+  border-radius: 0px;
+  color: black;
+  transition-timing-function: cubic-bezier(0.25, 0.8, 0.25, 1);
+  transition-duration: 300ms;
+  transition-property: color, background-color, box-shadow;
+  display: flex;
+  height: 32px;
+  align-items: center;
+  box-shadow: rgba(0, 0, 0, 0.15) 0px 2px 1px 0px inset, rgba(255, 255, 255, 0.17) 0px 1px 1px 0px;
+  outline: none;
+  justify-content: center;
+  min-width: 55px;
+}
+
+.customCheckBox:hover {
+  background-color: #2c2c2c;
+  color: white;
+  box-shadow: rgba(0, 0, 0, 0.23) 0px -4px 1px 0px inset, rgba(255, 255, 255, 0.17) 0px -1px 1px 0px, rgba(0, 0, 0, 0.17) 0px 2px 4px 1px;
+}
+
+.customCheckBox .inner {
+  font-size: 13px;
+  font-weight: 900;
+  pointer-events: none;
+  transition-timing-function: cubic-bezier(0.25, 0.8, 0.25, 1);
+  transition-duration: 300ms;
+  transition-property: transform;
+  transform: translateY(0px);
+}
+
+.customCheckBox:hover .inner {
+  transform: translateY(-2px);
+}
+
+.customCheckBoxWrapper:first-of-type .customCheckBox {
+  border-bottom-left-radius: 5px;
+  border-top-left-radius: 5px;
+  border-right: 0px;
+}
+
+.customCheckBoxWrapper:last-of-type .customCheckBox {
+  border-bottom-right-radius: 5px;
+  border-top-right-radius: 5px;
+  border-left: 0px;
+}
+
+.customCheckBoxInput {
+  display: none;
+}
+
+.customCheckBoxInput:checked + .customCheckBoxWrapper .customCheckBox {
+  background-color: #2d6737;
+  color: white;
+  box-shadow: rgba(0, 0, 0, 0.23) 0px -4px 1px 0px inset, rgba(255, 255, 255, 0.17) 0px -1px 1px 0px, rgba(0, 0, 0, 0.17) 0px 2px 4px 1px;
+}
+
+.customCheckBoxInput:checked + .customCheckBoxWrapper .customCheckBox .inner {
+  transform: translateY(-2px);
+}
+
+.customCheckBoxInput:checked + .customCheckBoxWrapper .customCheckBox:hover {
+  background-color: #34723f;
+  box-shadow: rgba(0, 0, 0, 0.26) 0px -4px 1px 0px inset, rgba(255, 255, 255, 0.17) 0px -1px 1px 0px, rgba(0, 0, 0, 0.15) 0px 3px 6px 2px;
+}
+
+.customCheckBoxWrapper .customCheckBox:hover .inner {
+  transform: translateY(-2px);
+}
+
+@media (max-width: 768px) {
+  .imagencards {
+    width: 50%;
+    margin-left: 25%;
+  }
+
+  .imagencards1 {
+    width: 60%;
+    margin-left: 25%;
+  }
+  .Carta0, .Carta10{
+    display: flex;
+    flex-direction: column;
+    margin-left: 5%;
+  }
+  .cards1{
+    width: 90%;
+    font-size: 12px;
+  }
+  .cards2 {
+    width: 90%;
+    font-size: 12px;
+  }
+
+  .Checkbox1,
+  .Checkbox2,
+  .buttonAcept2,
+  .Select1,
+  .form12,
+  .Texto23,
+  .texto20,
+  .texto21,
+  .customCheckBox,
+  .customCheckBoxWrapper {
+    width: 90%;
+  }
+  .customCheckBoxHolder{
+    display: flex;
+    flex-direction: column;
+    margin-left: 2%;
+  }
+  .customCheckBox {
+    width: 100%;
+    margin: 5px 0;
+  }
+  .form12{
+    width: 85%;
+    margin-left: 2%;
+  }
 }

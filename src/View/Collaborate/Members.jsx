@@ -1,29 +1,13 @@
 import React, { useEffect } from "react";
 import "./Members.css";
-import InputLabel from "@mui/material/InputLabel";
-import MenuItem from "@mui/material/MenuItem";
-import FormControl from "@mui/material/FormControl";
-import Select from "@mui/material/Select";
 import swal from "sweetalert2";
-import Box from "@mui/material/Box";
-import TextField from "@mui/material/TextField";
-import Button from "@mui/material/Button";
-import Stack from "@mui/material/Stack";
-import FormGroup from "@mui/material/FormGroup";
-import FormControlLabel from "@mui/material/FormControlLabel";
-import Checkbox from "@mui/material/Checkbox";
-import { red } from "@mui/material/colors";
 import Footer from "../../Components/Footer/Footer";
 import Navbar from "../../Components/Navbar/Navbar";
 import ScrollArrow from "../../Components/ScrollArrow/ScrollArrow";
 import ButtonDonate from "../../Components/ButtonDonate/ButtonDonate";
 import BannerViews from "../../Components/BannerViews/BannerViews";
 
-const label = { inputProps: { "aria-label": "Checkbox demo" } };
-
 const Members = () => {
-  const [age, setAge] = React.useState("");
-
   useEffect(() => {
     window.addEventListener("scroll", handleScroll);
     return () => {
@@ -45,10 +29,6 @@ const Members = () => {
         element.classList.remove("appear");
       }
     });
-  };
-
-  const handleChange = (event) => {
-    setAge(event.target.value);
   };
 
   const customColor = "rgb(236, 117, 14)";
@@ -141,6 +121,11 @@ const Members = () => {
               <p>
                 Puede ser realizada a través de la banca en línea, aplicación
                 móvil o visitando una sucursal bancaria.
+                <br />
+                <br />
+                Numero para la Transferencia: ES79 2100 8985 4702 0001
+                <br />
+                Entidad bancaria: La Caixa
               </p>
             </span>
           </div>
@@ -163,171 +148,154 @@ const Members = () => {
                 Se lleva a cabo a través de aplicaciones móviles de los bancos
                 asociados a Bizum que permiten realizar pagos instantáneos con
                 tan solo el número de teléfono móvil del destinatario.
+                <br />
+                <br />
+                Numero para realizar Bizum: 674 09 45 01
               </p>
             </span>
           </div>
         </div>
       </div>
-      <div className="container2">
-        <br />
-        <br />
-        <h1>Solicitud de socios</h1>
-        <div className="container1">
-          <div className="form3">
-            <Box
-              component="form"
-              sx={{
-                "& .MuiTextField-root": { m: 1, width: "37ch" },
-              }}
-              noValidate
-              autoComplete="off"
-              className="responsive"
-            >
-              <TextField
-                required
-                className="White"
-                id="outlined-required"
-                label="Nombre y Apellidos"
-                defaultValue=""
+      <form className="form12">
+        <p className="title12">Solicitud Socio</p>
+        <p className="message13">
+          Ayudar es un regalo que se da con el corazón.
+        </p>
+        <div className="flex14">
+          <input
+            type="text"
+            autoComplete="off"
+            name="text"
+            className="input14"
+            placeholder="Nombre y apellidos"
+          />
+          <input
+            type="text"
+            autoComplete="off"
+            name="text"
+            className="input14"
+            placeholder="DNI"
+          />
+          <input
+            type="text"
+            autoComplete="off"
+            name="text"
+            className="input14"
+            placeholder="Fecha de naciomiento"
+          />
+          <input
+            type="text"
+            autoComplete="off"
+            name="text"
+            className="input14"
+            placeholder="Domicilio"
+          />
+          <input
+            type="text"
+            autoComplete="off"
+            name="text"
+            className="input14"
+            placeholder="Telefono"
+          />
+          <input
+            type="text"
+            autoComplete="off"
+            name="text"
+            className="input14"
+            placeholder="Email"
+          />
+          <input
+            type="text"
+            autoComplete="off"
+            name="text"
+            className="input14"
+            placeholder="Cuenta Bancaria/IBAN"
+          />
+          <input
+            type="text"
+            autoComplete="off"
+            name="text"
+            className="input14"
+            placeholder="Titular de la cuenta"
+          />
+          <div className="customCheckBoxHolder">
+            <input className="customCheckBoxInput" id="cCB1" type="checkbox" />
+            <label className="customCheckBoxWrapper" htmlFor="cCB1">
+              <div className="customCheckBox">
+                <div className="inner">Servicio rehabilitación integral</div>
+              </div>
+            </label>
+
+            <input className="customCheckBoxInput" id="cCB2" type="checkbox" />
+            <label className="customCheckBoxWrapper" htmlFor="cCB2">
+              <div className="customCheckBox">
+                <div className="inner">Servicio estimulación cognitiva</div>
+              </div>
+            </label>
+
+            <input className="customCheckBoxInput" id="cCB3" type="checkbox" />
+            <label className="customCheckBoxWrapper" htmlFor="cCB3">
+              <div className="customCheckBox">
+                <div className="inner">Información y orientación</div>
+              </div>
+            </label>
+
+            <input className="customCheckBoxInput" id="cCB4" type="checkbox" />
+            <label className="customCheckBoxWrapper" htmlFor="cCB4">
+              <div className="customCheckBox">
+                <div className="inner">Otros</div>
+              </div>
+            </label>
+          </div>
+          <div className="radio-inputs">
+            <label>
+              <input
+                className="radio-input"
+                type="radio"
+                name="engine"
+                defaultChecked
               />
-              <TextField
-                required
-                className="White"
-                id="outlined-required"
-                label="Domicilio"
-                defaultValue=""
-              />
-              <TextField
-                required
-                className="White"
-                id="outlined-number"
-                label="Telefono"
-                defaultValue=""
-              />
-              <TextField
-                required
-                className="White"
-                id="outlined-required"
-                label="Email"
-                type="email"
-                defaultValue=""
-              />
-              <TextField
-                required
-                className="White"
-                id="outlined-required"
-                label="C:P."
-                type="text"
-                defaultValue=""
-              />
-            </Box>
-            <FormGroup className="Checkbox1">
-              <FormControlLabel
-                required
-                control={
-                  <Checkbox
-                    {...label}
-                    defaultChecked
-                    sx={{
-                      color: red[800],
-                      "&.Mui-checked": {
-                        color: red[600],
-                      },
-                    }}
+              <span className="radio-tile">
+                <span className="radio-icon">
+                  <img
+                    className="iconos2"
+                    src="https://res.cloudinary.com/da7ffijqs/image/upload/v1699533652/_10db012b-e128-4d83-9991-e71749e99874-modified_ct8sdp.png "
                   />
-                }
-                label="Acepto las Conciciones y la Politica de privacidad"
-              />
-            </FormGroup>
+                </span>
+                <span className="radio-label">Colaborativo</span>
+              </span>
+            </label>
+            <label>
+              <input className="radio-input" type="radio" name="engine" />
+              <span className="radio-tile">
+                <span className="radio-icon">
+                  <img
+                    className="iconos3"
+                    src="https://res.cloudinary.com/da7ffijqs/image/upload/v1699534004/61_sin_t%C3%ADtulo_20231027173013-modified_wflhki.png"
+                  />
+                </span>
+                <span className="radio-label">Afectado</span>
+              </span>
+            </label>
           </div>
-          <div className="form4">
-            <Box
-              component="form"
-              sx={{
-                "& .MuiTextField-root": { m: 1, width: "37ch" },
-              }}
-              noValidate
-              autoComplete="off"
-            >
-              <TextField
-                required
-                className="White"
-                id="outlined-required"
-                label="Ciudad"
-                defaultValue=""
-              />
-              <TextField
-                required
-                className="White"
-                id="outlined-number"
-                label="Provincia"
-                defaultValue=""
-              />
-              <TextField
-                required
-                className="White"
-                id="outlined-number"
-                label="Banco o Caja"
-                defaultValue=""
-              />
-              <TextField
-                required
-                className="White"
-                id="outlined-number"
-                label="Codigo Cta./libreta"
-                defaultValue=""
-              />
-              <TextField
-                required
-                className="White"
-                id="outlined-number"
-                label=" Nombre de Titular/es"
-                defaultValue=""
-              />
-            </Box>
-            <FormGroup className="Checkbox2">
-              <FormControlLabel
-                required
-                control={<Checkbox defaultChecked />}
-                label="Cuota 70€"
-              />
-            </FormGroup>
-          </div>
+          <label className="container40">
+            <input defaultChecked type="checkbox" />
+            <div className="checkmark"></div>
+            <div className="Terminos">
+              <p>Acepto las Conciciones y la Politica de privacidad</p>
+            </div>
+          </label>
         </div>
+        <br />
         <div>
-          <FormControl
-            className="Select1"
-            sx={{ m: 1, minWidth: 120 }}
-            size="small"
-          >
-            <InputLabel id="demo-select-small-label">
-              Tipos de Socios
-            </InputLabel>
-            <Select
-              labelId="demo-select-small-label"
-              id="demo-select-small"
-              value={age}
-              required
-              label="Tipos de Socios"
-              onChange={handleChange}
-            >
-              <MenuItem value=""></MenuItem>
-              <MenuItem value={10}>Colavorativo</MenuItem>
-              <MenuItem value={20}>Afectado</MenuItem>
-            </Select>
-          </FormControl>
+          *En caso de socio afectado deberá remitir a la entidad vía email copia
+          de informe médico actualizado, DNI y tarjeta sanitaria o seguro
+          médico.
         </div>
-        <div className="buttonAcept2">
-          <Stack direction="row" spacing={2}>
-            <Button
-              style={{ backgroundColor: customColor, color: "#fff" }}
-              onClick={handleEnviarClick}
-            >
-              ENVIAR
-            </Button>
-          </Stack>
-        </div>
-      </div>
+        <button onClick={handleEnviarClick} className="bn01" type="button">
+          Enviar!
+        </button>
+      </form>
       <Footer />
       <ButtonDonate />
       <ScrollArrow />
