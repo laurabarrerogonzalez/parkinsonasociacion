@@ -12,7 +12,7 @@ function Mapa() {
   ];
 
   return (
-    <MapContainer center={locations[0].position} zoom={8} style={{ height: "50vh", width: "50%", marginLeft: "25%", marginRight: "25%" }}>
+    <MapContainer center={locations[0].position} zoom={8} style={{ height: "70vh", width: "50%", marginLeft: "15px", marginRight: "auto", marginTop: "15px", marginBottom: "15px", border: "2px solid black", boxShadow: "4px 4px 8px rgba(0, 0, 0, 1)"}}>
       <TileLayer
         url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
       />
