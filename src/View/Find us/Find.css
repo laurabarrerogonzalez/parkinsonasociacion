@@ -182,6 +182,7 @@ transform: rotate(-90deg);
   padding: 10px;
   position: relative;
   width: 50%; /* Ocupará el ancho completo en pantallas pequeñas */
+  padding-right: 80px;
 }
 
 .lower-left-side {
