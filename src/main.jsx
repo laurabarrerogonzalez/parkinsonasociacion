@@ -19,7 +19,7 @@ import Voluntary from './View/Collaborate/Voluntary';
 import Members from './View/Collaborate/Members';
 import Donations from './View/Collaborate/Donations';
 import Work from './View/Work with us/Work';
-import Find from './View/Find us/Find';
+import Find from './View/Find us/Find'; 
 import '../src/View/Parkinson/Myths.css';
 import Navbar from './Components/Navbar/Navbar';
 
