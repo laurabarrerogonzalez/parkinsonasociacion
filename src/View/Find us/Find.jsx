@@ -1,10 +1,9 @@
 import React from "react";
-import "../Find us/Find.css"
+import "../Find us/Find.css";
 import Navbar from "../../Components/Navbar/Navbar";
 import BannerViews from "../../Components/BannerViews/BannerViews";
-import Footer from '../../Components/Footer/Footer';
-
-  
+import Footer from "../../Components/Footer/Footer";
+import Mapa from "../../Components/Map/Map";
 
 const Find = () => {
   return (
@@ -22,11 +21,25 @@ const Find = () => {
           <h2>Síguenos en redes sociales</h2>
         </div>
         <div className="right-side">
-          <a href="https://m.facebook.com/p/Asociaci%C3%B3n-Regional-Parkinson-Extremadura-100083410775324/" target="_blank" rel="noopener noreferrer">
-            <img src="https://res.cloudinary.com/doft9ylq1/image/upload/v1698930197/Facebook_blancof_Mesa_de_trabajo_1_hqp4sl.png" alt="Facebook" />
+          <a
+            href="https://m.facebook.com/p/Asociaci%C3%B3n-Regional-Parkinson-Extremadura-100083410775324/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <img
+              src="https://res.cloudinary.com/doft9ylq1/image/upload/v1698930197/Facebook_blancof_Mesa_de_trabajo_1_hqp4sl.png"
+              alt="Facebook"
+            />
           </a>
-          <a href="https://www.instagram.com/parkinsonex/" target="_blank" rel="noopener noreferrer">
-            <img src="https://res.cloudinary.com/doft9ylq1/image/upload/v1698930182/IgF_Mesa_de_trabajo_1_waifsm.png" alt="Instagram" />
+          <a
+            href="https://www.instagram.com/parkinsonex/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <img
+              src="https://res.cloudinary.com/doft9ylq1/image/upload/v1698930182/IgF_Mesa_de_trabajo_1_waifsm.png"
+              alt="Instagram"
+            />
           </a>
         </div>
         <div className="triangleF"></div>
@@ -38,7 +51,11 @@ const Find = () => {
         </div>
         <div className="lower-right-side">
           <a href="URL-DE-ICONO" target="_blank" rel="noopener noreferrer">
-            <img src="https://res.cloudinary.com/doft9ylq1/image/upload/v1698934696/calendario_con_color_Mesa_de_trabajo_1_nucd0r.png" alt="Icono" className="icon" />
+            <img
+              src="https://res.cloudinary.com/doft9ylq1/image/upload/v1698934696/calendario_con_color_Mesa_de_trabajo_1_nucd0r.png"
+              alt="Icono"
+              className="icon"
+            />
           </a>
         </div>
         <div className="lower-triangle"></div>
@@ -49,12 +66,4 @@ const Find = () => {
   );
 };
 
-
-
-
 export default Find;
-
-
-
-
-
