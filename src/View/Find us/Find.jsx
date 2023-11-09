@@ -1,22 +1,24 @@
 import React from "react";
 import "../Find us/Find.css";
 import Navbar from "../../Components/Navbar/Navbar";
+import Mapa from "../../Components/Map/Map";
 import BannerViews from "../../Components/BannerViews/BannerViews";
 import Footer from "../../Components/Footer/Footer";
-import Mapa from "../../Components/Map/Map";
+import ButtonDonate from "../../Components/ButtonDonate/ButtonDonate";
+import ScrollArrow from "../../Components/ScrollArrow/ScrollArrow";
 
+
+  
 const Find = () => {
-  return (
-    <>
-      <div>
-        <Navbar />
+    
+    return(
+        <>
+        <Navbar/>
         <BannerViews
           image="https://res.cloudinary.com/doft9ylq1/image/upload/v1698914683/pareja-blanca-wanderlust_1_njqb3r.jpg"
-          title="DÓNDE NOS TRABAJAMOS"
-        />
-      </div>
-
-      <div className="social-band">
+          title="DÓNDE NOS ENCONTRAMOS"/>
+        <Mapa/> 
+        <div className="social-band">
         <div className="left-side">
           <h2>Síguenos en redes sociales</h2>
         </div>
@@ -60,10 +62,10 @@ const Find = () => {
         </div>
         <div className="lower-triangle"></div>
       </div>
-
-      <Footer />
-    </>
-  );
-};
-
+        <Footer/>
+        <ButtonDonate/>
+        <ScrollArrow/>
+        </>
+    )}
+    
 export default Find;
