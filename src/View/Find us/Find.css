@@ -117,9 +117,6 @@ transform: rotate(-90deg);
 ----------calendar--------------
 
 
-
-
-
 .textQ {
   font-family: "Times New Roman", Times, serif;
   text-align: center;
@@ -128,7 +125,7 @@ transform: rotate(-90deg);
 
 .social-band {
   display: flex;
-  padding: 10px;
+  padding:1px;
   color: white;
   flex-wrap: wrap; /* Permitirá que los elementos se ajusten en pantallas más pequeñas */
 }
@@ -141,6 +138,7 @@ transform: rotate(-90deg);
   position: relative;
   display: flex;
   align-items: center;
+  bottom: 500px;
 }
 
 .left-side h2 {
@@ -158,9 +156,9 @@ transform: rotate(-90deg);
   position: absolute;
   left: 50%;
   transform: translateX(-50%); /* Centra el triángulo horizontalmente */
-  margin-top: 25px;
   transform: rotate(-90deg);
   margin-left: -20px;
+  bottom:-509px;
 }
 
 .right-side {
@@ -171,6 +169,7 @@ transform: rotate(-90deg);
   position: relative;
   display: flex;
   align-items: center;
+  bottom: 500px;
   
 }
 
@@ -187,9 +186,8 @@ transform: rotate(-90deg);
   background: #E26890;
   padding: 10px;
   position: relative;
-  margin-bottom:400px;
   width: 50%; /* Ocupará el ancho completo en pantallas pequeñas */
- 
+  bottom: 500px;
 }
 
 .lower-left-side {

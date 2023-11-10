@@ -41,12 +41,11 @@ const CalendarComponent = () => {
     borderRadius: token.borderRadiusLG,
     padding: '20px',
     backgroundColor: 'white',
-    margin:'85px',
+    margin:'90px',
     marginTop:'70px',
     position: 'relative', // Define la posición relativa
-     top: 650, // Mueve el elemento 20 píxeles desde la posición original en la parte superior
+     top: 150, // Mueve el elemento 20 píxeles desde la posición original en la parte superior
      left: 50, 
-    
     
   };
 
