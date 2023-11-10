@@ -9,8 +9,6 @@ import ScrollArrow from "../../Components/ScrollArrow/ScrollArrow";
 
 const Find = () => {
   return (
-
-
     <>
       <div>
         <Navbar />
