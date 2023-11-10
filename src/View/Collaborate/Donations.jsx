@@ -16,7 +16,7 @@ const Donations = () => {
       </div>
       <div class="flip12">
         <div class="content12">
-          <div class="front12">
+          <div class="front-12">
             <h2 className="texts40">
               La generosidad es el arte de dar con el corazón.
             </h2>

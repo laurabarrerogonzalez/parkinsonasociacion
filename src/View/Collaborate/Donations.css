@@ -14,7 +14,7 @@
   transform-style: preserve-3d;
 }
 .flip12 .back12,
-.flip12 .front12 {
+.flip12 .front-12 {
   transform-style: preserve-3d;
   backface-visibility: hidden;
   display: flex;
@@ -42,11 +42,6 @@
   width: 80%;
   margin-top: 3%;
   margin-left: 10%;
-}
-.flip12 p {
-  font-size: 1em;
-  color: #eee;
-  line-height: 1.6em;
 }
 .flip12::before,
 .flip12::after {

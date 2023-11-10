@@ -112,10 +112,12 @@ padding: 20px;
   font-family: tahoma;
   justify-content: center;
 }
+
 .process-wrapper {
   margin: auto;
   max-width: 1080px;
 }
+
 #progress-bar-container {
   position: relative;
   width: 90%;
@@ -123,6 +125,7 @@ padding: 20px;
   height: 100px;
   margin-top: 100px;
 }
+
 #progress-bar-container ul {
   padding: 0;
   margin: 0;
@@ -133,6 +136,7 @@ padding: 20px;
   align-items: center;
   margin-bottom: 20px;
 }
+
 #progress-bar-container ul li {
   list-style: none;
   text-align: center;
@@ -142,6 +146,7 @@ padding: 20px;
   font-weight: 700;
   position: relative;
 }
+
 #progress-bar-container ul li:before {
   content: '';
   display: block;
@@ -155,14 +160,17 @@ padding: 20px;
   transform: translateX(-50%);
   z-index: 1;
 }
+
 #progress-bar-container ul li.active:before,
 #progress-bar-container ul li:hover:before {
-  background: deepskyblue;
+  background: rgb(236, 117, 14);
 }
+
 #progress-bar-container ul li.active span,
 #progress-bar-container ul li:hover span {
-  color: deepskyblue;
+  color: #000;
 }
+
 #progress-bar-container #line {
   width: 96%;
   position: relative;
@@ -174,28 +182,32 @@ padding: 20px;
   margin-bottom: 10px;
   overflow: hidden;
 }
+
 #progress-bar-container #line-process {
   content: '';
-  width: 3%;
+  width: 100%;
   height: 100%;
-  background: deepskyblue;
+  background: linear-gradient(to right, rgb(231, 231, 86),rgb(231, 231, 86),rgb(231, 231, 86), rgb(255, 132, 0), rgb(255, 132, 0), red); /* Puedes ajustar los colores según tus preferencias */
   position: absolute;
   z-index: 2;
   border-radius: 50px;
   transition: all ease 0.9s;
 }
+
 #progress-content-section {
   width: 90%;
   margin: auto;
-  background: #F3F3F3;
+  background: #f3f3f3;
   border-radius: 4px;
   text-align: center;
   position: relative;
 }
+
 .section-content {
   display: none;
   padding: 30px 40px;
 }
+
 .section-content.active {
   display: block;
 }
