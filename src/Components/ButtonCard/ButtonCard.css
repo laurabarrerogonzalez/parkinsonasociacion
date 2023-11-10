@@ -9,8 +9,8 @@ margin-top: 40px;
     width: 8em;
     font-family: Montserrat;
     height: 8em;
-    background: #AE47C2;
-    box-shadow: inset -25px -25px 0px #A73DBD, 10px 10px 10px rgba(0,0,0,0.2);
+    background: #c2a747;
+    box-shadow: inset -25px -25px 0px #bd9434, 10px 10px 10px rgba(0,0,0,0.2);
     overflow: hidden;
     border-radius: 50%;
     transition: .4s ease-in-out;
@@ -41,7 +41,7 @@ margin-top: 40px;
     transition: .4s ease-in-out;
   }
   .card1 .heading02:hover, .card2 .heading02:hover, .card3 .heading02:hover {
-    background: linear-gradient(to right, #fff 20%,orange 40%,yellow 60%, skyblue 80%, #FFE4F2 100%);
+    background: linear-gradient(to right, #fff 20%,orange 40%,yellow 60%, rgb(223, 178, 79) 80%, #FFE4F2 100%);
     background-size: 200% auto;
     -webkit-background-clip: text;
     background-clip: text;
@@ -70,7 +70,7 @@ margin-top: 40px;
     background-color: #171717;
     border-radius: 20px;
     box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 2px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -1px 0px inset;
-    background: linear-gradient(270deg, #CE68D9, #45C6DB, #45DB79);
+    background: linear-gradient(270deg, #d9ca68, #efc930, rgb(220, 192, 6));
     background-size: 800% 800%;
     -webkit-animation: AnimationName 3s ease infinite;
     -moz-animation: AnimationName 3s ease infinite;
