@@ -40,6 +40,17 @@ const Symptoms = () => {
       <h1>¿Qué es el Parkinson?</h1>
       </div>
 
+
+
+
+
+
+
+
+
+
+      
+
       <div >
         <p className="text-parkinson">La enfermedad de Parkinson es un Trastorno Neurodegenerativo que afecta al sistema nervioso central. <br></br>
           Es crónico y progresivo y se caracteriza por la falta de dopamina en el organismo, que es la sustancia necesaria para la realización de movimientos.

@@ -1,6 +1,4 @@
-
-
-.timeline {
+/* .timeline {
     display: flex;
     justify-content: space-between;
     padding: 20px;
@@ -17,31 +15,30 @@
     align-items: center;
     cursor: pointer;
     transition: background-color 0.3s;
-    background-color: white; /* Color de fondo predeterminado (blanco) */
+    background-color: white; 
   }
   
-  /* Estilo para la etapa 0 (verde) */
+  
   .timeline-item.stage-0:hover {
-    background-color: green; /* Cambia el color al verde cuando se hace hover */
+    background-color: green;
   }
   
-  /* Estilo para las etapas 1 y 2 (amarillo) */
+
   .timeline-item.stage-1:hover,
   .timeline-item.stage-2:hover {
-    background-color: rgb(231, 231, 86); /* Cambia el color al amarillo cuando se hace hover */
+    background-color: rgb(231, 231, 86);
   }
   
-  /* Estilo para las etapas 3 y 4 (naranja) */
   .timeline-item.stage-3:hover,
   .timeline-item.stage-4:hover {
-    background-color: orange; /* Cambia el color al naranja cuando se hace hover */
+    background-color: orange; 
   }
   
-  /* Estilo para la etapa 5 (rojo) */
+  
   .timeline-item.stage-5:hover {
-    background-color: red; /* Cambia el color al rojo cuando se hace hover */
+    background-color: red; 
   }
-  
+   */
   .description {
     margin-top: 20px;
     margin-left: 35%;
@@ -64,19 +61,13 @@ grid-template-rows: auto auto;
 width: 90%;
 margin: 0 auto;
 margin-top: 50px;
-/* background-color: aqua; */
 padding: 20px;
-/* border: 1px solid black; */
 }
 
   .box{
-    /* width: 150px;
-    height: 150px; */
-    border: 4px solid black;
     text-align: center;
-    /* line-height: 150px; */
-  
   }
+
 .b1{
     grid-column: 1/3;
     background-color: rgb(231, 231, 86);
@@ -110,6 +101,101 @@ padding: 20px;
 
 .li-state {
     padding: 15px;
-    text-align: left;  
-    
+    text-align: left;    
+}
+
+
+
+.bodys12 {
+  width: 100%;
+  height: 500px;
+  font-family: tahoma;
+  justify-content: center;
+}
+.process-wrapper {
+  margin: auto;
+  max-width: 1080px;
+}
+#progress-bar-container {
+  position: relative;
+  width: 90%;
+  margin: auto;
+  height: 100px;
+  margin-top: 100px;
+}
+#progress-bar-container ul {
+  padding: 0;
+  margin: 0;
+  position: relative;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+#progress-bar-container ul li {
+  list-style: none;
+  text-align: center;
+  color: #aaa;
+  text-transform: uppercase;
+  font-size: 11px;
+  font-weight: 700;
+  position: relative;
+}
+#progress-bar-container ul li:before {
+  content: '';
+  display: block;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: #aaa;
+  position: absolute;
+  top: -15px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 1;
+}
+#progress-bar-container ul li.active:before,
+#progress-bar-container ul li:hover:before {
+  background: deepskyblue;
+}
+#progress-bar-container ul li.active span,
+#progress-bar-container ul li:hover span {
+  color: deepskyblue;
+}
+#progress-bar-container #line {
+  width: 96%;
+  position: relative;
+  margin-top: -4.7%;
+  margin-left: 2%;
+  height: 4px;
+  background: #ccc;
+  border-radius: 2px;
+  margin-bottom: 10px;
+  overflow: hidden;
+}
+#progress-bar-container #line-process {
+  content: '';
+  width: 3%;
+  height: 100%;
+  background: deepskyblue;
+  position: absolute;
+  z-index: 2;
+  border-radius: 50px;
+  transition: all ease 0.9s;
+}
+#progress-content-section {
+  width: 90%;
+  margin: auto;
+  background: #F3F3F3;
+  border-radius: 4px;
+  text-align: center;
+  position: relative;
+}
+.section-content {
+  display: none;
+  padding: 30px 40px;
+}
+.section-content.active {
+  display: block;
 }
