@@ -9,7 +9,7 @@ const ButtonCard = () => {
           <div class="heading">
             Tratamiento <span>Farmacológico</span>
           </div>
-          <div class="content">
+          <div class="content-buton">
             <p className="text-buttoncard">
               {" "}
               Los medicamentos disponibles actualmente alivian los síntomas del
@@ -50,7 +50,7 @@ const ButtonCard = () => {
           <div class="heading">
             Tratamiento <span>Quirúrgico</span>
           </div>
-          <div class="content">
+          <div class="content-buton">
             <p className="text-buttoncard">
               {" "}
               El tratamiento quirúrgico de la Enfermedad de Parkinson se inició
@@ -91,7 +91,7 @@ const ButtonCard = () => {
           <div class="heading">
             Estimulación <span>Cerebral</span>
           </div>
-          <div class="content">
+          <div class="content-buton">
             <p className="text-buttoncard">
               La Terapia de Estimulación Cerebral Profunda (DBS) es un
               tratamiento quirúrgico que alivia los síntomas de la enfermedad de

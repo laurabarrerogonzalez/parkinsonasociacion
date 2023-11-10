@@ -17,7 +17,6 @@
 }
 
 
-
 .titlecard{
     display: flex;
     justify-content: space-around;
@@ -25,14 +24,12 @@
     font-size: 25px;
 }
 
-
 .cardmyth{
+  margin-top: 30px;
 display: flex;
 flex-wrap: wrap;
 justify-content: space-between;
 }
-
-
 
    .cardd {
     width: 20rem;
@@ -186,7 +183,7 @@ background-color: rgb(127, 204, 240);
   .back3{
     transform: rotateY(0.5turn);
     background-color: #ffae00;
-    background-image: url(https://res.cloudinary.com/dit2zhtwz/image/upload/v1699555017/Captura_de_pantalla_2023-11-09_193546-removebg-preview_pfmk5q.png);
+    background-image: url(https://res.cloudinary.com/dit2zhtwz/image/upload/v1699604228/Captura_de_pantalla_2023-11-10_091426-removebg-preview_hhufqh.png);
     background-repeat: no-repeat;
     background-size: contain;
   }
@@ -194,7 +191,7 @@ background-color: rgb(127, 204, 240);
   .back4{
     transform: rotateY(0.5turn);
     background-color: #ffae00;
-    background-image: url(https://res.cloudinary.com/dit2zhtwz/image/upload/v1699555017/Captura_de_pantalla_2023-11-09_193546-removebg-preview_pfmk5q.png);
+    background-image: url(https://res.cloudinary.com/dit2zhtwz/image/upload/v1699604431/Captura_de_pantalla_2023-11-10_091912-removebg-preview_jzrj2z.png);
     background-repeat: no-repeat;
     background-size: contain;
   }
@@ -202,7 +199,7 @@ background-color: rgb(127, 204, 240);
   .back5{
     transform: rotateY(0.5turn);
     background-color: #ffae00;
-    background-image: url(https://res.cloudinary.com/dit2zhtwz/image/upload/v1699555017/Captura_de_pantalla_2023-11-09_193546-removebg-preview_pfmk5q.png);
+    background-image: url(https://res.cloudinary.com/dit2zhtwz/image/upload/v1699604581/Captura_de_pantalla_2023-11-10_092204-removebg-preview_ceq9pt.png);
     background-repeat: no-repeat;
     background-size: contain;
   }
@@ -210,7 +207,7 @@ background-color: rgb(127, 204, 240);
   .back6{
     transform: rotateY(0.5turn);
     background-color: #ffae00;
-    background-image: url(https://res.cloudinary.com/dit2zhtwz/image/upload/v1699555017/Captura_de_pantalla_2023-11-09_193546-removebg-preview_pfmk5q.png);
+    background-image: url(https://res.cloudinary.com/dit2zhtwz/image/upload/v1699604796/Captura_de_pantalla_2023-11-10_092416-removebg-preview_uldugg.png);
     background-repeat: no-repeat;
     background-size: contain;
   }
@@ -218,7 +215,7 @@ background-color: rgb(127, 204, 240);
   .back7{
     transform: rotateY(0.5turn);
     background-color: #ffae00;
-    background-image: url(https://res.cloudinary.com/dit2zhtwz/image/upload/v1699555017/Captura_de_pantalla_2023-11-09_193546-removebg-preview_pfmk5q.png);
+    background-image: url(https://res.cloudinary.com/dit2zhtwz/image/upload/v1699604909/Captura_de_pantalla_2023-11-10_092727-removebg-preview_qrrhgp.png);
     background-repeat: no-repeat;
     background-size: contain;
   }
@@ -226,7 +223,7 @@ background-color: rgb(127, 204, 240);
   .back8{
     transform: rotateY(0.5turn);
     background-color: #ffae00;
-    background-image: url(https://res.cloudinary.com/dit2zhtwz/image/upload/v1699555017/Captura_de_pantalla_2023-11-09_193546-removebg-preview_pfmk5q.png);
+    background-image: url(https://res.cloudinary.com/dit2zhtwz/image/upload/v1699605209/Captura_de_pantalla_2023-11-10_093000-removebg-preview_cn7uol.png);
     background-repeat: no-repeat;
     background-size: contain;
   }
@@ -234,7 +231,7 @@ background-color: rgb(127, 204, 240);
   .back9{
     transform: rotateY(0.5turn);
     background-color: #ffae00;
-    background-image: url(https://res.cloudinary.com/dit2zhtwz/image/upload/v1699555017/Captura_de_pantalla_2023-11-09_193546-removebg-preview_pfmk5q.png);
+    background-image: url(https://res.cloudinary.com/dit2zhtwz/image/upload/v1699605402/Captura_de_pantalla_2023-11-10_093443-removebg-preview_e060r4.png);
     background-repeat: no-repeat;
     background-size: contain;
   }
@@ -242,7 +239,7 @@ background-color: rgb(127, 204, 240);
   .back10{
     transform: rotateY(0.5turn);
     background-color: #ffae00;
-    background-image: url(https://res.cloudinary.com/dit2zhtwz/image/upload/v1699555017/Captura_de_pantalla_2023-11-09_193546-removebg-preview_pfmk5q.png);
+    background-image: url(https://res.cloudinary.com/dit2zhtwz/image/upload/v1699606057/Captura_de_pantalla_2023-11-10_094625-removebg-preview_lr2a9p.png);
     background-repeat: no-repeat;
     background-size: contain;
   }
@@ -250,7 +247,7 @@ background-color: rgb(127, 204, 240);
   .back11{
     transform: rotateY(0.5turn);
     background-color: #ffae00;
-    background-image: url(https://res.cloudinary.com/dit2zhtwz/image/upload/v1699555017/Captura_de_pantalla_2023-11-09_193546-removebg-preview_pfmk5q.png);
+    background-image: url(https://res.cloudinary.com/dit2zhtwz/image/upload/v1699606295/Captura_de_pantalla_2023-11-10_094916-removebg-preview_bmhtub.png);
     background-repeat: no-repeat;
     background-size: contain;
   }
@@ -258,13 +255,14 @@ background-color: rgb(127, 204, 240);
   .back12{
     transform: rotateY(0.5turn);
     background-color: #ffae00;
-    background-image: url(https://res.cloudinary.com/dit2zhtwz/image/upload/v1699555017/Captura_de_pantalla_2023-11-09_193546-removebg-preview_pfmk5q.png);
+    background-image: url(https://res.cloudinary.com/dit2zhtwz/image/upload/v1699606413/Captura_de_pantalla_2023-11-10_095234-removebg-preview_l4kwfz.png);
     background-repeat: no-repeat;
     background-size: contain;
   }
   
   .description {
-    margin-left: 100px;
+    /* margin-left: 100px; */
+    text-align: end;
     margin-top: -1px;
     /* margin-left: -30px; */
     transform: translateZ(3rem);
