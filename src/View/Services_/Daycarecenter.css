@@ -52,7 +52,7 @@
     color: #033239; 
   }
 
-  .image-container {
+  .image-containerCD {
     display: flex;
     flex-direction: column; 
     align-items: center; 
@@ -60,7 +60,7 @@
 
   }
   
-  .activity-image {
+  .activity-imageCD1 {
 
     position: absolute;
     top:900px;
@@ -74,7 +74,7 @@
     border-style:groove;
   }
   
-  .activity-image1 {
+  .activity-imageCD2 {
     position: absolute;
     top:900px;
     border-radius:100%;
@@ -87,7 +87,7 @@
     object-fit:cover;
   }
 
-  .activity-image2{
+  .activity-imageCD3{
     position: absolute;
     top:900px;
     border-radius:100%;
@@ -100,7 +100,7 @@
     object-fit:cover;
   }
 
-  .activity-image3{
+  .activity-imageCD4{
     position: absolute;
     top:900px;
     border-radius:100%;
@@ -151,7 +151,7 @@
 
   }
 
-  .activity-image4 {
+  .activity-imageCD5 {
 
     position: absolute;
     top:1250px;
@@ -165,7 +165,7 @@
     border-style:groove;
   }
   
-  .activity-image5 {
+  .activity-imageCD6 {
     position: absolute;
     top:1250px;
     border-radius:100%;
@@ -178,7 +178,7 @@
     object-fit:cover;
   }
 
-  .activity-image6{
+  .activity-imageCD7{
     position: absolute;
     top:1250px;
     border-radius:100%;
@@ -191,7 +191,7 @@
     object-fit:cover;
   }
 
-  .activity-image7{
+  .activity-imageCD8{
     position: absolute;
     top:1250px;
     border-radius:100%;
@@ -204,14 +204,14 @@
     object-fit:cover;
   }
 
-.activity-image:hover,
-.activity-image1:hover,
-.activity-image2:hover,
-.activity-image3:hover,
-.activity-image4:hover,
-.activity-image5:hover,
-.activity-image6:hover,
-.activity-image7:hover {
+.activity-imageCD1:hover,
+.activity-imageCD2:hover,
+.activity-imageCD3:hover,
+.activity-imageCD4:hover,
+.activity-imageCD5:hover,
+.activity-imageCD6:hover,
+.activity-imageCD7:hover,
+.activity-imageCD8:hover {
   transform: scale(1.1);
   transition: transform 0.3s;
 }
@@ -231,7 +231,7 @@
       height: 15vw; /* Alto en unidades de viewport */
     }
 
-      .image-container {
+      .image-containerCD {
         flex-direction: column;
         position:fixed; 
   }}
