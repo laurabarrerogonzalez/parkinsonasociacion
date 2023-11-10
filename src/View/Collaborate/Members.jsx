@@ -158,9 +158,6 @@ const Members = () => {
       </div>
       <form className="form12">
         <p className="title12">Solicitud Socio</p>
-        <p className="message13">
-          Ayudar es un regalo que se da con el corazón.
-        </p>
         <div className="flex14">
           <input
             type="text"
