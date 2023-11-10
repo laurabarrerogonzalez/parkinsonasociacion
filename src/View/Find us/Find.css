@@ -187,8 +187,9 @@ transform: rotate(-90deg);
   background: #E26890;
   padding: 10px;
   position: relative;
+  margin-bottom:400px;
   width: 50%; /* Ocupará el ancho completo en pantallas pequeñas */
-  padding-right: 80px;
+ 
 }
 
 .lower-left-side {
