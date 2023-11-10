@@ -6,6 +6,9 @@ import BannerViews from "../../Components/BannerViews/BannerViews";
 import Footer from "../../Components/Footer/Footer";
 import ButtonDonate from "../../Components/ButtonDonate/ButtonDonate";
 import ScrollArrow from "../../Components/ScrollArrow/ScrollArrow";
+import Information from "../../Components/Information/Information";
+import CalendarComponent from "../../Components/Calendar/Calendar";
+
 
 const Find = () => {
   return (
@@ -17,8 +20,15 @@ const Find = () => {
           title="¿DÓNDE TRABAJAMOS?"
         />
       </div>
-      
-
+      <div style={{ display: 'flex' }}>
+        <div style={{ flex: '0 0 50%', paddingRight: '20px' }}>
+          <Mapa />
+        </div>
+        <div style={{ flex: '1' }}>
+          <Information />
+        </div>
+      </div>
+      <CalendarComponent />
       <div className="social-band">
         <div className="left-side">
           <h2>Síguenos en redes sociales</h2>
@@ -63,13 +73,11 @@ const Find = () => {
         </div>
         <div className="lower-triangle"></div>
       </div>
-     
       <Footer />
+      <ButtonDonate />
+      <ScrollArrow />
     </>
-  );
-};
-
-
-
+  )
+}
 
 export default Find;
