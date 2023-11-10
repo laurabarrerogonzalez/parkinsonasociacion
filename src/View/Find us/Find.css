@@ -204,7 +204,7 @@ transform: rotate(-90deg);
   position: absolute;
   left: 50%;
   transform: translateX(-50%); /* Centra el triángulo horizontalmente */
-  bottom: -2rem; /* Ajusta la posición del triángulo */
+  bottom: -2.2rem; /* Ajusta la posición del triángulo */
 }
 
 .lower-title {
