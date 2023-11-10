@@ -36,7 +36,7 @@ const Home = () => {
       <Navbar />
       <Banner
         image="https://res.cloudinary.com/dp7lr71t8/image/upload/v1699219864/zyro-image_wkxrbc.png"
-        title="VIVIENDO CON PASIÓN"
+        title="Viviendo con pasión"
         text="Trazando juntos un camino de superación: Acompañando la lucha contra el Parkinson con determinación y esperanza."
       />
 

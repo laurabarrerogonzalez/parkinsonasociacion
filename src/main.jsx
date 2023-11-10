@@ -2,6 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import './index.css';
+import Navbar from './Components/Navbar/Navbar';
 import Aboutus from './View/About us/Aboutus';
 import Home from './View/Home/Home';
 import Symptoms from './View/Parkinson/Symptoms';
@@ -23,10 +24,12 @@ import Find from './View/Find us/Find';
 import '../src/View/Parkinson/Myths.css';
 import Navbar from './Components/Navbar/Navbar';
 
+
 ReactDOM.createRoot(document.getElementById('root')).render(
   <Router>
     <Navbar />
     <React.StrictMode>
+    <Navbar />
       <Routes>
         <Route path="/" element={<Home />} /> 
         <Route path="/aboutus" element={<Aboutus />} />

@@ -77,33 +77,40 @@ const Aboutus = () => {
                 </div>
             </section>
 
+            <hr className='line_home' />
+
+        
+        <section className="title_workers_cards">
+         <h1>Especialistas</h1>   
+        </section>
+
             <section className="section_workers" >
                 <div className="card_worker" id="card1">
                     <div className="section_img_worker">
-                        <img className="img_worker" src="https://res.cloudinary.com/dp7lr71t8/image/upload/v1698965836/descarga_2_nltw4k.jpg" alt="" />
+                        <img className="img_worker"  src="https://res.cloudinary.com/dp7lr71t8/image/upload/v1699532004/PEDRO_FISIOTERAPEUTA-removebg-preview_gmstaa.png" alt="" />
                         <div class="triangle"></div>
                     </div>
                     <div className="section_content_worker">
                         <p>"En cada paso que damos juntos, encontramos la fuerza para superar los desafíos del Parkinson.
                             ¡Sigamos avanzando con determinación y esperanza!"</p>
 
-                        <p className="name_worker">Paloma ruiz</p>
-                        <p className="name_worker_two">(Encargada Centro de día)</p>
+                        <p className="name_worker">Pedro</p>
+                        <p className="name_worker_two">Fisioterapeuta</p>
 
                     </div>
 
                 </div>
                 <div className="card_worker" id="card2">
                     <div className="section_img_worker" >
-                        <img className="img_worker" src="https://res.cloudinary.com/dp7lr71t8/image/upload/v1698965749/Angel_zwozbd.png" alt="" />
+                        <img className="img_worker" src="https://res.cloudinary.com/dp7lr71t8/image/upload/v1699532444/Foto_de_Noelia__-removebg-preview_zkhy9k.png" alt="" />
                         <div class="triangle" id="triangle2"></div>
                     </div>
                     <div className="section_content_worker">
                         <p>"Nuestro compromiso es más fuerte que cualquier temblor.
                             ¡Trabajemos unidos, inspirando coraje y alegría en cada momento!"</p>
 
-                        <p className="name_worker">Angel Serrano</p>
-                        <p className="name_worker_two">(Encargado de rehabilitación)</p>
+                        <p className="name_worker">Noelia</p>
+                        <p className="name_worker_two">(Encargada de rehabilitación)</p>
 
                     </div>
                 </div>
@@ -112,12 +119,12 @@ const Aboutus = () => {
                         <p>"En esta asociación, la perseverancia es nuestra bandera. Recordemos siempre: cada logro, grande o pequeño,
                             es una victoria en la batalla contra el Parkinson."</p>
 
-                        <p className="name_worker">Celia García</p>
-                        <p className="name_worker_two">(Encargada de estimulación)</p>
+                        <p className="name_worker">Cristina</p>
+                        <p className="name_worker_two">(Logopeda - Servicios rehabilitación)</p>
 
                     </div>
                     <div className="section_img_worker">
-                        <img className="img_worker" src="https://res.cloudinary.com/dp7lr71t8/image/upload/v1698965750/celia_gknqcr.png" alt="" />
+                        <img className="img_worker" src="https://res.cloudinary.com/dp7lr71t8/image/upload/v1699531762/CRISTINA_LOGOPEDA_SERVICIO_REHABILITACION_ltcpwi.jpg" alt="" />
                         <div class="triangle" id="triangle3"></div>
                     </div>
 
@@ -129,12 +136,12 @@ const Aboutus = () => {
                         <p>"Con cada sonrisa que compartimos, iluminamos el camino hacia la superación. Juntos,
                             creamos un espacio de apoyo, empatía y fortaleza para vencer al Parkinson."</p>
 
-                        <p className="name_worker">Marcos Chotsourian</p>
-                        <p className="name_worker_two">(Encargado ayuda a domicilio)</p>
+                        <p className="name_worker">Isabel</p>
+                        <p className="name_worker_two">(Cuidadora Centro día)</p>
 
                     </div>
                     <div className="section_img_worker">
-                        <img className="img_worker" src="https://res.cloudinary.com/dp7lr71t8/image/upload/v1698965857/1696600529245_2_cdnn1v.jpg" alt="" />
+                        <img className="img_worker" src="https://res.cloudinary.com/dp7lr71t8/image/upload/v1699531762/M_ISABEL_CUIDADORA_CENTRO_DE_DIA_ziykmz.jpg" alt="" />
                         <div class="triangle" id="triangle4"></div>
                     </div>
 
