@@ -77,6 +77,8 @@ const Aboutus = () => {
                 </div>
             </section>
 
+            <hr className='line_home' />
+
         
         <section className="title_workers_cards">
          <h1>Especialistas</h1>   
