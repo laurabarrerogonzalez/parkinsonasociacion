@@ -2,7 +2,10 @@ import React, { useState } from "react";
 import Navbar from "../../Components/Navbar/Navbar";
 import Footer from "../../Components/Footer/Footer";
 import BannerViews from "../../Components/BannerViews/BannerViews";
-import "./Evolution.css"; // Importa tu archivo CSS aquí
+import "./Evolution.css"; 
+import ButtonCard from "../../Components/ButtonCard/ButtonCard";
+import '../Parkinson/Symptoms.css';
+
 
 const Evolution = () => {
   const [stageDescription, setStageDescription] = useState("");
@@ -25,15 +28,96 @@ const Evolution = () => {
     setStageDescription("");
   };
 
+
+
+  const [currentStep, setCurrentStep] = useState(1);
+  const handleStepClick = (step) => {
+    setCurrentStep(step);
+  };
+
   return (
     <>
       <div>
         <Navbar />
         <BannerViews
-          image="https://res.cloudinary.com/dit2zhtwz/image/upload/v1699193991/istockphoto-532484805-612x612_l9xgr1.jpg"
+          image="https://res.cloudinary.com/dit2zhtwz/image/upload/v1699431863/e96e5008-5541-4c4c-b02c-140d8e7a1183_myzg2w.jpg"
           title="Evolución y Tratamiento"
         />
       </div>
+
+
+      <div className="what">
+      <div className="title-parkinson">
+      <h1>Evolución</h1>
+      </div>
+      </div>
+
+
+      <div className="bodys12">
+      <div className="process-wrapper">
+        <div id="progress-bar-container">
+          <ul>
+            <li className={`step step01 ${currentStep === 1 ? 'active' : ''}`} onClick={() => handleStepClick(1)}>
+              <span>Step 1</span>
+            </li>
+            <li className={`step step02 ${currentStep === 2 ? 'active' : ''}`} onClick={() => handleStepClick(2)}>
+              <span>Step 2</span>
+            </li>
+            <li className={`step step03 ${currentStep === 3 ? 'active' : ''}`} onClick={() => handleStepClick(3)}>
+              <span>Step 3</span>
+            </li>
+            <li className={`step step04 ${currentStep === 4 ? 'active' : ''}`} onClick={() => handleStepClick(4)}>
+              <span>Step 4</span>
+            </li>
+            <li className={`step step05 ${currentStep === 5 ? 'active' : ''}`} onClick={() => handleStepClick(5)}>
+              <span>Step 5</span>
+            </li>
+          </ul>
+          <div id="line">
+            <div id="line-process" style={{ width: `${(currentStep - 1) * 25}%` }}></div>
+          </div>
+        </div>
+        <div id="progress-content-section">
+          <div className={`section-content discovery ${currentStep === 1 ? 'active' : ''}`}>
+            <h2>Section 1</h2>
+            <p>Text for section 1</p>
+          </div>
+          <div className={`section-content strategy ${currentStep === 2 ? 'active' : ''}`}>
+            <h2>Section 2</h2>
+            <p>Text for section 2</p>
+          </div>
+          <div className={`section-content creative ${currentStep === 3 ? 'active' : ''}`}>
+            <h2>Section 3</h2>
+            <p>Text for section 3</p>
+          </div>
+          <div className={`section-content production ${currentStep === 4 ? 'active' : ''}`}>
+            <h2>Section 4</h2>
+            <p>Text for section 4</p>
+          </div>
+          <div className={`section-content analysis ${currentStep === 5 ? 'active' : ''}`}>
+            <h2>Section 5</h2>
+            <p>Text for section 5</p>
+          </div>
+        </div>
+      </div>
+      </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
       <div className="background-evolution">
         <div className="timeline">
@@ -127,6 +211,17 @@ const Evolution = () => {
           </div>
         </div>
       </div>
+
+      <div className="what">
+      <div className="title-parkinson">
+      <h1>Tratamientos</h1>
+      </div>
+      </div>
+
+<ButtonCard/>
+
+
+
 
       <Footer />
     </>
