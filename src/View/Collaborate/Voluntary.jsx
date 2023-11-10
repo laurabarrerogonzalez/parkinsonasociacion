@@ -8,7 +8,6 @@ import ScrollArrow from "../../Components/ScrollArrow/ScrollArrow";
 import BannerViews from "../../Components/BannerViews/BannerViews";
 
 const Voluntary = () => {
-
   const customColor = "rgb(236, 117, 14)";
 
   const handleEnviarClick = () => {
@@ -29,12 +28,12 @@ const Voluntary = () => {
             title: "Enviado",
             text: "La información ha sido enviada.",
             icon: "success",
-            confirmButtonColor: customColor, // Configurar el color del botón OK
+            confirmButtonColor: customColor, 
           });
         }
       });
   };
-  
+
   return (
     <>
       <div className="photos">
@@ -70,56 +69,115 @@ const Voluntary = () => {
         </div>
       </div>
       <form className="form11">
-    <p className="title12">Solicitud Voluntariado</p>
-    <p className="message13">
-      Ayudar es un regalo que se da con el corazón.
-    </p>
-    <div className="flex14">
-      <input type="text" autoComplete="off" name="text" className="input14" placeholder="Nombre y apellidos" />
-      <input type="text" autoComplete="off" name="text" className="input14" placeholder="DNI" />
-      <input type="text" autoComplete="off" name="text" className="input14" placeholder="Fecha de naciomiento" />
-      <input type="text" autoComplete="off" name="text" className="input14" placeholder="Domicilio" />
-      <input type="text" autoComplete="off" name="text" className="input14" placeholder="Telefono" />
-      <input type="text" autoComplete="off" name="text" className="input14" placeholder="Email" />
-       <input type="text" autoComplete="off" name="text" className="input14" placeholder="Formación" />
-      <div className="radio-inputs">
-        <label>
-          <input className="radio-input" type="radio" name="engine" />
-          <span className="radio-tile">
-            <span className="radio-icon"><img className="iconos1"
-              src="https://res.cloudinary.com/da7ffijqs/image/upload/v1699523977/_63c2f168-6681-4203-a864-def47b6c13e9-modified_gml1c5.png"
-            /></span>
-            <span className="radio-label">Mañanas
-            </span>
-          </span>
-        </label>
-        <label>
-          <input className="radio-input" type="radio" name="engine" defaultChecked />
-          <span className="radio-tile">
-            <span className="radio-icon"><img className="iconos2"
-              src="https://res.cloudinary.com/da7ffijqs/image/upload/v1699523003/_9eb70b3d-1fe2-4adf-a18a-86aa53ea5e6f-removebg-preview_mh6cyo.png"
-            /></span>
-            <span className="radio-label">Tardes</span>
-          </span>
-        </label>
-        <label>
-          <input className="radio-input" type="radio" name="engine" />
-          <span className="radio-tile">
-            <span className="radio-icon"><img className="iconos3"
-              src="https://res.cloudinary.com/da7ffijqs/image/upload/v1699526592/_20e53d9a-7260-4834-81d4-949bc5d96d25-modified_f7l2s1.png"
-            /></span>
-            <span className="radio-label">Fin de Semana</span>
-          </span>
-        </label>
-      </div>
-      <label className="container40">
-        <input defaultChecked type="checkbox" />
-        <div className="checkmark"></div>
-        <div className="Terminos"><p>Acepto las Conciciones y la Politica de privacidad</p></div>
-      </label>
-    </div>
-    <button onClick={handleEnviarClick} className="bn01" type="button">Enviar!</button>
-  </form>
+        <p className="title12">Solicitud Voluntariado</p>
+        <p className="message13">
+          Ayudar es un regalo que se da con el corazón.
+        </p>
+        <div className="flex14">
+          <input
+            type="text"
+            autoComplete="off"
+            name="text"
+            className="input14"
+            placeholder="Nombre y apellidos"
+          />
+          <input
+            type="text"
+            autoComplete="off"
+            name="text"
+            className="input14"
+            placeholder="DNI"
+          />
+          <input
+            type="text"
+            autoComplete="off"
+            name="text"
+            className="input14"
+            placeholder="Fecha de naciomiento"
+          />
+          <input
+            type="text"
+            autoComplete="off"
+            name="text"
+            className="input14"
+            placeholder="Domicilio"
+          />
+          <input
+            type="text"
+            autoComplete="off"
+            name="text"
+            className="input14"
+            placeholder="Telefono"
+          />
+          <input
+            type="text"
+            autoComplete="off"
+            name="text"
+            className="input14"
+            placeholder="Email"
+          />
+          <input
+            type="text"
+            autoComplete="off"
+            name="text"
+            className="input14"
+            placeholder="Formación"
+          />
+          <div className="radio-inputs">
+            <label>
+              <input className="radio-input" type="radio" name="engine" />
+              <span className="radio-tile">
+                <span className="radio-icon">
+                  <img
+                    className="iconos1"
+                    src="https://res.cloudinary.com/da7ffijqs/image/upload/v1699523977/_63c2f168-6681-4203-a864-def47b6c13e9-modified_gml1c5.png"
+                  />
+                </span>
+                <span className="radio-label">Mañanas</span>
+              </span>
+            </label>
+            <label>
+              <input
+                className="radio-input"
+                type="radio"
+                name="engine"
+                defaultChecked
+              />
+              <span className="radio-tile">
+                <span className="radio-icon">
+                  <img
+                    className="iconos2"
+                    src="https://res.cloudinary.com/da7ffijqs/image/upload/v1699523003/_9eb70b3d-1fe2-4adf-a18a-86aa53ea5e6f-removebg-preview_mh6cyo.png"
+                  />
+                </span>
+                <span className="radio-label">Tardes</span>
+              </span>
+            </label>
+            <label>
+              <input className="radio-input" type="radio" name="engine" />
+              <span className="radio-tile">
+                <span className="radio-icon">
+                  <img
+                    className="iconos3"
+                    src="https://res.cloudinary.com/da7ffijqs/image/upload/v1699526592/_20e53d9a-7260-4834-81d4-949bc5d96d25-modified_f7l2s1.png"
+                  />
+                </span>
+                <span className="radio-label">Fin de Semana</span>
+              </span>
+            </label>
+          </div>
+          <label className="container40">
+            <input defaultChecked type="checkbox" />
+            <div className="checkmark"></div>
+            <div className="Terminos">
+              <p>Acepto las Conciciones y la Politica de privacidad</p>
+            </div>
+          </label>
+        </div>
+        <button onClick={handleEnviarClick} className="bn01" type="button">
+          Enviar!
+        </button>
+      </form>
       <Footer />
       <ButtonDonate />
       <ScrollArrow />
