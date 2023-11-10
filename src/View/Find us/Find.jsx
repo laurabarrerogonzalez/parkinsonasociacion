@@ -4,10 +4,14 @@ import Navbar from "../../Components/Navbar/Navbar";
 import BannerViews from "../../Components/BannerViews/BannerViews";
 import Footer from '../../Components/Footer/Footer';
 
-  
+
+
+
 
 const Find = () => {
   return (
+
+
     <>
       <div>
         <Navbar />
@@ -16,6 +20,7 @@ const Find = () => {
           title="¿DÓNDE TRABAJAMOS?"
         />
       </div>
+      
 
       <div className="social-band">
         <div className="left-side">
@@ -43,7 +48,7 @@ const Find = () => {
         </div>
         <div className="lower-triangle"></div>
       </div>
-
+     
       <Footer />
     </>
   );
