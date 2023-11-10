@@ -7,18 +7,21 @@ import Footer from "../../Components/Footer/Footer";
 import ButtonDonate from "../../Components/ButtonDonate/ButtonDonate";
 import ScrollArrow from "../../Components/ScrollArrow/ScrollArrow";
 
-
-  
 const Find = () => {
-    
-    return(
-        <>
-        <Navbar/>
+  return (
+
+
+    <>
+      <div>
+        <Navbar />
         <BannerViews
           image="https://res.cloudinary.com/doft9ylq1/image/upload/v1698914683/pareja-blanca-wanderlust_1_njqb3r.jpg"
-          title="DÓNDE NOS ENCONTRAMOS"/>
-        <Mapa/> 
-        <div className="social-band">
+          title="¿DÓNDE TRABAJAMOS?"
+        />
+      </div>
+      
+
+      <div className="social-band">
         <div className="left-side">
           <h2>Síguenos en redes sociales</h2>
         </div>
@@ -62,10 +65,13 @@ const Find = () => {
         </div>
         <div className="lower-triangle"></div>
       </div>
-        <Footer/>
-        <ButtonDonate/>
-        <ScrollArrow/>
-        </>
-    )}
-    
+     
+      <Footer />
+    </>
+  );
+};
+
+
+
+
 export default Find;

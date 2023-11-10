@@ -25,6 +25,8 @@ import '../src/View/Parkinson/Myths.css';
 import Navbar from './Components/Navbar/Navbar';
 
 
+
+
 ReactDOM.createRoot(document.getElementById('root')).render(
   <Router>
     <Navbar />

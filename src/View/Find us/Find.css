@@ -114,6 +114,12 @@ transform: rotate(-90deg);
     align-items: center; }
   
 } */
+----------calendar--------------
+
+
+
+
+
 .textQ {
   font-family: "Times New Roman", Times, serif;
   text-align: center;
@@ -182,6 +188,7 @@ transform: rotate(-90deg);
   padding: 10px;
   position: relative;
   width: 50%; /* Ocupará el ancho completo en pantallas pequeñas */
+  padding-right: 80px;
 }
 
 .lower-left-side {
