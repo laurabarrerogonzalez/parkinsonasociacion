@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from 'react';
 import Navbar from "../../Components/Navbar/Navbar";
 import BannerViews from "../../Components/BannerViews/BannerViews";
 import "../Services_/Revitalization.css"
@@ -10,6 +10,11 @@ import ScrollArrow from "../../Components/ScrollArrow/ScrollArrow";
 
 
 const Revitalization = () => {
+
+    useEffect(() => {
+        // Hacer scroll al principio de la página cuando el componente se monta
+        window.scrollTo(0, 0);
+      }, []);
 
     return (
 

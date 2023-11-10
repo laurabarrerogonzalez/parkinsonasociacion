@@ -1,11 +1,17 @@
-import React from "react";
+import React, { useEffect } from 'react';
 import Navbar from "../../Components/Navbar/Navbar";
 import"../Services_/Daycarecenter.css";
 // import "../Services/Daycarecenter.css";
 import BannerViews from "../../Components/BannerViews/BannerViews";
 import Footer from '../../Components/Footer/Footer';
+
   
 const Daycarecenter = () => {
+
+  useEffect(() => {
+    // Hacer scroll al principio de la página cuando el componente se monta
+    window.scrollTo(0, 0);
+  }, []);
     
     return(
         <>

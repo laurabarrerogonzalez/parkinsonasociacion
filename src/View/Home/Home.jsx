@@ -1,5 +1,6 @@
 import React, { useEffect } from 'react';
 import "../Home/Home.css"
+import { Link } from 'react-router-dom';
 import Banner from '../../Components/Banner/Banner';
 import Navbar from '../../Components/Navbar/Navbar';
 import Footer from '../../Components/Footer/Footer';
@@ -37,7 +38,8 @@ const Home = () => {
       <Banner
         image="https://res.cloudinary.com/dp7lr71t8/image/upload/v1699219864/zyro-image_wkxrbc.png"
         title="Viviendo con pasión"
-        text="Trazando juntos un camino de superación: Acompañando la lucha contra el Parkinson con determinación y esperanza."
+        text="Trazando juntos un camino de superación: 
+        Acompañando la lucha contra el Parkinson y otras enfermedades Neurodegenerativas."
       />
 
       <section className='section_title'>
@@ -69,9 +71,9 @@ const Home = () => {
             y atiendan de un modo integral sus necesidades específicas. Las mismas
             se cubren desde un enfoque biopsicosocial con servicios de asesoramiento,
             rehabilitación, orientación para la promoción de la autonomía.</p>
-          <button class="btn">
-            Leer más
-          </button>
+            <Link to="/daycarecenter" className="btn">
+          Leer más
+        </Link>
         </div>
         <div className='services_info'>
           <h1>Rehabilitación Integral</h1> <br />
@@ -83,9 +85,9 @@ const Home = () => {
             , así como atención personalizada. Nuestro objetivo es facilitar un plan
             de atención integral para su recuperación.</p>
 
-          <button class="btn">
-            Leer más
-          </button>
+            <Link to="/revitalization" className="btn">
+          Leer más
+        </Link>
         </div>
         <div className='services_info'>
           <img src="https://res.cloudinary.com/dp7lr71t8/image/upload/v1699190201/IMG_1755_rqep6u.jpg" alt="" />
@@ -102,9 +104,9 @@ const Home = () => {
             atención personalizada que promueve el desarrollo y el mantenimiento de las
             capacidades cognitivas. A través de técnicas especializadas, trabajamos para
             fomentar el bienestar y la autonomía cognitiva de nuestros usuarios.</p>
-          <button class="btn">
-            Leer más
-          </button>
+            <Link to="/stimulation" className="btn">
+          Leer más
+        </Link>
         </div>
 
         <div className='services_info'>
@@ -118,9 +120,9 @@ const Home = () => {
             garantizando la comodidad y el bienestar de quienes necesitan asistencia
             en su hogar.</p>
 
-          <button class="btn">
-            Leer más
-          </button>
+            <Link to="/help" className="btn">
+          Leer más
+        </Link>
         </div>
         <div className='services_info'>
           <img src="https://res.cloudinary.com/dp7lr71t8/image/upload/v1698787489/istockphoto-1430601013-612x612_qte2gh.jpg" alt="" />
