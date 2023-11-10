@@ -4,9 +4,9 @@ import "../../Components/ButtonCard/ButtonCard.css";
 const ButtonCard = () => {
   return (
     <>
-      <div className="buttoncard">
+      <div className="buttoncard14">
         <div class="card1">
-          <div class="heading">
+          <div class="heading02">
             Tratamiento <span>Farmacológico</span>
           </div>
           <div class="content-buton">
@@ -47,7 +47,7 @@ const ButtonCard = () => {
           </div>
         </div>
         <div class="card2">
-          <div class="heading">
+          <div class="heading02">
             Tratamiento <span>Quirúrgico</span>
           </div>
           <div class="content-buton">
@@ -88,7 +88,7 @@ const ButtonCard = () => {
           </div>
         </div>
         <div class="card3">
-          <div class="heading">
+          <div class="heading02">
             Estimulación <span>Cerebral</span>
           </div>
           <div class="content-buton">

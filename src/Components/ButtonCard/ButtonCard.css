@@ -1,4 +1,4 @@
-.buttoncard{
+.buttoncard14{
 display: flex;
 justify-content: space-around;
 margin-top: 40px;
@@ -33,14 +33,14 @@ margin-top: 40px;
   .card3:before {
     content: "Estimulación Cerebral";
   }
-  .card1 .heading, .card2 .heading,  .card3 .heading {
+  .card1 .heading02, .card2 .heading02,  .card3 .heading02 {
     opacity: 0;
     transition: .1s ease-in-out;
   }
-  .card1 .heading span, .card2 .heading span, .card3 .heading span {
+  .card1 .heading02 span, .card2 .heading02 span, .card3 .heading02 span {
     transition: .4s ease-in-out;
   }
-  .card1 .heading:hover, .card2 .heading:hover, .card3 .heading:hover {
+  .card1 .heading02:hover, .card2 .heading02:hover, .card3 .heading02:hover {
     background: linear-gradient(to right, #fff 20%,orange 40%,yellow 60%, skyblue 80%, #FFE4F2 100%);
     background-size: 200% auto;
     -webkit-background-clip: text;
@@ -55,7 +55,7 @@ margin-top: 40px;
       background-position: 200% center;
     }
   }
-  .card1 .content, .card2 .content, .card3 .content {
+  .card1 .content-buton, .card2 .content-buton, .card3 .content-buton {
     opacity: 0;
     transition: .1s ease-in-out;
   }
@@ -77,18 +77,18 @@ margin-top: 40px;
     animation: AnimationName 3s ease infinite;
     transition: .4s ease-in-out;
   }
-  .card1:hover .heading, .card2:hover .heading, .card3:hover .heading {
+  .card1:hover .heading02, .card2:hover .heading02, .card3:hover .heading02 {
     opacity: 1;
     transition: .8s ease-in-out;
   }
-  .card1:hover .content, .card2:hover .content, .card3:hover .content {
+  .card1:hover .content-buton, .card2:hover .content-buton, .card3:hover .content-buton  {
     opacity: 1;
     transition: .8s ease-in-out;
   }
   .card1:hover::before, .card2:hover::before, .card3:hover::before {
     opacity: 0;
   }
-  .heading {
+  .heading02 {
     display: flex;
     flex-direction: column;
     color: white;
