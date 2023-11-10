@@ -4,7 +4,7 @@ import './Information.css';
 const Information = () => {
     return (
         <div className="container">
-            <div className="card card1">
+            <div className="card cardbadajoz">
                 <div className="image-container">
                     <img src="https://res.cloudinary.com/duwenv0yr/image/upload/v1699529346/Badajoz_uougel.jpg" alt="Badajoz" />
                 </div>
@@ -14,7 +14,7 @@ const Information = () => {
                     06011 - Badajoz</p>
                 </div>
             </div>
-            <div className="card card2">
+            <div className="card cardcaceres">
             <div className="image-container">
                     <img src="https://res.cloudinary.com/duwenv0yr/image/upload/v1699529346/Caceres_gq4sxu.jpg" alt="Cáceres" />
                 </div>
@@ -24,7 +24,7 @@ const Information = () => {
                     10002 - Cáceres</p>
                 </div>
             </div>
-            <div className="card card3">
+            <div className="card cardmontijo">
             <div className="image-container">
                     <img src="https://res.cloudinary.com/duwenv0yr/image/upload/v1699529345/Montijo_akt4yh.jpg" alt="Montijo" />
                 </div>
@@ -35,7 +35,7 @@ const Information = () => {
                     06480 - Montijo (Badajoz)</p>
                 </div>
             </div>
-            <div className="card card4">
+            {/* <div className="card card4">
             <div className="image-container">
                     <img src="https://res.cloudinary.com/duwenv0yr/image/upload/v1699529346/Plasencia_w71bzo.jpg" alt="Plasencia" />
                 </div>
@@ -44,8 +44,8 @@ const Information = () => {
                     <p className="card__description">Calle Fernando Calvo, 2 <br/>
                     10600 - Plasencia (Cáceres)</p>
                 </div>
-            </div>
-            <div className="card card5">
+            </div> */}
+            <div className="card cardmerida">
             <div className="image-container">
                     <img src="https://res.cloudinary.com/duwenv0yr/image/upload/v1699529346/M%C3%A9rida_lkgskb.jpg" alt="Mérida" />
                 </div>

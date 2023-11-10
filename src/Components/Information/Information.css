@@ -23,23 +23,23 @@
   }
   
   
-  .card1 {
+  .cardbadajoz {
     order: 1;
   }
   
-  .card2 {
+  .cardcaceres {
     order: 2;
   }
   
-  .card3 {
+  .cardmontijo {
     order: 3;
   }
   
-  .card4 {
+  /* .card4 {
     order: 4;
-  }
+  } */
   
-  .card5 {
+  .cardmerida {
     order: 5;
   }
   .card svg {
