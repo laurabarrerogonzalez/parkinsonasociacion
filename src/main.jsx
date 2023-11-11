@@ -22,6 +22,7 @@ import Donations from './View/Collaborate/Donations';
 import Work from './View/Work with us/Work';
 import Find from './View/Find us/Find'; 
 import '../src/View/Parkinson/Myths.css';
+import Admin from './View/Admin/Admin';
 
 
 
@@ -32,6 +33,7 @@ ReactDOM.createRoot(document.getElementById('root')).render(
     <React.StrictMode>
       <Routes>
         <Route path="/" element={<Home />} /> 
+        <Route path="/admin" element={<Admin />} /> 
         <Route path="/aboutus" element={<Aboutus />} />
         <Route path="/symptoms" element={<Symptoms />} />
         <Route path="/evolution" element={<Evolution />} />

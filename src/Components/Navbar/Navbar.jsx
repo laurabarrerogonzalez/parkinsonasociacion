@@ -24,6 +24,16 @@ const Navbar = () => {
   }, []);
     return (
         <div className={`navbar ${scrolled ? 'scrolled' : ''}`}>
+
+
+            <div className='logo-admin'>
+                <Link to="/admin">
+                    <img className='tulipan' src='https://res.cloudinary.com/da7ffijqs/image/upload/v1699698764/_8d1ca073-4c49-42a8-9d3c-2a797078f4cf-removebg-preview_ksvtqn.png'/>
+                </Link>
+            </div>
+
+
+
             <div className="nav_logo">
                 <Link to="/">
                     <img
