@@ -167,7 +167,7 @@ const Voluntary = () => {
             </label>
           </div>
           <label className="container40">
-            <input defaultChecked type="checkbox" />
+            <input defaultChecked type="checkbox" required/>
             <div className="checkmark"></div>
             <div className="Terminos">
               <p>Acepto las Conciciones y la Politica de privacidad</p>
