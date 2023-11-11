@@ -4,6 +4,8 @@ import"../Services_/Daycarecenter.css";
 // import "../Services/Daycarecenter.css";
 import BannerViews from "../../Components/BannerViews/BannerViews";
 import Footer from '../../Components/Footer/Footer';
+import ButtonDonate from '../../Components/ButtonDonate/ButtonDonate';
+import ScrollArrow from '../../Components/ScrollArrow/ScrollArrow';
 
   
 const Daycarecenter = () => {
@@ -81,6 +83,8 @@ const Daycarecenter = () => {
     
 
        <Footer />
+       <ButtonDonate />
+      <ScrollArrow/>
         </>
 
     )

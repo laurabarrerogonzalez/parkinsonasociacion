@@ -2,6 +2,8 @@ import React from "react";
 import Navbar from "../../Components/Navbar/Navbar";
 import Footer from "../../assets/Components/Footer/Footer";
 import BannerViews from "../../Components/BannerViews/BannerViews";
+import ButtonDonate from "../../Components/ButtonDonate/ButtonDonate";
+import ScrollArrow from "../../Components/ScrollArrow/ScrollArrow";
 
 const Donations = () => {
   return (
@@ -14,6 +16,8 @@ const Donations = () => {
         />
       </div>
       <Footer />
+      <ButtonDonate />
+      <ScrollArrow/>
     </>
   );
 };

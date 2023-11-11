@@ -4,6 +4,7 @@ import Navbar from "../../Components/Navbar/Navbar";
 import BannerViews from "../../Components/BannerViews/BannerViews";
 import Footer from "../../Components/Footer/Footer";
 import ScrollArrow from '../../Components/ScrollArrow/ScrollArrow';
+import ButtonDonate from "../../Components/ButtonDonate/ButtonDonate";
 
 
 
@@ -367,7 +368,8 @@ const Aboutus = () => {
 
 
             <Footer />
-            <ScrollArrow />
+            <ButtonDonate />
+            <ScrollArrow/>
 
 
         </div>

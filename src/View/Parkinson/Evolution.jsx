@@ -3,6 +3,8 @@ import Navbar from "../../Components/Navbar/Navbar";
 import Footer from "../../Components/Footer/Footer";
 import BannerViews from "../../Components/BannerViews/BannerViews";
 import "./Evolution.css"; // Importa tu archivo CSS aquí
+import ButtonDonate from "../../Components/ButtonDonate/ButtonDonate";
+import ScrollArrow from "../../Components/ScrollArrow/ScrollArrow";
 
 const Evolution = () => {
   const [stageDescription, setStageDescription] = useState("");
@@ -129,6 +131,8 @@ const Evolution = () => {
       </div>
 
       <Footer />
+      <ButtonDonate />
+      <ScrollArrow/>
     </>
   );
 };

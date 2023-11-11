@@ -5,6 +5,8 @@ import Footer from "../../assets/Components/Footer/Footer";
 import BannerViews from "../../Components/BannerViews/BannerViews";
 import "../../Components/FlipBook/FlipBook.css";
 import HTMLFlipBook from "react-pageflip";
+import ButtonDonate from "../../Components/ButtonDonate/ButtonDonate";
+import ScrollArrow from "../../Components/ScrollArrow/ScrollArrow";
 
 
 const Page = React.forwardRef((props, ref) => {
@@ -145,6 +147,9 @@ const Symptoms = () => {
 
 
     <Footer />
+
+    <ButtonDonate />
+      <ScrollArrow/>
     </>
   );
 };

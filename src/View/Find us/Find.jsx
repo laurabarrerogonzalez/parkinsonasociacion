@@ -3,6 +3,8 @@ import "../Find us/Find.css"
 import Navbar from "../../Components/Navbar/Navbar";
 import BannerViews from "../../Components/BannerViews/BannerViews";
 import Footer from '../../Components/Footer/Footer';
+import ButtonDonate from "../../Components/ButtonDonate/ButtonDonate";
+import ScrollArrow from "../../Components/ScrollArrow/ScrollArrow";
 
   
 
@@ -45,6 +47,8 @@ const Find = () => {
       </div>
 
       <Footer />
+      <ButtonDonate />
+      <ScrollArrow/>
     </>
   );
 };

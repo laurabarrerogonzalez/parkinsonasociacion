@@ -11,6 +11,8 @@ import FormControlLabel from "@mui/material/FormControlLabel";
 import Checkbox from "@mui/material/Checkbox";
 import { red } from "@mui/material/colors";
 import Footer from "../../Components/Footer/Footer";
+import ButtonDonate from "../../Components/ButtonDonate/ButtonDonate";
+import ScrollArrow from "../../Components/ScrollArrow/ScrollArrow";
 
 const label = { inputProps: { "aria-label": "Checkbox demo" } };
 
@@ -194,6 +196,8 @@ const Voluntary = () => {
         </div>
       </div>
      <Footer/> 
+     <ButtonDonate />
+      <ScrollArrow/>
     </>
   );
 };
