@@ -21,7 +21,7 @@ const Revitalization = () => {
         <div>
             <Navbar />
             <BannerViews
-                image="https://res.cloudinary.com/dp7lr71t8/image/upload/v1699270839/rehabilitacion_njafpr.jpg"
+                image="https://res.cloudinary.com/dp7lr71t8/image/upload/v1699720847/e96e5008-5541-4c4c-b02c-140d8e7a1183_1_2_sp7kdx.jpg"
             // title="REHABILITACIÓN"
             />
             <section className="section_title_content_revitalization">
