@@ -6,6 +6,7 @@ import Navbar from "../../Components/Navbar/Navbar";
 import ScrollArrow from "../../Components/ScrollArrow/ScrollArrow";
 import ButtonDonate from "../../Components/ButtonDonate/ButtonDonate";
 import BannerViews from "../../Components/BannerViews/BannerViews";
+import TermsAndConditions from "../../Components/TermsAndConditions/TermsAndConditions";
 
 const Members = () => {
   useEffect(() => {
@@ -279,7 +280,7 @@ const Members = () => {
             <input defaultChecked type="checkbox" />
             <div className="checkmark"></div>
             <div className="Terminos">
-              <p>Acepto las Conciciones y la Politica de privacidad</p>
+              <TermsAndConditions/>
             </div>
           </label>
         </div>

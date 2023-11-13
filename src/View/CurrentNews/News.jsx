@@ -1,5 +1,8 @@
 import React from "react";
 import Navbar from "../../Components/Navbar/Navbar";
+import TermsAndConditions from "../../Components/TermsAndConditions/TermsAndConditions";
+import Mapa from "../../Components/Map/Map";
+
 
   
 const News = () => {
@@ -7,7 +10,8 @@ const News = () => {
     return(
         <>
         <Navbar/>
-       <h1>News</h1> 
+        <Mapa/>
+        <TermsAndConditions/>
         </>
 
     )

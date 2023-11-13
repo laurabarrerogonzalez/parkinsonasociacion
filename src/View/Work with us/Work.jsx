@@ -5,6 +5,7 @@ import BannerViews from "../../Components/BannerViews/BannerViews";
 import Footer from "../../Components/Footer/Footer";
 import ScrollArrow from '../../Components/ScrollArrow/ScrollArrow';
 import ButtonDonate from "../../Components/ButtonDonate/ButtonDonate";
+import TermsAndConditions from "../../Components/TermsAndConditions/TermsAndConditions";
 
 const Work = () => {
 
@@ -256,12 +257,12 @@ const Work = () => {
                         <input type="file" className="input" required />
                         <span>Adjuntar Archivo</span>
                     </label>
-                    <p className="signin">
+                    {/* <p className="signin">
                         Protección de datos personales <a href="#">Leer</a>
-                    </p>
+                    </p> */}
                     <label className="checkbox-label">
                         <input type="checkbox" className="input" id="check" required />
-                        <span className="protect_dates">Acepto la protección de datos personales</span>
+                        <TermsAndConditions/>
                     </label>
                     <button className="submit">Enviar</button>
 
