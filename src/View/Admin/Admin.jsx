@@ -24,7 +24,6 @@ const Admin = () => {
       Password: !Password ? "Password is required" : "",
     };
 
-    // Si algún campo está vacío, no procedemos con el registro
     if (!UserName || !Password) {
       setErrorMessages(newErrorMessages);
       return;
@@ -41,7 +40,8 @@ const Admin = () => {
       });
 
       if (response.ok) {
-        console.log("Inicio de sesión exitoso");
+        const data = await response.json();
+        localStorage.setItem("token", data.Token);
         setLoggedIn(true);
       } else {
         Swal.fire("Error", "Credenciales incorrectas", "error");
@@ -70,6 +70,11 @@ const Admin = () => {
     });
   };
 
+  const handleLogout = () => {
+    localStorage.removeItem("token");
+    setLoggedIn(false);
+  };
+
   return (
     <>
       <div>
@@ -77,6 +82,7 @@ const Admin = () => {
           <div>
             <h1>Admin</h1>
             {/* Contenido de la página después de iniciar sesión */}
+            <button onClick={handleLogout}>Cerrar sesión</button>
           </div>
         ) : (
           <div className="login-card">
