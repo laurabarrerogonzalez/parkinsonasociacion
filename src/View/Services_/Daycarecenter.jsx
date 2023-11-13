@@ -251,14 +251,14 @@ export default Daycarecenter; */}
 
         <div className="text_DC">
           <p>
-            El Centro de Día CON ALMA ofrece una atención integral durante el
+            El centro de día ofrece una atención integral durante el
             período diurno a las personas en situación de dependencia, con el
             objetivo de mantener el mayor grado de autonomía posible. Está
             dirigido a proporcionar una intervención especializada al usuario de
             manera que se contemplen y atiendan de un modo integral sus
             necesidades específicas. Las mismas se cubren desde un enfoque
             biopsicosocial con servicios de asesoramiento, rehabilitación,
-            orientación para la promoción de la autonomía. en su hogar.{" "}
+            orientación para la promoción de la autonomía en su hogar.{" "}
             <br></br>
           </p>
         </div>

@@ -33,7 +33,7 @@ const Revitalization = () => {
 
                 <div className="content_revitalization">
                     <p>Uno de los recursos complementarios al tratamiento
-                        farmacológico son las terapias de rehabilitación y estimulación. Éstas comprenden: <br></br>
+                        farmacológico son las terapias de rehabilitación y estimulación. Estas comprenden: <br></br>
                     </p>
                 </div>
             </section>
@@ -46,7 +46,7 @@ const Revitalization = () => {
                     </div>
                     <div className='one_activ'>
                         <h3>01 FISIOTERAPIA</h3>
-                        <p>La Fisioterapia en la enfermedad de Parkinson ayuda a rehabilitar
+                        <p>La fisioterapia en la enfermedad de Parkinson ayuda a rehabilitar
                             la marcha, superar bloqueos,
                             facilitar los cambios posturales,
                             mantener la amplitud del movimiento,
@@ -58,7 +58,7 @@ const Revitalization = () => {
                     </div>
                     <div className='one_activ'>
                         <h3>02 TERAPIA OCUPACIONAL</h3>
-                        <p>La Terapia ocupacional se encarga de prevenir
+                        <p>La terapia ocupacional se encarga de prevenir
                             limitaciones articulares, mejorar o mantener la
                             <strong> motricidad fina</strong>, entrenar
                             las <strong>actividades básicas de la vida diaria </strong>
@@ -67,14 +67,14 @@ const Revitalization = () => {
                     </div>
                     <div className='one_activ'>
                         <h3>03 LOGOPEDIA</h3>
-                        <p>La Logopedia pretende mejorar el control
+                        <p>La logopedia pretende mejorar el control
                             de la <strong>musculatura bucofonatoria, </strong>
                             mejorar la <strong>prosodia </strong> para evitar la
-                            <strong>monotonía del hable</strong> y conseguir una
-                            <strong>articulación sana y eficaz. </strong>
+                            <strong> monotonía del hable</strong> y conseguir una
+                            <strong> articulación sana y eficaz. </strong>
                             Además ayuda a tratar la <strong>disfagia</strong> y trabaja
                             el <strong>pensamiento</strong> mediante
-                            <strong>el lenguaje comprensivo y expresivo.</strong>
+                            <strong> el lenguaje comprensivo y expresivo.</strong>
                         </p>
                     </div>
                 </div>
@@ -121,7 +121,7 @@ const Revitalization = () => {
                                 sociosanitaria de la <strong>Enfermedad de Párkinson y/o
                                     Pakinsonismos
                                 </strong> con <strong>alteraciones,</strong> presentes o no,
-                                relacionadas con síntomas <strong>motores y no motores</strong>
+                                relacionadas con síntomas <strong>motores y no motores </strong> 
                                 de la propia patología.
 
                             </p>
@@ -144,7 +144,7 @@ const Revitalization = () => {
                 </div>
 
                 <div className="content_revitalization">
-                    <p>En este punto la funcion de la Asociacion es imprescindible ya que debemos
+                    <p>En este punto la funcion de la Asociación es imprescindible ya que debemos
                         ofrecer todo tipo de apoyos a nuestro colectivo: asistencial, psicológico y 
                         social.
                     </p>

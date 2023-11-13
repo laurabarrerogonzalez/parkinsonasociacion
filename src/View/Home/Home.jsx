@@ -64,7 +64,7 @@ const Home = () => {
         </div>
         <div className='services_info'>
           <h1>Centro de día</h1> <br />
-          <p>El centro de día con alma ofrece una atención integral durante el
+          <p>El centro de día ofrece una atención integral durante el
             período diurno a las personas en situación de dependencia, con el objetivo
             de mantener el mayor grado de autonomía posible. Está dirigido a proporcionar
             una intervención especializada al usuario de manera que se contemplen
