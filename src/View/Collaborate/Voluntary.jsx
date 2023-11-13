@@ -37,7 +37,6 @@ const Voluntary = () => {
   return (
     <>
       <div className="photos">
-        <Navbar />
         <BannerViews
           image="https://res.cloudinary.com/da7ffijqs/image/upload/v1698681283/20201119_125749_1_lmqez1.jpg"
           title="¿QUIERES SER VOLUNTARIO?"

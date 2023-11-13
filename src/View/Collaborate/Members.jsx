@@ -70,7 +70,7 @@ const Members = () => {
           <div class="content">
             <br />
             <br />
-            <h1>Socio Colavorativo</h1>
+            <h1>Socio Colaborativo</h1>
             <br />
             <p>
               Esto se refiere a una relación o situación en la que individuos,
