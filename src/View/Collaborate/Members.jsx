@@ -215,6 +215,7 @@ const Members = () => {
             className="input14"
             placeholder="Titular de la cuenta"
           />
+          <h2>Marcar servicio de interés:</h2>
           <div className="customCheckBoxHolder">
             <input className="customCheckBoxInput" id="cCB1" type="checkbox" />
             <label className="customCheckBoxWrapper" htmlFor="cCB1">
@@ -244,6 +245,7 @@ const Members = () => {
               </div>
             </label>
           </div>
+          <h2>Marcar tipo de socio:</h2>
           <div className="radio-inputs">
             <label>
               <input

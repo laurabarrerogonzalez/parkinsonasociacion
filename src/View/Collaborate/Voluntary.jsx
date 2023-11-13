@@ -500,6 +500,7 @@ const Voluntary = () => {
             value={formData.education}
             onChange={handleInputChange}
           />
+          <h2>Marcar disponibilidad:</h2>
           <div className="radio-inputs">
             <label className={formData.shift === "Mañanas" ? "selected" : ""}>
               <input
