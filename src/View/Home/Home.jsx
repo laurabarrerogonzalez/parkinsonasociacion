@@ -64,7 +64,7 @@ const Home = () => {
         </div>
         <div className='services_info'>
           <h1>Centro de día</h1> <br />
-          <p>El Centro de Día CON ALMA ofrece una atención integral durante el
+          <p>El centro de día con alma ofrece una atención integral durante el
             período diurno a las personas en situación de dependencia, con el objetivo
             de mantener el mayor grado de autonomía posible. Está dirigido a proporcionar
             una intervención especializada al usuario de manera que se contemplen
@@ -80,9 +80,9 @@ const Home = () => {
           <p>La Rehabilitación Integral aborda una atención completa y especializada
             para aquellos que requieren apoyo en su proceso de recuperación.
             Este enfoque está diseñado para contemplar y atender las necesidades
-            individuales en un marco biopsicosocial. Ofrecemos servicios de asesoramiento
-            , terapias de rehabilitación, orientación para el desarrollo de habilidades
-            , así como atención personalizada. Nuestro objetivo es facilitar un plan
+            individuales en un marco biopsicosocial. Ofrecemos servicios de asesoramiento,
+            terapias de rehabilitación, orientación para el desarrollo de habilidades,
+            así como atención personalizada. Nuestro objetivo es facilitar un plan
             de atención integral para su recuperación.</p>
 
             <Link to="/revitalization" className="btn">
@@ -97,7 +97,7 @@ const Home = () => {
         </div>
         <div className='services_info'>
           <h1>Estimulación Cognitiva</h1> <br />
-          <p>La Estimulación Cognitiva es un programa diseñado para potenciar y preservar
+          <p>La estimulación cognitiva es un programa diseñado para potenciar y preservar
             las capacidades mentales y cognitivas de manera integral. Ofrecemos actividades
             y ejercicios especializados que buscan fortalecer la memoria, la atención,
             el razonamiento y otras habilidades cognitivas. Nuestro enfoque abarca una
@@ -111,7 +111,7 @@ const Home = () => {
 
         <div className='services_info'>
           <h1>Ayuda a domicilio</h1> <br />
-          <p>Nuestro servicio de Ayuda a Domicilio está diseñado para proporcionar
+          <p>Nuestro servicio de ayuda a domicilio está diseñado para proporcionar
             apoyo integral a personas que requieren asistencia en la comodidad de su
             hogar. Ofrecemos una amplia gama de cuidados personalizados que van desde
             el soporte en las actividades diarias hasta la atención especializada,
