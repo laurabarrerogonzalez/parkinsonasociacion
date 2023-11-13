@@ -43,7 +43,7 @@
   transform: translateX(-50%); /* Centra el triángulo horizontalmente */
   transform: rotate(-90deg);
   margin-left: -20px;
-  bottom:-509px;
+  bottom:-535px;
 }
 
 .right-side {
