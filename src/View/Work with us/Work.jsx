@@ -4,17 +4,19 @@ import Navbar from "../../Components/Navbar/Navbar";
 import BannerViews from "../../Components/BannerViews/BannerViews";
 import Footer from "../../Components/Footer/Footer";
 import ScrollArrow from '../../Components/ScrollArrow/ScrollArrow';
+import ButtonDonate from "../../Components/ButtonDonate/ButtonDonate";
+import TermsAndConditions from "../../Components/TermsAndConditions/TermsAndConditions";
 
 const Work = () => {
 
 
-    window.addEventListener('scroll', function() {
+    window.addEventListener('scroll', function () {
         var images = document.querySelectorAll('.img_form_work,.video_person_asociation');
-    
-        images.forEach(function(image) {
+
+        images.forEach(function (image) {
             var imagePosition = image.getBoundingClientRect().top;
             var screenPosition = window.innerHeight;
-    
+
             // Verificar si la imagen está en el punto deseado para mostrarla con la animación
             if (imagePosition < screenPosition) {
                 image.style.opacity = '4';
@@ -70,7 +72,7 @@ const Work = () => {
             </div>
 
             <section className="container_logo_asociation_work">
-        <img className="logo_asociation_work"src="https://res.cloudinary.com/dp7lr71t8/image/upload/v1699013908/descarga-removebg-preview_chico_dzkvgc.png" alt="" />
+                <img className="logo_asociation_work" src="https://res.cloudinary.com/dp7lr71t8/image/upload/v1699013908/descarga-removebg-preview_chico_dzkvgc.png" alt="" />
             </section>
             <section className="container_form">
 
@@ -255,34 +257,34 @@ const Work = () => {
                         <input type="file" className="input" required />
                         <span>Adjuntar Archivo</span>
                     </label>
-                    <p className="signin">
+                    {/* <p className="signin">
                         Protección de datos personales <a href="#">Leer</a>
-                    </p>
+                    </p> */}
                     <label className="checkbox-label">
                         <input type="checkbox" className="input" id="check" required />
-                        <span className="protect_dates">Acepto la protección de datos personales</span>
+                        <TermsAndConditions/>
                     </label>
                     <button className="submit">Enviar</button>
-                    
+
                 </form>
 
                 <div className="img_form">
                     <div className="img_form_work">
-                    <img className="img_form_people" src="https://res.cloudinary.com/dp7lr71t8/image/upload/v1699017362/20230420_115157_viks1q.jpg" alt="" />
+                        <img className="img_form_people" src="https://res.cloudinary.com/dp7lr71t8/image/upload/v1699017362/20230420_115157_viks1q.jpg" alt="" />
                     </div>
                     <div className="img_form_work"></div>
                     <div className="img_form_work"></div>
                     <div className="img_form_work">
-                    <img className="img_form_people"src="https://res.cloudinary.com/dp7lr71t8/image/upload/v1699017363/20200415_100037_xcsgqv.jpg" alt="" />
+                        <img className="img_form_people" src="https://res.cloudinary.com/dp7lr71t8/image/upload/v1699017363/20200415_100037_xcsgqv.jpg" alt="" />
                     </div>
 
                 </div>
 
             </section>
 
-            <Footer/>
-            <ScrollArrow/>
-
+            <Footer />
+            <ButtonDonate />
+            <ScrollArrow />
 
         </div>
 

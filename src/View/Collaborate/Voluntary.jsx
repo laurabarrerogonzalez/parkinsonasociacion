@@ -293,6 +293,7 @@ import Footer from "../../Components/Footer/Footer";
 import ButtonDonate from "../../Components/ButtonDonate/ButtonDonate";
 import ScrollArrow from "../../Components/ScrollArrow/ScrollArrow";
 import BannerViews from "../../Components/BannerViews/BannerViews";
+import TermsAndConditions from "../../Components/TermsAndConditions/TermsAndConditions";
 
 const Voluntary = () => {
   const [formData, setFormData] = useState({
@@ -478,7 +479,7 @@ const Voluntary = () => {
             autoComplete="off"
             name="phone"
             className="input14"
-            placeholder="Telefono"
+            placeholder="Teléfono"
             value={formData.phone}
             onChange={handleInputChange}
           />
@@ -555,19 +556,14 @@ const Voluntary = () => {
             </label>
           </div>
           <div className="checkbox-container">
-            <input
-              type="checkbox"
-              checked={formData.termsAccepted}
-              onChange={() => handleInputChange({ target: { name: "termsAccepted", value: !formData.termsAccepted } })}
-            />
             <div className={`checkmark ${formData.termsAccepted ? "checked" : ""}`}></div>
             <div className="Terminos">
-              <p>Acepto las Condiciones y la Politica de privacidad</p>
+              <TermsAndConditions/>
             </div>
           </div>
         </div>
         <button onClick={handleEnviarClick} className={`bn01 ${formData.termsAccepted ? "accepted" : ""}`} type="button">
-          Enviar!
+          Enviar
         </button>
       </form>
       <Footer />
