@@ -142,12 +142,12 @@ const Aboutus = () => {
                 <h3>Junta directiva</h3>
                 <p>
                     <ul>
-                        <li><strong className="name_name">José Angel Calle Grajera</strong> - Presidente</li>
+                        <li><strong className="name_name">José Ángel Calle Grajera</strong> - Presidente</li>
                         <li> <strong className="name_name">Antonio Ramón Zorita Pacheco</strong> - Secretario</li>
-                        <li> <strong className="name_name">Manuel Garcia Cid</strong> - Tesorero</li>
-                        <li> <strong className="name_name">Angel Gonzales Serrano</strong> - Primer Vocal</li>
+                        <li> <strong className="name_name">Manuel García Cid</strong> - Tesorero</li>
+                        <li> <strong className="name_name">Ángel González Serrano</strong> - Primer Vocal</li>
                         <li> <strong className="name_name">Felicidad Suárez Fornelino</strong> - Segunda Vocal</li>
-                        <li> <strong className="name_name">Miriam Vela toro</strong> - tercera Vocal</li>
+                        <li> <strong className="name_name">Miriam Vela Toro</strong> - Tercera Vocal</li>
                     </ul>
                 </p>
 
@@ -180,7 +180,7 @@ const Aboutus = () => {
                         <div class="triangle" id="triangle2"></div>
                     </div>
                     <div className="section_content_worker">
-                        <h3 className="name_worker"> Maria Dolores Fresno Hernández </h3>
+                        <h3 className="name_worker"> María Dolores Fresno Hernández </h3>
 
                         <p>Técnica Administrativa.</p>
 
@@ -193,7 +193,7 @@ const Aboutus = () => {
 
 
             <section className="title_therapeutics">
-                <h3>Equipo Terapeútico</h3>
+                <h3>Equipo Terapéutico</h3>
             </section>
 
             <section className="section_workers" >
@@ -203,7 +203,7 @@ const Aboutus = () => {
                         <div class="triangle"></div>
                     </div>
                     <div className=" section_content_worker ">
-                        <h3 className="name_worker"> Cristina Hernandez Gonzáles </h3>
+                        <h3 className="name_worker"> Cristina Hernández González </h3>
 
                         <p >Logopeda del servicio
                             de rehabilitación integral para enfermos de parkinson y/o
@@ -277,7 +277,7 @@ const Aboutus = () => {
                         <div class="triangle"></div>
                     </div>
                     <div className=" section_content_worker ">
-                        <h3 className="name_worker"> Carmen Mª Barroso Lozano </h3>
+                        <h3 className="name_worker"> Carmen María Barroso Lozano </h3>
 
                         <p >Cuidadora del servicio de Centro de día</p>
 
@@ -291,7 +291,7 @@ const Aboutus = () => {
                         <div class="triangle" id="triangle2"></div>
                     </div>
                     <div className="section_content_worker">
-                        <h3 className="name_worker"> Maria Isabel Bravo Corbacho </h3>
+                        <h3 className="name_worker"> María Isabel Bravo Corbacho </h3>
 
                         <p>Cuidadora del servicio de Centro de día.</p>
 
@@ -299,7 +299,7 @@ const Aboutus = () => {
                 </div>
                 <div className="card_worker" id="card4" >
                     <div className="section_content_worker">
-                        <h3 className="name_worker"> Mª Josefa Silvero Lozano </h3>
+                        <h3 className="name_worker"> María Josefa Silvero Lozano </h3>
 
                         <p>Cuidadora del servicio de Centro de día.</p>
 
