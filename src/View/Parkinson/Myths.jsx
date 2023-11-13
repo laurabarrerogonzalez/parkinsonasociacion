@@ -3,6 +3,8 @@ import Navbar from "../../Components/Navbar/Navbar";
 import "../Parkinson/Myths.css";
 import Footer from '../../assets/Components/Footer/Footer.jsx';
 import BannerViews from "../../Components/BannerViews/BannerViews";
+import ButtonDonate from "../../Components/ButtonDonate/ButtonDonate.jsx";
+import ScrollArrow from "../../Components/ScrollArrow/ScrollArrow.jsx";
 
 
 
@@ -293,6 +295,9 @@ const Myths = () => {
   
 
 <Footer />
+
+<ButtonDonate />
+      <ScrollArrow/>
     </>
   );
 };

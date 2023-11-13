@@ -1,6 +1,5 @@
-import React from "react";
+import React, { useEffect } from 'react';
 import Navbar from "../../Components/Navbar/Navbar";
-import BannerViews from "../../Components/BannerViews/BannerViews";
 import "../Services_/Stimulation.css"
 import Footer from "../../Components/Footer/Footer";
 import ButtonDonate from "../../Components/ButtonDonate/ButtonDonate";
@@ -9,6 +8,11 @@ import ScrollArrow from "../../Components/ScrollArrow/ScrollArrow";
 
 
 const Stimulation = () => {
+
+    useEffect(() => {
+        // Hacer scroll al principio de la página cuando el componente se monta
+        window.scrollTo(0, 0);
+      }, []);
 
     return (
         <div>
