@@ -287,9 +287,11 @@ const Members = () => {
         </div>
         <br />
         <div>
+          <h3>
           *En caso de socio afectado deberá remitir a la entidad vía email copia
           de informe médico actualizado, DNI y tarjeta sanitaria o seguro
           médico.
+          </h3>
         </div>
         <button onClick={handleEnviarClick} className="bn01" type="button">
           Enviar!
