@@ -303,46 +303,46 @@ export default Daycarecenter; */}
         </div>
       </div>
 
-      <div className="image-container">
+      <div className="image-containerCD">
         <img
           src="https://res.cloudinary.com/doft9ylq1/image/upload/v1699004873/IMG-20231025-WA0001_qku82e.jpg"
           alt="Imagen 1"
-          className="activity-image"
+          className="activity-imageCD1"
         />
         <img
           src="https://res.cloudinary.com/doft9ylq1/image/upload/v1699005153/e96e5008-5541-4c4c-b02c-140d8e7a1183_jwxyis.jpg"
           alt=""
-          className="activity-image1"
+          className="activity-imageCD2"
         />
         <img
           src="https://res.cloudinary.com/doft9ylq1/image/upload/v1699015076/20221110_114455_nsagal.jpg"
           alt="Imagen 2"
-          className="activity-image2"
+          className="activity-imageCD3"
         />
         <img
           src="https://res.cloudinary.com/doft9ylq1/image/upload/v1699015418/20200626_110630_1_qco2pi.jpg"
           alt="Imagen 2"
-          className="activity-image3"
+          className="activity-imageCD4"
         />
         <img
           src="https://res.cloudinary.com/doft9ylq1/image/upload/v1699436691/20200415_112914_iruuon.jpg"
           alt="Imagen 1"
-          className="activity-image4"
+          className="activity-imageCD5"
         />
         <img
           src="https://res.cloudinary.com/doft9ylq1/image/upload/v1699436663/20210810_120627_1_tg9wyh.jpg"
           alt=""
-          className="activity-image5"
+          className="activity-imageCD6"
         />
         <img
           src="https://res.cloudinary.com/doft9ylq1/image/upload/v1699436643/20200617_113153_zgsadh.jpg"
           alt="Imagen 2"
-          className="activity-image6"
+          className="activity-imageCD7"
         />
         <img
           src="https://res.cloudinary.com/doft9ylq1/image/upload/v1699440850/20230131_104420_1_1_chswfw.jpg"
           alt="Imagen 2"
-          className="activity-image7"
+          className="activity-imageCD8"
         />
       </div>
 
