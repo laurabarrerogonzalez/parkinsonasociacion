@@ -479,7 +479,7 @@ const Voluntary = () => {
             autoComplete="off"
             name="phone"
             className="input14"
-            placeholder="Telefono"
+            placeholder="Teléfono"
             value={formData.phone}
             onChange={handleInputChange}
           />
@@ -562,7 +562,7 @@ const Voluntary = () => {
           </div>
         </div>
         <button onClick={handleEnviarClick} className={`bn01 ${formData.termsAccepted ? "accepted" : ""}`} type="button">
-          Enviar!
+          Enviar
         </button>
       </form>
       <Footer />

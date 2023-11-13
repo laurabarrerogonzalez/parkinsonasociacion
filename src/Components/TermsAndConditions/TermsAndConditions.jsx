@@ -21,7 +21,7 @@ const TermsAndConditions = () => {
         <input type="checkbox" checked={isChecked} onChange={handleCheckboxChange} />
         Acepto las 
         <span className="terms-link" onClick={handleTermsClick}>
-          Condiciones y la Politica de privacidad
+          Condiciones y la Política de privacidad
         </span>
       </label>
 

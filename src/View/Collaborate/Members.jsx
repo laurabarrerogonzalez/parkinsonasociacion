@@ -124,7 +124,7 @@ const Members = () => {
                 móvil o visitando una sucursal bancaria.
                 <br />
                 <br />
-                Numero para la Transferencia: ES79 2100 8985 4702 0001
+                Número para la Transferencia: ES79 2100 8985 4702 0001
                 <br />
                 Entidad bancaria: La Caixa
               </p>
@@ -151,7 +151,7 @@ const Members = () => {
                 tan solo el número de teléfono móvil del destinatario.
                 <br />
                 <br />
-                Numero para realizar Bizum: 674 09 45 01
+                Número para realizar Bizum: 674 09 45 01
               </p>
             </span>
           </div>
@@ -193,7 +193,7 @@ const Members = () => {
             autoComplete="off"
             name="text"
             className="input14"
-            placeholder="Telefono"
+            placeholder="Teléfono"
           />
           <input
             type="text"
@@ -291,7 +291,7 @@ const Members = () => {
           médico.
         </div>
         <button onClick={handleEnviarClick} className="bn01" type="button">
-          Enviar!
+          Enviar
         </button>
       </form>
       <Footer />

@@ -20,7 +20,7 @@ const Stimulation = () => {
             <section className="section_banner_new_stimulation">
                 <div className="title_stimulation">
 
-                    <h1>Estimulacion Cognitiva <br />
+                    <h1>Estimulación Cognitiva <br />
                         "¡Activa tu mente, expande tu mundo!"
                     </h1>
 
@@ -31,7 +31,7 @@ const Stimulation = () => {
                     </p>
                     <div className="buttons_items">
                         <button className="button_1_info">
-                            <span>Informacion</span>
+                            <span>Información</span>
 
                         </button>
                         <button className="button_2_info">

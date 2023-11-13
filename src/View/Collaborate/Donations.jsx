@@ -50,7 +50,7 @@ const Donations = () => {
             o visitando una sucursal bancaria.
             <br />
             <br />
-            Numero para la Transferencia: ES79 2100 8985 4702 0001
+            Número para la Transferencia: ES79 2100 8985 4702 0001
             <br />
             <br />
             Entidad bancaria: La Caixa
@@ -174,7 +174,7 @@ const Donations = () => {
                 <p class="number">9759 2484 5269 6576</p>
                 <p class="valid_thru">VALID THRU</p>
                 <p class="date_8264">1 2 / 2 4</p>
-                <p class="name">CODERS MERIDA</p>
+                <p class="name">CODERS MÉRIDA</p>
               </div>
             </div>
           </div>
@@ -187,7 +187,7 @@ const Donations = () => {
             solo el número de teléfono móvil del destinatario.
             <br />
             <br />
-            Numero para realizar Bizum: 674 09 45 01
+            Número para realizar Bizum: 674 09 45 01
           </p>
           <div class="cardS12">
             <div class="card__date12">
