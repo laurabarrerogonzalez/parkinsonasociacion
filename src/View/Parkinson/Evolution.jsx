@@ -46,7 +46,7 @@ const Evolution = () => {
       </div>
 
 
-      <div className="what">
+      <div className="what1">
       <div className="title-parkinson">
       <h1>Evolución</h1>
       </div>

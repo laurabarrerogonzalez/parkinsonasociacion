@@ -28,11 +28,11 @@
   margin-top: 30px;
 display: flex;
 flex-wrap: wrap;
-justify-content: space-between;
+justify-content: space-around;
 }
 
    .cardd {
-    width: 20rem;
+    width: 40rem;
     cursor: pointer;
     padding: 20px;
   }
@@ -41,7 +41,6 @@ justify-content: space-between;
     text-align: center;
     position: relative;
     transition: all 2.25s;
-    /* background-color: rgb(127, 204, 240); */
     padding: 5em;
     transform-style: preserve-3d;
   }
@@ -61,7 +60,6 @@ justify-content: space-between;
     transform-style: preserve-3d;
     backface-visibility: hidden;
   }
-
 
   .front1{
 background-image: url(https://res.cloudinary.com/dit2zhtwz/image/upload/v1699552673/istockphoto-1359115367-612x612-removebg-preview_tyqo5e.png);
@@ -99,7 +97,7 @@ background-color: rgb(127, 204, 240);
   }
 
   .front6{
-    background-image: url(https://res.cloudinary.com/dit2zhtwz/image/upload/v1699555790/Captura_de_pantalla_2023-11-09_194902-removebg-preview_g0beuz.png);
+    background-image: url(https://res.cloudinary.com/dit2zhtwz/image/upload/v1699965901/Captura_de_pantalla_2023-11-14_134259-removebg-preview_iv9knr.png);
     background-repeat: no-repeat;
     background-size: contain;
     background-color: rgb(127, 204, 240);
@@ -153,12 +151,12 @@ background-color: rgb(127, 204, 240);
     transform: translateZ(5rem);
     font-size: 2rem;
     margin-top: -30px;
-    margin-left: 120px;
+    margin-left: 420px;
   }
   
   .subtitle {
     margin-top: 9px;
-    margin-left: 120px;
+    margin-left: 20px;
     text-align: right;
     /* color: white; */
     transform: translateZ(2rem);
@@ -263,7 +261,8 @@ background-color: rgb(127, 204, 240);
   .description {
     /* margin-left: 100px; */
     text-align: end;
-    margin-top: -1px;
+    margin-top: 10px;
+    font-weight: bold;
     /* margin-left: -30px; */
     transform: translateZ(3rem);
   }
@@ -273,6 +272,73 @@ background-color: rgb(127, 204, 240);
 
 
 
+  @media screen and (max-width: 700px) {
+    .photobanner {
+      height: 300px; 
+    }
+  
+    .questions {
+      width: 90%; 
+      margin: 8% 5%; 
+    }
 
+
+    .myths{
+margin-left: 25px;
+    }
+
+    .vs{
+      margin-left: 50px;
+    }
+  
+    .titlecard {
+      flex-direction: column; 
+      margin-top: 30px; 
+      margin-left: 120px;
+      font-size: 20px; 
+    }
+  
+    .cardmyth {
+      margin-top: 20px; 
+      justify-content: center; 
+    }
+  
+    .cardd {
+      width: 90%; 
+      margin-bottom: 20px; 
+    }
+  
+    .content {
+      padding: 3em; 
+    }
+  
+    .title {
+      font-size: 1.5rem; 
+      margin-left: 0; 
+    }
+  
+    .subtitle {
+      margin-left: 0; 
+      text-align: center; 
+    }
+  
+    .description {
+      text-align: center; 
+    }
+   
+
+    .front1, .front2, .front3, .front4, .front5, .front6, .front7, .front8, .front9, .front10, .front11, .front12 {
+      background-image: none;
+      height: 80px;
+    }
+
+
+    .back1, .back2, .back3, .back4, .back5, .back6, .back7, .back8, .back9, .back10, .back11, .back12 {
+      background-image: none;
+      height: 80px;
+    }
+
+
+  }
 
 
