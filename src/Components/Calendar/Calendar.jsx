@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { Calendar, theme } from 'antd';
+import './Calendar.css'; // Importa el archivo CSS
 
 const onPanelChange = (value, mode) => {
   console.log(value.format('YYYY-MM-DD'), mode);
@@ -22,7 +23,6 @@ const CalendarComponent = () => {
     '2023-09-08': 'Día de Extremadura 💚🤍🖤',
     '2023-10-27': 'Día de la terapia ocupacional 🙆🏻‍♂️💆🏻‍♀️🧘🏻',
     '2023-10-10': 'Día Mundial de la Salud Mental 🧠🫂🗣️',
-
     // Agrega el resto de las fechas...
   };
 
@@ -47,63 +47,16 @@ const CalendarComponent = () => {
       '2023-09-08',
       '2023-10-27',
       '2023-10-10',
-      
     ];
-
-    const highlightStyle = {
-      border: '4px solid yellow',
-      borderRadius: '100%',
-      height: '18px',
-      width: '18px',
-      position: 'absolute',
-      top: '50%',
-      left: '50%',
-      transform: 'translate(-50%, -50%)',
-    };
 
     const isDateToHighlight = dateToHighlight.includes(currentDate.format('YYYY-MM-DD'));
 
-    return isDateToHighlight ? <div style={highlightStyle} /> : null;
-  };
-
-  const containerStyle = {
-    display: 'flex',
-    flexDirection: 'row',
-    alignItems: 'center',
-    marginLeft: '500px',
-    marginTop: '60px',  // Ajusta según sea necesario
-  };
-
-  const calendarWrapperStyle = {
-    width: '300px',
-    border: `1px solid ${token.colorBorderSecondary}`,
-    borderRadius: token.borderRadiusLG,
-    padding: '20px',
-    backgroundColor: 'lightblue',
-    marginTop: '200px',  // Ajusta según sea necesario
-    
-  };
-
-  const infoStyle = {
-    padding: '15px',
-    backgroundColor: 'lightblue',
-    width: '450px',
-    textAlign: 'center',
-    marginTop: '30px',  // Ajusta según sea necesario
-  };
-
-  const scheduleStyle = {
-    padding: '15px',
-    backgroundColor: 'lightgreen',
-    width: '400px',
-    textAlign: 'center',
-    marginLeft:'25px',
-    marginTop: '12px',
+    return isDateToHighlight ? <div className="highlight" /> : null;
   };
 
   return (
-    <div style={containerStyle}>
-      <div style={calendarWrapperStyle}>
+    <div className="calendar-container">
+      <div className="calendar-wrapper">
         <Calendar
           fullscreen={false}
           onPanelChange={onPanelChange}
@@ -112,15 +65,15 @@ const CalendarComponent = () => {
         />
       </div>
       <div>
-        <div style={infoStyle}>
+        <div className="info">
           {dateInfoMap[selectedDate] ? (
-            <p style={{ fontSize: '18px' }}>{dateInfoMap[selectedDate]}</p>
+            <p>{dateInfoMap[selectedDate]}</p>
           ) : (
-            <p style={{ fontSize: '18px',color: '#767A82'}}>Selecciona una fecha para ver información</p>
+            <p className="no-date-selected">Selecciona una fecha para ver información</p>
           )}
         </div>
-        <div style={scheduleStyle}>
-          <p style={{ fontSize: '18px' }}>{workSchedule}</p>
+        <div className="schedule">
+          <p>{workSchedule}</p>
         </div>
       </div>
     </div>
@@ -128,4 +81,3 @@ const CalendarComponent = () => {
 };
 
 export default CalendarComponent;
-

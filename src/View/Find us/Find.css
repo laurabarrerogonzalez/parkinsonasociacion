@@ -116,8 +116,8 @@
     border-right: 8vw solid transparent;
     border-top: 8vw solid #EC750E;
     position: absolute;
-    margin-left: -57px;
-    margin-bottom: -500px;
+    margin-left: -45px;
+    margin-bottom: -535px;
  
 
 }
@@ -129,7 +129,7 @@
   border-top: 10vw solid #E26890;
   position: absolute;
   left: 50%;
-  margin-bottom:8px;
+  margin-bottom:7px;
 }
 .lower-title {
   text-align: left;
@@ -148,4 +148,13 @@
   text-align: center; /* Alinea el texto al centro */
 }
 
+.left-side {
+  bottom: 750px;
+}
+.right-side{
+  bottom: 750px;
+}
+.lower-band {
+  bottom: 750px;
+}
 }
