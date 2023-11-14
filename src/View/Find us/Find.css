@@ -23,7 +23,7 @@
   position: relative;
   display: flex;
   align-items: center;
-  bottom: 500px;
+  bottom: 600px;
 }
 
 .left-side h2 {
@@ -43,7 +43,7 @@
   transform: translateX(-50%); /* Centra el triángulo horizontalmente */
   transform: rotate(-90deg);
   margin-left: -20px;
-  bottom:-535px;
+  bottom:-510px;
 }
 
 .right-side {
@@ -54,7 +54,7 @@
   position: relative;
   display: flex;
   align-items: center;
-  bottom: 500px;
+  bottom: 600px;
   
 }
 
@@ -72,7 +72,7 @@
   padding: 10px;
   position: relative;
   width: 50%; /* Ocupará el ancho completo en pantallas pequeñas */
-  bottom: 500px;
+  bottom: 600px;
 }
 
 .lower-left-side {

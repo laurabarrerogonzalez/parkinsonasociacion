@@ -132,7 +132,7 @@ const Daycarecenter = () => {
      
      <Navbar />
       <BannerViews
-        image="https://res.cloudinary.com/doft9ylq1/image/upload/v1699005153/e96e5008-5541-4c4c-b02c-140d8e7a1183_jwxyis.jpg"
+        image="https://res.cloudinary.com/doft9ylq1/image/upload/v1699436663/20210810_120627_1_tg9wyh.jpg"
         title="CENTRO DE DÍA"
       />
       <div className="boxDC1">
