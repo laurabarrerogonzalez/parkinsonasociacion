@@ -5,11 +5,9 @@ import BannerViews from "../../Components/BannerViews/BannerViews";
 import Footer from "../../Components/Footer/Footer";
 
 const Daycarecenter = () => {
-  
   return (
     <>
-     
-     <Navbar />
+      <Navbar />
       <BannerViews
         image="https://res.cloudinary.com/doft9ylq1/image/upload/v1699436663/20210810_120627_1_tg9wyh.jpg"
         title="CENTRO DE DÍA"
@@ -21,14 +19,14 @@ const Daycarecenter = () => {
 
         <div className="text_DC">
           <p>
-          El Centro de Día CON ALMA ofrece una atención integral durante el
-             período diurno a las personas en situación de dependencia, con el objetivo
-             de mantener el mayor grado de autonomía posible. Está dirigido a proporcionar
-             una intervención especializada al usuario de manera que se contemplen
-            y atiendan de un modo integral sus necesidades específicas. Las mismas
-            se cubren desde un enfoque biopsicosocial con servicios de asesoramiento,
-            rehabilitación, orientación para la promoción de la autonomía.
-            en su hogar. <br></br>
+            El Centro de Día CON ALMA ofrece una atención integral durante el
+            período diurno a las personas en situación de dependencia, con el
+            objetivo de mantener el mayor grado de autonomía posible. Está
+            dirigido a proporcionar una intervención especializada al usuario de
+            manera que se contemplen y atiendan de un modo integral sus
+            necesidades específicas. Las mismas se cubren desde un enfoque
+            biopsicosocial con servicios de asesoramiento, rehabilitación,
+            orientación para la promoción de la autonomía. en su hogar. <br></br>
           </p>
         </div>
       </div>
@@ -40,13 +38,27 @@ const Daycarecenter = () => {
 
         <div className="text-centroD">
           <ul>
-          <li> <strong>Taller nuevas tecnologías</strong></li>
-     <li> <strong>Deambulación</strong></li>
-     <li> <strong>Hortoterapia</strong></li>
-     <li> <strong>Ludoterapia</strong></li>
-     <li> <strong>Laborterapia</strong></li>
-     <li> <strong>Terapia con perros</strong></li>
-    <li> <strong>Psicomotricidad</strong></li>
+            <li>
+              <strong>Taller nuevas tecnologías</strong>
+            </li>
+            <li>
+              <strong>Deambulación</strong>
+            </li>
+            <li>
+              <strong>Hortoterapia</strong>
+            </li>
+            <li>
+              <strong>Ludoterapia</strong>
+            </li>
+            <li>
+              <strong>Laborterapia</strong>
+            </li>
+            <li>
+              <strong>Terapia con perros</strong>
+            </li>
+            <li>
+              <strong>Psicomotricidad</strong>
+            </li>
           </ul>
         </div>
       </div>
@@ -100,17 +112,24 @@ const Daycarecenter = () => {
         </div>
         <div className="text_DC3">
           <ul>
-          <li> <strong>Atención especializada</strong></li>
-   <li> <strong>Rehabilitación especifica:</strong><br></br>
-    Terapia ocupacional<br></br>
-    Estimulación cognitiva<br></br>
-    Fisioterapia<br></br></li>
-    <li> <strong>Asitencia en las actividades 
-      de la vida diaria</strong></li>
-    <li> <strong>Asesoramiento en materia de ayudas
-      técnicas </strong></li>
-   <li> <strong>Sala multisensorial</strong></li>
-    (Estimulación sensorial)
+            <li>
+              <strong>Atención especializada</strong>
+            </li>
+            <li>
+              <strong>Rehabilitación especifica:</strong>
+              <br></br> Terapia ocupacional<br></br> Estimulación cognitiva
+              <br></br> Fisioterapia<br></br>
+            </li>
+            <li>
+              <strong>Asitencia en las actividades de la vida diaria</strong>
+            </li>
+            <li>
+              <strong>Asesoramiento en materia de ayudas técnicas </strong>
+            </li>
+            <li>
+              <strong>Sala multisensorial</strong>
+            </li>
+            (Estimulación sensorial)
           </ul>
         </div>
       </div>
