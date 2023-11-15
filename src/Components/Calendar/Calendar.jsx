@@ -23,6 +23,10 @@ const CalendarComponent = () => {
     '2023-09-08': 'Día de Extremadura 💚🤍🖤',
     '2023-10-27': 'Día de la terapia ocupacional 🙆🏻‍♂️💆🏻‍♀️🧘🏻',
     '2023-10-10': 'Día Mundial de la Salud Mental 🧠🫂🗣️',
+    '2023-12-03': 'Día Mundial de la Discapacidad ♿👩🏻',
+    '2023-09-21': 'Día Mundial del Alzheimer ♿👩🏻',
+    '2023-03-06': 'Día Europeo de la logopedia ♿👩🏻',
+    // '2023-09-08': 'Día Mundial de la fisioterapia',
     // Agrega el resto de las fechas...
   };
 
@@ -47,6 +51,9 @@ const CalendarComponent = () => {
       '2023-09-08',
       '2023-10-27',
       '2023-10-10',
+      '2023-12-03',
+      '2023-09-21',
+      '2023-03-06',
     ];
 
     const isDateToHighlight = dateToHighlight.includes(currentDate.format('YYYY-MM-DD'));
