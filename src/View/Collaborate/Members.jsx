@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React, { useState } from "react";
 import "./Members.css";
 import swal from "sweetalert2";
 import Footer from "../../Components/Footer/Footer";
@@ -9,32 +9,61 @@ import BannerViews from "../../Components/BannerViews/BannerViews";
 import TermsAndConditions from "../../Components/TermsAndConditions/TermsAndConditions";
 
 const Members = () => {
-  useEffect(() => {
-    window.addEventListener("scroll", handleScroll);
-    return () => {
-      window.removeEventListener("scroll", handleScroll);
-    };
-  }, []);
+  const [formData, setFormData] = useState({
+    name: "",
+    dni: "",
+    birthdate: "",
+    address: "",
+    phone: "",
+    email: "",
+    iban: "",
+    holder: "",
+    services: "",
+    members: "Colaborativo",
+    termsAccepted: false,
+  });
 
-  const handleScroll = () => {
-    const elements = document.querySelectorAll(".services_info");
-    elements.forEach((element) => {
-      const elementTop = element.getBoundingClientRect().top;
-      const elementBottom = element.getBoundingClientRect().bottom;
+  const handleInputChange = (e) => {
+    const { name, value, type, checked } = e.target;
 
-      const isVisible = elementTop < window.innerHeight && elementBottom >= 0;
-
-      if (isVisible) {
-        element.classList.add("appear");
-      } else {
-        element.classList.remove("appear");
-      }
-    });
+    if (name === "services") {
+      setFormData((prevData) => ({
+        ...prevData,
+        services: checked
+          ? [...prevData.services, value]
+          : prevData.services.filter((services) => services !== value),
+      }));
+    } else {
+      setFormData((prevData) => ({
+        ...prevData,
+        [name]: type === "checkbox" ? checked : value,
+      }));
+    }
   };
 
-  const customColor = "rgb(236, 117, 14)";
-
   const handleEnviarClick = () => {
+    if (
+      !(formData.members === "Colaborativo" || formData.members === "Afectado")
+    ) {
+      swal.fire({
+        title: "Error",
+        text: "Por favor, elige un tipo de colaborador (Colaborativo o Afectado).",
+        icon: "error",
+        confirmButtonColor: customColor,
+      });
+      return;
+    }
+
+    if (!formData.termsAccepted) {
+      swal.fire({
+        title: "Error",
+        text: "Debes aceptar las Condiciones y la Política de privacidad.",
+        icon: "error",
+        confirmButtonColor: customColor,
+      });
+      return;
+    }
+
     swal
       .fire({
         title: "¿Estás seguro de enviar la información?",
@@ -48,14 +77,59 @@ const Members = () => {
       })
       .then((result) => {
         if (result.isConfirmed) {
-          swal.fire({
-            title: "Enviado",
-            text: "La información ha sido enviada.",
-            icon: "success",
-            confirmButtonColor: customColor,
-          });
+          sendFormDataToAPI(formData);
         }
       });
+  };
+
+  const sendFormDataToAPI = async () => {
+    try {
+      const response = await fetch(
+        "https://localhost:7165/MembersControllers/Post",
+        {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+          },
+          body: JSON.stringify({
+            ...formData,
+            services: Array.isArray(formData.services) ? formData.services : [formData.services],
+          }),
+        }
+      );
+
+      if (response.status === 200) {
+        swal.fire({
+          title: "Enviado",
+          text: "La información ha sido enviada.",
+          icon: "success",
+          confirmButtonColor: customColor,
+        });
+        setFormData({
+          name: "",
+          dni: "",
+          birthdate: "",
+          address: "",
+          phone: "",
+          email: "",
+          iban: "",
+          holder: "",
+          services: "",
+          members: "Colaborativo",
+          termsAccepted: false,
+        });
+      } else {
+        throw new Error("Error al enviar los datos");
+      }
+    } catch (error) {
+      console.error("Error:", error);
+      swal.fire({
+        title: "Error",
+        text: "Hubo un error al enviar la información.",
+        icon: "error",
+        confirmButtonColor: customColor,
+      });
+    }
   };
 
   return (
@@ -163,83 +237,135 @@ const Members = () => {
           <input
             type="text"
             autoComplete="off"
-            name="text"
+            name="name"
             className="input14"
             placeholder="Nombre y apellidos"
+            value={formData.name}
+            onChange={handleInputChange}
           />
           <input
             type="text"
             autoComplete="off"
-            name="text"
+            name="dni"
             className="input14"
             placeholder="DNI"
+            value={formData.dni}
+            onChange={handleInputChange}
           />
           <input
             type="text"
             autoComplete="off"
-            name="text"
+            name="birthdate"
             className="input14"
             placeholder="Fecha de naciomiento"
+            value={formData.birthdate}
+            onChange={handleInputChange}
           />
           <input
             type="text"
             autoComplete="off"
-            name="text"
+            name="address"
             className="input14"
             placeholder="Domicilio"
+            value={formData.address}
+            onChange={handleInputChange}
           />
           <input
             type="text"
             autoComplete="off"
-            name="text"
+            name="phone"
             className="input14"
             placeholder="Teléfono"
+            value={formData.phone}
+            onChange={handleInputChange}
           />
           <input
             type="text"
             autoComplete="off"
-            name="text"
+            name="email"
             className="input14"
             placeholder="Email"
+            value={formData.email}
+            onChange={handleInputChange}
           />
           <input
             type="text"
             autoComplete="off"
-            name="text"
+            name="iban"
             className="input14"
             placeholder="Cuenta Bancaria/IBAN"
+            value={formData.iban}
+            onChange={handleInputChange}
           />
           <input
             type="text"
             autoComplete="off"
-            name="text"
+            name="holder"
             className="input14"
             placeholder="Titular de la cuenta"
+            value={formData.holder}
+            onChange={handleInputChange}
           />
           <h2>Marcar servicio de interés:</h2>
           <div className="customCheckBoxHolder">
-            <input className="customCheckBoxInput" id="cCB1" type="checkbox" />
+            <input
+              className="customCheckBoxInput"
+              id="cCB1"
+              type="checkbox"
+              name="services"
+              value="Servicio rehabilitación integral"
+              checked={formData.services.includes(
+                "Servicio rehabilitación integral"
+              )}
+              onChange={handleInputChange}
+            />
             <label className="customCheckBoxWrapper" htmlFor="cCB1">
               <div className="customCheckBox">
                 <div className="inner">Servicio rehabilitación integral</div>
               </div>
             </label>
 
-            <input className="customCheckBoxInput" id="cCB2" type="checkbox" />
+            <input
+              className="customCheckBoxInput"
+              id="cCB2"
+              type="checkbox"
+              name="services"
+              value="Servicio estimulación cognitiva"
+              checked={formData.services.includes(
+                "Servicio estimulación cognitiva"
+              )}
+              onChange={handleInputChange}
+            />
             <label className="customCheckBoxWrapper" htmlFor="cCB2">
               <div className="customCheckBox">
                 <div className="inner">Servicio estimulación cognitiva</div>
               </div>
             </label>
 
-            <input className="customCheckBoxInput" id="cCB3" type="checkbox" />
+            <input
+              className="customCheckBoxInput"
+              id="cCB3"
+              type="checkbox"
+              name="services"
+              value="Información y orientación"
+              checked={formData.services.includes("Información y orientacióna")}
+              onChange={handleInputChange}
+            />
             <label className="customCheckBoxWrapper" htmlFor="cCB3">
               <div className="customCheckBox">
                 <div className="inner">Información y orientación</div>
               </div>
             </label>
 
-            <input className="customCheckBoxInput" id="cCB4" type="checkbox" />
+            <input
+              className="customCheckBoxInput"
+              id="cCB4"
+              type="checkbox"
+              name="services"
+              value="Otro"
+              checked={formData.services.includes("Otro")}
+              onChange={handleInputChange}
+            />
             <label className="customCheckBoxWrapper" htmlFor="cCB4">
               <div className="customCheckBox">
                 <div className="inner">Otros</div>
@@ -248,12 +374,18 @@ const Members = () => {
           </div>
           <h2>Marcar tipo de socio:</h2>
           <div className="radio-inputs">
-            <label>
+            <label
+              className={formData.members === "Colaborativo" ? "selected" : ""}
+            >
               <input
                 className="radio-input"
                 type="radio"
-                name="engine"
-                defaultChecked
+                name="members"
+                onChange={() =>
+                  handleInputChange({
+                    target: { name: "members", value: "Colaborativo" },
+                  })
+                }
               />
               <span className="radio-tile">
                 <span className="radio-icon">
@@ -265,8 +397,17 @@ const Members = () => {
                 <span className="radio-label">Colaborativo</span>
               </span>
             </label>
-            <label>
-              <input className="radio-input" type="radio" name="engine" />
+            <label lassName={formData.members === "Afectado" ? "selected" : ""}>
+              <input
+                className="radio-input"
+                type="radio"
+                name="members"
+                onChange={() =>
+                  handleInputChange({
+                    target: { name: "members", value: "Afectado" },
+                  })
+                }
+              />
               <span className="radio-tile">
                 <span className="radio-icon">
                   <img
@@ -278,23 +419,40 @@ const Members = () => {
               </span>
             </label>
           </div>
-          <label className="container40">
-            <input defaultChecked type="checkbox" />
-            <div className="checkmark"></div>
+          <div className="checkbox-container">
+            <input
+              type="checkbox"
+              checked={formData.termsAccepted}
+              onChange={() =>
+                handleInputChange({
+                  target: {
+                    name: "termsAccepted",
+                    value: !formData.termsAccepted,
+                  },
+                })
+              }
+            />
+            <div
+              className={`checkmark ${formData.termsAccepted ? "checked" : ""}`}
+            ></div>
             <div className="Terminos">
-              <TermsAndConditions/>
+              <TermsAndConditions />
             </div>
-          </label>
+          </div>
         </div>
         <br />
         <div>
           <h3>
-          *En caso de socio afectado deberá remitir a la entidad vía email copia
-          de informe médico actualizado, DNI y tarjeta sanitaria o seguro
-          médico.
+            *En caso de socio afectado deberá remitir a la entidad vía email
+            copia de informe médico actualizado, DNI y tarjeta sanitaria o
+            seguro médico.
           </h3>
         </div>
-        <button onClick={handleEnviarClick} className="bn01" type="button">
+        <button
+          onClick={handleEnviarClick}
+          className={`bn01 ${formData.termsAccepted ? "accepted" : ""}`}
+          type="button"
+        >
           Enviar
         </button>
       </form>
