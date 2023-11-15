@@ -33,13 +33,15 @@ const Myths = () => {
        <div class="content">
            <div class="front1">
                <h3 class="title">MITO</h3>
-               <p class="subtitle"><strong>Es una enfermedad contagiosa y hereditaria</strong></p>
+               <p class="subtitle"><strong>Es una enfermedad hereditaria</strong></p>
            </div>
 
            <div class="back1">
            <h3 class="title">Verdad</h3>
                <p class="description">
-               La enfermedad no es contagiosa y solo afecta a alrededor del 10-15% de los pacientes que tienen antecedentes familiares de la enfermedad
+               Solo un pequeño porcentaje (10%-15%) tiene antecedentes familiares. 
+               <br></br>
+               Hay una combinación de factores: ambientales, genéticos, envejecimiento, sustancias tóxicas...
                </p>
            </div>
        </div>
@@ -58,14 +60,18 @@ const Myths = () => {
            <div class="back2">
            <h3 class="title">Verdad</h3>
                <p class="description">
-               Puede afectar a jóvenes, pero es más común entre los 40-70 años
+               Inicio común 50-60 años: 70% diagnósticos con más de 65 años.
+               <br></br>
+               10% diagnosticadas antes de los 40 años - 20 de cada 100
+               <br></br>
+               Diagnóstico retrasado y confuso
                </p>
            </div>
        </div>
    </div>
 
 
-   <div class="cardd">
+   {/* <div class="cardd">
        <div class="content">
            <div class="front3">
                <h3 class="title">MITO</h3>
@@ -81,7 +87,7 @@ const Myths = () => {
                </p>
            </div>
        </div>
-   </div>
+   </div> */}
 
 
    <div class="cardd">
@@ -89,21 +95,25 @@ const Myths = () => {
            <div class="front4">
                <h3 class="title">MITO</h3>
                <p class="subtitle"><strong>
-               Produce demencia y envejecimiento prematuro, y deteriora la inteligencia de los pacientes
+               Produce demencia y pérdida de razonamiento
                 </strong></p>
            </div>
 
            <div class="back4">
            <h3 class="title">Verdad</h3>
                <p class="description">
-               El enfermo tiene más dificultades para hacer determinador movimientos y para expresarse
+               Parkinson es distinto del Alzheimer.
+               <br></br>
+               No pierde capacidad de razonamiento.
+               <br></br>
+               Estadios avanzados proceso degenerativo mental
                </p>
            </div>
        </div>
    </div>
 
 
-   <div class="cardd">
+   {/* <div class="cardd">
        <div class="content">
            <div class="front5">
                <h3 class="title">MITO</h3>
@@ -119,7 +129,7 @@ const Myths = () => {
                </p>
            </div>
        </div>
-   </div>
+   </div> */}
 
 
    <div class="cardd">
@@ -127,14 +137,14 @@ const Myths = () => {
            <div class="front6">
                <h3 class="title">MITO</h3>
                <p class="subtitle"><strong>
-               Fumar protege de la enfermedad
+               Todo temblor es Parkinson
                 </strong></p>
            </div>
 
            <div class="back6">
            <h3 class="title">Verdad</h3>
                <p class="description">
-               Las evidencias en este sentido no son concluyentes
+               Otras enfermedades también cursan con temblor
                </p>
            </div>
        </div>
@@ -146,14 +156,16 @@ const Myths = () => {
            <div class="front7">
                <h3 class="title">MITO</h3>
                <p class="subtitle"><strong>
-               Los temblores son el primer signo de alarma que animan al paciente o familiares a acudir al médico
+               Se manifiesta solo con temblores
                 </strong></p>
            </div>
 
            <div class="back7">
            <h3 class="title">Verdad</h3>
                <p class="description">
-               La consulta inicial es por lentitud en tareas cotidianas
+               Existen otros síntomas motores y no motores que caracterizan la enfermedad
+               <br></br>
+               NO todos manifiestan temblores, algunos no llegan a sufrirlos nunca
                </p>
            </div>
        </div>
@@ -165,14 +177,14 @@ const Myths = () => {
            <div class="front8">
                <h3 class="title">MITO</h3>
                <p class="subtitle"><strong>
-               El temblor de manos es invariable en su intensidad
+               No limita en la realización de las actividades diarias
                 </strong></p>
            </div>
 
            <div class="back8">
            <h3 class="title">Verdad</h3>
                <p class="description">
-               Temblor en reposo, disminuye con movimientos voluntarios
+               Si, en más del 80% de CASOS MODERADOS Y SEVEROS (Invisibles para la sociedad)
                </p>
            </div>
        </div>
@@ -184,14 +196,14 @@ const Myths = () => {
            <div class="front9">
                <h3 class="title">MITO</h3>
                <p class="subtitle"><strong>
-               Todo temblor es signo de enfermedad de Parkinson
+               Es una enfermedad neurológica menor
                 </strong></p>
            </div>
 
            <div class="back9">
            <h3 class="title">Verdad</h3>
                <p class="description">
-               Hay muchas enfermedades similares y que se manifiestan con síntomas parecidos, pero no son el Parkinson
+                NO: es la 2ª enfermedad neurodegenerativa tras el alzheime
                </p>
            </div>
        </div>
@@ -203,14 +215,14 @@ const Myths = () => {
            <div class="front10">
                <h3 class="title">MITO</h3>
                <p class="subtitle"><strong>
-               No hay un tratamiento farmacológico realmente útil
+               Solo existen tratamientos farmacológicos
                 </strong></p>
            </div>
 
            <div class="back10">
            <h3 class="title">Verdad</h3>
                <p class="description">
-               Aunque no hay cura, la terapia actual mejora la calidad de vida y reduce los síntomas de la enfermedad 
+               Es muy importante combinar el tratamiento con terapias de rehabilitación
                </p>
            </div>
        </div>
@@ -222,14 +234,14 @@ const Myths = () => {
            <div class="front11">
                <h3 class="title">MITO</h3>
                <p class="subtitle"><strong>
-               El único síntoma incapacitante son los movimientos involuntarios de la mano
+               Es mortal esta enfermedad
                 </strong></p>
            </div>
 
            <div class="back11">
            <h3 class="title">Verdad</h3>
                <p class="description">
-               Síntomas diversos incluyen motoras, ansiedad, depresión y deterioro verbal
+               A pesar de ser una enfermedad crónica, las personas no mueren a causa del párkinson
                </p>
            </div>
        </div>

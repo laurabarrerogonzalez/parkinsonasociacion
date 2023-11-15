@@ -37,30 +37,19 @@ const Symptoms = () => {
       </div>
 
 
-    <div className="what">
+    {/* <div className="what">
       <div className="title-parkinson">
       <h1>¿Qué es el Parkinson?</h1>
       </div>
-
-
-
-
-
-
-
-
-
-
-      
 
       <div >
         <p className="text-parkinson">La enfermedad de Parkinson es un Trastorno Neurodegenerativo que afecta al sistema nervioso central. <br></br>
           Es crónico y progresivo y se caracteriza por la falta de dopamina en el organismo, que es la sustancia necesaria para la realización de movimientos.
         </p>
       </div>
-    </div>
+    </div> */}
 
-    <div className="what">
+    {/* <div className="what">
       <div className="title-parkinson">
       <h1>Primeros Síntomas</h1>
       </div>
@@ -85,66 +74,126 @@ const Symptoms = () => {
       </div> 
       </div>
 
-    </div>
+    </div> */}
 
 
 
     <div className="Bodys">
-        <HTMLFlipBook width={300} height={500}>
+        <HTMLFlipBook width={600} height={500}>
           <Page number="1">
-            <h1>Síntomas asociados o secundarios</h1> <br />{" "}
-            <li className="li-symp">Cambios en el tono de voz que se torna más débil.</li>
-            <li className="li-symp">Cambios en el semblante que se vuelve menos expresivo.</li>
-            <li className="li-symp">Síntomas psíquicos: ansiedad, depresión y disminución de la libido.</li>
-            <li className="li-symp">Trastornos del sueño: insomnio y fragmentación del sueño.</li>
-            
-            <br /> 
+            <div className="parkinson-book">
+              <h1>¿Qué es el Parkinson?</h1> <br />{" "}
+             <p>El Parkinson es un trastorno neurodegenerativo de curso crónico, progresivo e irreversible</p>
+             <ul>
+              <li>Degenerativa: disminución de la calidad</li>
+              <li>Neurológico: sistema nervioso</li>
+              <li>Crónico: de larga duración</li>
+              <li>Progresivo: con una evolución en etapas</li>
+             </ul>
+            </div>
 
+            <div className="parkinson-book">
+<h1>¿Cómo se produce?</h1>
+             <p>Células de la sustancia negra funcionan mal y mueren, disminuye producción de dopamina</p>
+             <p>Dopamina: neurotransmisor de información para realizar movimientos con normalidad</p>
+
+            </div>
+
+             
             
           </Page>
 
           <Page number="2">
-            <h1>Síntomas asociados o secundarios</h1> <br /><br/> 
-            <li className="li-symp">Síntomas sensitivos: hormigueos e incluso dolor en alguna extremidad.</li>
-            <li className="li-symp">Trastornos leves del sistema nervioso autónomo: estreñimiento y aumento de la sudación.</li>
-            <li className="li-symp">Alteraciones cutáneas: eczema seborreico, que afecta fundamentalmente a la piel de la cara y el cuero cabelludo.</li>
-            <li className="li-symp">Disminución del sentido del olfato.</li>
+            <h1>Síntomas Motores</h1> 
+            <div className="parkinson-book">
+              <h1>Principales</h1>
+              <ul>
+                <li>BRADICINESIA - lentitud en el movimiento - bloqueo y dificultades en marcha</li>
+                <li>RIGIDEZ- aumento del tono muscular - amplitud del movimiento menor, dolor y calambres, postura encorvada</li>
+                <li>TEMBLOR EN REPOSO - temblor parkinsoniano</li>
+                <li>INESTABILIDAD POSTURAL - caídas</li>
+              </ul>
+            </div>
+
+            <div className="parkinson-book">
+              <h1>Otros</h1>
+              <ul>
+                <li>HIPOMIMIA: disminución expresión facial debido a rigidez</li>
+                <li>HIPOFONÍA: disminución tono voz</li>
+                <li>DISARTRIA: problemas de articulación del habla</li>
+                <li>DIFICULTADES RESPIRATORIAS</li>
+                <li>FATIGA Y CANSANCIO</li>
+                <li>DISCINESIAS: movimientos involuntarios provocados por la medicación</li>
+              </ul>
+            </div>
+           
           </Page>
 
           <Page number="3">
-            <h1>Diagnóstico</h1> <br /> <br/> 
-            <img className="imgs" src="https://res.cloudinary.com/dit2zhtwz/image/upload/v1699097744/medical-563427_1280_clghkv.jpg" /><br /> <br/> 
-            El diagnóstico de la enfermedad es fundamentalmente clínico y se basa en:
-            <li className="li-symp">La historia clínica del paciente </li>
-            <li className="li-symp">La exploración física y neurológica</li>
+           <h1>Síntomas No Motores</h1>
+           <div className="parkinson-book">
+            <h1>NEUROPSIQUIATRICOS</h1>
+             <ul>
+                <li>TRASTORNOS EMOCIONALES: ansiedad, depresión...</li>
+                <li>TRASTORNOS CONDUCTUALES: control de impulso, hipersexualidad</li>
+                <li>ALUCINACIONES Y DELIRIOS: efecto de medicación</li>
+                <li>ALTERACIONES COGNITIVAS: enlentecimiento del procesamiento de información, alteración función ejecutiva y déficit atencionales, 
+                  visuales, espacial y de memoria</li>
+              </ul>
+           </div>
+             
           </Page>
 
           <Page number="4">
-            <h1>Diagnóstico</h1> <br /> <br/> 
-            En algunos pacientes se solicitarán:
-            <li className="li-symp">Análisis de laboratorio.</li>
-            <li className="li-symp">Pruebas de diagnóstico de imagen, como un escáner cerebral, 
-              la tomografía por emisión de positrones (SPECT) o una resonancia magnética. 
-              Las pruebas de imagen no aportan datos diagnósticos, pero permiten excluir otras 
-              causas de síndrome parkinsoniano, como hidrocefalias, tumores o lesiones vasculares,
-               y dar información de la capacidad anatómico-funcional del cerebro</li>
-           
+            <h1>Síntomas No Motores</h1>          
+            <div className="parkinson-book">
+            <h1>GASTROINTESTINALES</h1>
+             <ul>
+                <li>ESTREÑIMIENTO</li>
+                <li>DIGESTIONES PESADAS</li>
+                <li>DISFAGIAS: dificultades para tragar</li>
+                <li>NAUSEAS Y VÓMITOS</li>
+                <li>SIALORREA: salivación o babeo</li>
+              </ul>
+           </div>
+
+           <div className="parkinson-book">
+            <h1>SENSORIALES</h1>
+             <ul>
+                <li>ALTERACIONES VISUALES</li>
+                <li>DOLOR Y PARESTESIAS</li>
+                <li>HIPOSMIA/ANOSMIA: disminución o pérdida del olfato</li>
+              </ul>
+           </div>
 
           </Page>
 
           <Page number="5">
-            <h1>Diagnóstico</h1> <br /> <br/> 
-            <li className="li-symp">Exámenes neurofisiológicos, como el estudio de ciertos reflejos del tronco 
-              cerebral, el estudio del sistema nervioso autónomo o el estudio de la frecuencia 
-              y las características del temblor.</li>
-            *Es muy importante establecer el diagnóstico diferencial entre la enfermedad de 
-            Parkinson y otras dolencias que pueden cursar con parkinsonismo.
+            <h1>SINTOMAS NO MOTORES</h1> <br /> <br/> 
+            <div className="parkinson-book">
+            <h1>ALTERACIONES DEL SUEÑO</h1>
+             <ul>
+                <li>INSOMNIO O SUEÑO FRACCIONADO</li>
+                <li>SOMNOLENCIA DIURNA</li>
+                <li>SUEÑOS VIVIDOS</li>
+                <li>SINDROME PIERNAS INQUIETAS</li>
+              </ul>
+           </div>
+
+           <div className="parkinson-book">
+            <h1>ALTERACIONES AUTONÓMICAS</h1>
+             <ul>
+                <li>HIPOTENSIÓN ORTOSTÁTICA</li>
+                <li>AUMENTO DE SUDORACIÓN Y SEBORREA</li>
+                <li>ALTERACIONES SEXUALES</li>
+                <li>DISFUNCIONES URINARIAS</li>
+              </ul>
+           </div>
           </Page>
 
           <Page number="6">
             <h1>No dudes en pedir ayuda</h1> <br /> <br/> 
-            <img className="imgs" src="https://res.cloudinary.com/dit2zhtwz/image/upload/v1699098000/istockphoto-1461330630-612x612_ysetew.jpg" /><br /> <br/>
-            Diagnosticar a tiempo es siempre muy importante
+            
           </Page>
 
         </HTMLFlipBook>
