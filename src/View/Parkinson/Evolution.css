@@ -140,17 +140,34 @@
     padding: 0 20px; /* Ajustar el relleno para adaptarse al ancho reducido */
   }
 
+
+} 
+
+
   #progress-bar-container ul {
     flex-direction: row; 
     height: auto; 
     margin-top: -50px;
+    /* display: flex;
+    justify-content: space-between;
+    text-align: center;
+    align-items: center; */
   }
+
+
+p{
+  margin-top: 20px;
+  margin-left: -20px;
+}
+
+
 
 
 
   #progress-bar-container ul li {
     margin-bottom: 10px; 
     margin-right: 20px;
+    font-size: 9px;
     display: flex; /* Usar flexbox */
     flex-direction: column; /* Cambiar la dirección a columna */
     align-items: center; /* Centrar el contenido */
@@ -168,7 +185,7 @@
   }
 
   #progress-bar-container #line {
-    margin-top: -74px;
+    margin-top: -58px;
     margin-left: -15px;
   }
 
@@ -183,7 +200,7 @@
   .section-content {
     padding: 20px; /* Ajustar el relleno para adaptarse al ancho reducido */
   }
-}
+
 
 .what1{
   margin-right: 70px;
