@@ -1,11 +1,11 @@
 import "./Voluntary.css";
 import React, { useState } from "react";
 import swal from "sweetalert2";
-import Navbar from "../../Components/Navbar/Navbar";
 import Footer from "../../Components/Footer/Footer";
 import ButtonDonate from "../../Components/ButtonDonate/ButtonDonate";
 import ScrollArrow from "../../Components/ScrollArrow/ScrollArrow";
 import BannerViews from "../../Components/BannerViews/BannerViews";
+import TermsAndConditions from "../../Components/TermsAndConditions/TermsAndConditions";
 
 const Voluntary = () => {
   const [formData, setFormData] = useState({
@@ -31,7 +31,13 @@ const Voluntary = () => {
   };
 
   const handleEnviarClick = () => {
-    if (!(formData.shift === "Mañanas" || formData.shift === "Tardes" || formData.shift === "Fin de Semana")) {
+    if (
+      !(
+        formData.shift === "Mañanas" ||
+        formData.shift === "Tardes" ||
+        formData.shift === "Fin de Semana"
+      )
+    ) {
       swal.fire({
         title: "Error",
         text: "Por favor, elige un turno (Mañanas, Tardes o Fin de Semana).",
@@ -69,17 +75,20 @@ const Voluntary = () => {
       });
   };
 
-  const sendFormDataToAPI = async (formData) => {
+  const sendFormDataToAPI = async () => {
     try {
-      const response = await fetch("http://localhost:3000/form", {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-        },
-        body: JSON.stringify({ form: [formData] }),
-      });
+      const response = await fetch(
+        "https://localhost:7165/VolunteersControllers/Post",
+        {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+          },
+          body: JSON.stringify(formData),
+        }
+      );
 
-      if (response.status === 201) {
+      if (response.status === 200) {
         swal.fire({
           title: "Enviado",
           text: "La información ha sido enviada.",
@@ -116,7 +125,6 @@ const Voluntary = () => {
   return (
     <>
       <div className="photos">
-        <Navbar />
         <BannerViews
           image="https://res.cloudinary.com/da7ffijqs/image/upload/v1698681283/20201119_125749_1_lmqez1.jpg"
           title="¿QUIERES SER VOLUNTARIO?"
@@ -129,8 +137,8 @@ const Voluntary = () => {
             <h2>
               Mejorar la calidad de vida de las personas afectadas por la
               enfermedad de Parkinson y a sus familiares. Promoción del
-              voluntariado social y fomento de acciones y actividades de
-              interés general de naturaleza análoga.
+              voluntariado social y fomento de acciones y actividades de interés
+              general de naturaleza análoga.
             </h2>
           </div>
         </div>
@@ -149,7 +157,9 @@ const Voluntary = () => {
       </div>
       <form className="form11">
         <p className="title12">Solicitud Voluntariado</p>
-        <p className="message13">Ayudar es un regalo que se da con el corazón.</p>
+        <p className="message13">
+          Ayudar es un regalo que se da con el corazón.
+        </p>
         <div className="flex14">
           <input
             type="text"
@@ -192,7 +202,7 @@ const Voluntary = () => {
             autoComplete="off"
             name="phone"
             className="input14"
-            placeholder="Telefono"
+            placeholder="Teléfono"
             value={formData.phone}
             onChange={handleInputChange}
           />
@@ -214,13 +224,18 @@ const Voluntary = () => {
             value={formData.education}
             onChange={handleInputChange}
           />
+          <h2>Marcar disponibilidad:</h2>
           <div className="radio-inputs">
             <label className={formData.shift === "Mañanas" ? "selected" : ""}>
               <input
                 className="radio-input"
                 type="radio"
                 name="shift"
-                onChange={() => handleInputChange({ target: { name: "shift", value: "Mañanas" } })}
+                onChange={() =>
+                  handleInputChange({
+                    target: { name: "shift", value: "Mañanas" },
+                  })
+                }
               />
               <span className="radio-tile">
                 <span className="radio-icon">
@@ -237,7 +252,11 @@ const Voluntary = () => {
                 className="radio-input"
                 type="radio"
                 name="shift"
-                onChange={() => handleInputChange({ target: { name: "shift", value: "Tardes" } })}
+                onChange={() =>
+                  handleInputChange({
+                    target: { name: "shift", value: "Tardes" },
+                  })
+                }
               />
               <span className="radio-tile">
                 <span className="radio-icon">
@@ -249,12 +268,18 @@ const Voluntary = () => {
                 <span className="radio-label">Tardes</span>
               </span>
             </label>
-            <label className={formData.shift === "Fin de Semana" ? "selected" : ""}>
+            <label
+              className={formData.shift === "Fin de Semana" ? "selected" : ""}
+            >
               <input
                 className="radio-input"
                 type="radio"
                 name="shift"
-                onChange={() => handleInputChange({ target: { name: "shift", value: "Fin de Semana" } })}
+                onChange={() =>
+                  handleInputChange({
+                    target: { name: "shift", value: "Fin de Semana" },
+                  })
+                }
               />
               <span className="radio-tile">
                 <span className="radio-icon">
@@ -271,16 +296,29 @@ const Voluntary = () => {
             <input
               type="checkbox"
               checked={formData.termsAccepted}
-              onChange={() => handleInputChange({ target: { name: "termsAccepted", value: !formData.termsAccepted } })}
+              onChange={() =>
+                handleInputChange({
+                  target: {
+                    name: "termsAccepted",
+                    value: !formData.termsAccepted,
+                  },
+                })
+              }
             />
-            <div className={`checkmark ${formData.termsAccepted ? "checked" : ""}`}></div>
+            <div
+              className={`checkmark ${formData.termsAccepted ? "checked" : ""}`}
+            ></div>
             <div className="Terminos">
-              <p>Acepto las Condiciones y la Politica de privacidad</p>
+              <TermsAndConditions />
             </div>
           </div>
         </div>
-        <button onClick={handleEnviarClick} className={`bn01 ${formData.termsAccepted ? "accepted" : ""}`} type="button">
-          Enviar!
+        <button
+          onClick={handleEnviarClick}
+          className={`bn01 ${formData.termsAccepted ? "accepted" : ""}`}
+          type="button"
+        >
+          Enviar
         </button>
       </form>
       <Footer />

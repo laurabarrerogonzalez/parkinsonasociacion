@@ -28,6 +28,7 @@ const Find = () => {
           <Information />
         </div>
       </div>
+    
       <CalendarComponent />
       <div className="social-band">
         <div className="left-side">
@@ -57,7 +58,6 @@ const Find = () => {
         </div>
         <div className="triangleF"></div>
       </div>
-
       <div className="lower-band">
         <div className="lower-left-side">
           <h2 className="lower-title">FECHAS IMPORTANTES</h2>

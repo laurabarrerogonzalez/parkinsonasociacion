@@ -186,6 +186,7 @@
   overflow: hidden;
   width: 400px;
   margin-top: 20px;
+  text-align: center;
 }
 
 .btn:hover {

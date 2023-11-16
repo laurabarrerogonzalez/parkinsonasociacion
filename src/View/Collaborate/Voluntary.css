@@ -56,7 +56,6 @@
   border-radius: 20px;
   position: relative;
 }
-
 .title12 {
   font-size: 28px;
   color: royalblue;
@@ -100,13 +99,13 @@
   border-radius: 15px;
   padding: 1em;
   background-color: #ffffff;
-  box-shadow: inset 2px 5px 10px rgba(0,0,0,0.3);
+  box-shadow: 2px 5px 5px rgba(0,0,0,0.3);
   transition: 300ms ease-in-out;
 }
 .input14:focus {
   background-color: white;
   transform: scale(1.05);
-  box-shadow: 13px 13px 100px #969696,
+  box-shadow: 13px 13px 100px #b0b0b0bd,
              -13px -13px 100px #ffffff;
 }
 .bn01 {
@@ -278,7 +277,7 @@
   align-items: center;
   justify-content: center;
   width: 80px;
-  min-height: 80px;
+  height: 90px;
   border-radius: 0.5rem;
   border: 2px solid #b5bfd9;
   background-color: #000000;
@@ -310,10 +309,10 @@
   opacity: 1;
 }
 .radio-label {
-  color: #707070;
+  color: white;
   transition: 0.375s ease;
   text-align: center;
-  font-size: 13px;
+  font-size: 15px;
 }
 .radio-input {
   clip: rect(0 0 0 0);

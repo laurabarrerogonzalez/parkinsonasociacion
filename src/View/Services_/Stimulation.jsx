@@ -1,6 +1,5 @@
-import React from "react";
+import React, { useEffect } from 'react';
 import Navbar from "../../Components/Navbar/Navbar";
-import BannerViews from "../../Components/BannerViews/BannerViews";
 import "../Services_/Stimulation.css"
 import Footer from "../../Components/Footer/Footer";
 import ButtonDonate from "../../Components/ButtonDonate/ButtonDonate";
@@ -10,13 +9,18 @@ import ScrollArrow from "../../Components/ScrollArrow/ScrollArrow";
 
 const Stimulation = () => {
 
+    useEffect(() => {
+        // Hacer scroll al principio de la página cuando el componente se monta
+        window.scrollTo(0, 0);
+      }, []);
+
     return (
         <div>
             <Navbar />
             <section className="section_banner_new_stimulation">
                 <div className="title_stimulation">
 
-                    <h1>Estimulacion Cognitiva <br />
+                    <h1>Estimulación Cognitiva <br />
                         "¡Activa tu mente, expande tu mundo!"
                     </h1>
 
@@ -27,7 +31,7 @@ const Stimulation = () => {
                     </p>
                     <div className="buttons_items">
                         <button className="button_1_info">
-                            <span>Informacion</span>
+                            <span>Información</span>
 
                         </button>
                         <button className="button_2_info">

@@ -159,6 +159,8 @@ const Evolution = () => {
 
 
       <Footer />
+      <ButtonDonate />
+      <ScrollArrow/>
     </>
   );
 };
