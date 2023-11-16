@@ -23,6 +23,8 @@ const Members = () => {
     termsAccepted: false,
   });
 
+  const customColor = "rgb(236, 117, 14)";
+
   const handleInputChange = (e) => {
     const { name, value, type, checked } = e.target;
 
