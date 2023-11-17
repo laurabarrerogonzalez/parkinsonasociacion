@@ -6,6 +6,7 @@
   text-decoration: underline;
   text-decoration-color: #ec750e;
   text-decoration-thickness: 6px;
+ 
 }
 
 .project-container {
@@ -69,13 +70,6 @@
   margin-top: 52px;
 
 }
-
-
-/* Otras reglas CSS... */
-
-
-  
-  /* Otras reglas CSS... */
   
 @media (max-width: 768px) {
   .project-container {
