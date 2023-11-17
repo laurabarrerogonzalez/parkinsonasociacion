@@ -1,7 +1,3 @@
-
-----------calendar--------------
-
-
 .textQ {
   font-family: "Times New Roman", Times, serif;
   text-align: center;
@@ -23,12 +19,12 @@
   position: relative;
   display: flex;
   align-items: center;
-  bottom: 500px;
+  bottom: 600px;
 }
 
 .left-side h2 {
-  font-size: 1.5rem;
-  margin: 0;
+  font-size: 1.8rem;
+  margin-left:150px;
   text-align: center; /* Alinea el texto al centro */
 }
 
@@ -43,7 +39,7 @@
   transform: translateX(-50%); /* Centra el triángulo horizontalmente */
   transform: rotate(-90deg);
   margin-left: -20px;
-  bottom:-509px;
+  bottom:-722px;
 }
 
 .right-side {
@@ -54,7 +50,7 @@
   position: relative;
   display: flex;
   align-items: center;
-  bottom: 500px;
+  bottom: 600px;
   
 }
 
@@ -72,7 +68,7 @@
   padding: 10px;
   position: relative;
   width: 50%; /* Ocupará el ancho completo en pantallas pequeñas */
-  bottom: 500px;
+  bottom: 600px;
 }
 
 .lower-left-side {
@@ -116,8 +112,8 @@
     border-right: 8vw solid transparent;
     border-top: 8vw solid #EC750E;
     position: absolute;
-    margin-left: -57px;
-    margin-bottom: -500px;
+    margin-left: -48px;
+    margin-bottom: -320px;
  
 
 }
@@ -129,7 +125,7 @@
   border-top: 10vw solid #E26890;
   position: absolute;
   left: 50%;
-  margin-bottom:8px;
+  margin-bottom:7px;
 }
 .lower-title {
   text-align: left;
@@ -148,4 +144,13 @@
   text-align: center; /* Alinea el texto al centro */
 }
 
+.left-side {
+  bottom: 750px;
+}
+.right-side{
+  bottom: 750px;
+}
+.lower-band {
+  bottom: 750px;
+}
 }
