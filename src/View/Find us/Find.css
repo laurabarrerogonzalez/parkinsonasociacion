@@ -39,7 +39,7 @@
   transform: translateX(-50%); /* Centra el triángulo horizontalmente */
   transform: rotate(-90deg);
   margin-left: -20px;
-  bottom:-510px;
+  bottom:-722px;
 }
 
 .right-side {
@@ -112,8 +112,8 @@
     border-right: 8vw solid transparent;
     border-top: 8vw solid #EC750E;
     position: absolute;
-    margin-left: -45px;
-    margin-bottom: -535px;
+    margin-left: -48px;
+    margin-bottom: -320px;
  
 
 }
