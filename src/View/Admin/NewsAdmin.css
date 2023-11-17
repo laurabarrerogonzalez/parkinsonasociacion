@@ -1,0 +1,26 @@
+/* Estilos para las noticias */
+.news-item {
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    padding: 10px;
+  }
+  
+  .thumbnail {
+    width: 300px;
+    height: 200px;
+    object-fit: cover;
+  }
+
+  
+  
+  .titlea {
+    font-size: 200px;
+    margin-top: 10px;
+    margin-bottom: 5px;
+  }
+  
+  .link {
+    text-decoration: none;
+    color: blue;
+  }
+  
