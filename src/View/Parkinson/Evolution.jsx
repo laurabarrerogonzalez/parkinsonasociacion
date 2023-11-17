@@ -58,19 +58,19 @@ const Evolution = () => {
         <div id="progress-bar-container">
           <ul>
             <li className={`step step01 ${currentStep === 1 ? 'active' : ''}`} onClick={() => handleStepClick(1)}>
-              <span>Estadío I</span>
+              <p>Estadío I</p>
             </li>
             <li className={`step step02 ${currentStep === 2 ? 'active' : ''}`} onClick={() => handleStepClick(2)}>
-              <span>Estadío II</span>
+              <p>Estadío II</p>
             </li>
             <li className={`step step03 ${currentStep === 3 ? 'active' : ''}`} onClick={() => handleStepClick(3)}>
-              <span>Estadío III</span>
+              <p>Estadío III</p>
             </li>
             <li className={`step step04 ${currentStep === 4 ? 'active' : ''}`} onClick={() => handleStepClick(4)}>
-              <span>Estadío IV</span>
+              <p>Estadío IV</p>
             </li>
             <li className={`step step05 ${currentStep === 5 ? 'active' : ''}`} onClick={() => handleStepClick(5)}>
-              <span>Estadío V</span>
+              <p>Estadío V</p>
             </li>
           </ul>
           <div id="line">
