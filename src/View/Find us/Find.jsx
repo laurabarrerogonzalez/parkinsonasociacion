@@ -43,7 +43,7 @@ const Find = () => {
             <img src="https://res.cloudinary.com/doft9ylq1/image/upload/v1698930182/IgF_Mesa_de_trabajo_1_waifsm.png" alt="Instagram" />
           </a>
         </div>
-        <div className="triangleF"></div>
+        <div className="triangleF2525"></div>
       </div>
       <div className="lower-band">
         <div className="lower-left-side">
