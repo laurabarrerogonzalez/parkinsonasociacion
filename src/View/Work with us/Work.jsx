@@ -14,6 +14,7 @@ const Work = () => {
   const handleFileSelect = (event) => {
     const fileInput = event.target;
     const selectedFile = fileInput.files[0];
+    setFile(selectedFile);
 
     if (selectedFile.type.startsWith("image/")) {
       // Mostrar la vista previa de la imagen
@@ -36,7 +37,7 @@ const Work = () => {
       const preview = document.getElementById("preview");
       const objectElement = document.createElement("object");
       objectElement.type = "application/pdf";
-      
+
       preview.innerHTML = "";
       preview.appendChild(objectElement);
     } else {
@@ -46,7 +47,7 @@ const Work = () => {
 
   window.addEventListener("scroll", function () {
     var images = document.querySelectorAll(
-      ".img_form_work,.video_person_asociation"     
+      ".img_form_work,.video_person_asociation"
     );
 
     images.forEach(function (image) {
@@ -63,22 +64,42 @@ const Work = () => {
 
   const [formsData, setFormsData] = useState({
     name: "",
-    dni: "",
-    birthdate: "",
-    address: "",
-    phone: "",
+    lastName: "",
     email: "",
-    iban: "",
-    holder: "",
-    services: "",
-    members: "Colaborativo",
+    phone: "",
+    province: "",
+    city: "",
+    zipcode: "",
+    position: "",
+    archive: "",
     termsAccepted: false,
   });
 
   const customColor = "rgb(236, 117, 14)";
 
+  const [positions, setPositions] = useState([
+    "Fisioterapeuta",
+    "Terapeuta Ocupacional",
+    "Educador@ Social",
+    "Trabajador@ Social",
+    "Psicólog@",
+    "Logopeda",
+    "Auxiliar de Enfermeria/ Cuidador@",
+    "Servicio de Limpieza",
+    "Técnic@ de Administración",
+    "Monitor@ de Ocio y Tiempo Libre",
+    "Técnic@ superior en integarción social",
+  ]);
+
+  const [selectedPosition, setSelectedPosition] = useState("");
+
   const handleInputChange = (e) => {
     const { name, value, type, checked } = e.target;
+
+    if (name === "position") {
+      setSelectedPosition(value);
+    }
+
     setFormsData((prevData) => ({
       ...prevData,
       [name]: type === "checkbox" ? checked : value,
@@ -86,20 +107,6 @@ const Work = () => {
   };
 
   const handleEnviarClick = () => {
-    if (
-      !(
-        formsData.members === "Colaborativo" || formsData.members === "Afectado"
-      )
-    ) {
-      swal.fire({
-        title: "Error",
-        text: "Por favor, elige un tipo de colaborador (Colaborativo o Afectado).",
-        icon: "error",
-        confirmButtonColor: customColor,
-      });
-      return;
-    }
-
     if (!formsData.termsAccepted) {
       swal.fire({
         title: "Error",
@@ -126,6 +133,51 @@ const Work = () => {
           sendFormsDataToAPI(formsData);
         }
       });
+  };
+
+  const sendFormsDataToAPI = async () => {
+    try {
+      const formData = new FormData();
+
+      // Agregar datos del formulario
+      Object.entries(formsData).forEach(([key, value]) => {
+        formData.append(key, value);
+      });
+
+      // Agregar el archivo
+      formData.append("file", file);
+
+      const response = await fetch(
+        "https://localhost:7165/WorkControllers/Post",
+        {
+          method: "POST",
+          body: formData,
+        }
+      );
+
+      if (response.status === 200) {
+        // Éxito
+        swal.fire({
+          title: "Enviado",
+          text: "La información ha sido enviada.",
+          icon: "success",
+          confirmButtonColor: customColor,
+        });
+        setFormsData({
+          // ... otros campos del formulario
+        });
+      } else {
+        throw new Error("Error al enviar los datos");
+      }
+    } catch (error) {
+      console.error("Error:", error);
+      swal.fire({
+        title: "Error",
+        text: "Hubo un error al enviar la información.",
+        icon: "error",
+        confirmButtonColor: customColor,
+      });
+    }
   };
 
   return (
@@ -183,60 +235,107 @@ const Work = () => {
           registrate:
         </p>
       </div>
-
-      <section className="container_logo_asociation_work">
-        <img
-          className="logo_asociation_work"
-          src="https://res.cloudinary.com/dp7lr71t8/image/upload/v1699013908/descarga-removebg-preview_chico_dzkvgc.png"
-          alt=""
-        />
-      </section>
       <section className="container_form">
-        <form className="form">
+        <form className="form" encType="multipart/form-data">
           <p className="title13">Regístrate</p>
           <p className="message">Registrate: "El futuro esta en tus manos"</p>
           <div className="flex">
             <label>
-              <input className="input" type="text" placeholder="" required />
+              <input
+                className="input"
+                type="text"
+                placeholder=""
+                required
+                name="name"
+                value={formsData.name}
+                onChange={handleInputChange}
+              />
               <span>Nombres</span>
             </label>
 
             <label>
-              <input className="input" type="text" placeholder="" required />
+              <input
+                className="input"
+                type="text"
+                placeholder=""
+                required
+                name="lastName"
+                value={formsData.lastName}
+                onChange={handleInputChange}
+              />
               <span>Apellidos</span>
             </label>
           </div>
 
           <label>
-            <input className="input" type="email" placeholder="" required />
+            <input
+              className="input"
+              type="email"
+              placeholder=""
+              required
+              name="email"
+              value={formsData.email}
+              onChange={handleInputChange}
+            />
             <span>Email</span>
           </label>
 
           <label>
-            <input className="input" type="text" placeholder="" required />
+            <input
+              className="input"
+              type="text"
+              placeholder=""
+              required
+              name="phone"
+              value={formsData.phone}
+              onChange={handleInputChange}
+            />
             <span>Teléfono</span>
           </label>
           <label>
-            <input className="input" type="text" placeholder="" required />
+            <input
+              className="input"
+              type="text"
+              placeholder=""
+              required
+              name="province"
+              value={formsData.province}
+              onChange={handleInputChange}
+            />
             <span>Provincia</span>
           </label>
           <label>
-            <input className="input" type="text" placeholder="" required />
+            <input
+              className="input"
+              type="text"
+              placeholder=""
+              required
+              name="city"
+              value={formsData.city}
+              onChange={handleInputChange}
+            />
             <span>Ciudad</span>
           </label>
           <label>
-            <input className="input" type="text" placeholder="" required />
+            <input
+              className="input"
+              type="text"
+              placeholder=""
+              required
+              name="zipcode"
+              value={formsData.zipcode}
+              onChange={handleInputChange}
+            />
             <span>Código Postal</span>
           </label>
 
           <label>
-            <select className="input" required>
+            {/* <select className="input" required>
               <option value="" disabled selected>
                 Seleccione un cargo
               </option>
               <option value="Fisioterapeuta">Fisioterapeuta</option>
               <option value="Terapeuta Ocupacional">
-                {" "}
                 Terapeuta Ocupacional
               </option>
               <option value="Edicador@ Social">Edicador@ Social</option>
@@ -253,6 +352,22 @@ const Work = () => {
                 {" "}
                 Técnic@ superior en integarción social
               </option>
+            </select> */}
+            <select
+              className="input"
+              required
+              name="position"
+              value={formsData.position}
+              onChange={handleInputChange}
+            >
+              <option value="" disabled selected>
+                Seleccione un cargo
+              </option>
+              {positions.map((position) => (
+                <option key={position} value={position}>
+                  {position}
+                </option>
+              ))}
             </select>
             <span>Cargo a gestionar</span>
           </label>
@@ -266,7 +381,7 @@ const Work = () => {
                 required
               />
             </label>
-            <div id="preview"></div>
+            <div id="preview">{file && <p>{file.name}</p>}</div>
           </div>
           <div className="checkbox-container">
             <input
