@@ -76,32 +76,32 @@ const Work = () => {
             </section>
             <section className="container_form">
 
-                <form className="form">
-                    <p className="title">Regístrate</p>
+                <form className="form_work">
+                    <p className="title_work">Regístrate</p>
                     <p className="message">Registrate: "El futuro esta en tus manos"</p>
                     <div className="flex">
                         <label>
-                            <input className="input" type="text" placeholder="" required />
+                            <input className="input_work" type="text" placeholder="" required />
                             <span>Nombres</span>
                         </label>
 
                         <label>
-                            <input className="input" type="text" placeholder="" required />
+                            <input className="input_work" type="text" placeholder="" required />
                             <span>Apellidos</span>
                         </label>
                     </div>
 
                     <label>
-                        <input className="input" type="email" placeholder="" required />
+                        <input className="input_work" type="email" placeholder="" required />
                         <span>Email</span>
                     </label>
 
                     <label>
-                        <input className="input" type="text" placeholder="" required />
+                        <input className="input_work" type="text" placeholder="" required />
                         <span>Teléfono</span>
                     </label>
                     <label>
-                        <select className="input" required>
+                        <select className="input_work" required>
                             <option value="" disabled selected>Selecciona un País</option>
                             <option value="Albania">Albania</option>
                             <option value="Alemania">Alemania</option>
@@ -167,7 +167,7 @@ const Work = () => {
                     </label>
 
                     <label>
-                        <select className="input" required>
+                        <select className="input_work" required>
                             <option value="" disabled selected>Selecciona una Provincia</option>
                             <option value="Álava">Álava</option>
                             <option value="Albacete">Albacete</option>
@@ -225,12 +225,12 @@ const Work = () => {
                         <span>Provincia</span>
                     </label>
                     <label>
-                        <input className="input" type="text" placeholder="" required />
+                        <input className="input_work" type="text" placeholder="" required />
                         <span>Código Postal</span>
                     </label>
 
                     <label>
-                        <select className="input" required>
+                        <select className="input_work" required>
                             <option value="" disabled selected>Seleccione un cargo</option>
                             <option value="Presidente">Presidente</option>
                             <option value="Vicepresidente">Vicepresidente</option>
@@ -254,16 +254,16 @@ const Work = () => {
                         <span>Cargo a gestionar</span>
                     </label>
                     <label>
-                        <input type="file" className="input" required />
+                        <input type="file" className="input_work" required />
                         <span>Adjuntar Archivo</span>
                     </label>
                     {/* <p className="signin">
                         Protección de datos personales <a href="#">Leer</a>
                     </p> */}
-                    <label className="checkbox-label">
-                        <input type="checkbox" className="input" id="check" required />
+                    <div className="checkbox-label">
+                        <input type="checkbox" className="input_work" id="check" required />
                         <TermsAndConditions/>
-                    </label>
+                    </div>
                     <button className="submit">Enviar</button>
 
                 </form>

@@ -229,7 +229,7 @@
 
 */
 
-.form {
+.form_work {
     display: flex;
     flex-direction: column;
     gap: 10px;
@@ -242,7 +242,7 @@
     border: 1px solid #333;
   }
   
-  .title {
+  .title_work {
     font-size: 30px;
     font-weight: 600;
     letter-spacing: -1px;
@@ -253,19 +253,19 @@
     color: #ffffff;
   }
   
-  .title::before {
+  .title_work::before {
     width: 18px;
     height: 18px;
   }
   
-  .title::after {
+  .title_work::after {
     width: 18px;
     height: 18px;
     animation: pulse 1s linear infinite;
   }
   
-  .title::before,
-  .title::after {
+  .title_work::before,
+  .title_work::after {
     position: absolute;
     content: "";
     height: 16px;
@@ -299,11 +299,11 @@
     gap: 6px;
   }
   
-  .form label {
+  .form_work label {
     position: relative;
   }
   
-  .form label .input {
+  .form_work label .input_work {
     background-color: #ffffff;
     color: #000000;
     width: 100%;
@@ -313,7 +313,7 @@
     border-radius: 10px;
   }
   
-  .form label .input + span {
+  .form_work label .input_work + span {
     color: rgba(52, 52, 52, 0.5);
     position: absolute;
     left: 10px;
@@ -334,27 +334,27 @@
   }
   
   /* Aplica la clase a ese elemento en particular */
-  .form label .input + span.protect_dates {
+  .form_work label .input_work + span.protect_dates {
     color: #ffffff; /* Color rosa */
   }
-  Luego, en 
+ 
 
 
   
-  .form label .input:placeholder-shown + span {
+  .form_work label .input_work:placeholder-shown + span {
     top: 12.5px;
     font-size: 0.9em;
   }
   
-  .form label .input:focus + span,
-  .form label .input:valid + span {
+  .form_work label .input_work:focus + span,
+  .form_work label .input_work:valid + span {
     color: #00bfff;
     top: 0px;
     font-size: 0.7em;
     font-weight: 600;
   }
   
-  .input {
+  .input_work {
     font-size: medium;
   }
   
@@ -391,5 +391,5 @@
     margin-bottom: 15px;
 }
   .checkbox-label input[type="checkbox"] {
-    margin-left: 200px;
+    margin-left: 100px;
 }
