@@ -11,57 +11,6 @@ import TermsAndConditions from "../../Components/TermsAndConditions/TermsAndCond
 const Work = () => {
   const [file, setFile] = useState(null);
 
-  const handleFileSelect = (event) => {
-    const fileInput = event.target;
-    const selectedFile = fileInput.files[0];
-    setFile(selectedFile);
-
-    if (selectedFile.type.startsWith("image/")) {
-      // Mostrar la vista previa de la imagen
-      const reader = new FileReader();
-      reader.onload = (e) => {
-        const preview = document.getElementById("preview");
-        const imgElement = document.createElement("img");
-        imgElement.src = e.target.result;
-        imgElement.alt = "Vista previa";
-
-        // Aplicar estilos al elemento de la imagen
-        imgElement.style.width = "100%";
-        imgElement.style.height = "90%";
-
-        preview.innerHTML = "";
-        preview.appendChild(imgElement);
-      };
-      reader.readAsDataURL(selectedFile);
-    } else if (selectedFile.type === "application/pdf") {
-      const preview = document.getElementById("preview");
-      const objectElement = document.createElement("object");
-      objectElement.type = "application/pdf";
-
-      preview.innerHTML = "";
-      preview.appendChild(objectElement);
-    } else {
-      console.log("Archivo no compatible");
-    }
-  };
-
-  window.addEventListener("scroll", function () {
-    var images = document.querySelectorAll(
-      ".img_form_work,.video_person_asociation"
-    );
-
-    images.forEach(function (image) {
-      var imagePosition = image.getBoundingClientRect().top;
-      var screenPosition = window.innerHeight;
-
-      if (imagePosition < screenPosition) {
-        image.style.opacity = "4";
-      } else {
-        image.style.opacity = "0";
-      }
-    });
-  });
-
   const [formsData, setFormsData] = useState({
     name: "",
     lastName: "",
@@ -70,8 +19,8 @@ const Work = () => {
     province: "",
     city: "",
     zipcode: "",
-    position: "",
-    archive: "",
+    positions: "",
+    archive: null,
     termsAccepted: false,
   });
 
@@ -93,10 +42,30 @@ const Work = () => {
 
   const [selectedPosition, setSelectedPosition] = useState("");
 
+  const handleFileSelect = (event) => {
+    const fileInput = event.target;
+    const selectedFile = fileInput.files[0];
+
+    setFile(selectedFile);
+
+    setFormsData((prevData) => ({
+      ...prevData,
+      archive: selectedFile, 
+    }));
+
+    if (selectedFile.type.startsWith("image/")) {
+      // Resto del código para mostrar la vista previa si es una imagen
+    } else if (selectedFile.type === "application/pdf") {
+      // Resto del código para manejar archivos PDF
+    } else {
+      console.log("Archivo no compatible");
+    }
+  };
+
   const handleInputChange = (e) => {
     const { name, value, type, checked } = e.target;
 
-    if (name === "position") {
+    if (name === "positions") {
       setSelectedPosition(value);
     }
 
@@ -141,17 +110,25 @@ const Work = () => {
 
       // Agregar datos del formulario
       Object.entries(formsData).forEach(([key, value]) => {
-        formData.append(key, value);
+        if (key !== "archive") {
+          formData.append(key, value);
+        }
       });
 
+      if (formsData.archive) {
+        formData.append("archive", formsData.archive);
+      }
+
       // Agregar el archivo
-      formData.append("file", file);
 
       const response = await fetch(
         "https://localhost:7165/WorkControllers/Post",
         {
           method: "POST",
           body: formData,
+          headers: {
+            "Content-Type": "multipart/form-data",
+          },
         }
       );
 
@@ -165,6 +142,7 @@ const Work = () => {
         });
         setFormsData({
           // ... otros campos del formulario
+          archive: null,  // Reinicializar 'archive' a null después del envío
         });
       } else {
         throw new Error("Error al enviar los datos");
@@ -330,42 +308,19 @@ const Work = () => {
           </label>
 
           <label>
-            {/* <select className="input" required>
-              <option value="" disabled selected>
-                Seleccione un cargo
-              </option>
-              <option value="Fisioterapeuta">Fisioterapeuta</option>
-              <option value="Terapeuta Ocupacional">
-                Terapeuta Ocupacional
-              </option>
-              <option value="Edicador@ Social">Edicador@ Social</option>
-              <option value="Trabajador@ Social">Trabajador@ Social</option>
-              <option value="Psicólog@">Psicólog@</option>
-              <option value="Logopeda">Logopeda</option>
-              <option value="Cuidador@">
-                Auxiliar de Enfermeria/ Cuidador@
-              </option>
-              <option value="Limpieza">Servicio de Limpieza</option>
-              <option value="Administración">Técnic@ de Administración</option>
-              <option value="Monitor@">Monitor@ de Ocio y Tiempo Libre</option>
-              <option value="Técnic@">
-                {" "}
-                Técnic@ superior en integarción social
-              </option>
-            </select> */}
             <select
               className="input"
               required
-              name="position"
-              value={formsData.position}
+              name="positions"
+              value={formsData.positions}
               onChange={handleInputChange}
             >
               <option value="" disabled selected>
                 Seleccione un cargo
               </option>
-              {positions.map((position) => (
-                <option key={position} value={position}>
-                  {position}
+              {positions.map((positions) => (
+                <option key={positions} value={positions}>
+                  {positions}
                 </option>
               ))}
             </select>
