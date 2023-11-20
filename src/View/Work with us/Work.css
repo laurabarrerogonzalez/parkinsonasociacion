@@ -1,391 +1,319 @@
 .section_person_asociation{
-    width: 100%;
-    height: auto;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    margin-top: 20px;
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin-top: 20px;
 }
-
 @font-face {
-    font-family: 'Lexend';
-    src: url('../../Fonts/LexendMega-VariableFont_wght.ttf') format('truetype');
-    /* Agrega más formatos y rutas para soporte de navegadores diferentes */
-  }
-
-  @font-face {
-    font-family: 'stint';
-    src: url('../../Fonts/StintUltraExpanded-Regular.ttf') format('truetype');
-    /* Agrega más formatos y rutas para soporte de navegadores diferentes */
-  }
-
+  font-family: 'Lexend';
+  src: url('../../Fonts/LexendMega-VariableFont_wght.ttf') format('truetype');
+  /* Agrega más formatos y rutas para soporte de navegadores diferentes */
+}
+@font-face {
+  font-family: 'stint';
+  src: url('../../Fonts/StintUltraExpanded-Regular.ttf') format('truetype');
+  /* Agrega más formatos y rutas para soporte de navegadores diferentes */
+}
 .title_person_asociation{
-    width: 100%;
-    height: 85px;
-
-    text-align: center;
-    
-}
-
-@media(max-width:768px){
-
-    .title_person_asociation{
-        margin-bottom: 70px;
-        
-    }
-}
-
-.title_person_asociation p .fuente_one {
-    font-size: 35px;
-    font-family:'Lexend' ;
-}
-
-.title_person_asociation p .fuente_two {
-    font-size: 40px;
-    font-family:'stint' ;
-    font-weight: bold;
-    color: #EC750E;
-}
-
-.text_person_asociation{
-    width: 50%;
-    height: 350px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align:justify;
-    
-}
-
-.text_person_asociation p{
-    width: 90%; 
-    font-family: 'Lexend';
-    font-size: 15px;   
+  width: 100%;
+  height: 85px;
+  text-align: center;
 }
 @media(max-width:768px){
-
-    .text_person_asociation{
-      width: 100%;
-      font-size: 18px;
-      
-     
-    }
-}
-
-
-.video_person_asociation{
-    width: 49.5%;
-    height: 350px;
-    display: flex;
-    flex-direction: row;
-    
-   justify-content: center;
-   transition: opacity 10s ease;
-    
-}
-
-@media(max-width:768px){
-
-    .video_person_asociation{
-      width: 100%;
-      
-    }
-}
-
-.img_person_work {
-    max-width: 100%;
-    height: auto;
-    display: block;
-    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.5); /* Agrega una sombra */
-     /* Rota la imagen ligeramente en sentido antihorario */
-}
-
-.line_work{
-    border-top: 3px solid #EC750E;
-    margin-top: 100px;
-    width: 60%;
-    margin-left: 70px;
+  .title_person_asociation{
+      margin-bottom: 70px;
   }
-
-  @media(max-width:768px){
-
-    .line_work{
-      margin-top: 50px;
-      
-    }
 }
-
+.title_person_asociation p .fuente_one {
+  font-size: 35px;
+  font-family:'Lexend' ;
+}
+.title_person_asociation p .fuente_two {
+  font-size: 40px;
+  font-family:'stint' ;
+  font-weight: bold;
+  color: #EC750E;
+}
+.text_person_asociation{
+  width: 50%;
+  height: 350px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align:justify;
+}
+.text_person_asociation p{
+  width: 90%;
+  font-family: 'Lexend';
+  font-size: 15px;
+}
+@media(max-width:768px){
+  .text_person_asociation{
+    width: 100%;
+    font-size: 18px;
+  }
+}
+.video_person_asociation{
+  width: 49.5%;
+  height: 350px;
+  display: flex;
+  flex-direction: row;
+ justify-content: center;
+ transition: opacity 10s ease;
+}
+@media(max-width:768px){
+  .video_person_asociation{
+    width: 100%;
+  }
+}
+.img_person_work {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.5); /* Agrega una sombra */
+   /* Rota la imagen ligeramente en sentido antihorario */
+}
+.line_work{
+  border-top: 3px solid #EC750E;
+  margin-top: 100px;
+  width: 60%;
+  margin-left: 70px;
+}
+@media(max-width:768px){
+  .line_work{
+    margin-top: 50px;
+  }
+}
 .title_form_asociation{
-    width: 100%;
-    height: 85px;
-    text-align: center;
-    margin-top: 20px;
-
+  width: 100%;
+  height: 85px;
+  text-align: center;
+  margin-top: 20px;
 }
-
 .title_form_asociation p .fuente_one {
-    font-size: 35px;
-    font-family:'Lexend' ;
+  font-size: 35px;
+  font-family:'Lexend' ;
 }
-
 .title_form_asociation p .fuente_two {
-    font-size: 40px;
-    font-family:'stint' ;
-    font-weight: bold;
-    color: #EC750E;
+  font-size: 40px;
+  font-family:'stint' ;
+  font-weight: bold;
+  color: #EC750E;
 }
-
 .text_form_asociation{
-    width: 100%;
-    height: 50px;
-    margin-top: 10px;
+  width: 100%;
+  height: 50px;
+  margin-top: 10px;
 }
 .text_form_asociation p{
-    margin-left: 50px;
-    font-family: 'Lexend';
-    font-size: 15px;
+  margin-left: 50px;
+  font-family: 'Lexend';
+  font-size: 15px;
 }
-
 @media(max-width:768px){
-
-    .text_form_asociation p{
-        font-size: 18px;
-        margin-left: 20px;
-    }
+  .text_form_asociation p{
+      font-size: 18px;
+      margin-left: 20px;
+  }
 }
-
-
 .container_logo_asociation_work{
-    width: 100%;
-    height: auto;
-    display: flex;
-    flex-direction: column;
-    justify-content:end;
-    align-items:center;
-    margin-top: 20px;
-   
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content:end;
+  align-items:center;
+  margin-top: 20px;
 }
-
 .logo_asociation_work{
-    width: 150px;
-    height: 100px;
+  width: 150px;
+  height: 100px;
 }
 .container_form{
-    width: 100%;
-    height: auto;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    flex-wrap: wrap;
-   
-
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
 }
-
 .img_form{
-    width: 55%;
-    height:auto; ;
-    
-    display:flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    align-items: center;
-    margin-left: 50px;
+  width: 55%;
+  height:auto; ;
+  display:flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  margin-left: 50px;
 }
-
 @media(max-width:768px){
-
-    .img_form{
-        margin-top: 20px;
+  .img_form{
+      margin-top: 20px;
+      display: flex;
+      flex-direction:row;
+      width: 100%;
+      height: 500px;
 }
 .img_form_work{
-    width: 100%;
+  width: 100%;
 }
 .img_form_people{
-    width: 100%;
-    height: 100%;
+  width: 100%;
+  height: auto;
 }
 }
-
 .img_form_work{
-    width: 49%;
-    height: 310px;
-    
-    opacity: 0;
-    transition: opacity 3s ease;
-    
-    
+  width: 49%;
+  height: 310px;
+  opacity: 0;
+  transition: opacity 3s ease;
 }
-
 .img_form_work img{
-    width: 100%;
-    object-fit:cover;
-    
+  width: 100%;
+  object-fit:cover;
 }
-
-
-.form {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-    max-width: 380px;
-    padding: 20px;
-    border-radius: 20px;
-    position: relative;
-    background-color: #03414A;
-    color: #fff;
-    border: 1px solid #333;
-  }
-  
-  .title13 {
-    font-size: 30px;
-    font-weight: 600;
-    letter-spacing: -1px;
-    position: relative;
-    display: flex;
-    align-items: center;
-    padding-left: 30px;
-    color: #ffffff;
-  }
-  
-  .title13::before {
-    width: 18px;
-    height: 18px;
-  }
-  
-  .title13::after {
-    width: 18px;
-    height: 18px;
-    animation: pulse 1s linear infinite;
-  }
-  
-  .title13::before,
-  .title13::after {
-    position: absolute;
-    content: "";
-    height: 16px;
-    width: 16px;
-    border-radius: 50%;
-    left: 0px;
-    background-color: #00bfff;
-  }
-  
-  .message, 
-  .signin {
-    font-size: 14.5px;
-    color: rgba(255, 255, 255, 0.7);
-  }
-  
-  .signin {
-    text-align: center;
-  }
-  
-  .signin a:hover {
-    text-decoration: underline royalblue;
-  }
-  
-  .signin a {
-    color: #00bfff;
-  }
-  
-  .flex {
-    display: flex;
-    width: 100%;
-    gap: 6px;
-  }
-  
-  .form label {
-    position: relative;
-  }
-  
-  .form label .input {
-    background-color: #ffffff;
-    color: #000000;
-    width: 100%;
-    padding: 20px 02px 05px 02px;
-    outline: 0;
-    border: 1px solid rgba(105, 105, 105, 0.397);
-    border-radius: 10px;
-  }
-  
-  .form label .input + span {
-    color: rgba(52, 52, 52, 0.5);
-    position: absolute;
-    left: 10px;
-    top: 0px;
-    font-size: 0.9em;
-    cursor: text;
-    transition: 0.3s ease;
-  }
-
-  .protect_dates {
-    color: #ffffff; /* Color rosa */
-    position: absolute;
-    left: 10px;
-    top: 0px;
-    font-size: 0.9em;
-    cursor: text;
-    transition: 0.3s ease;
-  }
-  
-  /* Aplica la clase a ese elemento en particular */
-  .form label .input + span.protect_dates {
-    color: #ffffff; /* Color rosa */
-  }
-  Luego, en 
-
-
-  
-  .form label .input:placeholder-shown + span {
-    top: 12.5px;
-    font-size: 0.9em;
-  }
-  
-  .form label .input:focus + span,
-  .form label .input:valid + span {
-    color: #00bfff;
-    top: 0px;
-    font-size: 0.7em;
-    font-weight: 600;
-  }
-  
-  .input {
-    font-size: medium;
-  }
-  
-  .submit {
-    border: none;
-    outline: none;
-    padding: 10px;
-    border-radius: 10px;
-    color: #fff;
-    font-size: 16px;
-    transform: .3s ease;
-    background-color: #EC750E;
-  }
-  
-  .submit:hover {
-    background-color: orangered;
-  }
-  
-  @keyframes pulse {
-    from {
-      transform: scale(0.9);
-      opacity: 1;
-    }
-  
-    to {
-      transform: scale(1.8);
-      opacity: 0;
-    }
-  }
-
-  .checkbox-label {
-    display: flex;
-    align-items: center;
-    margin-bottom: 15px;
+/* __________
+*/
+.form_work {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  max-width: 380px;
+  padding: 20px;
+  border-radius: 20px;
+  position: relative;
+  background-color: #03414A;
+  color: #fff;
+  border: 1px solid #333;
 }
-  .checkbox-label input[type="checkbox"] {
-    margin-left: 200px;
+.title_work {
+  font-size: 30px;
+  font-weight: 600;
+  letter-spacing: -1px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  padding-left: 30px;
+  color: #FFFFFF;
+}
+.title_work::before {
+  width: 18px;
+  height: 18px;
+}
+.title_work::after {
+  width: 18px;
+  height: 18px;
+  animation: pulse 1s linear infinite;
+}
+.title_work::before,
+.title_work::after {
+  position: absolute;
+  content: "";
+  height: 16px;
+  width: 16px;
+  border-radius: 50%;
+  left: 0px;
+  background-color: #00BFFF;
+}
+.message,
+.signin {
+  font-size: 14.5px;
+  color: rgba(255, 255, 255, 0.7);
+}
+.signin {
+  text-align: center;
+}
+.signin a:hover {
+  text-decoration: underline royalblue;
+}
+.signin a {
+  color: #00BFFF;
+}
+.flex {
+  display: flex;
+  width: 100%;
+  gap: 6px;
+}
+.form_work label {
+  position: relative;
+}
+.form_work label .input_work {
+  background-color: #FFFFFF;
+  color: #000000;
+  width: 100%;
+  padding: 20px 02px 05px 02px;
+  outline: 0;
+  border: 1px solid rgba(105, 105, 105, 0.397);
+  border-radius: 10px;
+}
+.form_work label .input_work + span {
+  color: rgba(52, 52, 52, 0.5);
+  position: absolute;
+  left: 10px;
+  top: 0px;
+  font-size: 0.9em;
+  cursor: text;
+  transition: 0.3s ease;
+}
+.protect_dates {
+  color: #FFFFFF; /* Color rosa */
+  position: absolute;
+  left: 10px;
+  top: 0px;
+  font-size: 0.9em;
+  cursor: text;
+  transition: 0.3s ease;
+}
+/* Aplica la clase a ese elemento en particular */
+.form_work label .input_work + span.protect_dates {
+  color: #FFFFFF; /* Color rosa */
+}
+.form_work label .input_work:placeholder-shown + span {
+  top: 12.5px;
+  font-size: 0.9em;
+}
+.form_work label .input_work:focus + span,
+.form_work label .input_work:valid + span {
+  color: #00BFFF;
+  top: 0px;
+  font-size: 0.7em;
+  font-weight: 600;
+}
+.input_work {
+  font-size: medium;
+}
+.submit {
+  border: none;
+  outline: none;
+  padding: 10px;
+  border-radius: 10px;
+  color: #fff;
+  font-size: 16px;
+  transform: .3s ease;
+  background-color: #EC750E;
+}
+.submit:hover {
+  background-color: orangered;
+}
+@keyframes pulse {
+  from {
+    transform: scale(0.9);
+    opacity: 1;
+  }
+  to {
+    transform: scale(1.8);
+    opacity: 0;
+  }
+}
+.checkbox-label {
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+}
+.checkbox-label input[type="checkbox"] {
+  margin-left: 100px;
 }
