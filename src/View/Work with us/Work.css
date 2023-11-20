@@ -225,10 +225,6 @@
 }
 
 
-/* __________
-
-*/
-
 .form {
     display: flex;
     flex-direction: column;
@@ -242,7 +238,7 @@
     border: 1px solid #333;
   }
   
-  .title {
+  .title13 {
     font-size: 30px;
     font-weight: 600;
     letter-spacing: -1px;
@@ -253,19 +249,19 @@
     color: #ffffff;
   }
   
-  .title::before {
+  .title13::before {
     width: 18px;
     height: 18px;
   }
   
-  .title::after {
+  .title13::after {
     width: 18px;
     height: 18px;
     animation: pulse 1s linear infinite;
   }
   
-  .title::before,
-  .title::after {
+  .title13::before,
+  .title13::after {
     position: absolute;
     content: "";
     height: 16px;

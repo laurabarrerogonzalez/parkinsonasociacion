@@ -1,77 +1,6 @@
-
-
-// import React, { useState } from 'react';
-// import { Calendar, theme, Modal } from 'antd';
-
-// const onPanelChange = (value, mode) => {
-//   console.log(value.format('YYYY-MM-DD'), mode);
-// };
-
-
-
-// const CalendarComponent = () => {
-//   const { token } = theme.useToken();
-//   const [selectedDate, setSelectedDate] = useState('');
-//   const dateInfoMap = {
-//     '2023-04-11': 'Día Internacional del Parkinson', // Por ejemplo, agrega información para un día específico
-//     '2023-11-05': 'Día Internacional de las Personas Cuidadoras', 
-//     '2023-05-12': ' Día Internacional de la Enfermería',
-//     '2023-07-26': ' Día del adulto Mayor',
-//     // Otro día
-//     // Agrega información para los días deseados
-//   };
-
-//   const handleDateSelect = (date) => {
-//     setSelectedDate(date.format('YYYY-MM-DD'));
-
-//     const infoForDate = dateInfoMap[date.format('YYYY-MM-DD')];
-//     if (infoForDate) {
-//       Modal.info({
-//         title: `Información del día ${date.format('YYYY-MM-DD')}`,
-//         content: <p>{infoForDate}</p>,
-//         style: { // Estilos personalizados para la ventana emergente
-//           top: 50, // Posición superior
-//           background: 'lightyellow', // Color de fondo
-//           border: '1px solid orange', // Borde
-//         },
-//       });
-//     }
-//   };
-
-//   const wrapperStyle = {
-//     width: 300,
-//     border: `1px solid ${token.colorBorderSecondary}`,
-//     borderRadius: token.borderRadiusLG,
-//     padding: '20px',
-//     backgroundColor: 'white',
-//     margin: '90px',
-//     marginTop: '70px',
-//     position: 'relative',
-//     top: 150,
-//     left: 50,
-//   };
-
-//   const calendarStyle = {
-//     backgroundColor: 'lightblue',
-//     border: 'none',
-//   };
-
-//   return (
-//     <div style={wrapperStyle}>
-//       <Calendar
-//         fullscreen={false}
-//         onPanelChange={onPanelChange}
-//         onSelect={handleDateSelect}
-//         style={calendarStyle}
-//       />
-//     </div>
-//   );
-// };
-
-// export default CalendarComponent;
-
 import React, { useState } from 'react';
-import { Calendar, theme, Modal } from 'antd';
+import { Calendar, theme } from 'antd';
+import './Calendar.css'; // Importa el archivo CSS
 
 const onPanelChange = (value, mode) => {
   console.log(value.format('YYYY-MM-DD'), mode);
@@ -80,6 +9,8 @@ const onPanelChange = (value, mode) => {
 const CalendarComponent = () => {
   const { token } = theme.useToken();
   const [selectedDate, setSelectedDate] = useState('');
+  const [workSchedule, setWorkSchedule] = useState('Horario de trabajo: 9:00 AM - 5:00 PM');
+
   const dateInfoMap = {
     '2023-04-11': 'Día Internacional del Parkinson🩺💛🧡',
     '2023-11-05': 'Día Internacional de las Personas Cuidadoras👨🏻‍⚕️👩🏻‍⚕️',
@@ -90,24 +21,21 @@ const CalendarComponent = () => {
     '2023-01-01': 'Año Nuevo🎇🥳',
     '2023-05-01': 'Día Internacional del Trabajador👷👷🏽‍♀️👨🏽‍⚕️👩🏻‍🏫',
     '2023-09-08': 'Día de Extremadura 💚🤍🖤',
-
+    '2023-10-27': 'Día de la terapia ocupacional 🙆🏻‍♂️💆🏻‍♀️🧘🏻',
+    '2023-10-10': 'Día Mundial de la Salud Mental 🧠🫂🗣️',
+    '2023-12-03': 'Día Mundial de la Discapacidad ♿👩🏻',
+    '2023-09-21': 'Día Mundial del Alzheimer ♿👩🏻',
+    '2023-03-06': 'Día Europeo de la logopedia ♿👩🏻',
+    // '2023-09-08': 'Día Mundial de la fisioterapia',
+    // Agrega el resto de las fechas...
   };
 
   const handleDateSelect = (date) => {
     setSelectedDate(date.format('YYYY-MM-DD'));
 
-    const infoForDate = dateInfoMap[date.format('YYYY-MM-DD')];
-    if (infoForDate) {
-      Modal.info({
-        title: `Información del día ${date.format('YYYY-MM-DD')}`,
-        content: <p>{infoForDate}</p>,
-        style: {
-          top: 50,
-          background: 'lightyellow',
-          border: '1px solid orange',
-        },
-      });
-    }
+    // Puedes ajustar el horario de trabajo según la fecha seleccionada
+    // Aquí es solo un ejemplo fijo, puedes personalizarlo según tus necesidades.
+    setWorkSchedule('Horario de trabajo: 9:00 AM - 5:00 PM');
   };
 
   const dateCellRender = (currentDate) => {
@@ -121,51 +49,40 @@ const CalendarComponent = () => {
       '2023-01-01',
       '2023-05-01',
       '2023-09-08',
+      '2023-10-27',
+      '2023-10-10',
+      '2023-12-03',
+      '2023-09-21',
+      '2023-03-06',
     ];
-
-    const highlightStyle = {
-      border: '4px solid yellow',
-      borderRadius: '100%',
-      height: '18px',
-      width: '18px',
-      position: 'absolute',
-      top: '50%',
-      left: '50%',
-      transform: 'translate(-50%, -50%)',
-    };
 
     const isDateToHighlight = dateToHighlight.includes(currentDate.format('YYYY-MM-DD'));
 
-    return isDateToHighlight ? <div style={highlightStyle} /> : null;
-  };
-
-  const wrapperStyle = {
-    width: 300,
-    border: `1px solid ${token.colorBorderSecondary}`,
-    borderRadius: token.borderRadiusLG,
-    padding: '20px',
-    backgroundColor: 'white',
-    margin: '90px',
-    marginTop: '70px',
-    position: 'relative',
-    top: 150,
-    left: 50,
-  };
-
-  const calendarStyle = {
-    backgroundColor: 'lightblue',
-    border: 'none',
+    return isDateToHighlight ? <div className="highlight" /> : null;
   };
 
   return (
-    <div style={wrapperStyle}>
-      <Calendar
-        fullscreen={false}
-        onPanelChange={onPanelChange}
-        onSelect={handleDateSelect}
-        dateCellRender={dateCellRender}
-        style={calendarStyle}
-      />
+    <div className="calendar-container">
+      <div className="calendar-wrapper">
+        <Calendar
+          fullscreen={false}
+          onPanelChange={onPanelChange}
+          onSelect={handleDateSelect}
+          dateCellRender={dateCellRender}
+        />
+      </div>
+      <div>
+        <div className="info">
+          {dateInfoMap[selectedDate] ? (
+            <p>{dateInfoMap[selectedDate]}</p>
+          ) : (
+            <p className="no-date-selected">Selecciona una fecha para ver información</p>
+          )}
+        </div>
+        <div className="schedule">
+          <p>{workSchedule}</p>
+        </div>
+      </div>
     </div>
   );
 };

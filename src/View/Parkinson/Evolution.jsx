@@ -5,6 +5,8 @@ import BannerViews from "../../Components/BannerViews/BannerViews";
 import "./Evolution.css"; 
 import ButtonCard from "../../Components/ButtonCard/ButtonCard";
 import '../Parkinson/Symptoms.css';
+import ButtonDonate from "../../Components/ButtonDonate/ButtonDonate";
+import ScrollArrow from "../../Components/ScrollArrow/ScrollArrow";
 
 
 const Evolution = () => {
@@ -153,14 +155,10 @@ const Evolution = () => {
       </div>
       </div>
 
-<ButtonCard/>
-
-
-
-
+      <ButtonCard/>
       <Footer />
-      {/* <ButtonDonate /> */}
-      {/* <ScrollArrow/> */}
+      <ButtonDonate/>
+      <ScrollArrow/>
     </>
   );
 };

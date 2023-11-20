@@ -7,6 +7,7 @@ import { Link } from "react-router-dom";
 
 const Admin = () => {
   const [Volunteers, setVolunteers] = useState([]);
+  const [Membres, setMembres] = useState([]);
   const [isLoggedIn, setLoggedIn] = useState(false);
   const [userData, setUserData] = useState({
     UserName: "",
@@ -23,6 +24,15 @@ const Admin = () => {
         .get("https://localhost:7165/VolunteersControllers/GetVolunteers")
         .then((response) => {
           setVolunteers(response.data);
+        })
+        .catch((error) => {
+          console.error("Error al obtener la lista de voluntarios", error);
+        });
+
+        axios
+        .get("https://localhost:7165/MembersControllers/GetMembers")
+        .then((response) => {
+          setMembres(response.data);
         })
         .catch((error) => {
           console.error("Error al obtener la lista de voluntarios", error);
@@ -94,12 +104,20 @@ const Admin = () => {
   const handleDeleteVolunteers = async (name) => {
     try {
       await axios.delete(`https://localhost:7165/VolunteersControllers/DeleteVolunteers?name=${name}`);
-  
-      // Eliminación exitosa, ahora obtén la lista actualizada de voluntarios
       const response = await axios.get("https://localhost:7165/VolunteersControllers/GetVolunteers");
-      setVolunteers(response.data); // Actualiza la lista de voluntarios con la nueva data
+      setVolunteers(response.data); 
     } catch (error) {
       console.error(`Error al eliminar el voluntario con nombre ${name}`, error);
+    }
+  };
+
+  const handleDeleteMembers = async (name) => {
+    try {
+      await axios.delete(`https://localhost:7165/MembersControllers/DeleteMembers?name=${name}`);
+      const response = await axios.get("https://localhost:7165/MembersControllers/GetMembers");
+      setMembres(response.data); 
+    } catch (error) {
+      console.error(`Error al eliminar el socio con nombre ${name}`, error);
     }
   };
 
@@ -110,12 +128,7 @@ const Admin = () => {
           <div className="Admistitle">
             <h1>Admin</h1>
             <button onClick={handleLogout}>Cerrar sesión</button>
-
-
-            <Link to="/newsAdmin">
-      <button>Noticias</button>
-    </Link>
-           
+            <button>Noticias</button>
             <br />
             <br />
             <h2>Lista de Voluntarios</h2>
@@ -145,6 +158,46 @@ const Admin = () => {
                     <td>{Volunteers.shift}</td>
                     <td>
                       <button class="delete-btn" onClick={() => handleDeleteVolunteers(Volunteers.name)}>
+                        Eliminar
+                      </button>
+                    </td>
+                  </tr>
+                ))}
+              </tbody>
+            </table>
+            <br />
+            <br />
+            <h2>Lista de Socios</h2>
+            <table className="TableVoluntarios">
+              <thead>
+                <tr>
+                  <th>Nombre</th>
+                  <th>DNI</th>
+                  <th>Fecha de Nacimiento</th>
+                  <th>Domicilio</th>
+                  <th>Numero de Teléfono</th>
+                  <th>Email</th>
+                  <th>IBAN</th>
+                  <th>Titular de la cuenta</th>
+                  <th>Servicios</th>
+                  <th>Tipo de Socio</th>
+                </tr>
+              </thead>
+              <tbody>
+                {Membres.map((Membres) => (
+                  <tr key={Membres.id}>
+                    <td>{Membres.name}</td>
+                    <td>{Membres.dni}</td>
+                    <td>{Membres.birthdate}</td>
+                    <td>{Membres.address}</td>
+                    <td>{Membres.phone}</td>
+                    <td>{Membres.email}</td>
+                    <td>{Membres.iban}</td>
+                    <td>{Membres.holder}</td>
+                    <td>{Membres.services}</td>
+                    <td>{Membres.members}</td>
+                    <td>
+                      <button class="delete-btn" onClick={() => handleDeleteMembers(Membres.name)}>
                         Eliminar
                       </button>
                     </td>
