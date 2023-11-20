@@ -159,8 +159,8 @@ const Evolution = () => {
 
 
       <Footer />
-      <ButtonDonate />
-      <ScrollArrow/>
+      {/* <ButtonDonate /> */}
+      {/* <ScrollArrow/> */}
     </>
   );
 };

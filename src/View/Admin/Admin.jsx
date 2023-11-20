@@ -3,6 +3,7 @@ import "./Admin.css";
 import axios from "axios";
 import Swal from "sweetalert2";
 import Footer from "../../assets/Components/Footer/Footer";
+import { Link } from "react-router-dom";
 
 const Admin = () => {
   const [Volunteers, setVolunteers] = useState([]);
@@ -109,6 +110,12 @@ const Admin = () => {
           <div className="Admistitle">
             <h1>Admin</h1>
             <button onClick={handleLogout}>Cerrar sesión</button>
+
+
+            <Link to="/newsAdmin">
+      <button>Noticias</button>
+    </Link>
+           
             <br />
             <br />
             <h2>Lista de Voluntarios</h2>

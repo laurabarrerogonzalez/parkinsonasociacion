@@ -1,0 +1,31 @@
+/* Estilos para las noticias */
+.news-item {
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+  
+  .thumbnail {
+    /* display: flex; */
+    /* flex-direction: ; */
+    width: 300px;
+    height: 200px;
+    object-fit: contain;
+  }
+
+  
+  
+  .titlea {
+    font-size: 20px;
+    margin-top: 10px;
+    margin-bottom: 5px;
+  }
+  
+  .link {
+    text-decoration: none;
+    color: blue;
+  }
+  
