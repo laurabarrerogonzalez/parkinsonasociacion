@@ -191,8 +191,6 @@
 .img_form_work {
   width: 49%;
   height: 310px;
-
-  opacity: 0;
   transition: opacity 3s ease;
 }
 
