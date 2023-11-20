@@ -13,7 +13,7 @@ const Myths = () => {
     <>
 
 <div>
-      <Navbar />
+     
       <BannerViews
         image="https://res.cloudinary.com/dit2zhtwz/image/upload/v1698744222/pareja-alegre-celebracion-icono-votacion-sentado-sofa_53876-24976_kke7zn.jpg"
         title="Mitos y Verdades"
@@ -71,25 +71,6 @@ const Myths = () => {
    </div>
 
 
-   {/* <div class="cardd">
-       <div class="content">
-           <div class="front3">
-               <h3 class="title">MITO</h3>
-               <p class="subtitle"><strong>
-               Más en hombres y en ciertas razas
-                </strong></p>
-           </div>
-
-           <div class="back3">
-           <h3 class="title">Verdad</h3>
-               <p class="description">
-               La enfermedad no hace distinciones entre sexos ni razas
-               </p>
-           </div>
-       </div>
-   </div> */}
-
-
    <div class="cardd">
        <div class="content">
            <div class="front4">
@@ -112,24 +93,6 @@ const Myths = () => {
        </div>
    </div>
 
-
-   {/* <div class="cardd">
-       <div class="content">
-           <div class="front5">
-               <h3 class="title">MITO</h3>
-               <p class="subtitle"><strong>
-               Los enfermos tienen problemas auditivos
-                </strong></p>
-           </div>
-
-           <div class="back5">
-           <h3 class="title">Verdad</h3>
-               <p class="description">
-               No son más duros de oído, sino que son más lentos para responder a una pregunta
-               </p>
-           </div>
-       </div>
-   </div> */}
 
 
    <div class="cardd">

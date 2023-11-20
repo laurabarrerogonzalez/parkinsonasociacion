@@ -24,6 +24,7 @@ import Find from './View/Find us/Find';
 import '../src/View/Parkinson/Myths.css';
 import Admin from './View/Admin/Admin';
 import NewsAdmin from './View/Admin/NewsAdmin';
+import ResourcesAdmin from './View/Admin/ResourcesAdmin';
 
 
 
@@ -53,6 +54,7 @@ ReactDOM.createRoot(document.getElementById('root')).render(
         <Route path="/work" element={<Work />} />
         <Route path="/find" element={<Find />} />
         <Route path="/newsAdmin" element={<NewsAdmin />} />
+        <Route path="/resourcesAdmin" element={<ResourcesAdmin />} />
       </Routes>
     </React.StrictMode>
   </Router>

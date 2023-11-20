@@ -128,7 +128,13 @@ const Admin = () => {
           <div className="Admistitle">
             <h1>Admin</h1>
             <button onClick={handleLogout}>Cerrar sesión</button>
-            <button>Noticias</button>
+           <Link to= '/newsAdmin'>
+           <button>Noticias</button>
+           </Link>
+           <Link to= '/resourcesAdmin'>
+           <button>Recursos y pautas</button>
+           </Link>
+            
             <br />
             <br />
             <h2>Lista de Voluntarios</h2>
