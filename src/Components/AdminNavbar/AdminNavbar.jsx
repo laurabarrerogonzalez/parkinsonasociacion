@@ -24,11 +24,13 @@ const AdminNavbar = ({ handleLogout }) => {
   return (
     <div className="AdminNavbar">
       <div className="logo-admin12">
-        <img
-          className="tulipan12"
-          src="https://res.cloudinary.com/da7ffijqs/image/upload/v1699698764/_8d1ca073-4c49-42a8-9d3c-2a797078f4cf-removebg-preview_ksvtqn.png"
-          alt="Logo de tulipán"
-        />
+        <Link to="/">
+          <img
+            className="tulipan12"
+            src="https://res.cloudinary.com/da7ffijqs/image/upload/v1699698764/_8d1ca073-4c49-42a8-9d3c-2a797078f4cf-removebg-preview_ksvtqn.png"
+            alt="Logo de tulipán"
+          />
+        </Link>
       </div>
 
       <div className="nav_logo13">
