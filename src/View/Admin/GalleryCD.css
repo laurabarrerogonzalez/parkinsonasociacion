@@ -1,0 +1,9 @@
+.galleryCD{
+    margin-top: 150px;
+    margin-left: 35%;
+}
+
+.custom-image-list {
+    max-height: 450px; /* Altura máxima para mostrar el scroll */
+    overflow-y: auto; /* Mostrar el scroll vertical */
+  }

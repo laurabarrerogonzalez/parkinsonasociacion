@@ -74,7 +74,6 @@ const Work = () => {
       [name]: type === "checkbox" ? checked : value,
     }));
   };
-
   const handleEnviarClick = () => {
     if (!formsData.termsAccepted) {
       swal.fire({
@@ -85,7 +84,6 @@ const Work = () => {
       });
       return;
     }
-
     swal
       .fire({
         title: "¿Estás seguro de enviar la información?",
@@ -131,7 +129,6 @@ const Work = () => {
           },
         }
       );
-
       if (response.status === 200) {
         // Éxito
         swal.fire({
@@ -157,7 +154,6 @@ const Work = () => {
       });
     }
   };
-
   return (
     <div>
       <Navbar />
@@ -165,7 +161,6 @@ const Work = () => {
         image="https://res.cloudinary.com/dp7lr71t8/image/upload/v1699001571/hands-1846428_pxnoco.jpg"
         title="TRABAJA CON NOSOTROS"
       />
-
       <section className="section_person_asociation">
         <div className="title_person_asociation">
           <p>
@@ -199,14 +194,12 @@ const Work = () => {
         </div>
       </section>
       <hr className="line_work" />
-
       <div className="title_form_asociation">
         <p>
           <span class="fuente_one">Trabaja en nuestra</span>
           <span class="fuente_two"> asociación</span>
         </p>
       </div>
-
       <div className="text_form_asociation">
         <p>
           Si quieres unirte a nuestro reto y formar parte de nuestra comunidad,
@@ -230,7 +223,6 @@ const Work = () => {
               />
               <span>Nombres</span>
             </label>
-
             <label>
               <input
                 className="input"
@@ -244,7 +236,6 @@ const Work = () => {
               <span>Apellidos</span>
             </label>
           </div>
-
           <label>
             <input
               className="input"
@@ -257,7 +248,6 @@ const Work = () => {
             />
             <span>Email</span>
           </label>
-
           <label>
             <input
               className="input"
@@ -306,7 +296,6 @@ const Work = () => {
             />
             <span>Código Postal</span>
           </label>
-
           <label>
             <select
               className="input"
@@ -387,12 +376,10 @@ const Work = () => {
           </div>
         </div>
       </section>
-
       <Footer />
       <ButtonDonate />
       <ScrollArrow />
     </div>
   );
 };
-
 export default Work;

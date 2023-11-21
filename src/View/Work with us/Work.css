@@ -18,14 +18,12 @@
   src: url("../../Fonts/StintUltraExpanded-Regular.ttf") format("truetype");
   /* Agrega más formatos y rutas para soporte de navegadores diferentes */
 }
-
 .title_person_asociation {
   width: 100%;
   height: 85px;
 
   text-align: center;
 }
-
 @media (max-width: 768px) {
   .title_person_asociation {
     margin-bottom: 70px;
@@ -43,7 +41,6 @@
   font-weight: bold;
   color: #ec750e;
 }
-
 .text_person_asociation {
   width: 50%;
   height: 350px;
@@ -53,7 +50,6 @@
   align-items: center;
   text-align: justify;
 }
-
 .text_person_asociation p {
   width: 90%;
   font-family: "Lexend";
@@ -65,7 +61,6 @@
     font-size: 18px;
   }
 }
-
 .video_person_asociation {
   width: 49.5%;
   height: 350px;
@@ -96,13 +91,11 @@
   width: 60%;
   margin-left: 70px;
 }
-
 @media (max-width: 768px) {
   .line_work {
     margin-top: 50px;
   }
 }
-
 .title_form_asociation {
   width: 100%;
   height: 85px;
@@ -121,7 +114,6 @@
   font-weight: bold;
   color: #ec750e;
 }
-
 .text_form_asociation {
   width: 100%;
   height: 50px;
@@ -132,14 +124,12 @@
   font-family: "Lexend";
   font-size: 15px;
 }
-
 @media (max-width: 768px) {
   .text_form_asociation p {
     font-size: 18px;
     margin-left: 20px;
   }
 }
-
 .container_logo_asociation_work {
   width: 100%;
   height: auto;
@@ -149,7 +139,6 @@
   align-items: center;
   margin-top: 20px;
 }
-
 .logo_asociation_work {
   width: 150px;
   height: 100px;
@@ -174,7 +163,6 @@
   align-items: center;
   margin-left: 50px;
 }
-
 @media (max-width: 768px) {
   .img_form {
     margin-top: 20px;
@@ -187,18 +175,15 @@
     height: 100%;
   }
 }
-
 .img_form_work {
   width: 49%;
   height: 310px;
   transition: opacity 3s ease;
 }
-
 .img_form_work img {
   width: 100%;
   object-fit: cover;
 }
-
 .form {
   display: flex;
   flex-direction: column;
@@ -211,7 +196,6 @@
   color: #fff;
   border: 1px solid #333;
 }
-
 .title13 {
   font-size: 30px;
   font-weight: 600;
@@ -222,18 +206,15 @@
   padding-left: 30px;
   color: #ffffff;
 }
-
 .title13::before {
   width: 18px;
   height: 18px;
 }
-
 .title13::after {
   width: 18px;
   height: 18px;
   animation: pulse 1s linear infinite;
 }
-
 .title13::before,
 .title13::after {
   position: absolute;
@@ -282,7 +263,6 @@
   border: 1px solid rgba(105, 105, 105, 0.397);
   border-radius: 10px;
 }
-
 .form label .input + span {
   color: rgba(52, 52, 52, 0.5);
   position: absolute;
@@ -307,8 +287,8 @@
 .form label .input + span.protect_dates {
   color: #ffffff; /* Color rosa */
 }
-Luego,
-en .form label .input:placeholder-shown + span {
+
+.form label .input:placeholder-shown + span {
   top: 12.5px;
   font-size: 0.9em;
 }
@@ -320,7 +300,6 @@ en .form label .input:placeholder-shown + span {
   font-size: 0.7em;
   font-weight: 600;
 }
-
 .input {
   font-size: medium;
 }
