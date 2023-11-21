@@ -1,18 +1,19 @@
 import * as React from "react";
 import ImageList from "@mui/material/ImageList";
 import ImageListItem from "@mui/material/ImageListItem";
-import "../Admin/GalleryCD.css";
+import "../Admin/GalleryEC.css"; // Puedes crear un archivo CSS separado para esta galería si es necesario
+import '../CurrentNews/Activities.css';
 import AdminNavbar from "../../Components/AdminNavbar/AdminNavbar";
 
-export default function QuiltedImageList() {
-  const [imageList, setImageList] = React.useState([]);
-  const [imageURL, setImageURL] = React.useState("");
-  const [selectedImageIndex, setSelectedImageIndex] = React.useState(-1);
+const GalleryEC = () => {
+  const [imageListEC, setImageListEC] = React.useState([]); // Cambia el nombre de la lista de imágenes
+  const [selectedImageIndexEC, setSelectedImageIndexEC] = React.useState(-1); // Cambia el nombre del estado del índice seleccionado
+  const [imageURL, setImageURL] = React.useState(""); // Estado para la URL de la imagen a agregar
 
   const handleFormSubmit = async (e) => {
     e.preventDefault();
     try {
-      const response = await fetch("https://localhost:7165/api/gallery1", {
+      const response = await fetch("https://localhost:7165/api/gallery2", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
@@ -20,8 +21,7 @@ export default function QuiltedImageList() {
         body: JSON.stringify({ url: imageURL }),
       });
       const data = await response.json();
-      const formattedData = Array.isArray(data) ? data : [data];
-      setImageList([...imageList, ...formattedData]);
+      setImageListEC([...imageListEC, data]);
       setImageURL("");
     } catch (error) {
       console.error("Error:", error);
@@ -29,20 +29,20 @@ export default function QuiltedImageList() {
   };
 
   const handleDelete = async () => {
-    if (selectedImageIndex !== -1 && imageList[selectedImageIndex]?.id_gallery1 !== undefined) {
+    if (selectedImageIndexEC !== -1 && imageListEC[selectedImageIndexEC]?.id_gallery2 !== undefined) {
       try {
-        const idToDelete = imageList[selectedImageIndex].id_gallery1; // Usar id_gallery1 en lugar de id
+        const idToDelete = imageListEC[selectedImageIndexEC].id_gallery2;
         const response = await fetch(
-          `https://localhost:7165/api/gallery1/${idToDelete}`,
+          `https://localhost:7165/api/gallery2/${idToDelete}`,
           {
             method: "DELETE",
           }
         );
         if (response.ok) {
-          const updatedList = [...imageList];
-          updatedList.splice(selectedImageIndex, 1);
-          setImageList(updatedList);
-          setSelectedImageIndex(-1);
+          const updatedList = [...imageListEC];
+          updatedList.splice(selectedImageIndexEC, 1);
+          setImageListEC(updatedList);
+          setSelectedImageIndexEC(-1);
         }
       } catch (error) {
         console.error("Error deleting image:", error);
@@ -52,9 +52,9 @@ export default function QuiltedImageList() {
 
   const fetchImages = async () => {
     try {
-      const response = await fetch("https://localhost:7165/api/gallery1");
+      const response = await fetch("https://localhost:7165/api/gallery2");
       const data = await response.json();
-      setImageList(data);
+      setImageListEC(data);
     } catch (error) {
       console.error("Error fetching images:", error);
     }
@@ -67,7 +67,7 @@ export default function QuiltedImageList() {
   return (
     <>
       <AdminNavbar />
-      <div className="galleryCD">
+      <div className="galleryEC">
         <form onSubmit={handleFormSubmit}>
           <label>
             Image URL:
@@ -82,24 +82,24 @@ export default function QuiltedImageList() {
         </form>
 
         <ImageList
-  sx={{
-    width: 500,
-    height: "auto",
-    maxHeight: 400, // Reducir la altura máxima para activar el scroll con solo 4 imágenes
-    overflowY: "auto",
-  }}
-  variant="quilted"
-  cols={2}
-  rowHeight={200} // Ajustar la altura de las imágenes para que se muestren dos por fila
-  className="custom-image-list"
->
-          {imageList.map((item, index) => (
+          sx={{
+            width: 500,
+            height: "auto",
+            maxHeight: 400,
+            overflowY: "auto",
+          }}
+          variant="quilted"
+          cols={2}
+          rowHeight={200}
+          className="custom-image-list"
+        >
+          {imageListEC.map((item, index) => (
             <ImageListItem
               key={index}
               cols={item.cols || 1}
               rows={item.rows || 1}
-              onClick={() => setSelectedImageIndex(index)}
-              className={selectedImageIndex === index ? "selected" : ""}
+              onClick={() => setSelectedImageIndexEC(index)}
+              className={selectedImageIndexEC === index ? "selected" : ""}
             >
               <img src={item.url} alt={`Image ${index}`} loading="lazy" />
             </ImageListItem>
@@ -108,11 +108,13 @@ export default function QuiltedImageList() {
         <button
           type="button"
           onClick={handleDelete}
-          disabled={selectedImageIndex === -1}
+          disabled={selectedImageIndexEC === -1}
         >
           Delete Selected Image
         </button>
       </div>
     </>
   );
-}
+};
+
+export default GalleryEC;

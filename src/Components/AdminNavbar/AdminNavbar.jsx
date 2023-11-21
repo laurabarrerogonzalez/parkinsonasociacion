@@ -51,6 +51,11 @@ const AdminNavbar = ({ handleLogout }) => {
       <Link to="/galleryCD">
         <button className="button333">Galería Centro de Día</button>
       </Link>
+      <Link to="/galleryEC">
+        <button className="button333">Galería E. Cognitiva</button>
+      </Link>
+
+
       {isLoggedIn && (
         <Link to="/">
           <button onClick={logout} className="button333">
