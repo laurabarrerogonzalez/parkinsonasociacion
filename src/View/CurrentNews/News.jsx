@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import axios from "axios";
 import BannerViews from "../../Components/BannerViews/BannerViews";
+import Navbar from "../../Components/Navbar/Navbar";
 
 const News = () => {
   const [newsList, setNewsList] = useState([]);
@@ -20,6 +21,7 @@ const News = () => {
 
   return (
     <>
+      <Navbar />
       <BannerViews
         image="https://res.cloudinary.com/dit2zhtwz/image/upload/v1700473022/hombre-leyendo-periodico_53876-89052_egu6c0.avif"
         title="Noticias"

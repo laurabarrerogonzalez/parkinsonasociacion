@@ -7,8 +7,10 @@ import Footer from "../../Components/Footer/Footer";
 import ScrollArrow from "../../Components/ScrollArrow/ScrollArrow";
 import ButtonDonate from "../../Components/ButtonDonate/ButtonDonate";
 import TermsAndConditions from "../../Components/TermsAndConditions/TermsAndConditions";
+
 const Work = () => {
   const [file, setFile] = useState(null);
+
   const [formsData, setFormsData] = useState({
     name: "",
     lastName: "",
@@ -21,7 +23,9 @@ const Work = () => {
     archive: null,
     termsAccepted: false,
   });
+
   const customColor = "rgb(236, 117, 14)";
+
   const [positions, setPositions] = useState([
     "Fisioterapeuta",
     "Terapeuta Ocupacional",
@@ -35,15 +39,20 @@ const Work = () => {
     "Monitor@ de Ocio y Tiempo Libre",
     "Técnic@ superior en integarción social",
   ]);
+
   const [selectedPosition, setSelectedPosition] = useState("");
+
   const handleFileSelect = (event) => {
     const fileInput = event.target;
     const selectedFile = fileInput.files[0];
+
     setFile(selectedFile);
+
     setFormsData((prevData) => ({
       ...prevData,
-      archive: selectedFile,
+      archive: selectedFile, 
     }));
+
     if (selectedFile.type.startsWith("image/")) {
       // Resto del código para mostrar la vista previa si es una imagen
     } else if (selectedFile.type === "application/pdf") {
@@ -52,11 +61,14 @@ const Work = () => {
       console.log("Archivo no compatible");
     }
   };
+
   const handleInputChange = (e) => {
     const { name, value, type, checked } = e.target;
+
     if (name === "positions") {
       setSelectedPosition(value);
     }
+
     setFormsData((prevData) => ({
       ...prevData,
       [name]: type === "checkbox" ? checked : value,
@@ -79,7 +91,7 @@ const Work = () => {
         icon: "question",
         showCancelButton: true,
         confirmButtonColor: customColor,
-        cancelButtonColor: "#6C757D",
+        cancelButtonColor: "#6c757d",
         confirmButtonText: "Sí, enviar",
         cancelButtonText: "Cancelar",
       })
@@ -89,19 +101,24 @@ const Work = () => {
         }
       });
   };
+
   const sendFormsDataToAPI = async () => {
     try {
       const formData = new FormData();
+
       // Agregar datos del formulario
       Object.entries(formsData).forEach(([key, value]) => {
         if (key !== "archive") {
           formData.append(key, value);
         }
       });
+
       if (formsData.archive) {
         formData.append("archive", formsData.archive);
       }
+
       // Agregar el archivo
+
       const response = await fetch(
         "https://localhost:7165/WorkControllers/Post",
         {

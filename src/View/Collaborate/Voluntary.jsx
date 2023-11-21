@@ -6,6 +6,7 @@ import ButtonDonate from "../../Components/ButtonDonate/ButtonDonate";
 import ScrollArrow from "../../Components/ScrollArrow/ScrollArrow";
 import BannerViews from "../../Components/BannerViews/BannerViews";
 import TermsAndConditions from "../../Components/TermsAndConditions/TermsAndConditions";
+import Navbar from "../../Components/Navbar/Navbar";
 
 const Voluntary = () => {
   const [formData, setFormData] = useState({
@@ -125,6 +126,7 @@ const Voluntary = () => {
   return (
     <>
       <div className="photos">
+        <Navbar/>
         <BannerViews
           image="https://res.cloudinary.com/da7ffijqs/image/upload/v1698681283/20201119_125749_1_lmqez1.jpg"
           title="¿QUIERES SER VOLUNTARIO?"

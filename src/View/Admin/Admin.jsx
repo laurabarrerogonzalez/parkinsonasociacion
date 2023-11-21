@@ -3,7 +3,7 @@ import "./Admin.css";
 import axios from "axios";
 import Swal from "sweetalert2";
 import Footer from "../../assets/Components/Footer/Footer";
-import { Link } from "react-router-dom";
+import AdminNavbar from "../../Components/AdminNavbar/AdminNavbar";
 
 const Admin = () => {
   const [Volunteers, setVolunteers] = useState([]);
@@ -16,7 +16,38 @@ const Admin = () => {
   const [errorMessages, setErrorMessages] = useState({
     UserName: "",
     Password: "",
-  });
+  }); 
+
+  useEffect(() => {
+    // Verificar si hay un token almacenado en el localStorage al montar el componente
+    const token = localStorage.getItem("token");
+    if (token) {
+      setLoggedIn(true);
+      // Realizar cualquier carga de datos adicional que necesites aquí
+      fetchVolunteersData();
+      fetchMembersData();
+    }
+  }, []);
+  const fetchVolunteersData = async () => {
+    try {
+      const response = await axios.get(
+        "https://localhost:7165/VolunteersControllers/GetVolunteers"
+      );
+      setVolunteers(response.data);
+    } catch (error) {
+      console.error("Error al obtener la lista de voluntarios", error);
+    }
+  };
+  const fetchMembersData = async () => {
+    try {
+      const response = await axios.get(
+        "https://localhost:7165/MembersControllers/GetMembers"
+      );
+      setMembres(response.data);
+    } catch (error) {
+      console.error("Error al obtener la lista de socios", error);
+    }
+  };
 
   useEffect(() => {
     if (isLoggedIn) {
@@ -29,7 +60,7 @@ const Admin = () => {
           console.error("Error al obtener la lista de voluntarios", error);
         });
 
-        axios
+      axios
         .get("https://localhost:7165/MembersControllers/GetMembers")
         .then((response) => {
           setMembres(response.data);
@@ -103,19 +134,30 @@ const Admin = () => {
 
   const handleDeleteVolunteers = async (name) => {
     try {
-      await axios.delete(`https://localhost:7165/VolunteersControllers/DeleteVolunteers?name=${name}`);
-      const response = await axios.get("https://localhost:7165/VolunteersControllers/GetVolunteers");
-      setVolunteers(response.data); 
+      await axios.delete(
+        `https://localhost:7165/VolunteersControllers/DeleteVolunteers?name=${name}`
+      );
+      const response = await axios.get(
+        "https://localhost:7165/VolunteersControllers/GetVolunteers"
+      );
+      setVolunteers(response.data);
     } catch (error) {
-      console.error(`Error al eliminar el voluntario con nombre ${name}`, error);
+      console.error(
+        `Error al eliminar el voluntario con nombre ${name}`,
+        error
+      );
     }
   };
 
   const handleDeleteMembers = async (name) => {
     try {
-      await axios.delete(`https://localhost:7165/MembersControllers/DeleteMembers?name=${name}`);
-      const response = await axios.get("https://localhost:7165/MembersControllers/GetMembers");
-      setMembres(response.data); 
+      await axios.delete(
+        `https://localhost:7165/MembersControllers/DeleteMembers?name=${name}`
+      );
+      const response = await axios.get(
+        "https://localhost:7165/MembersControllers/GetMembers"
+      );
+      setMembres(response.data);
     } catch (error) {
       console.error(`Error al eliminar el socio con nombre ${name}`, error);
     }
@@ -125,97 +167,96 @@ const Admin = () => {
     <>
       <div>
         {isLoggedIn ? (
-          <div className="Admistitle">
-            <h1>Admin</h1>
-            <button onClick={handleLogout}>Cerrar sesión</button>
-           <Link to= '/newsAdmin'>
-           <button>Noticias</button>
-           </Link>
-           <Link to= '/resourcesAdmin'>
-           <button>Recursos y pautas</button>
-           </Link>
-
-           <Link to= '/galleryCD'>
-           <button>Galería Centro de Día</button>
-           </Link>
-            
-            <br />
-            <br />
-            <h2>Lista de Voluntarios</h2>
-            <table className="TableVoluntarios">
-              <thead>
-                <tr>
-                  <th>Nombre</th>
-                  <th>DNI</th>
-                  <th>Fecha de Nacimiento</th>
-                  <th>Domicilio</th>
-                  <th>Numero de Teléfono</th>
-                  <th>Email</th>
-                  <th>Educación</th>
-                  <th>Disponibilidad</th>
-                </tr>
-              </thead>
-              <tbody>
-                {Volunteers.map((Volunteers) => (
-                  <tr key={Volunteers.id}>
-                    <td>{Volunteers.name}</td>
-                    <td>{Volunteers.dni}</td>
-                    <td>{Volunteers.birthdate}</td>
-                    <td>{Volunteers.address}</td>
-                    <td>{Volunteers.phone}</td>
-                    <td>{Volunteers.email}</td>
-                    <td>{Volunteers.education}</td>
-                    <td>{Volunteers.shift}</td>
-                    <td>
-                      <button class="delete-btn" onClick={() => handleDeleteVolunteers(Volunteers.name)}>
-                        Eliminar
-                      </button>
-                    </td>
+          <>
+            <AdminNavbar handleLogout={() => setLoggedIn(false)} />
+            <div className="Admistitle">
+              <h1>Admin</h1>
+              <br />
+              <br />
+              <h2>Lista de Voluntarios</h2>
+              <table className="TableVoluntarios">
+                <thead>
+                  <tr className="tr12">
+                    <th className="th14">Nombre</th>
+                    <th className="th14">DNI</th>
+                    <th className="th14">Fecha de Nacimiento</th>
+                    <th className="th14">Domicilio</th>
+                    <th className="th14">Numero de Teléfono</th>
+                    <th className="th14">Email</th>
+                    <th className="th14">Educación</th>
+                    <th className="th14">Disponibilidad</th>
                   </tr>
-                ))}
-              </tbody>
-            </table>
-            <br />
-            <br />
-            <h2>Lista de Socios</h2>
-            <table className="TableVoluntarios">
-              <thead>
-                <tr>
-                  <th>Nombre</th>
-                  <th>DNI</th>
-                  <th>Fecha de Nacimiento</th>
-                  <th>Domicilio</th>
-                  <th>Numero de Teléfono</th>
-                  <th>Email</th>
-                  <th>IBAN</th>
-                  <th>Titular de la cuenta</th>
-                  <th>Servicios</th>
-                  <th>Tipo de Socio</th>
-                </tr>
-              </thead>
-              <tbody>
-                {Membres.map((Membres) => (
-                  <tr key={Membres.id}>
-                    <td>{Membres.name}</td>
-                    <td>{Membres.dni}</td>
-                    <td>{Membres.birthdate}</td>
-                    <td>{Membres.address}</td>
-                    <td>{Membres.phone}</td>
-                    <td>{Membres.email}</td>
-                    <td>{Membres.iban}</td>
-                    <td>{Membres.holder}</td>
-                    <td>{Membres.services}</td>
-                    <td>{Membres.members}</td>
-                    <td>
-                      <button class="delete-btn" onClick={() => handleDeleteMembers(Membres.name)}>
-                        Eliminar
-                      </button>
-                    </td>
+                </thead>
+                <tbody>
+                  {Volunteers.map((Volunteers) => (
+                    <tr className="tr12" key={Volunteers.id}>
+                      <td className="td13">{Volunteers.name}</td>
+                      <td className="td13">{Volunteers.dni}</td>
+                      <td className="td13">{Volunteers.birthdate}</td>
+                      <td className="td13">{Volunteers.address}</td>
+                      <td className="td13">{Volunteers.phone}</td>
+                      <td className="td13">{Volunteers.email}</td>
+                      <td className="td13">{Volunteers.education}</td>
+                      <td className="td13">{Volunteers.shift}</td>
+                      <td className="td13">
+                        <button
+                          class="delete-btn"
+                          onClick={() =>
+                            handleDeleteVolunteers(Volunteers.name)
+                          }
+                        >
+                          Eliminar
+                        </button>
+                      </td>
+                    </tr>
+                  ))}
+                </tbody>
+              </table>
+              <br />
+              <br />
+              <h2>Lista de Socios</h2>
+              <table className="TableVoluntarios">
+                <thead>
+                  <tr className="tr12">
+                    <th className="th14">Nombre</th>
+                    <th className="th14">DNI</th>
+                    <th className="th14">Fecha de Nacimiento</th>
+                    <th className="th14">Domicilio</th>
+                    <th className="th14">Numero de Teléfono</th>
+                    <th className="th14">Email</th>
+                    <th className="th14">IBAN</th>
+                    <th className="th14">Titular de la cuenta</th>
+                    <th className="th14">Servicios</th>
+                    <th className="th14">Tipo de Socio</th>
                   </tr>
-                ))}
-              </tbody>
-            </table>
-          </div>
+                </thead>
+                <tbody>
+                  {Membres.map((Membres) => (
+                    <tr className="tr12" key={Membres.id}>
+                      <td className="td13">{Membres.name}</td>
+                      <td className="td13">{Membres.dni}</td>
+                      <td className="td13">{Membres.birthdate}</td>
+                      <td className="td13">{Membres.address}</td>
+                      <td className="td13">{Membres.phone}</td>
+                      <td className="td13">{Membres.email}</td>
+                      <td className="td13">{Membres.iban}</td>
+                      <td className="td13">{Membres.holder}</td>
+                      <td className="td13">{Membres.services}</td>
+                      <td className="td13">{Membres.members}</td>
+                      <td className="td13">
+                        <button
+                          class="delete-btn"
+                          onClick={() => handleDeleteMembers(Membres.name)}
+                        >
+                          Eliminar
+                        </button>
+                      </td>
+                    </tr>
+                  ))}
+                </tbody>
+              </table>
+            </div>
+          </>
         ) : (
           <div className="login-card">
             <div className="card-header">
