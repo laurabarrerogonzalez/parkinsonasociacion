@@ -46,7 +46,16 @@ const AdminNavbar = ({ handleLogout }) => {
       <Link to="/resourcesAdmin">
         <button className="button333">Recursos y pautas</button>
       </Link>
-      {isLoggedIn && <Link to="/"><button onClick={logout} className="button333">Cerrar sesión</button></Link>}
+      <Link to="/galleryCD">
+        <button className="button333">Galería Centro de Día</button>
+      </Link>
+      {isLoggedIn && (
+        <Link to="/">
+          <button onClick={logout} className="button333">
+            Cerrar sesión
+          </button>
+        </Link>
+      )}
     </div>
   );
 };
