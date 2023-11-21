@@ -1,5 +1,6 @@
-import React from "react";
+import React, { useState } from "react";
 import "../Work with us/Work.css";
+import swal from "sweetalert2";
 import Navbar from "../../Components/Navbar/Navbar";
 import BannerViews from "../../Components/BannerViews/BannerViews";
 import Footer from "../../Components/Footer/Footer";
@@ -49,7 +50,7 @@ const Work = () => {
 
     setFormsData((prevData) => ({
       ...prevData,
-      archive: selectedFile,
+      archive: selectedFile, 
     }));
 
     if (selectedFile.type.startsWith("image/")) {
@@ -141,7 +142,7 @@ const Work = () => {
         });
         setFormsData({
           // ... otros campos del formulario
-          archive: null, // Reinicializar 'archive' a null después del envío
+          archive: null,  // Reinicializar 'archive' a null después del envío
         });
       } else {
         throw new Error("Error al enviar los datos");
@@ -156,22 +157,6 @@ const Work = () => {
       });
     }
   };
-
-  window.addEventListener("scroll", function () {
-    var images = document.querySelectorAll(
-      ".img_form_work,.video_person_asociation"
-    );
-    images.forEach(function (image) {
-      var imagePosition = image.getBoundingClientRect().top;
-      var screenPosition = window.innerHeight;
-      // Verificar si la imagen está en el punto deseado para mostrarla con la animación
-      if (imagePosition < screenPosition) {
-        image.style.opacity = "4";
-      } else {
-        image.style.opacity = "0"; // Si la imagen no está en la posición deseada, ocultarla
-      }
-    });
-  });
 
   return (
     <div>
@@ -402,10 +387,12 @@ const Work = () => {
           </div>
         </div>
       </section>
+
       <Footer />
       <ButtonDonate />
       <ScrollArrow />
     </div>
   );
 };
+
 export default Work;
