@@ -9,7 +9,7 @@ import BannerViews from "../../Components/BannerViews/BannerViews";
 import TermsAndConditions from "../../Components/TermsAndConditions/TermsAndConditions";
 
 const Members = () => {
-  const [formData, setFormData] = useState({
+  const [formsData, setFormsData] = useState({
     name: "",
     dni: "",
     birthdate: "",
@@ -27,25 +27,17 @@ const Members = () => {
 
   const handleInputChange = (e) => {
     const { name, value, type, checked } = e.target;
-
-    if (name === "services") {
-      setFormData((prevData) => ({
-        ...prevData,
-        services: checked
-          ? [...prevData.services, value]
-          : prevData.services.filter((services) => services !== value),
-      }));
-    } else {
-      setFormData((prevData) => ({
-        ...prevData,
-        [name]: type === "checkbox" ? checked : value,
-      }));
-    }
+    setFormsData((prevData) => ({
+      ...prevData,
+      [name]: type === "checkbox" ? checked : value,
+    }));
   };
 
   const handleEnviarClick = () => {
     if (
-      !(formData.members === "Colaborativo" || formData.members === "Afectado")
+      !(
+        formsData.members === "Colaborativo" || formsData.members === "Afectado"
+      )
     ) {
       swal.fire({
         title: "Error",
@@ -56,7 +48,7 @@ const Members = () => {
       return;
     }
 
-    if (!formData.termsAccepted) {
+    if (!formsData.termsAccepted) {
       swal.fire({
         title: "Error",
         text: "Debes aceptar las Condiciones y la Política de privacidad.",
@@ -79,12 +71,12 @@ const Members = () => {
       })
       .then((result) => {
         if (result.isConfirmed) {
-          sendFormDataToAPI(formData);
+          sendFormsDataToAPI(formsData);
         }
       });
   };
 
-  const sendFormDataToAPI = async () => {
+  const sendFormsDataToAPI = async () => {
     try {
 
 
@@ -108,10 +100,7 @@ const Members = () => {
           headers: {
             "Content-Type": "application/json",
           },
-          body: JSON.stringify({
-            ...formData,
-            services: Array.isArray(formData.services) ? formData.services : [formData.services],
-          }),
+          body: JSON.stringify(formsData),
         }
       );
 
@@ -122,7 +111,7 @@ const Members = () => {
           icon: "success",
           confirmButtonColor: customColor,
         });
-        setFormData({
+        setFormsData({
           name: "",
           dni: "",
           birthdate: "",
@@ -257,7 +246,7 @@ const Members = () => {
             name="name"
             className="input14"
             placeholder="Nombre y apellidos"
-            value={formData.name}
+            value={formsData.name}
             onChange={handleInputChange}
           />
           <input
@@ -266,7 +255,7 @@ const Members = () => {
             name="dni"
             className="input14"
             placeholder="DNI"
-            value={formData.dni}
+            value={formsData.dni}
             onChange={handleInputChange}
           />
           <input
@@ -275,7 +264,7 @@ const Members = () => {
             name="birthdate"
             className="input14"
             placeholder="Fecha de naciomiento"
-            value={formData.birthdate}
+            value={formsData.birthdate}
             onChange={handleInputChange}
           />
           <input
@@ -284,7 +273,7 @@ const Members = () => {
             name="address"
             className="input14"
             placeholder="Domicilio"
-            value={formData.address}
+            value={formsData.address}
             onChange={handleInputChange}
           />
           <input
@@ -293,7 +282,7 @@ const Members = () => {
             name="phone"
             className="input14"
             placeholder="Teléfono"
-            value={formData.phone}
+            value={formsData.phone}
             onChange={handleInputChange}
           />
           <input
@@ -302,7 +291,7 @@ const Members = () => {
             name="email"
             className="input14"
             placeholder="Email"
-            value={formData.email}
+            value={formsData.email}
             onChange={handleInputChange}
           />
           <input
@@ -311,7 +300,7 @@ const Members = () => {
             name="iban"
             className="input14"
             placeholder="Cuenta Bancaria/IBAN"
-            value={formData.iban}
+            value={formsData.iban}
             onChange={handleInputChange}
           />
           <input
@@ -320,79 +309,37 @@ const Members = () => {
             name="holder"
             className="input14"
             placeholder="Titular de la cuenta"
-            value={formData.holder}
+            value={formsData.holder}
             onChange={handleInputChange}
           />
-          <h2>Marcar servicio de interés:</h2>
+          <h2>Elige servicio de interés:</h2>
           <div className="customCheckBoxHolder">
-            <input
-              className="customCheckBoxInput"
-              id="cCB1"
-              type="checkbox"
-              name="services"
-              value="Servicio rehabilitación integral"
-              checked={formData.services.includes(
-                "Servicio rehabilitación integral"
-              )}
-              onChange={handleInputChange}
-            />
-            <label className="customCheckBoxWrapper" htmlFor="cCB1">
-              <div className="customCheckBox">
-                <div className="inner">Servicio rehabilitación integral</div>
-              </div>
-            </label>
-
-            <input
-              className="customCheckBoxInput"
-              id="cCB2"
-              type="checkbox"
-              name="services"
-              value="Servicio estimulación cognitiva"
-              checked={formData.services.includes(
-                "Servicio estimulación cognitiva"
-              )}
-              onChange={handleInputChange}
-            />
-            <label className="customCheckBoxWrapper" htmlFor="cCB2">
-              <div className="customCheckBox">
-                <div className="inner">Servicio estimulación cognitiva</div>
-              </div>
-            </label>
-
-            <input
-              className="customCheckBoxInput"
-              id="cCB3"
-              type="checkbox"
-              name="services"
-              value="Información y orientación"
-              checked={formData.services.includes("Información y orientacióna")}
-              onChange={handleInputChange}
-            />
-            <label className="customCheckBoxWrapper" htmlFor="cCB3">
-              <div className="customCheckBox">
-                <div className="inner">Información y orientación</div>
-              </div>
-            </label>
-
-            <input
-              className="customCheckBoxInput"
-              id="cCB4"
-              type="checkbox"
-              name="services"
-              value="Otro"
-              checked={formData.services.includes("Otro")}
-              onChange={handleInputChange}
-            />
-            <label className="customCheckBoxWrapper" htmlFor="cCB4">
-              <div className="customCheckBox">
-                <div className="inner">Otros</div>
-              </div>
-            </label>
+            <div className="customCheckBox">
+              <div className="inner">Servicio rehabilitación integral</div>
+            </div>
+            <div className="customCheckBox">
+              <div className="inner">Servicio estimulación cognitiva</div>
+            </div>
+            <div className="customCheckBox">
+              <div className="inner">Información y orientación</div>
+            </div>
+            <div className="customCheckBox">
+              <div className="inner">Otros</div>
+            </div>
           </div>
+          <input
+            type="text"
+            autoComplete="off"
+            name="services"
+            className="input14"
+            placeholder="Escribe tus servicios"
+            value={formsData.services}
+            onChange={handleInputChange}
+          />
           <h2>Marcar tipo de socio:</h2>
           <div className="radio-inputs">
             <label
-              className={formData.members === "Colaborativo" ? "selected" : ""}
+              className={formsData.members === "Colaborativo" ? "selected" : ""}
             >
               <input
                 className="radio-input"
@@ -414,7 +361,9 @@ const Members = () => {
                 <span className="radio-label">Colaborativo</span>
               </span>
             </label>
-            <label lassName={formData.members === "Afectado" ? "selected" : ""}>
+            <label
+              lassName={formsData.members === "Afectado" ? "selected" : ""}
+            >
               <input
                 className="radio-input"
                 type="radio"
@@ -439,18 +388,20 @@ const Members = () => {
           <div className="checkbox-container">
             <input
               type="checkbox"
-              checked={formData.termsAccepted}
+              checked={formsData.termsAccepted}
               onChange={() =>
                 handleInputChange({
                   target: {
                     name: "termsAccepted",
-                    value: !formData.termsAccepted,
+                    value: !formsData.termsAccepted,
                   },
                 })
               }
             />
             <div
-              className={`checkmark ${formData.termsAccepted ? "checked" : ""}`}
+              className={`checkmark ${
+                formsData.termsAccepted ? "checked" : ""
+              }`}
             ></div>
             <div className="Terminos">
               <TermsAndConditions />
@@ -467,7 +418,7 @@ const Members = () => {
         </div>
         <button
           onClick={handleEnviarClick}
-          className={`bn01 ${formData.termsAccepted ? "accepted" : ""}`}
+          className={`bn01 ${formsData.termsAccepted ? "accepted" : ""}`}
           type="button"
         >
           Enviar

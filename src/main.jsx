@@ -7,7 +7,7 @@ import Aboutus from './View/About us/Aboutus';
 import Home from './View/Home/Home';
 import Symptoms from './View/Parkinson/Symptoms';
 import Evolution from './View/Parkinson/Evolution';
-import Resources from './View/Parkinson/Resources';
+// import Resources from './View/Parkinson/Resources';
 import Myths from './View/Parkinson/Myths';
 import Daycarecenter from './View/Services_/Daycarecenter';
 import Revitalization from './View/Services_/Revitalization';
@@ -24,13 +24,16 @@ import Find from './View/Find us/Find';
 import '../src/View/Parkinson/Myths.css';
 import Admin from './View/Admin/Admin';
 import NewsAdmin from './View/Admin/NewsAdmin';
+import ResourcesAdmin from './View/Admin/ResourcesAdmin';
+import GalleryCD from './View/Admin/GalleryCD';
+import GalleryEC from './View/Admin/GalleryEC';
 
 
 
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <Router>
-    <Navbar />
+    {/* <Navbar /> */}
     <React.StrictMode>
       <Routes>
         <Route path="/" element={<Home />} /> 
@@ -38,7 +41,7 @@ ReactDOM.createRoot(document.getElementById('root')).render(
         <Route path="/aboutus" element={<Aboutus />} />
         <Route path="/symptoms" element={<Symptoms />} />
         <Route path="/evolution" element={<Evolution />} />
-        <Route path="/resources" element={<Resources />} />
+        {/* <Route path="/resources" element={<Resources />} /> */}
         <Route path="/myths" element={<Myths />} />
         <Route path="/daycarecenter" element={<Daycarecenter />} />
         <Route path="/revitalization" element={<Revitalization />} />
@@ -53,6 +56,11 @@ ReactDOM.createRoot(document.getElementById('root')).render(
         <Route path="/work" element={<Work />} />
         <Route path="/find" element={<Find />} />
         <Route path="/newsAdmin" element={<NewsAdmin />} />
+        <Route path="/resourcesAdmin" element={<ResourcesAdmin />} />
+        <Route path="/galleryCD" element={<GalleryCD />} />
+        <Route path="/galleryEC" element={<GalleryEC />} />
+
+
       </Routes>
     </React.StrictMode>
   </Router>
