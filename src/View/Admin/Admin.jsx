@@ -134,6 +134,10 @@ const Admin = () => {
            <Link to= '/resourcesAdmin'>
            <button>Recursos y pautas</button>
            </Link>
+
+           <Link to= '/galleryCD'>
+           <button>Galería Centro de Día</button>
+           </Link>
             
             <br />
             <br />

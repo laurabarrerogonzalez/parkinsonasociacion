@@ -76,71 +76,72 @@
 
 
 
-import "../Admin/ResourcesAdmin.css";
-import React, { useState, useEffect } from "react";
+// import "../Admin/ResourcesAdmin.css";
+// import React, { useState, useEffect } from "react";
 
-const ResourcesAdmin = () => {
-  const [file, setFile] = useState(null);
-  const [pdfList, setPdfList] = useState([]);
+// const ResourcesAdmin = () => {
+//   const [file, setFile] = useState(null);
+//   const [pdfList, setPdfList] = useState([]);
 
-  const handleFileChange = (event) => {
-    setFile(event.target.files[0]);
-  };
+//   const handleFileChange = (event) => {
+//     setFile(event.target.files[0]);
+//   };
 
-  const generateRandomFileName = () => {
-    const names = ["DocumentA.pdf", "ReportB.pdf", "GuideC.pdf"]; // Nombres predefinidos
-    const randomIndex = Math.floor(Math.random() * names.length);
-    return names[randomIndex];
-  };
+//   const generateRandomFileName = () => {
+//     const names = ["DocumentA.pdf", "ReportB.pdf", "GuideC.pdf"]; // Nombres predefinidos
+//     const randomIndex = Math.floor(Math.random() * names.length);
+//     return names[randomIndex];
+//   };
 
-  const handleSubmit = async () => {
-    try {
-      // Simulación de subida de archivo a la "API" (localmente)
-      const uploadedFile = {
-        name: file ? file.name : generateRandomFileName(), // Si no se selecciona un archivo, se genera un nombre aleatorio
-        id: Date.now(), // Simulando un ID para el archivo
-      };
+//   const handleSubmit = async () => {
+//     try {
+//       // Simulación de subida de archivo a la "API" (localmente)
+//       const uploadedFile = {
+//         name: file ? file.name : generateRandomFileName(), // Si no se selecciona un archivo, se genera un nombre aleatorio
+//         id: Date.now(), // Simulando un ID para el archivo
+//       };
 
-      setPdfList([...pdfList, uploadedFile]);
-    } catch (error) {
-      console.error("Error al subir el archivo:", error);
-    }
-  };
+//       setPdfList([...pdfList, uploadedFile]);
+//     } catch (error) {
+//       console.error("Error al subir el archivo:", error);
+//     }
+//   };
 
-  useEffect(() => {
-    // Simulación de obtener la lista de archivos de la "API" (localmente)
-    const fakePdfList = [
-      { name: "Ejemplo1.pdf", id: 1 },
-      { name: "Ejemplo2.pdf", id: 2 },
-      { name: "Ejemplo3.pdf", id: 3 },
-    ];
-    setPdfList(fakePdfList);
-  }, []);
+//   useEffect(() => {
+//     // Simulación de obtener la lista de archivos de la "API" (localmente)
+//     const fakePdfList = [
+//       { name: "Ejemplo1.pdf", id: 1 },
+//       { name: "Ejemplo2.pdf", id: 2 },
+//       { name: "Ejemplo3.pdf", id: 3 },
+//     ];
+//     setPdfList(fakePdfList);
+//   }, []);
 
-  return (
-    <div className="resource">
-      <div className="pdf-list">
-        <h2>Lista de PDF:</h2>
-        <ul>
-          {pdfList.map((pdf, index) => (
-            <li key={pdf.id}>
-              <a
-                href={`http://localhost:3000/fakeapi/pdf/${pdf.name}`}
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                Ver PDF {index + 1}
-              </a>
-            </li>
-          ))}
-        </ul>
-      </div>
-      <div>
-        <input type="file" onChange={handleFileChange} />
-        <button onClick={handleSubmit}>Subir PDF</button>
-      </div>
-    </div>
-  );
-};
+//   return (
+//     // <div className="resource">
+//     //   <div className="pdf-list">
+//     //     <h2>Lista de PDF:</h2>
+//     //     <ul>
+//     //       {pdfList.map((pdf, index) => (
+//     //         <li key={pdf.id}>
+//     //           <a
+//     //             href={`http://localhost:3000/fakeapi/pdf/${pdf.name}`}
+//     //             target="_blank"
+//     //             rel="noopener noreferrer"
+//     //           >
+//     //             Ver PDF {index + 1}
+//     //           </a>
+//     //         </li>
+//     //       ))}
+//     //     </ul>
+//     //   </div>
+//     //   <div>
+//     //     <input type="file" onChange={handleFileChange} />
+//     //     <button onClick={handleSubmit}>Subir PDF</button>
+//     //   </div>
+//     // </div>
+//     <h1>Hola</h1>
+//   );
+// };
 
-export default ResourcesAdmin;
+// export default ResourcesAdmin;
