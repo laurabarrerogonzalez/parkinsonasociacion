@@ -158,7 +158,7 @@ const Work = () => {
     <div>
       <Navbar />
       <BannerViews
-        image="https://res.cloudinary.com/dp7lr71t8/image/upload/v1699001571/hands-1846428_pxnoco.jpg"
+        image="https://res.cloudinary.com/dp7lr71t8/image/upload/v1700401445/trabaja_sfweaf.jpg"
         title="TRABAJA CON NOSOTROS"
       />
       <section className="section_person_asociation">
