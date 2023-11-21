@@ -1,0 +1,107 @@
+.banner {
+    position: relative;
+  }
+  
+  .banner img {
+    width: 100%;
+  height: 600px;
+   object-fit:cover;
+   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.7);
+  }
+
+  .text-banneer:hover {
+    background-color: rgba(0, 0, 0, 0.7);
+  }
+
+  @font-face {
+    font-family: 'Anton';
+    src: url('../../Fonts/Anton-Regular.ttf') format('truetype');
+    /* Agrega más formatos y rutas para soporte de navegadores diferentes */
+  }
+  @font-face {
+    font-family: 'Inria';
+    src: url('../../Fonts/InriaSans-Regular.ttf') format('truetype');
+    /* Agrega más formatos y rutas para soporte de navegadores diferentes */
+  }
+  @font-face {
+    font-family: 'Single';
+    src: url('../../Fonts/SingleDay-Regular.ttf') format('truetype');
+    /* Agrega más formatos y rutas para soporte de navegadores diferentes */
+  }
+  
+  .banner-text {
+   
+    /* Ajusta la posición vertical del texto */
+     /* Posiciona el texto a 50px del borde derecho */
+    color: white; /* Color del texto */
+    font-size: 30px; /* Tamaño de fuente del texto */
+     /* Ancho del texto */
+   
+    
+     /* Orientación vertical del texto */
+     /* Fondo negro transparente */
+    /* padding: 10px 10px 10px 10px;  */
+  
+    font-family: 'Inria';
+    text-shadow: 4px 4px 4px rgba(0, 0, 0, 0.9);
+    margin: 0;
+    margin-left: 50px;
+   
+
+}
+.text-banneer{
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items:center;
+  top: 100px;
+  right: 0px;
+  width: 700px;
+  height: 460px;
+  z-index: 1;
+  text-align: center;
+  background-color:rgba(0, 0, 0, 0.4) ;
+  shape-outside: polygon(0 0, 100% 0, 85% 100%, 15% 100%);
+  clip-path: polygon(18% 0, 100% 0, 100% 100%, 0 100%);
+ 
+  padding: 20px;
+  
+}
+
+.banner-title {
+  
+   /* Posición del título sobre la imagen */
+   /* Ajusta la posición horizontal del título */
+  
+  color: white; /* Color del título */
+  font-size: 70px; /* Tamaño de fuente del título */
+  /* Coloca el título encima de la imagen */
+  font-family: 'Anton'; /* Utiliza tu fuente personalizada */
+  text-shadow: 10px 10px 10px rgba(0, 0, 0, 0.9); /* Sombra para mejorar la legibilidad */
+margin: 0;
+margin-left: 50px;
+}
+
+
+@media(max-width:768px){
+    .banner img {
+    height: 500px;}
+
+
+/* .banner-text {
+    font-size: 20px;
+    width: 50%;
+} */
+.text-banneer{
+  width: 50%;
+  height: 360px;
+}
+.banner-title {
+  font-size: 50px;
+}
+.banner-text {
+  font-size: 20px;
+}
+
+}

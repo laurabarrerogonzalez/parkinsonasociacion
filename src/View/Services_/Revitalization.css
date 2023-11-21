@@ -1,0 +1,334 @@
+@font-face {
+    font-family: 'MiFuentePersonalizada';
+    src: url('../../Fonts/Bevan-Regular.ttf') format('truetype');
+    /* Agrega más formatos y rutas para soporte de navegadores diferentes */
+}
+
+@font-face {
+    font-family: 'Gotham Black';
+    src: url('../../Fonts/1830-font.otf') format('truetype');
+    /* Agrega más formatos y rutas para soporte de navegadores diferentes */
+}
+
+@font-face {
+    font-family: 'Lexend';
+    src: url('../../Fonts/LexendMega-VariableFont_wght.ttf') format('truetype');
+    /* Agrega más formatos y rutas para soporte de navegadores diferentes */
+}
+
+.container_revitalization_info {
+    width: 100%;
+    height: auto;
+    margin-top: 40px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.info_revitalization_info {
+    width: 30%;
+    height: auto;
+    margin: 10px;
+    background-color: #CC9E4A;
+}
+
+
+
+.photografy {
+    width: 50%;
+    height: auto;
+    
+    margin: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+}
+
+@media (max-width: 700px) {
+    .info_revitalization_info{
+      width: 100%;
+      height: auto;
+      
+    }
+
+    .photografy {
+        width: 100%;
+        height: auto;
+        
+    
+    }
+  }
+
+.title_info_revitalization {
+    width: 100%;
+    height: 120px;
+    
+}
+
+.title_info_revitalization h2 {
+    font-family: 'MiFuentePersonalizada';
+    font-size: 35px;
+    text-align: center;
+}
+
+.one_activ {
+    width: 100%;
+    height: 220px;
+    
+    margin-top: 10px;
+}
+
+.one_activ h3 {
+    font-family: 'Gotham Black';
+    font-size:25px;
+    text-align: center;
+}
+.one_activ p {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size:18px;
+    text-align: justify;
+    margin-top: 20px;
+    padding: 10px;
+}
+
+.activ_img_revitalization{
+    width: 48%;
+    height: 900px;
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.info_activ_img_revitalization{
+    width: 48%;
+    height: auto;
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.title_img_revitaliz{
+    width: 100%;
+    height: 250px;
+    border: 2px solid #067787;
+    border-radius: 20px;
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 10px;
+}
+
+
+
+.title_img_revitaliz h3{
+    font-size: 25px;
+    font-family:'Gotham Black';
+    text-align: center;
+}
+
+.title_img_revitaliz p{
+    font-size: 18px;
+    font-family:Arial, Helvetica, sans-serif;
+    text-align: justify;
+    margin-top: 10px;
+}
+
+@media (max-width: 700px) {
+    .activ_img_revitalization{
+      max-width: 45%;
+      height: 900px;
+      
+    }
+
+    .info_activ_img_revitalization{
+        width: 55%;
+        height: 900px;   
+    }
+
+    .title_img_revitaliz{
+        border: none;
+    }
+    .title_img_revitaliz h3{
+        font-size: 25px;
+    }
+
+    .title_img_revitaliz p{
+        font-size: 15px;
+    }
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.section_title_content_revitalization {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    text-align: justify;
+    margin-top: 20px;
+    background-color: #067787;
+    padding-bottom: 50px;
+}
+
+.title-revitalization {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 10px;
+    color: white;
+    font-family: 'MiFuentePersonalizada';
+    font-size: 25px;
+    text-shadow: 4px 4px 4px rgba(0, 0, 0, 1.9);
+}
+
+.content_revitalization {
+    width: 90%;
+    color: white;
+    font-family:Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, 1.2);
+}
+
+.section_activ_revitalization {
+    width: 100%;
+    height: auto;
+    margin-top: 20px;
+
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+
+}
+
+.content_activ {
+    width: 25%;
+    height: auto;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.title_activ {
+    width: 100%;
+    height: 30%;
+    text-align: center;
+}
+
+.text-activ {
+    width: 100%;
+    height: 70%;
+    font-family: 'Lexend';
+    font-size: 15px;
+}
+
+
+
+
+.revitaliz-image {
+
+
+
+    border-radius: 100%;
+    /* Hace que las imágenes sean circulares */
+    width: 200px;
+    /* Ajusta el tamaño de las imágenes según tus necesidades */
+    height: 200px;
+    /* Agrega margen inferior para separar las imágenes */
+    object-fit: cover;
+    border-color: #38929F;
+    border-style: groove;
+}
+
+.revitaliz-image1 {
+
+
+    border-radius: 100%;
+    border-color: #38929F;
+    border-style: groove;
+    width: 200px;
+    height: 200px;
+    /* Agrega margen derecho entre las imágenes */
+    object-fit: cover;
+}
+
+.revitaliz-image2 {
+
+
+    border-radius: 100%;
+    border-color: #38929F;
+    border-style: groove;
+    width: 200px;
+    height: 200px;
+    /* Agrega margen derecho entre las imágenes */
+    object-fit: initial;
+}
+
+.revitaliz-image3 {
+
+
+    border-radius: 100%;
+    border-color: #38929F;
+    border-style: groove;
+    width: 200px;
+    height: 200px;
+    /* Agrega margen derecho entre las imágenes */
+    object-fit: cover;
+}
+
+@media(max-width:768px) {
+
+    .content_activ {
+        width: 100%;
+        height: 300px;
+
+    }
+
+    .section_activ_revitalization {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        width: 100%;
+        height: auto;
+
+
+    }
+
+
+}
+
+.text_finish {
+    width: 60%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    text-align: justify;
+    margin-top: 50px;
+    background-color: #CC9E4A;
+    padding-bottom: 50px;
+    margin-left: 20%;
+}

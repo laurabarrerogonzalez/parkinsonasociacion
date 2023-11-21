@@ -1,0 +1,207 @@
+.what1{
+   
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-top: 80px;
+  
+}
+
+.title-parkinson1{
+   background-color: orange;
+   display: flex;
+   justify-content: center;
+   margin-left: 35px;
+   width: 95%; 
+   box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5); 
+   border: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+
+.li-state {
+    padding: 15px;
+    text-align: left;    
+}
+
+.bodys12 {
+  width: 100%;
+  height: 500px;
+  font-family: tahoma;
+  justify-content: center;
+}
+
+.process-wrapper {
+  margin: auto;
+  max-width: 1080px;
+}
+
+#progress-bar-container {
+  position: relative;
+  width: 90%;
+  margin: auto;
+  height: 100px;
+  margin-top: 100px;
+}
+
+#progress-bar-container ul {
+  padding: 0;
+  margin: 0;
+  position: relative;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px; 
+}
+
+#progress-bar-container ul li {
+  list-style: none;
+  text-align: center;
+  color: #aaa;
+  text-transform: uppercase;
+  font-size: 11px;
+  font-weight: 700;
+  position: relative;
+}
+
+#progress-bar-container ul li:before {
+  content: '';
+  display: block;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: #aaa;
+  position: absolute;
+  top: -15px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 1; 
+}
+
+#progress-bar-container ul li.active:before,
+#progress-bar-container ul li:hover:before {
+  background: rgb(236, 117, 14);
+}
+
+#progress-bar-container ul li.active span,
+#progress-bar-container ul li:hover span {
+  color: #000;
+}
+
+#progress-bar-container #line {
+  width: 96%;
+  position: relative;
+  margin-top: -4.7%;
+  margin-left: 2%;
+  height: 4px;
+  background: #ccc;
+  border-radius: 2px;
+  margin-bottom: 10px;
+  overflow: hidden;
+}
+
+#progress-bar-container #line-process {
+  content: '';
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to right, rgb(231, 231, 86),rgb(231, 231, 86),rgb(231, 231, 86), rgb(255, 132, 0), rgb(255, 132, 0), red); /* Puedes ajustar los colores según tus preferencias */
+  position: absolute;
+  z-index: 2;
+  border-radius: 50px;
+  transition: all ease 0.9s;
+}
+
+#progress-content-section {
+  width: 90%;
+  margin: auto;
+  background: linear-gradient(to right, rgb(231, 231, 86),rgb(231, 231, 86),rgb(231, 231, 86), rgb(255, 132, 0), rgb(255, 132, 0), red);
+  border-radius: 4px;
+  text-align: center;
+  position: relative;
+}
+
+.section-content {
+  display: none;
+  padding: 30px 40px;
+}
+
+.section-content.active {
+  display: block;
+}
+
+
+
+@media screen and (max-width: 700px) {
+  .bodys12 {
+    height: auto; /* Cambiar la altura para adaptarse al contenido */
+  }
+
+  .process-wrapper {
+    padding: 0 20px; /* Ajustar el relleno para adaptarse al ancho reducido */
+  }
+
+
+} 
+
+
+  #progress-bar-container ul {
+    flex-direction: row; 
+    height: auto; 
+    margin-top: -50px;
+    /* display: flex;
+    justify-content: space-between;
+    text-align: center;
+    align-items: center; */
+  }
+
+
+p{
+  margin-top: 20px;
+  margin-left: -20px;
+}
+
+
+
+
+
+  #progress-bar-container ul li {
+    margin-bottom: 10px; 
+    margin-right: 20px;
+    font-size: 9px;
+    display: flex; /* Usar flexbox */
+    flex-direction: column; /* Cambiar la dirección a columna */
+    align-items: center; /* Centrar el contenido */
+    text-align: center; /* Centrar el texto */
+  }
+  #progress-bar-container ul li span {
+    margin-top: 20px; 
+  }
+
+
+  #progress-bar-container ul li:before {
+    top: initial; /* Eliminar la posición superior */
+    left: -15px; /* Ajustar la posición izquierda */
+    transform: none; /* Eliminar la transformación */
+  }
+
+  #progress-bar-container #line {
+    margin-top: -58px;
+    margin-left: -15px;
+  }
+
+  #progress-bar-container #line-process {
+    border-radius: 0; 
+  }
+
+  #progress-content-section {
+    border-radius: 0;
+  }
+
+  .section-content {
+    padding: 20px; /* Ajustar el relleno para adaptarse al ancho reducido */
+  }
+
+
+.what1{
+  margin-right: 70px;
+}

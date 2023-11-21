@@ -1,0 +1,37 @@
+.photobanner1 {
+    height: 500px;
+    background-image: url("https://res.cloudinary.com/dit2zhtwz/image/upload/v1698917550/istockphoto-1434534146-612x612_c5rz28.jpg");
+    background-size:cover; 
+    border: 1px rgba(255, 255, 255, 0) solid; 
+}
+
+
+.what{
+   
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   margin-top: 50px;
+   
+}
+
+.title-parkinson{
+    background-color: orange;
+    display: flex;
+    justify-content: center;
+    margin-left: 35px;
+    width: 95%; 
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5); 
+    border: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+.text-parkinson{
+    width: 1100px;
+    margin-top: 20px;
+    margin-left: 200px;
+    font-size: 20px;
+
+}
+
+
+
