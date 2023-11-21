@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import axios from "axios";
-import '../Admin/NewsAdmin.css';
+import "../Admin/NewsAdmin.css";
+import AdminNavbar from "../../Components/AdminNavbar/AdminNavbar";
 
 const NewsAdmin = () => {
   const [link, setLink] = useState("");
@@ -56,18 +57,22 @@ const NewsAdmin = () => {
 
   const handleUpdate = async (id_News, updatedData) => {
     try {
-      const response = await axios.put(`https://localhost:7165/api/News/${id_News}`, updatedData);
-  
+      const response = await axios.put(
+        `https://localhost:7165/api/News/${id_News}`,
+        updatedData
+      );
+
       // Después de actualizar, realizar una nueva solicitud GET para obtener las noticias actualizadas
-      const updatedResponse = await axios.get("https://localhost:7165/api/News");
+      const updatedResponse = await axios.get(
+        "https://localhost:7165/api/News"
+      );
       setNewsList(updatedResponse.data);
-  
+
       closeModal();
     } catch (error) {
       console.error("Error al actualizar la noticia:", error);
     }
   };
-
 
   const openModal = (news) => {
     setSelectedNews(news);
@@ -88,6 +93,7 @@ const NewsAdmin = () => {
 
   return (
     <>
+      <AdminNavbar />
       <div className="newsadmin">
         <div className="form-newsadmin">
           <form onSubmit={handleSubmit}>
@@ -118,15 +124,21 @@ const NewsAdmin = () => {
             <button type="submit">Agregar Noticia</button>
           </form>
         </div>
-         
+
         <div className="news-container">
           {newsList.map((news, index) => (
             <div className="news-item" key={index}>
               <a href={news.link} className="thumbnail-link">
-                <img src={news.thumbnail} alt="Thumbnail" className="thumbnail" />
+                <img
+                  src={news.thumbnail}
+                  alt="Thumbnail"
+                  className="thumbnail"
+                />
               </a>
               <h3 className="titlea">{news.title}</h3>
-              <button onClick={() => handleDelete(news.id_News)}>Eliminar</button>
+              <button onClick={() => handleDelete(news.id_News)}>
+                Eliminar
+              </button>
               <button onClick={() => openModal(news)}>Editar</button>
             </div>
           ))}
@@ -144,7 +156,7 @@ const NewsAdmin = () => {
                 <input
                   type="text"
                   value={selectedNews.link}
-                  onChange={(e) => updateSelectedNews('link', e.target.value)}
+                  onChange={(e) => updateSelectedNews("link", e.target.value)}
                 />
               </label>
               <label>
@@ -152,7 +164,7 @@ const NewsAdmin = () => {
                 <input
                   type="text"
                   value={selectedNews.title}
-                  onChange={(e) => updateSelectedNews('title', e.target.value)}
+                  onChange={(e) => updateSelectedNews("title", e.target.value)}
                 />
               </label>
               <label>
@@ -160,10 +172,14 @@ const NewsAdmin = () => {
                 <input
                   type="text"
                   value={selectedNews.thumbnail}
-                  onChange={(e) => updateSelectedNews('thumbnail', e.target.value)}
+                  onChange={(e) =>
+                    updateSelectedNews("thumbnail", e.target.value)
+                  }
                 />
               </label>
-              <button onClick={() => handleUpdate(selectedNews.id_News, selectedNews)}>
+              <button
+                onClick={() => handleUpdate(selectedNews.id_News, selectedNews)}
+              >
                 Guardar Cambios
               </button>
             </div>

@@ -93,35 +93,53 @@
 
 // export default Resources;
 
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import Navbar from "../../Components/Navbar/Navbar";
-import { Worker, Viewer } from "@react-pdf-viewer/core";
-import "@react-pdf-viewer/core/lib/styles/index.css";
 import BannerViews from "../../Components/BannerViews/BannerViews";
-import { pdfjs } from "react-pdf";
 import "./Resources.css";
 
 const Resources = () => {
   const [files, setFiles] = useState([]);
   const [selectedFileIndex, setSelectedFileIndex] = useState(null);
+  const [inputValue, setInputValue] = useState("");
 
-  const handleFileChange = (event) => {
-    const selectedFiles = event.target.files;
-    const newFiles = Array.from(selectedFiles).map((file) => ({
-      name: file.name,
-      url: URL.createObjectURL(file),
-    }));
-    setFiles((prevFiles) => [...prevFiles, ...newFiles]);
+  useEffect(() => {
+    fetch("http://localhost:3000/files")
+      .then((response) => response.json())
+      .then((data) => setFiles(data));
+  }, []);
+
+  const handleInputChange = (event) => {
+    setInputValue(event.target.value);
   };
 
-  const handleRemoveFile = (index) => {
-    const newFiles = [...files];
-    newFiles.splice(index, 1);
-    setFiles(newFiles);
+  const handleFileAdd = async () => {
+    const response = await fetch("http://localhost:3000/files", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify({ url: inputValue }),
+    });
+
+    const newData = await response.json();
+    setFiles(newData);
+
+    setInputValue("");
+  };
+
+  const handleRemoveFile = async (fileId) => {
+    await fetch(`http://localhost:3000/files/${fileId}`, {
+      method: "DELETE",
+    });
+
+    const newData = await fetch("http://localhost:3000/files").then((response) => response.json());
+    setFiles(newData);
+
+    setSelectedFileIndex(null);
   };
 
   const handleFileClick = (index) => {
-    // Si el mismo archivo está seleccionado, deseleccionarlo
     setSelectedFileIndex((prevIndex) => (prevIndex === index ? null : index));
   };
 
@@ -134,8 +152,16 @@ const Resources = () => {
       />
       <div className="resources-container">
         <div className="file-upload-section">
-          <h2>Subir Archivos PDF</h2>
-          <input type="file" accept=".pdf" multiple onChange={handleFileChange} />
+          <h2>Subir Enlaces a Archivos</h2>
+          <div>
+            <input
+              type="text"
+              placeholder="Ingrese el enlace"
+              value={inputValue}
+              onChange={handleInputChange}
+            />
+            <button onClick={handleFileAdd}>Agregar Enlace</button>
+          </div>
           {files.map((file, index) => (
             <div
               key={index}
@@ -144,16 +170,13 @@ const Resources = () => {
             >
               <h3>{file.name}</h3>
               {index === selectedFileIndex ? (
-                <div className="pdf-viewer-container">
-                 <Worker workerUrl={`https://unpkg.com/pdfjs-dist@${pdfjs.version}/build/pdf.worker.min.js`}>
-                    <Viewer
-                      fileUrl={file.url}
-                      defaultScale={1.5}
-                    />
-                  </Worker>
+                <div className="file-viewer-container">
+                  <iframe title={`file-viewer-${index}`} src={file.url} frameBorder="0" width="100%" height="500px" />
                 </div>
               ) : null}
-              <button onClick={() => handleRemoveFile(index)}>Eliminar</button>
+              <button onClick={() => handleRemoveFile(file.id)}>
+                Eliminar
+              </button>
             </div>
           ))}
         </div>

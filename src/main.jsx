@@ -31,7 +31,7 @@ import ResourcesAdmin from './View/Admin/ResourcesAdmin';
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <Router>
-    <Navbar />
+    {/* <Navbar /> */}
     <React.StrictMode>
       <Routes>
         <Route path="/" element={<Home />} /> 
