@@ -5,7 +5,7 @@ margin-top: 40px;
 }
 
 
-.card2, .card1, .card3, .card4{
+.cardt2, .cardt1, .cardt3, .cardt4{
     width: 8em;
     font-family: Montserrat;
     height: 8em;
@@ -15,7 +15,7 @@ margin-top: 40px;
     border-radius: 50%;
     transition: .4s ease-in-out;
   }
-  .card1:before, .card2:before, .card3:before, .card4:before {
+  .cardt1:before, .cardt2:before, .cardt3:before, .cardt4:before {
     position: relative;
     text-align: center;
     color: white;
@@ -24,28 +24,28 @@ margin-top: 40px;
     left: 0.85em;
     font-weight: 600;
   }
-  .card1:before {
+  .cardt1:before {
     content: "Tratamiento Farmacológico";
   }
-  .card2:before {
+  .cardt2:before {
     content: "Tratamiento Quirúrgico";
   }
-  .card3:before {
+  .cardt3:before {
     content: "Estimulación Cerebral";
   }
 
-  .card4:before {
+  .cardt4:before {
     content: "Tratamiento No Farmacológico";
   }
 
-  .card1 .heading02, .card2 .heading02,  .card3 .heading02, .card4 .heading02 {
+  .cardt1 .heading02, .cardt2 .heading02,  .cardt3 .heading02, .cardt4 .heading02 {
     opacity: 0;
     transition: .1s ease-in-out;
   }
-  .card1 .heading02 span, .card2 .heading02 span, .card3 .heading02 span, .card4 .heading02 span {
+  .cardt1 .heading02 span, .cardt2 .heading02 span, .cardt3 .heading02 span, .cardt4 .heading02 span {
     transition: .4s ease-in-out;
   }
-  .card1 .heading02:hover, .card2 .heading02:hover, .card3 .heading02:hover, .card4 .heading02:hover {
+  .cardt1 .heading02:hover, .cardt2 .heading02:hover, .cardt3 .heading02:hover, .cardt4 .heading02:hover {
     background: linear-gradient(to right, #fff 20%,orange 40%,yellow 60%, rgb(223, 178, 79) 80%, #FFE4F2 100%);
     background-size: 200% auto;
     -webkit-background-clip: text;
@@ -60,11 +60,11 @@ margin-top: 40px;
       background-position: 200% center;
     }
   }
-  .card1 .content-buton, .card2 .content-buton, .card3 .content-buton, .card4 .content-buton {
+  .cardt1 .content-buton, .cardt2 .content-buton, .cardt3 .content-buton, .cardt4 .content-buton {
     opacity: 0;
     transition: .1s ease-in-out;
   }
-  .card1:hover, .card2:hover, .card3:hover, .card4:hover {
+  .cardt1:hover, .cardt2:hover, .cardt3:hover, .cardt4:hover {
     cursor: pointer;
     display: flex;
     flex-direction: column;
@@ -82,15 +82,15 @@ margin-top: 40px;
     animation: AnimationName 3s ease infinite;
     transition: .4s ease-in-out;
   }
-  .card1:hover .heading02, .card2:hover .heading02, .card3:hover .heading02, .card4:hover .heading02 {
+  .cardt1:hover .heading02, .cardt2:hover .heading02, .cardt3:hover .heading02, .cardt4:hover .heading02 {
     opacity: 1;
     transition: .8s ease-in-out;
   }
-  .card1:hover .content-buton, .card2:hover .content-buton, .card3:hover .content-buton,  .card4:hover .content-buton {
+  .cardt1:hover .content-buton, .cardt2:hover .content-buton, .cardt3:hover .content-buton,  .cardt4:hover .content-buton {
     opacity: 1;
     transition: .8s ease-in-out;
   }
-  .card1:hover::before, .card2:hover::before, .card3:hover::before, .card4:hover::before {
+  .cardt1:hover::before, .cardt2:hover::before, .cardt3:hover::before, .cardt4:hover::before {
     opacity: 0;
   }
 
@@ -170,29 +170,29 @@ margin-top: 40px;
       justify-content: space-between;
     }
   
-    .card1,
-    .card2,
-    .card3,
-    .card4 {
+    .cardt1,
+    .cardt2,
+    .cardt3,
+    .cardt4 {
       width: 100%; /* Ocupa todo el ancho disponible */
       margin-bottom: 20px;
       transition: all 0.3s ease;
     }
 
 
-    .card1:before {
+    .cardt1:before {
       content: "Tratamiento Farmacológico";
       margin-left: 80px;
     }
-    .card2:before {
+    .cardt2:before {
       content: "Tratamiento Quirúrgico";
       margin-left: 90px;
     }
-    .card3:before {
+    .cardt3:before {
       content: "Estimulación Cerebral";
       margin-left: 100px;
     }
-    .card4:before {
+    .cardt4:before {
       content: "Estimulación Cerebral";
       margin-left: 100px;
     }

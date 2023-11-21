@@ -1,0 +1,48 @@
+/* Estilos para las noticias */
+
+.form-newsadmin{
+  margin-bottom: 5%;
+}
+
+.newsadmin{
+margin-top: 10%;
+}
+
+
+.news-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); /* Cuatro columnas por fila */
+  gap: 20px; /* Espacio entre elementos */
+}
+
+
+.news-item {
+    margin-bottom: 20px;
+    /* border: 1px solid #ccc; */
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+  
+  .thumbnail {
+    /* display: flex; */
+    /* flex-direction: ; */
+    width: 300px;
+    height: 200px;
+    object-fit: cover;
+  }
+
+  
+  
+  .titlea {
+    font-size: 20px;
+    margin-top: 10px;
+    margin-bottom: 5px;
+  }
+  
+  .link {
+    text-decoration: none;
+    color: blue;
+  }
+  
