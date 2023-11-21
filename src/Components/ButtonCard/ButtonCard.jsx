@@ -6,7 +6,7 @@ const ButtonCard = () => {
   return (
     <>
       <div className="buttoncard14">
-        <div class="card1">
+        <div class="cardt1">
           <div class="heading02">
             Tratamiento <span>Farmacológico</span>
           </div>
@@ -47,7 +47,7 @@ const ButtonCard = () => {
             <span>Hazte socio</span>
           </div>
         </div>
-        <div class="card2">
+        <div class="cardt2">
           <div class="heading02">
             Tratamiento <span>Quirúrgico</span>
           </div>
@@ -88,7 +88,7 @@ const ButtonCard = () => {
             <span>Hazte socio</span>
           </div>
         </div>
-        <div class="card3">
+        <div class="cardt3">
           <div class="heading02">
             Estimulación <span>Cerebral</span>
           </div>
@@ -131,7 +131,7 @@ const ButtonCard = () => {
           </div>
         </div>
 
-        <div class="card4">
+        <div class="cardt4">
           <div class="heading02">
             Tratamiento <span>No Farmacológico</span>
           </div>

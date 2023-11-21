@@ -78,6 +78,21 @@ const Members = () => {
 
   const sendFormsDataToAPI = async () => {
     try {
+
+
+
+      
+      const formattedData = {
+        ...formData,
+        // Verifica si formData.services es un array antes de enviar al backend
+        services: Array.isArray(formData.services)
+          ? formData.services.map(service => ({ nameService: service }))
+          : [{ nameService: formData.services }],
+      };
+
+
+
+
       const response = await fetch(
         "https://localhost:7165/MembersControllers/Post",
         {
