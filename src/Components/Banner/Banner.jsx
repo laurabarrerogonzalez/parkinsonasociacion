@@ -1,8 +1,8 @@
-// import React from 'react';
-// import "../Banner/Banner.css"
+ import React from 'react';
+ import "../Banner/Banner.css"
 
 
-const Banner = ({ image, text, title }) => {
+function Banner({ image, text, title }) {
   return (
     <div className="banner">
       <img src={image} alt="Banner" />
@@ -12,6 +12,6 @@ const Banner = ({ image, text, title }) => {
       </div>
     </div>
   );
-};
+}
 
 export default Banner;
