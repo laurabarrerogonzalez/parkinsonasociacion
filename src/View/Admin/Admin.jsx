@@ -194,7 +194,7 @@ const Admin = () => {
               <h1>Admin</h1>
               <br />
               <br />
-              <h2>Lista de Voluntarios</h2>
+              <h2>Lista de solicitudes de Voluntarios</h2>
               <table className="TableVoluntarios">
                 <thead>
                   <tr className="tr12">
@@ -235,7 +235,7 @@ const Admin = () => {
               </table>
               <br />
               <br />
-              <h2>Lista de Socios</h2>
+              <h2>Lista de solicitudes de Socios</h2>
               <table className="TableVoluntarios">
                 <thead>
                   <tr className="tr12">
@@ -276,7 +276,9 @@ const Admin = () => {
                   ))}
                 </tbody>
               </table>
-              <h2>Lista de Trabajos</h2>
+              <br />
+              <br />
+              <h2>Lista de solicitudes de Trabajadores</h2>
               <table className="TableVoluntarios">
                 <thead>
                   <tr className="tr12">
