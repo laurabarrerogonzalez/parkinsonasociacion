@@ -41,7 +41,7 @@ const Activities = () => {
       <Navbar />
       <BannerViews
         image="https://res.cloudinary.com/dit2zhtwz/image/upload/v1700473022/hombre-leyendo-periodico_53876-89052_egu6c0.avif"
-        title="Actividades de los diferentes servicios"
+        title="ACTIVIDADES DE LOS DIFERENTES SERVICIOS"
       />
 
       <div className="gallery1">

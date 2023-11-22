@@ -1,3 +1,20 @@
+@font-face {
+  font-family: 'MiFuentePersonalizada';
+  src: url('../../Fonts/Bevan-Regular.ttf') format('truetype');
+  /* Agrega más formatos y rutas para soporte de navegadores diferentes */
+}
+
+@font-face {
+  font-family: 'Gotham Black';
+  src: url('../../Fonts/1830-font.otf') format('truetype');
+  /* Agrega más formatos y rutas para soporte de navegadores diferentes */
+}
+
+@font-face {
+  font-family: 'Poppins';
+  src: url('../../Fonts/Poppins-Regular.ttf') format('truetype');
+  /* Agrega más formatos y rutas para soporte de navegadores diferentes */
+}
 .boxDC1 {
   background-color: #EC750E;
   padding: 20px;
@@ -12,15 +29,23 @@
 }
 
 .title-Centro_dia h1 {
-  font-size: 38px;
-  color: #ffffff;
+  font-size: 40px;
+  color: black;
   text-align: center;
-  padding: 2%;
+  padding: 1%;
+  font-family: 'MiFuentePersonalizada';
 }
 
 .text_DC p {
-  font-size: 21px;
+  font-size: 17px;
   line-height: 1.5;
+  font-family: 'Poppins';
+  color: black;
+  
+}
+
+.title-DC h1{
+  font-family:'Gotham Black';
 }
 
 .text-centroD ul {
@@ -30,8 +55,9 @@
 
 .text-centroD ul li {
   margin: 10px 0;
-  font-size: 16px; 
-  color: #033239; 
+  font-size: 17px; 
+  color: #033239;
+  font-family: 'Poppins'; 
 }
 
 .image-containerCD {
@@ -108,10 +134,16 @@
 }
 .Centro_dia3 {
  
- padding: 2%;
- margin-left: 20px;
+ padding: 1%;
+ margin-left: 10px;
 
 }
+
+.Centro_dia3 h1 {
+ 
+  font-family:'Gotham Black';
+ font-size: 25px;
+ }
 
 .text_DC3 ul {
   list-style-type: disc;
@@ -120,8 +152,9 @@
 
 .text_DC3 ul li {
   margin: 10px 0;
-  font-size: 18px; 
+  font-size: 17px; 
   color: #ffffff; 
+  font-family: 'Poppins';
 
 }
 

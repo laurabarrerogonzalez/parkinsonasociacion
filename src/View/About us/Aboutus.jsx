@@ -162,7 +162,7 @@ const Aboutus = () => {
             <section className="section_workers" >
                 <div className="card_worker" id="card1">
                     <div className="section_img_worker">
-                        <img className="img_worker" src="https://res.cloudinary.com/dp7lr71t8/image/upload/v1699530751/Foto_de_Noelia_pbh04r.jpg" alt="" />
+                        <img className="img_worker" src="https://res.cloudinary.com/dp7lr71t8/image/upload/v1700644098/Noelia_directora_lyxh5i.jpg" alt="" />
                         <div class="triangle"></div>
                     </div>
                     <div className=" section_content_worker ">
@@ -255,11 +255,28 @@ const Aboutus = () => {
 
                     </div>
                     <div className="section_img_worker">
-                        <img className="img_worker" src="https://res.cloudinary.com/dp7lr71t8/image/upload/v1699702441/8dffc810ac2226282085257e73a60761_bxf3la.jpg" alt="" />
+                        <img className="img_worker" src="https://res.cloudinary.com/dp7lr71t8/image/upload/v1700644178/Miriam_terapeuta_ocupacional_qe5ooj.jpg" alt="" />
                         <div class="triangle" id="triangle4"></div>
                     </div>
 
                 </div>
+
+                <div className="card_worker" id="card2">
+                    <div className="section_content_worker">
+                        <h3 className="name_worker"> Rosa Muñoz Álvarez </h3>
+
+                        <p>Neurologopeda del servicio de rehabilitación integral para enfermos de Parkinson y/o Parkinsionismo.</p>
+
+
+                    </div>
+                    <div className="section_img_worker">
+                        <img className="img_worker" src="https://res.cloudinary.com/dp7lr71t8/image/upload/v1700644887/rosa_logopeda_lljylw.jpg" alt="" />
+                        <div class="triangle" id="triangle4"></div>
+                    </div>
+
+                </div>
+
+                
             </section>
 
             <hr className='line_medium' />
@@ -323,7 +340,7 @@ const Aboutus = () => {
 
                     </div>
                     <div className="section_img_worker">
-                        <img className="img_worker" src="https://res.cloudinary.com/dp7lr71t8/image/upload/v1699702441/8dffc810ac2226282085257e73a60761_bxf3la.jpg" alt="" />
+                        <img className="img_worker" src="https://res.cloudinary.com/dp7lr71t8/image/upload/v1700644430/Cecilia_auxiliar_ayuda_a_domicilio_cd8zdc.jpg" alt="" />
                         <div class="triangle" id="triangle4"></div>
                     </div>
 

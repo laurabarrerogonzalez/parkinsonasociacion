@@ -137,7 +137,7 @@ const Members = () => {
       <Navbar />
       <BannerViews
         image="https://res.cloudinary.com/da7ffijqs/image/upload/t_Banner 16:9/v1699001271/20200415_111209_1_iacccg.jpg "
-        title="¿Quieres ser socio?"
+        title="¿QUIERES SER SOCIO?"
       />
       <div className="Carta0">
         <div class="cards1">
