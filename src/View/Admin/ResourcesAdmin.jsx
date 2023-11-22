@@ -1,48 +1,106 @@
 import React, { useState, useEffect } from "react";
+import swal from "sweetalert2";
+import axios from "axios";
 import "./ResourcesAdmin.css";
 import AdminNavbar from "../../Components/AdminNavbar/AdminNavbar";
 
 const ResourcesAdmin = () => {
   const [files, setFiles] = useState([]);
   const [selectedFileIndex, setSelectedFileIndex] = useState(null);
-  const [inputValue, setInputValue] = useState("");
+  const [formData, setFormData] = useState({
+    name: "",
+    url: "",
+  });
 
   useEffect(() => {
-    fetch("http://localhost:3000/files")
-      .then((response) => response.json())
-      .then((data) => setFiles(data));
+    fetchResources();
   }, []);
 
-  const handleInputChange = (event) => {
-    setInputValue(event.target.value);
+  const fetchResources = async () => {
+    try {
+      const response = await fetch(
+        "https://localhost:7165/ResourcesControllers/GetResources"
+      );
+      const data = await response.json();
+      setFiles(data);
+    } catch (error) {
+      console.error("Error fetching resources:", error);
+    }
+  };
+
+  const handleInputChange = (event, fieldName) => {
+    setFormData((prevData) => ({
+      ...prevData,
+      [fieldName]: event.target.value,
+    }));
   };
 
   const handleFileAdd = async () => {
-    const response = await fetch("http://localhost:3000/files", {
-      method: "POST",
-      headers: {
-        "Content-Type": "application/json",
-      },
-      body: JSON.stringify({ url: inputValue }),
-    });
+    try {
+      const response = await fetch(
+        "https://localhost:7165/ResourcesControllers/Post",
+        {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+          },
+          body: JSON.stringify(formData),
+        }
+      );
 
-    const newData = await response.json();
-    setFiles(newData);
+      if (response.status === 200) {
+        swal.fire({
+          title: "Enviado",
+          text: "La información ha sido enviada.",
+          icon: "success",
+          confirmButtonColor: "rgb(236, 117, 14)",
+        });
 
-    setInputValue("");
+        fetchResources();
+
+        // Restablecer los campos del formulario después de enviar los datos
+        setFormData({
+          name: "",
+          url: "",
+        });
+      } else {
+        throw new Error("Error al enviar los datos");
+      }
+    } catch (error) {
+      console.error("Error:", error);
+      swal.fire({
+        title: "Error",
+        text: "Hubo un error al enviar la información.",
+        icon: "error",
+        confirmButtonColor: "rgb(236, 117, 14)",
+      });
+    }
   };
 
-  const handleRemoveFile = async (fileId) => {
-    await fetch(`http://localhost:3000/files/${fileId}`, {
-      method: "DELETE",
-    });
-
-    const newData = await fetch("http://localhost:3000/files").then(
-      (response) => response.json()
-    );
-    setFiles(newData);
-
-    setSelectedFileIndex(null);
+  const handleDeleteResources = async (name) => {
+    try {
+      await axios.delete(
+        `https://localhost:7165/ResourcesControllers/DeleteResources?name=${name}`
+      );
+  
+      // Actualizar la lista de recursos después de eliminar
+      fetchResources();
+  
+      swal.fire({
+        title: "Eliminado",
+        text: "El recurso ha sido eliminado correctamente.",
+        icon: "success",
+        confirmButtonColor: "rgb(236, 117, 14)",
+      });
+    } catch (error) {
+      console.error("Error al eliminar el recurso:", error);
+      swal.fire({
+        title: "Error",
+        text: "Hubo un error al eliminar el recurso.",
+        icon: "error",
+        confirmButtonColor: "rgb(236, 117, 14)",
+      });
+    }
   };
 
   const handleFileClick = (index) => {
@@ -59,8 +117,14 @@ const ResourcesAdmin = () => {
             <input
               type="text"
               placeholder="Ingrese el enlace"
-              value={inputValue}
-              onChange={handleInputChange}
+              value={formData.url}
+              onChange={(e) => handleInputChange(e, "url")}
+            />
+            <input
+              type="text"
+              placeholder="Ingrese el título"
+              value={formData.name}
+              onChange={(e) => handleInputChange(e, "name")}
             />
             <button onClick={handleFileAdd}>Agregar Enlace</button>
           </div>
@@ -84,7 +148,10 @@ const ResourcesAdmin = () => {
                   />
                 </div>
               ) : null}
-              <button className="button222" onClick={() => handleRemoveFile(file.id)}>
+              <button
+                className="button222"
+                onClick={() => handleDeleteResources(file.name)} 
+              >
                 Eliminar
               </button>
             </div>

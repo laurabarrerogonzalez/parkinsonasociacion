@@ -205,9 +205,9 @@ const Donations = () => {
               <div className="destinatario">
                 <div><img className="LogoBizum" src="https://res.cloudinary.com/da7ffijqs/image/upload/v1699571240/Captura_de_pantalla_2023-11-10_000621-modified_d9dbyj.png" alt="" /></div>
                 <div className="datostext">
-                  <p>¿A quién envías dinero?</p>
-                  <p>674 09 45 01</p>
-                  <p> Asociación</p>
+                  <p className="responsive12">¿A quién envías dinero?</p>
+                  <p className="responsive12">674 09 45 01</p>
+                  <p className="responsive12"> Asociación</p>
                 </div>
               </div>
               <div className="destinatario">

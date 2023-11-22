@@ -1,0 +1,48 @@
+.resources-container1111 {
+  margin-top: 2%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  width: 100%;
+}
+
+.file-container1112 {
+  position: relative;
+}
+
+.file-preview1113 {
+  overflow: hidden;
+  cursor: pointer;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  transition: box-shadow 0.3s;
+}
+
+.file-preview1113:hover {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.file-preview1113 h3 {
+  margin: 10px 0;
+  text-align: center;
+}
+
+.file-viewer1115 {
+  display: none;
+}
+
+.file-preview1113.selected .file-viewer1115 {
+  display: block;
+  width: 100%;
+}
+
+@media screen and (max-width: 700px) {
+  .resources-container1111 {
+    grid-template-columns: 1fr; /* Cambia a una sola columna */
+    gap: 10px; /* Reduce el espacio entre elementos */
+  }
+
+  .file-preview1113 {
+    width: 100%; /* Ocupa el ancho completo del contenedor padre */
+  }
+}

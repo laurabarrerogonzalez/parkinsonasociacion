@@ -323,3 +323,84 @@
   font-size: 9px;
   width: 500%;
 }
+
+@media screen and (max-width: 700px) {
+  .flip12 {
+    width: 100%; 
+    height: 320px; 
+    margin-left: 0; 
+  }
+  .texts41 {
+    margin-top: -5%;
+    margin-left: -5%;
+    text-align: center;
+    font-size: 15px; 
+    width: 110%;
+  }
+  .BOXES {
+    flex-direction: column; 
+  }
+
+  .card13, .card14 {
+    width: 100%;
+    margin-left: 0;
+    text-align: center;
+  }
+
+  .Pago, .Pago1 {
+    margin-left: 0;
+  }
+
+  .datos, .datos1 {
+    width: 100%; 
+    margin-left: 0; 
+  }
+
+  .flip-cards1 {
+    margin-left: 15%;
+    height: 35%;
+    width: 75%;
+  }
+
+  .cardS12 {
+    width: 50%; 
+    margin-left: 25%; 
+    height: 55%;
+  }
+  .logo{
+    margin-left: 5%;
+  }
+  .Dar, .Recibir {
+    width: 100%;
+    height: 100%;
+    margin-left: 0; 
+    text-align: center;
+    font-size: 10px;
+  }
+  .destinatario{
+    width: 100%;
+    margin-left: 0; 
+    margin-top: 5%;
+  }
+
+  .imagendar, .imagenrecibir {
+    width:35%;
+  }
+
+  .LogoBizum {
+    width: 50%;
+    margin-top: 5%;
+    margin-left: -25%;
+  }
+
+  .datostext { 
+    margin-left: 0;
+    width: 100%;
+  }
+  .number, .valid_thru, .date_8264, .name {
+    margin-left: 0.5%;
+  }
+  .responsive12{
+    margin-top: -1%;
+  }
+}
