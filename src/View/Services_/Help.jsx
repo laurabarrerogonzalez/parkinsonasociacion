@@ -25,7 +25,14 @@ const Help = () => {
           Este servicio consiste en la prestación de una serie de atenciones de
           carácter personal, doméstico y técnico a fin de que las personas
           beneficiarias puedan seguir viviendo en su domicilio y entorno
-          evitando en la medida de lo posible trasladarse a una residencia.
+          evitando en la medida de lo posible trasladarse a una residencia.<br></br>
+          <br></br>
+          Los beneficiarios son individuos y/o familias que se hallen en situaciones en las que 
+          no es posible la realización autónoma de sus actividades cotidianas de forma plena, o en 
+          aquellas otras de conflicto psico-familiar. Se orienta a personas con una dependencia 
+          no muy grave o, en caso de existir ésta, es decir, 
+          personas encamadas y totalmente dependientes, el servicio se destina a “descargar” 
+          a la familia como medida de apoyo a la misma
         </p>
       </div>
       </div>
