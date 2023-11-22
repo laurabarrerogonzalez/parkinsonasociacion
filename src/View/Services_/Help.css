@@ -26,7 +26,7 @@
     font-size: 35px;
     color: #067787;
     text-align: left;
-    padding: 2%;
+    padding: 4%;
    
 }
 
@@ -47,15 +47,11 @@
     display:flex;
     width: calc(150% + 0.2em);
     height: 250px;
-   
 }
 
 .Vibehelp {
     fill: #58a4af;
 }
-.footer{
-    margin-top: 0%;
-} 
 
 .image-container {
     display: flex;
@@ -81,10 +77,10 @@
     object-fit: cover;
 }
 
-/* Estilos para el pie de página */
 .Vibehelp {
     fill: #58a4af;
     position: relative;
+    top:50px;
 }
 
 .Vibehelp svg {
