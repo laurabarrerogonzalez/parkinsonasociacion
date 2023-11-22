@@ -70,7 +70,7 @@
   
   color: white; /* Color del título */
   font-weight: bold;
-  font-size: 40px; /* Tamaño de fuente del título */
+  font-size: 50px; /* Tamaño de fuente del título */
   /* Coloca el título encima de la imagen */
   font-family: 'MiFuentePersonalizada'; /* Utiliza tu fuente personalizada */
   text-shadow: 7px 7px 7px rgba(0, 0, 0, 1.9); /* Sombra para mejorar la legibilidad */

@@ -14,6 +14,12 @@
   }
 
   @font-face {
+    font-family: 'MiFuentePersonalizada';
+    src: url('../../Fonts/Bevan-Regular.ttf') format('truetype');
+    /* Agrega más formatos y rutas para soporte de navegadores diferentes */
+  }
+
+  @font-face {
     font-family: 'Anton';
     src: url('../../Fonts/Anton-Regular.ttf') format('truetype');
     /* Agrega más formatos y rutas para soporte de navegadores diferentes */
@@ -34,7 +40,7 @@
     /* Ajusta la posición vertical del texto */
      /* Posiciona el texto a 50px del borde derecho */
     color: white; /* Color del texto */
-    font-size: 30px; /* Tamaño de fuente del texto */
+    font-size: 25px; /* Tamaño de fuente del texto */
      /* Ancho del texto */
    
     
@@ -42,7 +48,7 @@
      /* Fondo negro transparente */
     /* padding: 10px 10px 10px 10px;  */
   
-    font-family: 'Inria';
+    font-family:'Poppins';
     text-shadow: 4px 4px 4px rgba(0, 0, 0, 0.9);
     margin: 0;
     margin-left: 50px;
@@ -75,9 +81,9 @@
    /* Ajusta la posición horizontal del título */
   
   color: white; /* Color del título */
-  font-size: 70px; /* Tamaño de fuente del título */
+  font-size: 40px; /* Tamaño de fuente del título */
   /* Coloca el título encima de la imagen */
-  font-family: 'Anton'; /* Utiliza tu fuente personalizada */
+  font-family: 'MiFuentePersonalizada'; /* Utiliza tu fuente personalizada */
   text-shadow: 10px 10px 10px rgba(0, 0, 0, 0.9); /* Sombra para mejorar la legibilidad */
 margin: 0;
 margin-left: 50px;

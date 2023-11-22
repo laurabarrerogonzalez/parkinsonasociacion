@@ -1,3 +1,21 @@
+@font-face {
+  font-family: 'MiFuentePersonalizada';
+  src: url('../../Fonts/Bevan-Regular.ttf') format('truetype');
+  /* Agrega más formatos y rutas para soporte de navegadores diferentes */
+}
+
+@font-face {
+  font-family: 'Gotham Black';
+  src: url('../../Fonts/1830-font.otf') format('truetype');
+  /* Agrega más formatos y rutas para soporte de navegadores diferentes */
+}
+
+@font-face {
+  font-family: 'Poppins';
+  src: url('../../Fonts/Poppins-Regular.ttf') format('truetype');
+  /* Agrega más formatos y rutas para soporte de navegadores diferentes */
+}
+
 .what1{
    
   display: flex;
@@ -5,6 +23,11 @@
   justify-content: center;
   margin-top: 80px;
   
+}
+
+.title-parkinson h1{
+  font-family:'MiFuentePersonalizada';
+  font-size: 40px;
 }
 
 .title-parkinson1{
@@ -20,13 +43,14 @@
 
 .li-state {
     padding: 15px;
-    text-align: left;    
+    text-align: left; 
+    font-family:'Poppins';   
 }
 
 .bodys12 {
   width: 100%;
   height: 500px;
-  font-family: tahoma;
+  font-family: 'Poppins'; 
   justify-content: center;
 }
 
@@ -123,6 +147,11 @@
 .section-content {
   display: none;
   padding: 30px 40px;
+}
+
+.section-content h2{
+  font-size: 30px;
+  font-family:'MiFuentePersonalizada';
 }
 
 .section-content.active {
