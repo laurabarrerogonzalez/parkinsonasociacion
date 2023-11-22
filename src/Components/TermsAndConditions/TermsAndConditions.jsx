@@ -1,5 +1,3 @@
-// TermsAndConditions.jsx
-
 import React, { useState } from 'react';
 import './TermsAndConditions.css';
 

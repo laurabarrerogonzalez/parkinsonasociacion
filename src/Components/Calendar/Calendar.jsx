@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { Calendar, theme } from 'antd';
-import './Calendar.css'; // Importa el archivo CSS
+import './Calendar.css'; 
 
 const onPanelChange = (value, mode) => {
   console.log(value.format('YYYY-MM-DD'), mode);
@@ -26,15 +26,13 @@ const CalendarComponent = () => {
     '2023-12-03': 'Día Mundial de la Discapacidad ♿👩🏻',
     '2023-09-21': 'Día Mundial del Alzheimer ♿👩🏻',
     '2023-03-06': 'Día Europeo de la logopedia ♿👩🏻',
-    // '2023-09-08': 'Día Mundial de la fisioterapia',
-    // Agrega el resto de las fechas...
+    
   };
 
   const handleDateSelect = (date) => {
     setSelectedDate(date.format('YYYY-MM-DD'));
 
-    // Puedes ajustar el horario de trabajo según la fecha seleccionada
-    // Aquí es solo un ejemplo fijo, puedes personalizarlo según tus necesidades.
+    
     setWorkSchedule('Horario de trabajo: 9:00 AM - 5:00 PM');
   };
 

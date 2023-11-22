@@ -1,19 +1,16 @@
 @font-face {
   font-family: 'MiFuentePersonalizada';
   src: url('../../Fonts/Bevan-Regular.ttf') format('truetype');
-  /* Agrega más formatos y rutas para soporte de navegadores diferentes */
 }
 
 @font-face {
   font-family: 'Gotham Black';
   src: url('../../Fonts/1830-font.otf') format('truetype');
-  /* Agrega más formatos y rutas para soporte de navegadores diferentes */
 }
 
 @font-face {
   font-family: 'Poppins';
   src: url('../../Fonts/Poppins-Regular.ttf') format('truetype');
-  /* Agrega más formatos y rutas para soporte de navegadores diferentes */
 }
 
 .buttoncard14{
@@ -25,7 +22,6 @@ margin-bottom: 3%;
 
 
 .text-buttoncard{
-  /* padding: 10px; */
   margin-left: 10px;
   margin-top: -10px;
 }
@@ -40,6 +36,7 @@ margin-bottom: 3%;
     border-radius: 50%;
     transition: .4s ease-in-out;
   }
+
   .cardt1:before, .cardt2:before, .cardt3:before, .cardt4:before {
     position: relative;
     text-align: center;
@@ -49,12 +46,15 @@ margin-bottom: 3%;
     left: 0.85em;
     font-weight: 600;
   }
+
   .cardt1:before {
     content: "Tratamiento Farmacológico";
   }
+
   .cardt2:before {
     content: "Tratamiento Quirúrgico";
   }
+
   .cardt3:before {
     content: "Estimulación Cerebral";
   }
@@ -85,10 +85,12 @@ margin-bottom: 3%;
       background-position: 200% center;
     }
   }
+
   .cardt1 .content-buton, .cardt2 .content-buton, .cardt3 .content-buton, .cardt4 .content-buton {
     opacity: 0;
     transition: .1s ease-in-out;
   }
+
   .cardt1:hover, .cardt2:hover, .cardt3:hover, .cardt4:hover {
     cursor: pointer;
     display: flex;
@@ -107,14 +109,17 @@ margin-bottom: 3%;
     animation: AnimationName 3s ease infinite;
     transition: .4s ease-in-out;
   }
+
   .cardt1:hover .heading02, .cardt2:hover .heading02, .cardt3:hover .heading02, .cardt4:hover .heading02 {
     opacity: 1;
     transition: .8s ease-in-out;
   }
+
   .cardt1:hover .content-buton, .cardt2:hover .content-buton, .cardt3:hover .content-buton,  .cardt4:hover .content-buton {
     opacity: 1;
     transition: .8s ease-in-out;
   }
+
   .cardt1:hover::before, .cardt2:hover::before, .cardt3:hover::before, .cardt4:hover::before {
     opacity: 0;
   }
@@ -128,18 +133,18 @@ margin-bottom: 3%;
     color: white;
     font-size: 1em;
     text-align: center;
-    /* padding-bottom: 1em; */
     font-weight: bold;
     transition: .4s ease-in-out;
   }
+
   .content-buton {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    /* padding-bottom: 2em; */
     padding: 15px;
   }
+
   @keyframes AnimationName {
     0% {
       background-position: 0% 50%
@@ -151,6 +156,7 @@ margin-bottom: 3%;
       background-position: 0% 50%
     }
   }
+
   .item {
     font-size: 0.8em;
     margin: 0.5em;
@@ -164,24 +170,29 @@ margin-bottom: 3%;
     transition: .4s ease-in-out;
     box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
   }
+  
   .item:hover {
     cursor: pointer;
     scale: 0.9;
     box-shadow: none;
   }
+
   .item:active {
     cursor: pointer;
     scale: 0.8;
     box-shadow: inset 2px 5px 10px rgba(0,0,0,0.2);
   }
+
   .item--create {
     padding-left: 2.5em;
     padding-right: 2.5em;
   }
+
   .item--post {
     padding-left: 3em;
     padding-right: 3em;
   }
+
   .item--inspire {
     padding-left: 2.5em;
     padding-right: 2.5em;
@@ -199,7 +210,7 @@ margin-bottom: 3%;
     .cardt2,
     .cardt3,
     .cardt4 {
-      width: 100%; /* Ocupa todo el ancho disponible */
+      width: 100%; 
       margin-bottom: 20px;
       transition: all 0.3s ease;
     }

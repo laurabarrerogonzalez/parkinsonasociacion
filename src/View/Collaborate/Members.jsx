@@ -81,7 +81,7 @@ const Members = () => {
 
       const formattedData = {
         ...formsData,
-        // Verifica si formData.services es un array antes de enviar al backend
+      
         services: Array.isArray(formsData.services)
           ? formsData.services.map(service => ({ nameService: service }))
           : [{ nameService: formsData.services }],

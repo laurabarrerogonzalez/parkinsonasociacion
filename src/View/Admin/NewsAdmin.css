@@ -83,7 +83,6 @@ margin-top: 10%;
   .buton-deletenews:hover {
     background-color: #db3434 !important;
     color: white !important;
-    /* Otros estilos hover si los hubiera */
   }
 
   .buton-editnews{
@@ -108,7 +107,7 @@ margin-top: 10%;
 
 
   @media screen and (max-width: 700px) {
-    /* Estilos para pantallas de 700px o menos */
+   
     .form-newsadmin {
       margin-top: 30%;
       margin-left: 5%;

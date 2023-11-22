@@ -1,36 +1,30 @@
 .navbar {
   z-index: 1000;
-  /* Asegúrate de que el z-index sea mayor que el del Banner */
 }
 
 @font-face {
   font-family: 'Poppins';
   src: url('../../Fonts/Poppins-Regular.ttf') format('truetype');
-  /* Agrega más formatos y rutas para soporte de navegadores diferentes */
 }
 
 @font-face {
   font-family: 'MiFuentePersonalizada';
   src: url('../../Fonts/Bevan-Regular.ttf') format('truetype');
-  /* Agrega más formatos y rutas para soporte de navegadores diferentes */
 }
 
 @font-face {
   font-family: 'RozhaOne';
   src: url('../../Fonts/RozhaOne-Regular.ttf') format('truetype');
-  /* Agrega más formatos y rutas para soporte de navegadores diferentes */
 }
 
 @font-face {
   font-family: 'Lexend';
   src: url('../../Fonts/LexendMega-VariableFont_wght.ttf') format('truetype');
-  /* Agrega más formatos y rutas para soporte de navegadores diferentes */
 }
 
 @font-face {
   font-family: 'Inria';
   src: url('../../Fonts/InriaSans-Regular.ttf') format('truetype');
-  /* Agrega más formatos y rutas para soporte de navegadores diferentes */
 }
 
 .banner {
@@ -125,24 +119,19 @@
   justify-content: center;
   height: auto;
   opacity: 0;
-  /* Empieza con opacidad en 0 para ocultar el elemento inicialmente */
   transform: translateY(20px);
-  /* Empieza con una ligera traslación hacia abajo */
   transition: opacity 1.5s ease, transform 1.5s ease;
-  /* Establece una transición suave */
-
 }
 
 .services_info.appear {
-  opacity: 1; /* Al añadir la clase "appear", el elemento aparecerá con una transición */
-  transform: translateY(0); /* Se mueve de vuelta a su posición original */
+  opacity: 1; 
+  transform: translateY(0); 
 }
 
 .services_info img {
   width: 500px;
   height: 300px;
   box-shadow: 8px 0 10px 5px rgba(0, 0, 0, 0.8);
-  /* Desplazamiento en X, desplazamiento en Y, desenfoque, color */
 }
 
 .services_info h1 {
@@ -223,4 +212,3 @@
   width: 160%;
 }
 
-/* Agrega al final del archivo Home.css */

@@ -59,7 +59,7 @@ const ResourcesAdmin = () => {
 
         fetchResources();
 
-        // Restablecer los campos del formulario después de enviar los datos
+      
         setFormData({
           name: "",
           url: "",
@@ -84,7 +84,7 @@ const ResourcesAdmin = () => {
         `https://localhost:7165/ResourcesControllers/DeleteResources?name=${name}`
       );
   
-      // Actualizar la lista de recursos después de eliminar
+    
       fetchResources();
   
       swal.fire({

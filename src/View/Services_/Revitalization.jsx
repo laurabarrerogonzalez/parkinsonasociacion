@@ -12,7 +12,7 @@ import ScrollArrow from "../../Components/ScrollArrow/ScrollArrow";
 const Revitalization = () => {
 
     useEffect(() => {
-        // Hacer scroll al principio de la página cuando el componente se monta
+        
         window.scrollTo(0, 0);
     }, []);
 
@@ -22,7 +22,7 @@ const Revitalization = () => {
             <Navbar />
             <BannerViews
                 image="https://res.cloudinary.com/dp7lr71t8/image/upload/v1699720847/e96e5008-5541-4c4c-b02c-140d8e7a1183_1_2_sp7kdx.jpg"
-            // title="REHABILITACIÓN"
+           
             />
 
 

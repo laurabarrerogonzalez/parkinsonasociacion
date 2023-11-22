@@ -38,7 +38,7 @@
   }
   
   .section1 p {
-    margin: 2px 0; /* Reduce el espacio entre los párrafos */
+    margin: 2px 0; 
   }
   
   .section2 {
@@ -54,7 +54,7 @@
     display: flex;
     align-items: center;
     margin-bottom: 10px;
-    gap: 5px; /* Ajusta el espacio entre los iconos */
+    gap: 5px; 
     }
   
   .section2 a {
@@ -112,11 +112,10 @@
   }
 
   .footer-section .slick-slider {
-    /* width: 100%; */
     overflow: hidden;
   }
   .footer-section .slick-slide {
-    margin-right: 0; /* Establece el margen en 0 o el valor que mejor funcione para tu diseño */
+    margin-right: 0; 
   }
 
   @media(max-width:768px){

@@ -14,24 +14,20 @@
 @font-face {
     font-family: 'MiFuentePersonalizada';
     src: url('../../Fonts/Bevan-Regular.ttf') format('truetype');
-    /* Agrega más formatos y rutas para soporte de navegadores diferentes */
   }
 
   @font-face {
     font-family: 'Gotham Black';
     src: url('../../Fonts/1830-font.otf') format('truetype');
-    /* Agrega más formatos y rutas para soporte de navegadores diferentes */
   }
 
   @font-face {
     font-family: 'Poppins';
     src: url('../../Fonts/Poppins-Regular.ttf') format('truetype');
-    /* Agrega más formatos y rutas para soporte de navegadores diferentes */
   }
   @font-face {
     font-family: 'Lexend';
     src: url('../../Fonts/LexendMega-VariableFont_wght.ttf') format('truetype');
-    /* Agrega más formatos y rutas para soporte de navegadores diferentes */
   }
   
 
@@ -122,10 +118,7 @@
   #img_img{
     display: flex;
     flex-direction: column;
-    align-items: start;
-    
-    
-    
+    align-items: start;  
   }
 
   #text_text h2{
@@ -245,9 +238,6 @@
    margin-top: 50px; 
    margin-bottom: 50px;
    height: 300px;
-   
-   
-   
   }
 
   .card_value {
@@ -263,24 +253,22 @@
     perspective: 1000px;
     box-shadow: 0 0 0 5px #ffffff80;
     transition: all 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
-    overflow: hidden; /* Oculta el exceso de la imagen */
+    overflow: hidden; 
     
   }
   .card_value img {
     position: absolute;
     top: 0;
     left: 0;
-    width: 100%; /* Ancho al 100% del contenedor */
-    height: 100%; /* Altura automática para mantener la proporción */
-    
-
+    width: 100%; 
+    height: 100%; 
   }
 
   .overlay {
     position: absolute;
-    top: 50%; /* Coloca en el medio verticalmente */
-    left: 50%; /* Coloca en el medio horizontalmente */
-    transform: translate(-50%, -50%); /* Centra el contenido */
+    top: 50%; 
+    left: 50%; 
+    transform: translate(-50%, -50%);
     text-align: center;
     z-index: 1;
     background-color:rgba(0, 0, 0, 0.7) ;
@@ -291,10 +279,7 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
-    
-    
-    
+    align-items: center;   
   }
 
   
@@ -304,17 +289,12 @@
     color: white;
     font-weight: 900px;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
-    opacity: 1; /* Mostrar por defecto */
-    /* Agrega estilos adicionales según tu diseño */
-    /* -webkit-text-stroke: 1px black; */
-    font-family: 'MiFuentePersonalizada';
-    
-    
-    
+    opacity: 1; 
+    font-family: 'MiFuentePersonalizada';  
   }
 
   .card_value:hover .overlay-text {
-    opacity: 0; /* Ocultar cuando se haga hover en la tarjeta */
+    opacity: 0; 
   }
   
   .card_value svg {
@@ -328,8 +308,6 @@
     box-shadow: 0 8px 16px rgba(255, 255, 255, 0.2);
   }
 
-  
-  
   .card__content {
     position: absolute;
     top: 0;
@@ -348,8 +326,6 @@
     justify-content: center;
     align-items: center;
     font-family: 'Poppins';
-    
-
   }
   
   .card_value:hover .card__content {
@@ -361,8 +337,7 @@
     margin: 0;
     font-size: 15px;
     color: white;
-    font-weight: 700;
-    
+    font-weight: 700; 
   }
   
   .card_value:hover svg {
@@ -394,9 +369,6 @@
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: center;
-  
-  
-  
 }
 
 .title_equipment{
@@ -449,8 +421,7 @@
     margin-top: 30px;
     
   }
-
-  
+ 
 }
 
 .card_worker{
@@ -549,10 +520,9 @@
 
 
   .img_worker {
-    /* Estilos para la imagen */
-    width: 100%; /* Ocupa todo el ancho del contenedor */
-    height: 100%; /* Ocupa toda la altura del contenedor */
-    object-fit:cover; /* Ajusta la imagen sin deformarla */
+    width: 100%; 
+    height: 100%; 
+    object-fit:cover; 
     
     
 }
@@ -565,21 +535,21 @@
     }
 
     #card2 .section_content_worker {
-        order: 1; /* Cambia el orden, coloca la sección de contenido primero */
+        order: 1; 
        
     }
 
     #card2 .section_img_worker {
-        order: 2; /* Luego, la sección de la imagen */
+        order: 2; 
         
     }
 
     #card4 .section_content_worker {
-        order: 2; /* Cambia el orden, coloca la sección de contenido segundo */
+        order: 2; 
     }
 
     #card4 .section_img_worker {
-        order: 1; /* Luego, la sección de la imagen */
+        order: 1;
     }
 
     .section_content_worker{
@@ -598,7 +568,7 @@
     width: 0;
     height: 0;
     border-top: 50px solid transparent;
-    border-left: 50px solid #FF961A; /* Color del triángulo */
+    border-left: 50px solid #FF961A; 
     transform-origin: top left;
     transform: rotate(45deg);
 }
@@ -610,7 +580,7 @@
     width: 0;
     height: 0;
     border-top: 50px solid transparent;
-    border-left: 50px solid #FF961A; /* Color del triángulo */
+    border-left: 50px solid #FF961A; 
     transform-origin: top left;
     transform: rotate(225deg);
 }
@@ -624,7 +594,7 @@
         width: 0;
         height: 0;
         border-top: 50px solid transparent;
-        border-left: 50px solid #FF961A; /* Color del triángulo */
+        border-left: 50px solid #FF961A;
         transform-origin: top left;
         transform: rotate(225deg);    
         
@@ -635,7 +605,7 @@
     width: 0;
     height: 0;
     border-top: 50px solid transparent;
-    border-left: 50px solid #FF961A; /* Color del triángulo */
+    border-left: 50px solid #FF961A; 
     transform-origin: top left;
     transform: rotate(45deg);
 
@@ -649,7 +619,7 @@
         width: 0;
         height: 0;
         border-top: 50px solid transparent;
-        border-left: 50px solid #FF961A; /* Color del triángulo */
+        border-left: 50px solid #FF961A; 
         transform-origin: top left;
         transform: rotate(225deg);
     }
@@ -726,10 +696,7 @@
     width: 90%;
     margin-left: 15px;
     font-size: 45px;
-  }
-
-
-  
+  } 
 }
 
 .container_history{
@@ -752,10 +719,7 @@
     flex-direction:row;
     flex-wrap: wrap;
     
-  }
-
-
-  
+  }  
 }
 
 .img_history_asociation{

@@ -97,7 +97,7 @@ const Voluntary = () => {
           confirmButtonColor: customColor,
         });
 
-        // Restablecer los campos del formulario después de enviar los datos
+       
         setFormData({
           name: "",
           dni: "",

@@ -1,15 +1,15 @@
 import * as React from "react";
 import ImageList from "@mui/material/ImageList";
 import ImageListItem from "@mui/material/ImageListItem";
-import "../Admin/GalleryEC.css"; // Puedes crear un archivo CSS separado para esta galería si es necesario
+import "../Admin/GalleryEC.css"; 
 import '../CurrentNews/Activities.css';
 import AdminNavbar from "../../Components/AdminNavbar/AdminNavbar";
 import Footer from "../../Components/Footer/Footer";
 
 const GalleryEC = () => {
-  const [imageListEC, setImageListEC] = React.useState([]); // Cambia el nombre de la lista de imágenes
-  const [selectedImageIndexEC, setSelectedImageIndexEC] = React.useState(-1); // Cambia el nombre del estado del índice seleccionado
-  const [imageURL, setImageURL] = React.useState(""); // Estado para la URL de la imagen a agregar
+  const [imageListEC, setImageListEC] = React.useState([]); 
+  const [selectedImageIndexEC, setSelectedImageIndexEC] = React.useState(-1); 
+  const [imageURL, setImageURL] = React.useState(""); 
 
   const handleFormSubmit = async (e) => {
     e.preventDefault();

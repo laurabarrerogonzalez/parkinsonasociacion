@@ -32,7 +32,6 @@ import GalleryEC from './View/Admin/GalleryEC';
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <Router>
-    {/* <Navbar /> */}
     <React.StrictMode>
       <Routes>
         <Route path="/" element={<Home />} /> 

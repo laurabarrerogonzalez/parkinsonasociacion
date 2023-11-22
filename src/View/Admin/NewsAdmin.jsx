@@ -48,7 +48,7 @@ const NewsAdmin = () => {
   const handleDelete = async (id) => {
     try {
       await axios.delete(`https://localhost:7165/api/News/${id}`);
-      // Después de eliminar, realizar una nueva solicitud GET para obtener las noticias actualizadas
+    
       const response = await axios.get("https://localhost:7165/api/News");
       setNewsList(response.data);
     } catch (error) {
@@ -63,7 +63,7 @@ const NewsAdmin = () => {
         updatedData
       );
 
-      // Después de actualizar, realizar una nueva solicitud GET para obtener las noticias actualizadas
+    
       const updatedResponse = await axios.get(
         "https://localhost:7165/api/News"
       );
