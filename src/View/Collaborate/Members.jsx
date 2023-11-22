@@ -83,11 +83,11 @@ const Members = () => {
 
       
       const formattedData = {
-        ...formData,
+        ...formsData,
         // Verifica si formData.services es un array antes de enviar al backend
-        services: Array.isArray(formData.services)
-          ? formData.services.map(service => ({ nameService: service }))
-          : [{ nameService: formData.services }],
+        services: Array.isArray(formsData.services)
+          ? formsData.services.map(service => ({ nameService: service }))
+          : [{ nameService: formsData.services }],
       };
 
 
@@ -263,7 +263,7 @@ const Members = () => {
             autoComplete="off"
             name="birthdate"
             className="input14"
-            placeholder="Fecha de naciomiento"
+            placeholder="Fecha de nacimiento"
             value={formsData.birthdate}
             onChange={handleInputChange}
           />

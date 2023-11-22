@@ -17,7 +17,7 @@ const Find = () => {
         <Navbar />
         <BannerViews
           image="https://res.cloudinary.com/doft9ylq1/image/upload/v1698914683/pareja-blanca-wanderlust_1_njqb3r.jpg"
-          title="¿DÓNDE TRABAJAMOS?"
+          title="¿DÓNDE ENCONTRARNOS?"
         />
       </div>
       <div style={{ display: 'flex' }}>

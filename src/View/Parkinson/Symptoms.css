@@ -1,3 +1,7 @@
+.Bodys{
+margin-bottom: 5%;
+}
+
 .photobanner1 {
     height: 500px;
     background-image: url("https://res.cloudinary.com/dit2zhtwz/image/upload/v1698917550/istockphoto-1434534146-612x612_c5rz28.jpg");
@@ -33,5 +37,9 @@
 
 }
 
-
+.parkinson-si,
+.parkinson-li {
+  list-style-type: none; 
+  padding-left: 0;
+}
 

@@ -49,10 +49,10 @@ const AdminNavbar = ({ handleLogout }) => {
         <button className="button333">Recursos y pautas</button>
       </Link>
       <Link to="/galleryCD">
-        <button className="button333">Galería Centro de Día</button>
+        <button className="button333">Galería Servicios</button>
       </Link>
       <Link to="/galleryEC">
-        <button className="button333">Galería E. Cognitiva</button>
+        <button className="button333">Galería Proyectos</button>
       </Link>
 
 

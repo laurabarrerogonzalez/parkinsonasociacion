@@ -4,6 +4,7 @@ import ImageListItem from "@mui/material/ImageListItem";
 import "../Admin/GalleryEC.css"; // Puedes crear un archivo CSS separado para esta galería si es necesario
 import '../CurrentNews/Activities.css';
 import AdminNavbar from "../../Components/AdminNavbar/AdminNavbar";
+import Footer from "../../Components/Footer/Footer";
 
 const GalleryEC = () => {
   const [imageListEC, setImageListEC] = React.useState([]); // Cambia el nombre de la lista de imágenes
@@ -113,6 +114,8 @@ const GalleryEC = () => {
           Delete Selected Image
         </button>
       </div>
+
+      <Footer/>
     </>
   );
 };

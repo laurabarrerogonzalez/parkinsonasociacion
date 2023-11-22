@@ -51,7 +51,7 @@
   right: 0;
   bottom: 0;
   position: absolute;
-  background-image: linear-gradient(#d600d6, #fe1616);
+  background-image: linear-gradient(#d68f00, #fed716);
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -59,7 +59,7 @@
 }
 .flip12::before {
   transform: none;
-  background-image: linear-gradient(rgb(37, 219, 244), #f1f41f);
+  background-image: linear-gradient(rgb(37, 44, 244), #1fd4f4);
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;

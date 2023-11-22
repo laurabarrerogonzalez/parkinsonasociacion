@@ -3,6 +3,7 @@ import ImageList from "@mui/material/ImageList";
 import ImageListItem from "@mui/material/ImageListItem";
 import "../Admin/GalleryCD.css";
 import AdminNavbar from "../../Components/AdminNavbar/AdminNavbar";
+import Footer from "../../Components/Footer/Footer";
 
 export default function QuiltedImageList() {
   const [imageList, setImageList] = React.useState([]);
@@ -113,6 +114,7 @@ export default function QuiltedImageList() {
           Delete Selected Image
         </button>
       </div>
+      <Footer/>
     </>
   );
 }

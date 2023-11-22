@@ -42,7 +42,7 @@ const Stimulation = () => {
 
                 </div>
                 <div className="img_stimulation_banner">
-                    <img src="https://res.cloudinary.com/dp7lr71t8/image/upload/v1699356047/Dise%C3%B1o_sin_t%C3%ADtulo_4_1_yll4l4.png" alt="" />
+                    <img src="https://res.cloudinary.com/dit2zhtwz/image/upload/v1700599925/IMG-20231114-WA0002_jilhro.jpg" alt="" />
                 </div>
             </section>
 

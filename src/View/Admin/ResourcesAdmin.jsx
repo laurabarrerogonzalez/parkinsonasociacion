@@ -3,6 +3,7 @@ import swal from "sweetalert2";
 import axios from "axios";
 import "./ResourcesAdmin.css";
 import AdminNavbar from "../../Components/AdminNavbar/AdminNavbar";
+import Footer from "../../Components/Footer/Footer";
 
 const ResourcesAdmin = () => {
   const [files, setFiles] = useState([]);
@@ -158,6 +159,8 @@ const ResourcesAdmin = () => {
           ))}
         </div>
       </div>
+
+      <Footer/>
     </>
   );
 };
