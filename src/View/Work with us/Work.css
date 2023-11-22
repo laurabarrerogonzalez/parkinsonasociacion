@@ -287,7 +287,6 @@
 .form label .input + span.protect_dates {
   color: #ffffff; /* Color rosa */
 }
-
 .form label .input:placeholder-shown + span {
   top: 12.5px;
   font-size: 0.9em;
