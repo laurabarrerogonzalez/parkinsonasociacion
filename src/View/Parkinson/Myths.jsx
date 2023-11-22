@@ -34,7 +34,7 @@ const Myths = () => {
             </div>
 
             <div class="back1">
-              <h3 class="titles">Verdad</h3>
+              <h3 class="titles">VERDAD</h3>
               <p class="description">
                 Solo un pequeño porcentaje (10%-15%) tiene antecedentes
                 familiares.
@@ -58,7 +58,7 @@ const Myths = () => {
             </div>
 
             <div class="back2">
-              <h3 class="titles">Verdad</h3>
+              <h3 class="titles">VERDAD</h3>
               <p class="description">
                 Inicio común 50-60 años: 70% diagnósticos con más de 65 años.
                 <br></br>
@@ -80,7 +80,7 @@ const Myths = () => {
             </div>
 
             <div class="back4">
-              <h3 class="titles">Verdad</h3>
+              <h3 class="titles">VERDAD</h3>
               <p class="description">
                 Parkinson es distinto del Alzheimer.
                 <br></br>
@@ -102,7 +102,7 @@ const Myths = () => {
             </div>
 
             <div class="back6">
-              <h3 class="titles">Verdad</h3>
+              <h3 class="titles">VERDAD</h3>
               <p class="description">
                 Otras enfermedades también cursan con temblor
               </p>
@@ -120,7 +120,7 @@ const Myths = () => {
             </div>
 
             <div class="back7">
-              <h3 class="titles">Verdad</h3>
+              <h3 class="titles">VERDAD</h3>
               <p class="description">
                 Existen otros síntomas motores y no motores que caracterizan la
                 enfermedad
@@ -144,7 +144,7 @@ const Myths = () => {
             </div>
 
             <div class="back8">
-              <h3 class="titles">Verdad</h3>
+              <h3 class="titles">VERDAD</h3>
               <p class="description">
                 Si, en más del 80% de CASOS MODERADOS Y SEVEROS (Invisibles para
                 la sociedad)
@@ -163,7 +163,7 @@ const Myths = () => {
             </div>
 
             <div class="back9">
-              <h3 class="titles">Verdad</h3>
+              <h3 class="titles">VERDAD</h3>
               <p class="description">
                 NO: es la 2ª enfermedad neurodegenerativa tras el alzheime
               </p>
@@ -181,7 +181,7 @@ const Myths = () => {
             </div>
 
             <div class="back10">
-              <h3 class="titles">Verdad</h3>
+              <h3 class="titles">VERDAD</h3>
               <p class="description">
                 Es muy importante combinar el tratamiento con terapias de
                 rehabilitación
@@ -219,7 +219,7 @@ const Myths = () => {
             </div>
 
             <div class="back12">
-              <h3 class="titles">Verdad</h3>
+              <h3 class="titles">VERDAD</h3>
               <p class="description">
                 Médicos más informados y apoyo de asociaciones benefician a
                 pacientes
