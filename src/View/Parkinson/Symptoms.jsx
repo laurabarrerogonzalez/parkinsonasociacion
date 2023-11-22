@@ -32,7 +32,7 @@ const Symptoms = () => {
       <Navbar />
       <BannerViews
         image="https://res.cloudinary.com/dit2zhtwz/image/upload/v1698917550/istockphoto-1434534146-612x612_c5rz28.jpg"
-        title="Síntomas y Diagnóstico"
+        title="SÍNTOMAS Y DIAGNÓSTICOS"
       />
       </div>
 

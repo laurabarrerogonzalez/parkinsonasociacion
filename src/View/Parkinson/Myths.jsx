@@ -13,7 +13,7 @@ const Myths = () => {
         <Navbar />
         <BannerViews
           image="https://res.cloudinary.com/dit2zhtwz/image/upload/v1698744222/pareja-alegre-celebracion-icono-votacion-sentado-sofa_53876-24976_kke7zn.jpg"
-          title="Mitos y Verdades"
+          title="MITOS Y VERDADES"
         />
       </div>
 
