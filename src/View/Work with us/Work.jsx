@@ -9,7 +9,7 @@ import ButtonDonate from "../../Components/ButtonDonate/ButtonDonate";
 import TermsAndConditions from "../../Components/TermsAndConditions/TermsAndConditions";
 
 const Work = () => {
-  const [file, setFile] = useState(null);
+  const [fileUrl, setFileUrl] = useState("");
 
   const [formsData, setFormsData] = useState({
     name: "",
@@ -42,24 +42,15 @@ const Work = () => {
 
   const [selectedPosition, setSelectedPosition] = useState("");
 
-  const handleFileSelect = (event) => {
-    const fileInput = event.target;
-    const selectedFile = fileInput.files[0];
+  const handleFileUrlChange = (e) => {
+    const { value } = e.target;
 
-    setFile(selectedFile);
+    setFileUrl(value);
 
     setFormsData((prevData) => ({
       ...prevData,
-      archive: selectedFile, 
+      archive: value, // Almacenar la URL en lugar del archivo
     }));
-
-    if (selectedFile.type.startsWith("image/")) {
-      // Resto del código para mostrar la vista previa si es una imagen
-    } else if (selectedFile.type === "application/pdf") {
-      // Resto del código para manejar archivos PDF
-    } else {
-      console.log("Archivo no compatible");
-    }
   };
 
   const handleInputChange = (e) => {
@@ -69,11 +60,16 @@ const Work = () => {
       setSelectedPosition(value);
     }
 
+    if (name === "archive") {
+      setFileUrl(value); // Actualizar la URL cuando cambia el campo "archive"
+    }
+
     setFormsData((prevData) => ({
       ...prevData,
       [name]: type === "checkbox" ? checked : value,
     }));
   };
+
   const handleEnviarClick = () => {
     if (!formsData.termsAccepted) {
       swal.fire({
@@ -104,33 +100,15 @@ const Work = () => {
 
   const sendFormsDataToAPI = async () => {
     try {
-      const formData = new FormData();
-
-      // Agregar datos del formulario
-      Object.entries(formsData).forEach(([key, value]) => {
-        if (key !== "archive") {
-          formData.append(key, value);
-        }
+      const response = await fetch("https://localhost:7165/WorkControllers/Post", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(formsData),
       });
 
-      if (formsData.archive) {
-        formData.append("archive", formsData.archive);
-      }
-
-      // Agregar el archivo
-
-      const response = await fetch(
-        "https://localhost:7165/WorkControllers/Post",
-        {
-          method: "POST",
-          body: formData,
-          headers: {
-            "Content-Type": "multipart/form-data",
-          },
-        }
-      );
-      if (response.status === 200) {
-        // Éxito
+      if (response.ok) {
         swal.fire({
           title: "Enviado",
           text: "La información ha sido enviada.",
@@ -138,8 +116,16 @@ const Work = () => {
           confirmButtonColor: customColor,
         });
         setFormsData({
-          // ... otros campos del formulario
-          archive: null,  // Reinicializar 'archive' a null después del envío
+          name: "",
+          lastName: "",
+          email: "",
+          phone: "",
+          province: "",
+          city: "",
+          zipcode: "",
+          positions: "",
+          archive: null,
+          termsAccepted: false,
         });
       } else {
         throw new Error("Error al enviar los datos");
@@ -154,6 +140,7 @@ const Work = () => {
       });
     }
   };
+
   return (
     <div>
       <Navbar />
@@ -315,18 +302,17 @@ const Work = () => {
             </select>
             <span>Cargo a gestionar</span>
           </label>
-          <div>
-            <label>
-              <span>Adjuntar Archivo</span>
-              <input
-                type="file"
-                className="input"
-                onChange={handleFileSelect}
-                required
-              />
-            </label>
-            <div id="preview">{file && <p>{file.name}</p>}</div>
-          </div>
+          <label>
+            <span>Adjuntar Archivo (URL)</span>
+            <input
+              type="text" // Cambiar el tipo a "text"
+              className="input"
+              placeholder="Ingrese la URL del archivo"
+              value={fileUrl}
+              onChange={handleFileUrlChange}
+              required
+            />
+          </label>
           <div className="checkbox-container">
             <input
               type="checkbox"

@@ -24,7 +24,7 @@ const News = () => {
       <Navbar />
       <BannerViews
         image="https://res.cloudinary.com/dit2zhtwz/image/upload/v1700473022/hombre-leyendo-periodico_53876-89052_egu6c0.avif"
-        title="Noticias"
+        title="NOTICIAS"
       />
 
       <div className="news-container">

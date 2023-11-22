@@ -1,3 +1,21 @@
+@font-face {
+  font-family: 'MiFuentePersonalizada';
+  src: url('../../Fonts/Bevan-Regular.ttf') format('truetype');
+  /* Agrega más formatos y rutas para soporte de navegadores diferentes */
+}
+
+@font-face {
+  font-family: 'Gotham Black';
+  src: url('../../Fonts/1830-font.otf') format('truetype');
+  /* Agrega más formatos y rutas para soporte de navegadores diferentes */
+}
+
+@font-face {
+  font-family: 'Poppins';
+  src: url('../../Fonts/Poppins-Regular.ttf') format('truetype');
+  /* Agrega más formatos y rutas para soporte de navegadores diferentes */
+}
+
 .photobanner {
     height: 500px;
     background-image: url("https://res.cloudinary.com/dit2zhtwz/image/upload/v1698744222/pareja-alegre-celebracion-icono-votacion-sentado-sofa_53876-24976_kke7zn.jpg");
@@ -21,7 +39,13 @@
     display: flex;
     justify-content: space-around;
     margin-top: 50px;
-    font-size: 25px;
+    font-size: 30px;
+    font-family: 'MiFuentePersonalizada';
+
+}
+
+.titlecard h2{
+  color: black;
 }
 
 .cardmyth{
@@ -149,9 +173,11 @@ background-color: rgb(127, 204, 240);
   
   .titles {
     transform: translateZ(5rem);
-    font-size: 2rem;
+    font-size: 30px;
     margin-top: -30px;
     margin-left: 420px;
+    font-family: 'MiFuentePersonalizada';
+    color: black;
   }
   
   .subtitle {
@@ -160,6 +186,19 @@ background-color: rgb(127, 204, 240);
     text-align: right;
     /* color: white; */
     transform: translateZ(2rem);
+    font-family: 'Poppins';
+    color: black;
+    font-size: 18px;
+  }
+
+
+  .description{
+    font-family: 'Poppins';
+    color: black;
+    font-size: 17px;
+    
+    
+    
   }
   
   .back1 {
@@ -310,9 +349,10 @@ margin-left: 25px;
   
     .content {
       padding: 3em; 
+      font-size: 12px;
     }
   
-    .title {
+    .titles {
       font-size: 1.5rem; 
       margin-left: 0; 
     }
@@ -320,10 +360,12 @@ margin-left: 25px;
     .subtitle {
       margin-left: 0; 
       text-align: center; 
+      font-size: 15px;
     }
   
     .description {
       text-align: center; 
+      font-size: 13px;
     }
    
 

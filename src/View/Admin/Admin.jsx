@@ -5,9 +5,35 @@ import Swal from "sweetalert2";
 import Footer from "../../assets/Components/Footer/Footer";
 import AdminNavbar from "../../Components/AdminNavbar/AdminNavbar";
 
+const FileModal = ({ isOpen, onClose, fileUrl }) => {
+  if (!isOpen) {
+    return null;
+  }
+
+  return (
+    <div className="file-modal-overlay">
+      <div className="file-modal-content">
+        <button className="button222" onClick={onClose}>
+          Cerrar Archivo
+        </button>
+        <iframe
+          title="file-viewer-modal"
+          src={fileUrl}
+          frameBorder="0"
+          width="100%"
+          height="500px"
+        />
+      </div>
+    </div>
+  );
+};
+
 const Admin = () => {
+  const [isModalOpen, setModalOpen] = useState(false);
+  const [selectedFileUrl, setSelectedFileUrl] = useState("");
   const [Volunteers, setVolunteers] = useState([]);
   const [Membres, setMembres] = useState([]);
+  const [WorkData, setWorkData] = useState([]);
   const [isLoggedIn, setLoggedIn] = useState(false);
   const [userData, setUserData] = useState({
     UserName: "",
@@ -16,18 +42,18 @@ const Admin = () => {
   const [errorMessages, setErrorMessages] = useState({
     UserName: "",
     Password: "",
-  }); 
+  });
 
   useEffect(() => {
-    // Verificar si hay un token almacenado en el localStorage al montar el componente
     const token = localStorage.getItem("token");
     if (token) {
       setLoggedIn(true);
-      // Realizar cualquier carga de datos adicional que necesites aquí
       fetchVolunteersData();
       fetchMembersData();
+      fetchWorkData();
     }
   }, []);
+
   const fetchVolunteersData = async () => {
     try {
       const response = await axios.get(
@@ -38,6 +64,7 @@ const Admin = () => {
       console.error("Error al obtener la lista de voluntarios", error);
     }
   };
+
   const fetchMembersData = async () => {
     try {
       const response = await axios.get(
@@ -49,27 +76,16 @@ const Admin = () => {
     }
   };
 
-  useEffect(() => {
-    if (isLoggedIn) {
-      axios
-        .get("https://localhost:7165/VolunteersControllers/GetVolunteers")
-        .then((response) => {
-          setVolunteers(response.data);
-        })
-        .catch((error) => {
-          console.error("Error al obtener la lista de voluntarios", error);
-        });
-
-      axios
-        .get("https://localhost:7165/MembersControllers/GetMembers")
-        .then((response) => {
-          setMembres(response.data);
-        })
-        .catch((error) => {
-          console.error("Error al obtener la lista de voluntarios", error);
-        });
+  const fetchWorkData = async () => {
+    try {
+      const response = await axios.get(
+        "https://localhost:7165/WorkControllers/GetWorks"
+      );
+      setWorkData(response.data);
+    } catch (error) {
+      console.error("Error al obtener la lista de trabajos", error);
     }
-  }, [isLoggedIn]);
+  };
 
   const handleLoginClick = async (event) => {
     event.preventDefault();
@@ -137,10 +153,7 @@ const Admin = () => {
       await axios.delete(
         `https://localhost:7165/VolunteersControllers/DeleteVolunteers?name=${name}`
       );
-      const response = await axios.get(
-        "https://localhost:7165/VolunteersControllers/GetVolunteers"
-      );
-      setVolunteers(response.data);
+      fetchVolunteersData();
     } catch (error) {
       console.error(
         `Error al eliminar el voluntario con nombre ${name}`,
@@ -154,12 +167,20 @@ const Admin = () => {
       await axios.delete(
         `https://localhost:7165/MembersControllers/DeleteMembers?name=${name}`
       );
-      const response = await axios.get(
-        "https://localhost:7165/MembersControllers/GetMembers"
-      );
-      setMembres(response.data);
+      fetchMembersData();
     } catch (error) {
       console.error(`Error al eliminar el socio con nombre ${name}`, error);
+    }
+  };
+
+  const handleDeleteWork = async (name) => {
+    try {
+      await axios.delete(
+        `https://localhost:7165/WorkControllers/DeleteWorks?name=${name}`
+      );
+      fetchWorkData();
+    } catch (error) {
+      console.error(`Error al eliminar el trabajo con ID ${name}`, error);
     }
   };
 
@@ -173,7 +194,7 @@ const Admin = () => {
               <h1>Admin</h1>
               <br />
               <br />
-              <h2>Lista de Voluntarios</h2>
+              <h2>Lista de solicitudes de Voluntarios</h2>
               <table className="TableVoluntarios">
                 <thead>
                   <tr className="tr12">
@@ -214,7 +235,7 @@ const Admin = () => {
               </table>
               <br />
               <br />
-              <h2>Lista de Socios</h2>
+              <h2>Lista de solicitudes de Socios</h2>
               <table className="TableVoluntarios">
                 <thead>
                   <tr className="tr12">
@@ -255,6 +276,65 @@ const Admin = () => {
                   ))}
                 </tbody>
               </table>
+              <br />
+              <br />
+              <h2>Lista de solicitudes de Trabajadores</h2>
+              <table className="TableVoluntarios">
+                <thead>
+                  <tr className="tr12">
+                    <th className="th14">Nombre</th>
+                    <th className="th14">Apellidos</th>
+                    <th className="th14">Email</th>
+                    <th className="th14">Teléfono</th>
+                    <th className="th14">Provincia</th>
+                    <th className="th14">Ciudad</th>
+                    <th className="th14">Código Postal</th>
+                    <th className="th14">Cargo</th>
+                    <th className="th14">Archivo URL</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  {WorkData.map((work) => (
+                    <tr className="tr12" key={work.Id_Works}>
+                      <td className="td13">{work.name}</td>
+                      <td className="td13">{work.lastName}</td>
+                      <td className="td13">{work.email}</td>
+                      <td className="td13">{work.phone}</td>
+                      <td className="td13">{work.province}</td>
+                      <td className="td13">{work.city}</td>
+                      <td className="td13">{work.zipcode}</td>
+                      <td className="td13">{work.positions}</td>
+                      <td className="td13">
+                        <div className="file-preview143">
+                          <h3>{work.archive}</h3>
+                          <button
+                            className="button222"
+                            onClick={() => {
+                              setSelectedFileUrl(work.archive);
+                              setModalOpen(true);
+                            }}
+                          >
+                            Abrir Archivo
+                          </button>
+                        </div>
+                      </td>
+                      <td className="td13">
+                        <button
+                          class="delete-btn"
+                          onClick={() => handleDeleteWork(work.name)}
+                        >
+                          Eliminar
+                        </button>
+                      </td>
+                    </tr>
+                  ))}
+                </tbody>
+              </table>
+              <FileModal
+                isOpen={isModalOpen}
+                onClose={() => setModalOpen(false)}
+                fileUrl={selectedFileUrl}
+              />
             </div>
           </>
         ) : (

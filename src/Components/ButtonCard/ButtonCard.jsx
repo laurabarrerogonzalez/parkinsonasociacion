@@ -8,7 +8,7 @@ const ButtonCard = () => {
       <div className="buttoncard14">
         <div class="cardt1">
           <div class="heading02">
-            Tratamiento <span>Farmacológico</span>
+            <p>Tratamiento <span>Farmacológico</span></p>
           </div>
           <div class="content-buton">
             <p className="text-buttoncard">

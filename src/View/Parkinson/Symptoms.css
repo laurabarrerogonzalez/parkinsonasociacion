@@ -3,38 +3,104 @@ margin-bottom: 5%;
 }
 
 .photobanner1 {
-    height: 500px;
-    background-image: url("https://res.cloudinary.com/dit2zhtwz/image/upload/v1698917550/istockphoto-1434534146-612x612_c5rz28.jpg");
-    background-size:cover; 
-    border: 1px rgba(255, 255, 255, 0) solid; 
+  height: 500px;
+  background-image: url("https://res.cloudinary.com/dit2zhtwz/image/upload/v1698917550/istockphoto-1434534146-612x612_c5rz28.jpg");
+  background-size: cover;
+  border: 1px rgba(255, 255, 255, 0) solid;
 }
 
-
-.what{
-   
-   display: flex;
-   flex-direction: column;
-   justify-content: center;
-   margin-top: 50px;
-   
+@font-face {
+  font-family: "MiFuentePersonalizada";
+  src: url("../../Fonts/Bevan-Regular.ttf") format("truetype");
+  /* Agrega más formatos y rutas para soporte de navegadores diferentes */
 }
 
-.title-parkinson{
-    background-color: orange;
+@font-face {
+  font-family: "Gotham Black";
+  src: url("../../Fonts/1830-font.otf") format("truetype");
+  /* Agrega más formatos y rutas para soporte de navegadores diferentes */
+}
+
+@font-face {
+  font-family: "Poppins";
+  src: url("../../Fonts/Poppins-Regular.ttf") format("truetype");
+  /* Agrega más formatos y rutas para soporte de navegadores diferentes */
+}
+
+.what {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-top: 50px;
+}
+
+.title-parkinson {
+  background-color: orange;
+  display: flex;
+  justify-content: center;
+  margin-left: 35px;
+  width: 95%;
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
+  border: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+.text-parkinson {
+  width: 1100px;
+  margin-top: 20px;
+  margin-left: 200px;
+  font-size: 20px;
+}
+
+.Bodys > HTMLFlipBook {
+  width: 100%;
+  max-width: 700px;
+}
+
+@media screen and (max-width: 700px) {
+  .parkinson-what,
+  .parkinson-si {
+    margin-left: 10px; /* Adjust margin for smaller screens */
+  }
+
+  .parkinson-h1,
+  .parkinson-li {
+    font-size: 18px; /* Adjust font size for smaller screens */
+  }
+
+  .parkinson-p {
+    font-size: 16px; /* Adjust font size for smaller screens */
+  }
+
+  .img-book {
+    width: 50%; /* Make the image responsive, take full width on smaller screens */
+  }
+
+  .demoPage {
+    margin-left: 5%;
+    width: 20%;
+  }
+  .Bodys {
+    margin-top: 3%;
+    margin-bottom: 5%;
+    height: auto;
     display: flex;
     justify-content: center;
-    margin-left: 35px;
-    width: 95%; 
-    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5); 
-    border: 1px solid rgba(0, 0, 0, 0.2);
+    align-items: center;
+    font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  }
+
+  .Bodys > HTMLFlipBook {
+    width: 90%; /* Adjust the width as needed */
+    max-width: 700px;
+    margin: 0 auto;
+  }
 }
 
-.text-parkinson{
-    width: 1100px;
-    margin-top: 20px;
-    margin-left: 200px;
-    font-size: 20px;
-
+.text-parkinson {
+  width: 1100px;
+  margin-top: 20px;
+  margin-left: 200px;
+  font-size: 20px;
 }
 
 .parkinson-si,

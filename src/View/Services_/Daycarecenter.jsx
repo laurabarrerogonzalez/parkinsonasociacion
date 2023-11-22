@@ -3,13 +3,16 @@ import Navbar from "../../Components/Navbar/Navbar";
 import "../Services_/Daycarecenter.css";
 import BannerViews from "../../Components/BannerViews/BannerViews";
 import Footer from "../../Components/Footer/Footer";
+import ButtonDonate from "../../Components/ButtonDonate/ButtonDonate";
+import ScrollArrow from "../../Components/ScrollArrow/ScrollArrow";
+
 
 const Daycarecenter = () => {
   return (
     <>
       <Navbar />
       <BannerViews
-        image="https://res.cloudinary.com/doft9ylq1/image/upload/v1699005153/e96e5008-5541-4c4c-b02c-140d8e7a1183_jwxyis.jpg"
+        image="https://res.cloudinary.com/doft9ylq1/image/upload/v1700670433/20230208_124105_inwcss.jpg"
         title="CENTRO DE DÍA"
       />
       <div className="boxDC1">
@@ -141,6 +144,9 @@ const Daycarecenter = () => {
         </div>
       </div>
       <div className="video-container">
+      <div className="titlevideo">
+          <h1>CONOCE NUESTRO CENTRO DE DÍA</h1>
+        </div>
         <video controls width="100%" height="auto">
           <source
             src="https://res.cloudinary.com/doft9ylq1/video/upload/v1700641777/V%C3%ADdeo_sin_t%C3%ADtulo_Hecho_con_Clipchamp_dfvw5q.mp4" // Reemplaza "URL_DEL_VIDEO" con la URL real del video
@@ -150,6 +156,8 @@ const Daycarecenter = () => {
         </video>
       </div>
       <Footer />
+      <ButtonDonate />
+      <ScrollArrow />
     </>
   );
 };

@@ -10,6 +10,12 @@
   }
 
   @font-face {
+    font-family: 'MiFuentePersonalizada';
+    src: url('../../Fonts/Bevan-Regular.ttf') format('truetype');
+    /* Agrega más formatos y rutas para soporte de navegadores diferentes */
+  }
+
+  @font-face {
     font-family: 'Inria';
     src: url('../../Fonts/InriaSans-Regular.ttf') format('truetype');
     /* Agrega más formatos y rutas para soporte de navegadores diferentes */
@@ -64,10 +70,10 @@
   
   color: white; /* Color del título */
   font-weight: bold;
-  font-size: 60px; /* Tamaño de fuente del título */
+  font-size: 50px; /* Tamaño de fuente del título */
   /* Coloca el título encima de la imagen */
-  font-family: 'Single'; /* Utiliza tu fuente personalizada */
-  text-shadow: 4px 4px 4px rgba(0, 0, 0, 1.9); /* Sombra para mejorar la legibilidad */
+  font-family: 'MiFuentePersonalizada'; /* Utiliza tu fuente personalizada */
+  text-shadow: 7px 7px 7px rgba(0, 0, 0, 1.9); /* Sombra para mejorar la legibilidad */
 margin: 0;
 }
 

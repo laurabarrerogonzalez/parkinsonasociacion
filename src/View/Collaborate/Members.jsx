@@ -79,9 +79,6 @@ const Members = () => {
   const sendFormsDataToAPI = async () => {
     try {
 
-
-
-      
       const formattedData = {
         ...formsData,
         // Verifica si formData.services es un array antes de enviar al backend
@@ -89,9 +86,6 @@ const Members = () => {
           ? formsData.services.map(service => ({ nameService: service }))
           : [{ nameService: formsData.services }],
       };
-
-
-
 
       const response = await fetch(
         "https://localhost:7165/MembersControllers/Post",
@@ -143,7 +137,7 @@ const Members = () => {
       <Navbar />
       <BannerViews
         image="https://res.cloudinary.com/da7ffijqs/image/upload/t_Banner 16:9/v1699001271/20200415_111209_1_iacccg.jpg "
-        title="¿Quieres ser socio?"
+        title="¿QUIERES SER SOCIO?"
       />
       <div className="Carta0">
         <div class="cards1">
