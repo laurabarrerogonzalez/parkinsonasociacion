@@ -103,7 +103,6 @@ const ButtonCard = () => {
               demostrado ser efectiva, ajustable y reversible, pero conlleva
               riesgos quirúrgicos y posibles efectos secundarios que requieren
               ajustes en la estimulación.
-              <br></br>
               No todos los pacientes son candidatos para la DBS Therapy, ya que
               se considera principalmente para aquellos que no responden
               adecuadamente a la medicación, experimentan periodos de ineficacia

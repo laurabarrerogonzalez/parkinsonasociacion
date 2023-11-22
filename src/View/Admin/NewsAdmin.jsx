@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import axios from "axios";
 import "../Admin/NewsAdmin.css";
 import AdminNavbar from "../../Components/AdminNavbar/AdminNavbar";
+import Footer from "../../Components/Footer/Footer";
 
 const NewsAdmin = () => {
   const [link, setLink] = useState("");
@@ -186,6 +187,8 @@ const NewsAdmin = () => {
           </div>
         )}
       </div>
+
+      <Footer/>
     </>
   );
 };

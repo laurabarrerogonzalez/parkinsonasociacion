@@ -32,7 +32,7 @@ const Resources = () => {
     <>
        <Navbar />
       <BannerViews
-        image="https://res.cloudinary.com/dit2zhtwz/image/upload/v1698744222/pareja-alegre-celebracion-icono-votacion-sentado-sofa_53876-24976_kke7zn.jpg"
+        image="https://res.cloudinary.com/dit2zhtwz/image/upload/v1700651138/cerca-pila-libros-coloridos_23-2149082168_e1gg2y.jpg"
         title="Recursos y Pautas"
       />
       <div className="resources-container1111">

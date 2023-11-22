@@ -257,7 +257,7 @@ const Members = () => {
             autoComplete="off"
             name="birthdate"
             className="input14"
-            placeholder="Fecha de naciomiento"
+            placeholder="Fecha de nacimiento"
             value={formsData.birthdate}
             onChange={handleInputChange}
           />
