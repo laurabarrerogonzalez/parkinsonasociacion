@@ -11,7 +11,7 @@ const Help = () => {
     <>
       <Navbar />
       <BannerViews
-        image="https://res.cloudinary.com/doft9ylq1/image/upload/v1700469463/ayuda-a-domicilio-cabecera_b1h9ez.jpg"
+        image="https://res.cloudinary.com/doft9ylq1/image/upload/v1700651748/Servicio_de_Ayuda_a_Domicilio_1_j1pfmk.jpg"
         title="Ayuda a Domicilio"
       />
       <div className="containerhelp">
@@ -31,7 +31,7 @@ const Help = () => {
       </div>
       
     <div className="text-HelpSer">
-   <h1 className="helpSer">El Servicio de Ayuda a Domicilio ofrece:</h1>
+   <h1 className="helpSer">EL SERVICIO DE AYUDA A DOMICILIO OFRECE:</h1>
   </div>
   <div className="titleHelpSer">
          <ul>
@@ -58,29 +58,43 @@ const Help = () => {
       <div className="image-container">
         <div className="help-card">
           <img
-            src="https://res.cloudinary.com/doft9ylq1/image/upload/v1700469463/ayuda-a-domicilio-cabecera_b1h9ez.jpg"
-            alt="Image 1"
+            src="https://res.cloudinary.com/doft9ylq1/image/upload/v1700650844/auxiliarayudacab-1_k8ithw.jpg"
+            alt="Imagen de mujer ayuda a domicilio"
+            className="help-image0101"
+          />
+        </div>
+        <div className="help-card">
+          <img
+            src="https://res.cloudinary.com/doft9ylq1/image/upload/v1700649874/viejo-paciente-que-sufre-parkinson_x4jr0p.jpg"
+            alt="Imagen de hombre ayuda a domicilio "
             className="help-image"
           />
         </div>
         <div className="help-card">
           <img
-            src="https://res.cloudinary.com/doft9ylq1/image/upload/v1700469463/ayuda-a-domicilio-cabecera_b1h9ez.jpg"
-            alt="Image 2"
+            src="https://res.cloudinary.com/doft9ylq1/image/upload/v1700649859/doctor-hablando-su-paciente-mayor_zy9diy.jpg"
+            alt="Imagen 2 de mujer ayuda a domicilio"
             className="help-image"
           />
         </div>
         <div className="help-card">
           <img
-            src="https://res.cloudinary.com/doft9ylq1/image/upload/v1700469463/ayuda-a-domicilio-cabecera_b1h9ez.jpg"
-            alt="Image 3"
+            src="https://res.cloudinary.com/doft9ylq1/image/upload/v1700650554/ayuda-domicilio-servicios_knrezb.jpg"
+            alt="Cuidadora con su paciente desayunando"
             className="help-image"
           />
         </div>
         <div className="help-card">
           <img
-            src="https://res.cloudinary.com/doft9ylq1/image/upload/v1700469463/ayuda-a-domicilio-cabecera_b1h9ez.jpg"
-            alt="Image 4"
+            src="https://res.cloudinary.com/doft9ylq1/image/upload/v1700651128/02_Sacyr_Social_Servicio_de_Ayuda_a__lyupuy.jpg"
+            alt="Cuidadora hablando con su paciente"
+            className="help-image"
+          />
+        </div>
+        <div className="help-card">
+          <img
+            src="https://res.cloudinary.com/doft9ylq1/image/upload/v1700651424/6778119D-941D-C9DB-B8E818511A0EBE2B_b24oly.jpg"
+            alt="Cuidadora haciendo labores del hogar"
             className="help-image"
           />
         </div>

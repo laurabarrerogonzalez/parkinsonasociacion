@@ -1,6 +1,7 @@
 import React from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faInstagramSquare, faFacebookSquare } from '@fortawesome/free-brands-svg-icons';
+import { faInstagramSquare, faFacebookSquare}  from '@fortawesome/free-brands-svg-icons';
+import { faPhone } from '@fortawesome/free-solid-svg-icons';
 import Slider from 'react-slick';
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
@@ -31,13 +32,19 @@ const Footer = () => {
                     <div>
                         <a href="https://www.instagram.com/PARKINSONEX" target="_blank" rel="noopener noreferrer">
                             <FontAwesomeIcon icon={faInstagramSquare} style={{ color: '#ffff' }} size="2x" />
-                            <span>@PARKINSONEX</span>
+                            <span> @PARKINSONEX</span>
                         </a>
                     </div>
                     <div>
                         <a href="https://www.facebook.com/AsociaciónRegionalParkinsonExtremadura" target="_blank" rel="noopener noreferrer">
                             <FontAwesomeIcon icon={faFacebookSquare} style={{ color: '#ffff' }} size="2x" />
-                            <span>Asociación Regional Parkinson Extremadura</span>
+                            <span> Asociación Regional Parkinson Extremadura</span>
+                        </a>
+                    </div>
+                    <div>
+                       <a href="tel:Asociación de parkinson">
+                             <FontAwesomeIcon icon={faPhone} style={{ color: '#ffff' }} size="2x" />
+                             <span> +34 620 76 64 69</span>
                         </a>
                     </div>
                 </section>

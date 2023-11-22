@@ -20,13 +20,16 @@
 .titleHelpSer{
     line-height: 1.8;
     margin-left: 2%;
+    padding-left: 55px;
+    margin-bottom: 45px;
 }
 
 .helpSer{
     font-size: 35px;
     color: #067787;
     text-align: left;
-    padding: 4%;
+    padding: 2%;
+    margin-left:6%;
    
 }
 
@@ -86,4 +89,11 @@
 .Vibehelp svg {
     width: 100%;
     height: auto;
+}
+.image-container{
+    background-color: #ec750e;
+    width: 100%;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    
 }
