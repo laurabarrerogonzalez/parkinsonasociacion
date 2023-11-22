@@ -71,7 +71,7 @@ const Daycarecenter = () => {
         />
         <img
           src="https://res.cloudinary.com/doft9ylq1/image/upload/v1699005153/e96e5008-5541-4c4c-b02c-140d8e7a1183_jwxyis.jpg"
-          alt=""
+          alt="Personas desarrollando actividad"
           className="activity-imageCD2"
         />
         <img

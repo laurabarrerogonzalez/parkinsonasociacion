@@ -80,7 +80,7 @@ const Proyects = () => {
     <>
       <Navbar />
       <BannerViews
-        image="https://res.cloudinary.com/doft9ylq1/image/upload/v1699436663/20210810_120627_1_tg9wyh.jpg"
+        image="https://res.cloudinary.com/doft9ylq1/image/upload/v1700477762/vista-lateral-manos-pegadas-post-it-amarillo_mhiptp.jpg"
         title="PROYECTOS"
       />
       <div className="boxPr1">
