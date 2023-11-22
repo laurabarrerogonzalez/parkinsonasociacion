@@ -195,11 +195,11 @@ const Donations = () => {
               <div className="Dinero50">
                 <div className="Dar">
                   <img className="imagendar" src="https://res.cloudinary.com/da7ffijqs/image/upload/v1699569831/_67196110-95c8-423b-9512-9d65a74337ef-modified_v7r5ok.png" alt="" />
-                  <p>Enviar</p>
+                  <p className="Enviar12">Enviar</p>
                 </div>
                 <div className="Recibir">
                   <img className="imagenrecibir" src="https://res.cloudinary.com/da7ffijqs/image/upload/v1699570477/_32c949e8-2ccf-4db2-8c35-b58d4afbaba6-modified_qxark5.png" alt="" />
-                  <p>Recibir</p>
+                  <p className="Recibir12">Recibir</p>
                 </div>
               </div>
               <div className="destinatario">

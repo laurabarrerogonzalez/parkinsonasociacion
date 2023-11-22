@@ -243,6 +243,10 @@
   transition: all 1s ease;
   color: antiquewhite;
 }
+.responsive12{
+  margin-left: 0%;
+  margin-top: -0.5%;
+}
 .cardS12::before {
   content: "";
   width: 20px;
@@ -284,6 +288,14 @@
 .imagendar{
   margin-top: 4%;
   width: 55%;
+}
+.Enviar12{
+  margin-left: 1%;
+  margin-top: -1%;
+}
+.Recibir12{
+  margin-left: 1%;
+  margin-top: -1%;
 }
 .Recibir{ 
   width: 30%;
@@ -403,4 +415,4 @@
   .responsive12{
     margin-top: -1%;
   }
-}
+} 
