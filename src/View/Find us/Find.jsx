@@ -56,7 +56,7 @@ const Find = () => {
             />
           </a>
         </div>
-        <div className="triangleF"></div>
+        <div className="triangleF2525"></div>
       </div>
       <div className="lower-band">
         <div className="lower-left-side">

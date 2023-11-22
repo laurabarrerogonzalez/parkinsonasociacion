@@ -78,7 +78,7 @@ const Daycarecenter = () => {
         />
         <img
           src="https://res.cloudinary.com/doft9ylq1/image/upload/v1699005153/e96e5008-5541-4c4c-b02c-140d8e7a1183_jwxyis.jpg"
-          alt=""
+          alt="Personas desarrollando actividad"
           className="activity-imageCD2"
         />
         <img
@@ -139,6 +139,15 @@ const Daycarecenter = () => {
             (Estimulación sensorial)
           </ul>
         </div>
+      </div>
+      <div className="video-container">
+        <video controls width="100%" height="auto">
+          <source
+            src="https://res.cloudinary.com/doft9ylq1/video/upload/v1700641777/V%C3%ADdeo_sin_t%C3%ADtulo_Hecho_con_Clipchamp_dfvw5q.mp4" // Reemplaza "URL_DEL_VIDEO" con la URL real del video
+            type="video/mp4"
+          />
+          Tu navegador no soporta el tag de video.
+        </video>
       </div>
       <Footer />
     </>
