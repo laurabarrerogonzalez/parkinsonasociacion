@@ -1,6 +1,5 @@
-/* Estilos para las noticias */
-
 .form-newsadmin{
+  margin-left: 15%;
   margin-bottom: 5%;
 }
 
@@ -11,14 +10,13 @@ margin-top: 10%;
 
 .news-container {
   display: grid;
-  grid-template-columns: repeat(4, 1fr); /* Cuatro columnas por fila */
-  gap: 20px; /* Espacio entre elementos */
+  grid-template-columns: repeat(4, 1fr); 
+  gap: 20px; 
 }
 
 
 .news-item {
     margin-bottom: 20px;
-    /* border: 1px solid #ccc; */
     padding: 10px;
     display: flex;
     flex-direction: column;
@@ -26,15 +24,11 @@ margin-top: 10%;
   }
   
   .thumbnail {
-    /* display: flex; */
-    /* flex-direction: ; */
     width: 300px;
     height: 200px;
     object-fit: cover;
   }
-
-  
-  
+ 
   .titlea {
     font-size: 20px;
     margin-top: 10px;
@@ -45,4 +39,122 @@ margin-top: 10%;
     text-decoration: none;
     color: blue;
   }
+
+.labelnews{
+  margin-right: 10px;
+}
+
+  .button-addnews {
+    margin-left: 10px;
+    margin-bottom: 10px;
+    border: none;
+    padding: 10px 20px;
+    background-color: #3498db;
+    color: white;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s, background-color 0.3s, color 0.3s;
+    font-family: 'Arial', sans-serif;
+  }
   
+  .button-addnews:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+    background-color: #4fd10e;
+  }
+  
+  .button-addnews:active {
+    transform: scale(0.95);
+  }
+  
+
+  .buton-deletenews{
+    margin-bottom: 10px;
+    border: none;
+    padding: 10px 20px;
+    background-color: #db3434 !important;
+    color: white !important;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s, background-color 0.3s, color 0.3s;
+    font-family: 'Arial', sans-serif;
+  }
+
+  .buton-deletenews:hover {
+    background-color: #db3434 !important;
+    color: white !important;
+    /* Otros estilos hover si los hubiera */
+  }
+
+  .buton-editnews{
+    margin-bottom: 10px;
+    border: none;
+    padding: 10px 20px;
+    background-color: #34b1db !important;
+    color: white !important;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s, background-color 0.3s, color 0.3s;
+    font-family: 'Arial', sans-serif;
+  }
+
+  
+  
+  .buton-editnews:hover {
+    background-color: #34b1db  !important;
+    color: white !important;
+  }
+  
+
+
+  @media screen and (max-width: 700px) {
+    /* Estilos para pantallas de 700px o menos */
+    .form-newsadmin {
+      margin-top: 30%;
+      margin-left: 5%;
+      margin-bottom: 3%;
+    }
+  
+    .newsadmin {
+      margin-top: 8%;
+    }
+  
+    .news-container {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  
+    .thumbnail {
+      width: 100%;
+      height: auto;
+    }
+
+    .form-newsadmin label {
+      width: 100%; 
+      margin-top: 2%;
+    }
+
+
+    .form-newsadmin form {
+      display: flex;
+      flex-direction: column;
+    }
+    .button-addnews{
+      width: 50%;
+      margin-top: 10px;
+      margin-left: 70px;
+    }
+
+    .inputlink{
+      margin-left: 10px;
+    }
+
+    .inputtitle{
+      margin-left: 15px;
+    }
+
+    .inputurl{
+      margin-left: 5px;
+    }
+  
+    
+  }

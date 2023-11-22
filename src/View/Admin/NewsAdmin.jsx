@@ -98,31 +98,31 @@ const NewsAdmin = () => {
       <div className="newsadmin">
         <div className="form-newsadmin">
           <form onSubmit={handleSubmit}>
-            <label>
+            <label className="labelnews">
               Enlace de la noticia:
-              <input
+              <input className="inputlink"
                 type="text"
                 value={link}
                 onChange={(e) => setLink(e.target.value)}
               />
             </label>
-            <label>
+            <label className="labelnews">
               Título de la noticia:
-              <input
+              <input className="inputtitle"
                 type="text"
                 value={title}
                 onChange={(e) => setTitle(e.target.value)}
               />
             </label>
-            <label>
+            <label className="labelnews">
               URL de la miniatura:
-              <input
+              <input className="inputurl"
                 type="text"
                 value={thumbnail}
                 onChange={(e) => setThumbnail(e.target.value)}
               />
             </label>
-            <button type="submit">Agregar Noticia</button>
+            <button className="button-addnews" type="submit">Agregar Noticia</button>
           </form>
         </div>
 
@@ -137,10 +137,10 @@ const NewsAdmin = () => {
                 />
               </a>
               <h3 className="titlea">{news.title}</h3>
-              <button onClick={() => handleDelete(news.id_News)}>
+              <button className="buton-deletenews" onClick={() => handleDelete(news.id_News)}>
                 Eliminar
               </button>
-              <button onClick={() => openModal(news)}>Editar</button>
+              <button className="buton-editnews" onClick={() => openModal(news)}>Editar</button>
             </div>
           ))}
         </div>
