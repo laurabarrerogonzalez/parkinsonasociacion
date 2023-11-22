@@ -1,13 +1,12 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
-import './index.css';
-import Navbar from './Components/Navbar/Navbar';
+import './index.css'; 
 import Aboutus from './View/About us/Aboutus';
 import Home from './View/Home/Home';
 import Symptoms from './View/Parkinson/Symptoms';
 import Evolution from './View/Parkinson/Evolution';
-// import Resources from './View/Parkinson/Resources';
+import Resources from './View/Parkinson/Resources';
 import Myths from './View/Parkinson/Myths';
 import Daycarecenter from './View/Services_/Daycarecenter';
 import Revitalization from './View/Services_/Revitalization';
@@ -41,7 +40,7 @@ ReactDOM.createRoot(document.getElementById('root')).render(
         <Route path="/aboutus" element={<Aboutus />} />
         <Route path="/symptoms" element={<Symptoms />} />
         <Route path="/evolution" element={<Evolution />} />
-        {/* <Route path="/resources" element={<Resources />} /> */}
+        <Route path="/resources" element={<Resources />} />
         <Route path="/myths" element={<Myths />} />
         <Route path="/daycarecenter" element={<Daycarecenter />} />
         <Route path="/revitalization" element={<Revitalization />} />
