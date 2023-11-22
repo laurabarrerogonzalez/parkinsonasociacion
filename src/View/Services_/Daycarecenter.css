@@ -1,7 +1,8 @@
 .boxDC1 {
   background-color: #EC750E;
   padding: 20px;
-  color: #033239;
+  color: #ffffff;
+  padding-bottom: 85px;
 }
 
 .boxDC2 {
@@ -11,14 +12,14 @@
 }
 
 .title-Centro_dia h1 {
-  font-size: 35px;
-  color: #033239;
+  font-size: 38px;
+  color: #ffffff;
   text-align: center;
   padding: 2%;
 }
 
 .text_DC p {
-  font-size: 18px;
+  font-size: 21px;
   line-height: 1.5;
 }
 
@@ -44,7 +45,7 @@
 .activity-imageCD1 {
 
   position: absolute;
-  top:900px;
+  top:1000px;
   border-radius: 100%; 
   width: 200px; 
   height: 200px;
@@ -57,7 +58,7 @@
 
 .activity-imageCD2 {
   position: absolute;
-  top:900px;
+  top:1000px;
   border-radius:100%;
   border-color: #38929F;
   border-style:groove;
@@ -70,7 +71,7 @@
 
 .activity-imageCD3{
   position: absolute;
-  top:900px;
+  top:1000px;
   border-radius:100%;
   border-color: #38929F;
   border-style:groove;
@@ -83,7 +84,7 @@
 
 .activity-imageCD4{
   position: absolute;
-  top:900px;
+  top:1000px;
   border-radius:100%;
   border-color: #38929F;
   border-style:groove;
@@ -136,11 +137,11 @@
 .activity-imageCD5 {
 
   position: absolute;
-  top:1250px;
+  top:1350px;
   border-radius: 100%; 
   width: 200px; 
   height: 200px;
-  margin-right:500px; 
+  margin-right:450px; 
   margin-top: -2%;
   object-fit:cover;
   border-color: #38929F;
@@ -149,39 +150,39 @@
 
 .activity-imageCD6 {
   position: absolute;
-  top:1250px;
+  top:1350px;
   border-radius:100%;
   border-color: #38929F;
   border-style:groove;
   width: 200px;
   height: 200px;
-  margin-right: 20px;
+  margin-right:0px;
   margin-top: -2%;
   object-fit:cover;
 }
 
 .activity-imageCD7{
   position: absolute;
-  top:1250px;
+  top:1350px;
   border-radius:100%;
   border-color: #38929F;
   border-style:groove;
   width: 200px;
   height: 200px;
-  margin-left:450px;
+  margin-left:465px;
   margin-top: -2%;
   object-fit:cover;
 }
 
 .activity-imageCD8{
   position: absolute;
-  top:1250px;
+  top:1350px;
   border-radius:100%;
   border-color: #38929F;
   border-style:groove;
   width: 200px;
   height: 200px;
-  margin-left:900px; 
+  margin-left:930px; 
   margin-top: -2%;
   object-fit:cover;
 }
@@ -198,7 +199,16 @@ transform: scale(1.3);
 transition: transform 0.3s;
 }
 
+.titlevideo {  
+  font-size: 18px;
+  line-height: 1.5;
+  text-align:center ;
+  color: #065662;
+  padding-bottom: 80px;
+  padding-top: 80px;
 
+
+}
 
 @media (max-width: 768px) {
 .boxDC1,
