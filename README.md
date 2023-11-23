@@ -8,7 +8,7 @@
 
 The objective of this educational project is the creation of an informative blog for the Extremadura Parkinson Regional Association. We have been tasked with creating a website from scratch to provide information about this disease and any related issues. In addition to the informative section, we also provide users with references to our day care center, rehabilitation, stimulation, and home assistance. Likewise, we want to be available to all users who require it, and for this purpose, they will have the option to fill out a form/request to become a part of this association and be informed of any updates to our website.
 
-## Screenshots Desktop (Coming soon) 💻
+## Screenshots Desktop 💻
 
 <img src="image/Front1.png" width="auto" height="200">
 <img src="image/Front2.png" width="auto" height="200">
@@ -19,9 +19,11 @@ The objective of this educational project is the creation of an informative blog
 <img src="image/DiagramaFlujo.png" width="auto" height="200">
 
 
-## Screenshots Responsive Mobile (Coming soon) 📱
+## Screenshots Responsive Mobile  📱
 
-<img src="" width="auto" height="150">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="" width="auto" height="150">
+<img src="image/Responsive1.png" width="auto" height="150">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="image/Responsive2.png" width="auto" height="150">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="image/Responsive3.png" width="auto" height="150">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="image/Responsive4.png" width="auto" height="150">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="image/Responsive5.png" width="auto" height="150">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="image/Responsive6.png" width="auto" height="150">
+
+
 
 ## Stacks 🖥️
 ● Visual Studio Code <br>
