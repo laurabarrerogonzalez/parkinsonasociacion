@@ -6,7 +6,11 @@
 
 ## Project Description 🚀
 
-The objective of this educational project is the creation of an informative blog for the Extremadura Parkinson Regional Association. We have been tasked with creating a website from scratch to provide information about this disease and any related issues. In addition to the informative section, we also provide users with references to our day care center, rehabilitation, stimulation, and home assistance. Likewise, we want to be available to all users who require it, and for this purpose, they will have the option to fill out a form/request to become a part of this association and be informed of any updates to our website.
+This educational project aims to create an informative blog dedicated to the Parkinson Extremadura Regional Association. From scratch, we have developed a website providing detailed information about Parkinson's disease and related topics, not only focusing on the illness itself but also highlighting all the activities and services offered by the association to the general public.
+
+In addition to the informative section, we have developed different views for detailed services, including rehabilitation programs, cognitive stimulation, and home assistance services. Striving to be of service to all interested users, we have incorporated a form/application to facilitate participation, allowing them to join the association and receive regular updates from our website.
+
+Our mission is to provide an accessible and valuable platform for those affected by Parkinson's and their families. We are committed to sharing valuable information, resources, and support, thereby creating an informed and supportive community around this disease. Welcome to our online community!
 
 ## Screenshots Desktop 💻
 
