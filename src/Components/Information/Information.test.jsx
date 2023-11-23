@@ -7,7 +7,6 @@ describe("Information", () => {
   it("renders Information and checks if elements are in the document", () => {
     render(<Information />);
 
-    // Check if the elements are in the document
     const badajozTitle = screen.getByText("Badajoz");
     expect(badajozTitle).toBeInTheDocument();
 

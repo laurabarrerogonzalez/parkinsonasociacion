@@ -130,7 +130,7 @@
     rgb(255, 132, 0),
     rgb(255, 132, 0),
     red
-  ); /* Puedes ajustar los colores según tus preferencias */
+  );
   position: absolute;
   z-index: 2;
   border-radius: 50px;
