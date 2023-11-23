@@ -44,7 +44,7 @@ const Proyects = () => {
 
   const cambiarInformacion2 = () => {
     setCardInfo2({
-      title: "ACTIVIDADES",
+      title: "Actividades",
       description: (
         <>
           <p>Lorem ipsum dolor sit amet consectetur adipiscing, elit placerat condimentum ultrices proin dignissim, maecenas libero ac mus augue, nascetur mattis netus sem dictumst. <br></br> </p>

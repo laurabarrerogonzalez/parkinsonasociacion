@@ -1,3 +1,21 @@
+@font-face {
+  font-family: 'MiFuentePersonalizada';
+  src: url('../../Fonts/Bevan-Regular.ttf') format('truetype');
+  /* Agrega más formatos y rutas para soporte de navegadores diferentes */
+}
+
+@font-face {
+  font-family: 'Gotham Black';
+  src: url('../../Fonts/1830-font.otf') format('truetype');
+  /* Agrega más formatos y rutas para soporte de navegadores diferentes */
+}
+
+@font-face {
+  font-family: 'Poppins';
+  src: url('../../Fonts/Poppins-Regular.ttf') format('truetype');
+  /* Agrega más formatos y rutas para soporte de navegadores diferentes */
+}
+
 .Carta0{
   display: flex;
   margin-top: 2%;
@@ -13,6 +31,28 @@
   transition: 0.5s;
   cursor: pointer;
 }
+
+.content{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: start
+
+}
+.content h1{
+
+font-family:'Gotham Black';
+font-size: 22px;
+width: 100%;
+}
+
+.content p{
+
+  font-family: 'Poppins';
+  font-size: 15px;
+  width: 90%;
+  text-align: start;
+  }
 
 .cards1:hover {
   transform: translateY(-20px);
@@ -173,6 +213,18 @@
 .Text23{
   width: 65%;
   text-align: center;
+}
+
+.Text23 h2{
+  font-family: 'Gotham Black';
+  color: black;
+  font-size: 30px;
+}
+
+.Text23 p{
+  font-family:'Poppins';
+  color: black;
+  font-size: 16px;
 }
 
 .form12 {
