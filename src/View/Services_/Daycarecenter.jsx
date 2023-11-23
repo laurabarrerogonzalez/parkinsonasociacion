@@ -144,10 +144,10 @@ const Daycarecenter = () => {
         </div>
       </div>
       <div className="video-container">
-      <div className="titlevideo">
+        <div className="titlevideo">
           <h1>CONOCE NUESTRO CENTRO DE DÍA</h1>
         </div>
-        <video controls width="100%" height="auto">
+        <video className="video-daycare" controls width="100%" height="auto">
           <source
             src="https://res.cloudinary.com/doft9ylq1/video/upload/v1700641777/V%C3%ADdeo_sin_t%C3%ADtulo_Hecho_con_Clipchamp_dfvw5q.mp4" // Reemplaza "URL_DEL_VIDEO" con la URL real del video
             type="video/mp4"
