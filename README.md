@@ -6,9 +6,8 @@
 
 ## Project Description 🚀
 
-This educational project has the ambitious goal of establishing an informative blog dedicated to the Parkinson Extremadura Regional Association. From the ground up, in our ongoing quest to make a positive impact on the lives of those facing Parkinson's, we are delighted to introduce the digital platform of the "Parkinson Extremadura Regional Association." With a patient-centered focus, our website provides an informative, inclusive, and supportive experience for everyone.
+This educational project has the ambitious goal of establishing an informative blog dedicated to the Parkinson Extremadura Regional Association. From the ground up, in our ongoing quest to make a positive impact on the lives of those facing Parkinson's, we are delighted to introduce the digital platform of the "Parkinson Extremadura Regional Association." With a patient-centered focus, our website provides an informative, inclusive, and supportive experience for everyone. Here is the content of our website:
 
-Explore and Discover:
 - Latest News: Stay updated with the latest developments and breakthroughs related to Parkinson's, offering a reliable source of information for patients, families, and healthcare professionals.
 - Become a Member or Volunteer: Join our dedicated community to make a difference in the lives of those living with Parkinson's. Discover how you can contribute and be part of meaningful initiatives.
 - Work With Us: Explore employment and volunteer opportunities, contributing to the growth and success of our association. Your dedication and skills can make a difference.
@@ -121,9 +120,13 @@ Our mission is to provide an accessible and useful platform for those affected b
 5. Once the component installations are complete, in a new terminal, run **npm run dev**. Open the **localhost**: that appears.
 
 
-## Next Steps (Coming soon) 🔜
+## Next Steps 🔜
 
+On our exciting journey towards the future of Frontend development, crucial steps await that will elevate the quality and performance of our website. First, we'll dive into a rigorous testing process to ensure that every corner of our online space functions seamlessly across different browsers and devices. We'll ensure not only functionality but also the proper reception of data through our forms.
 
+But that's not all. Performance optimization is our next stop! We're going to polish every detail so that our site loads like lightning, providing a swift and efficient experience for our visitors. This journey will include the magic of compression, where we'll shrink the size of images and static files to speed up loading times and keep everyone immersed in high-quality content.
+
+And we don't stop there. We'll delve into the world of styles, refining and perfecting our CSS to achieve a visual presentation that is not only attractive but ensures an exceptional user experience. We are committed to excellence in every detail, and these steps will take us to new horizons of design and functionality. Get ready for the evolution of our website!
 
 ## Authors 👨‍💻👩‍💻
 
