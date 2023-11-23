@@ -393,9 +393,8 @@ const Members = () => {
               }
             />
             <div
-              className={`checkmark ${
-                formsData.termsAccepted ? "checked" : ""
-              }`}
+              className={`checkmark ${formsData.termsAccepted ? "checked" : ""
+                }`}
             ></div>
             <div className="Terminos">
               <TermsAndConditions />
