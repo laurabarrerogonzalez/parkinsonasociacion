@@ -85,8 +85,7 @@ The objective of this educational project is the creation of an informative blog
 ## Tests ☑️
 
 <a href="https://vitest.dev/" target="_blank"><img style="margin: 10px" src="image/vitest.png" alt="Vitest" height="50" /></a>
-<a href="https://jestjs.io/" target="_blank"><img style="margin: 10px" src="image/Jest.jpg" alt="Jest" height="50" /></a>
-<a href="https://testing-library.com/" target="_blank"><img style="margin: 5px" src="image/Testinglibrary.png" alt="Testing Library" height="70" /></a>
+<a href="https://testing-library.com/" target="_blank"><img style="margin: 5px" src="image/Testinglibrary.png" alt="Testing Library" height="50" /></a>
 
 ## Test Screenshot (Coming soon) ✔️
  Once the component installations are complete, in a new terminal, run **npm test**.
