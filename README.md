@@ -66,8 +66,8 @@ The objective of this educational project is the creation of an informative blog
 
 
 ## Tech Stack 🛠️
-<a href="https://axios-http.com/ " target="_blank"><img style="margin: 10px" src="image/Axios.png" alt="Axios" height="50" /></a>
-<a href="https://nodejs.org/" target="_blank"><img style="margin: 10px" src="image/Node.js.png" alt="Node Js" height="50" /></a>
+<a href="https://axios-http.com/ " target="_blank"><img style="margin: 10px" src="image/Axios.png" alt="Axios" height="30" /></a>
+<a href="https://nodejs.org/" target="_blank"><img style="margin: 10px" src="image/Node.js.png" alt="Node Js" height="30" /></a>
 <a href="https://www.w3schools.com/js/js_json_server.asp" target="_blank"><img style="margin: 10px" src="image/Json.jpg" alt="Json Sever" height="50" /></a>
 
 ## Methodology 📚
