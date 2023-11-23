@@ -8,14 +8,21 @@
 }
 
 @font-face {
-  font-family: "Lexend";
-  src: url("../../Fonts/LexendMega-VariableFont_wght.ttf") format("truetype");
+  font-family: 'MiFuentePersonalizada';
+  src: url('../../Fonts/Bevan-Regular.ttf') format('truetype');
+  /* Agrega más formatos y rutas para soporte de navegadores diferentes */
+}
+
+
+@font-face {
+  font-family: 'Gotham Black';
+  src: url('../../Fonts/1830-font.otf') format('truetype');
   /* Agrega más formatos y rutas para soporte de navegadores diferentes */
 }
 
 @font-face {
-  font-family: "stint";
-  src: url("../../Fonts/StintUltraExpanded-Regular.ttf") format("truetype");
+  font-family: 'Poppins';
+  src: url('../../Fonts/Poppins-Regular.ttf') format('truetype');
   /* Agrega más formatos y rutas para soporte de navegadores diferentes */
 }
 .title_person_asociation {
@@ -26,18 +33,18 @@
 }
 @media (max-width: 768px) {
   .title_person_asociation {
-    margin-bottom: 70px;
+    margin-bottom: 150px;
   }
 }
 
 .title_person_asociation p .fuente_one {
   font-size: 35px;
-  font-family: "Lexend";
+  font-family: 'Gotham Black';
 }
 
 .title_person_asociation p .fuente_two {
-  font-size: 40px;
-  font-family: "stint";
+  font-size: 45px;
+  font-family: 'MiFuentePersonalizada';
   font-weight: bold;
   color: #ec750e;
 }
@@ -52,8 +59,8 @@
 }
 .text_person_asociation p {
   width: 90%;
-  font-family: "Lexend";
-  font-size: 15px;
+  font-family: 'Poppins';
+  font-size: 18px;
 }
 @media (max-width: 768px) {
   .text_person_asociation {
@@ -74,6 +81,7 @@
 @media (max-width: 768px) {
   .video_person_asociation {
     width: 100%;
+    margin-top: 100px;
   }
 }
 
@@ -101,11 +109,19 @@
   height: 85px;
   text-align: center;
   margin-top: 20px;
+  
+}
+
+@media (max-width: 768px) {
+  .title_form_asociation {
+    margin-bottom: 50px;
+    
+  }
 }
 
 .title_form_asociation p .fuente_one {
   font-size: 35px;
-  font-family: "Lexend";
+  font-family: 'Gotham Black';
 }
 
 .title_form_asociation p .fuente_two {
@@ -113,6 +129,7 @@
   font-family: "stint";
   font-weight: bold;
   color: #ec750e;
+  font-family: 'MiFuentePersonalizada';
 }
 .text_form_asociation {
   width: 100%;
@@ -121,10 +138,13 @@
 }
 .text_form_asociation p {
   margin-left: 50px;
-  font-family: "Lexend";
-  font-size: 15px;
+  font-family: 'Poppins';
+  font-size: 18px;
 }
 @media (max-width: 768px) {
+  .text_form_asociation{
+    margin-bottom: 50px;
+  }
   .text_form_asociation p {
     font-size: 18px;
     margin-left: 20px;
@@ -155,26 +175,15 @@
 .img_form {
   width: 55%;
   height: auto;
-
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
   margin-left: 50px;
+  
 }
-@media (max-width: 768px) {
-  .img_form {
-    margin-top: 20px;
-  }
-  .img_form_work {
-    width: 100%;
-  }
-  .img_form_people {
-    width: 100%;
-    height: 100%;
-  }
-}
+
 .img_form_work {
   width: 49%;
   height: 310px;
@@ -183,6 +192,24 @@
 .img_form_work img {
   width: 100%;
   object-fit: cover;
+}
+
+@media (max-width: 768px) {
+  .img_form {
+    margin-top: 20px;
+    width: 100%;
+    height: auto;
+  }
+  .img_form_work {
+    width: 90%;
+  
+    height: auto;
+    
+  }
+  .img_form_people {
+    width: 100%;
+    height: auto;
+  }
 }
 .form {
   display: flex;
