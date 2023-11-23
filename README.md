@@ -10,6 +10,7 @@ The objective of this educational project is the creation of an informative blog
 
 ## Screenshots Desktop (Coming soon) 💻
 
+<img src="image/DiagramaFlujo.png" width="auto" height="200">
 <img src="" width="auto" height="200">
 
 ## Screenshots Responsive Mobile (Coming soon) 📱
