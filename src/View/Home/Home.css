@@ -113,7 +113,9 @@
   justify-content: center;
   height: auto;
   opacity: 0;
+
   transform: translateY(20px);
+
   transition: opacity 1.5s ease, transform 1.5s ease;
 }
 

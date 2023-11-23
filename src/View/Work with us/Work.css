@@ -8,13 +8,22 @@
 }
 
 @font-face {
-  font-family: "Lexend";
-  src: url("../../Fonts/LexendMega-VariableFont_wght.ttf") format("truetype");
+  font-family: 'MiFuentePersonalizada';
+  src: url('../../Fonts/Bevan-Regular.ttf') format('truetype');
+
+}
+
+
+@font-face {
+  font-family: 'Gotham Black';
+  src: url('../../Fonts/1830-font.otf') format('truetype');
+  
 }
 
 @font-face {
-  font-family: "stint";
-  src: url("../../Fonts/StintUltraExpanded-Regular.ttf") format("truetype");
+  font-family: 'Poppins';
+  src: url('../../Fonts/Poppins-Regular.ttf') format('truetype');
+  
 }
 
 .title_person_asociation {
@@ -81,7 +90,8 @@
   max-width: 100%;
   height: auto;
   display: block;
-  box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.5);
+  box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.5); 
+
 }
 
 .line_work {
@@ -288,7 +298,7 @@
 }
 
 .protect_dates {
-  color: #ffffff;
+  color: #ffffff; 
   position: absolute;
   left: 10px;
   top: 0px;

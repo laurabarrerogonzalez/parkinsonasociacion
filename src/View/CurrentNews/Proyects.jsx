@@ -3,6 +3,7 @@ import Navbar from "../../Components/Navbar/Navbar";
 import BannerViews from "../../Components/BannerViews/BannerViews";
 import Footer from "../../Components/Footer/Footer";
 import "./Proyects.css";
+
 const Proyects = () => {
   const [cardInfo1, setCardInfo1] = useState({
     title: "Imagen Fiel",

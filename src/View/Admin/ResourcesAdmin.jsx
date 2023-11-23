@@ -82,6 +82,8 @@ const ResourcesAdmin = () => {
       await axios.delete(
         `https://localhost:7165/ResourcesControllers/DeleteResources?name=${name}`
       );
+  
+     
       fetchResources();
 
       swal.fire({

@@ -1,7 +1,42 @@
 @font-face {
-  font-family: "MiFuentePersonalizada";
-  src: url("../../Fonts/Bevan-Regular.ttf") format("truetype");
-  /* Agrega más formatos y rutas para soporte de navegadores diferentes */
+    font-family: 'MiFuentePersonalizada';
+    src: url('../../Fonts/Bevan-Regular.ttf') format('truetype');
+    
+  }
+ 
+  
+  @font-face {
+    font-family: 'Gotham Black';
+    src: url('../../Fonts/1830-font.otf') format('truetype');
+    
+  }
+  
+  @font-face {
+    font-family: 'Poppins';
+    src: url('../../Fonts/Poppins-Regular.ttf') format('truetype');
+  
+  }
+
+.help{
+    font-size: 35px;
+    color: #ec750e;
+    text-align: left;
+    padding: 2%;
+    font-family: 'Gotham Black';
+
+    
+}
+.containerhelp{
+    background-color: #033239;
+    padding: 85px;
+}
+.text-Help{
+    font-size: 18px;
+    color: #ffffff;
+    margin-left: 2%;
+    line-height: 1.5;
+    font-family: 'Poppins';
+ 
 }
 
 @font-face {
