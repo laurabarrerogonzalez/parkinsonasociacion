@@ -10,8 +10,14 @@ The objective of this educational project is the creation of an informative blog
 
 ## Screenshots Desktop (Coming soon) 💻
 
+<img src="image/Front1.png" width="auto" height="200">
+<img src="image/Front2.png" width="auto" height="200">
+<img src="image/Front3.png" width="auto" height="200">
+<img src="image/Front4.png" width="auto" height="200">
+<img src="image/Front5.png" width="auto" height="200">
+<img src="image/Front6.png" width="auto" height="200">
 <img src="image/DiagramaFlujo.png" width="auto" height="200">
-<img src="" width="auto" height="200">
+
 
 ## Screenshots Responsive Mobile (Coming soon) 📱
 
