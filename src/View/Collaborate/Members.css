@@ -1,19 +1,19 @@
 @font-face {
-  font-family: "MiFuentePersonalizada";
-  src: url("../../Fonts/Bevan-Regular.ttf") format("truetype");
-  /* Agrega más formatos y rutas para soporte de navegadores diferentes */
+  font-family: 'MiFuentePersonalizada';
+  src: url('../../Fonts/Bevan-Regular.ttf') format('truetype');
+  
 }
 
 @font-face {
-  font-family: "Gotham Black";
-  src: url("../../Fonts/1830-font.otf") format("truetype");
-  /* Agrega más formatos y rutas para soporte de navegadores diferentes */
+  font-family: 'Gotham Black';
+  src: url('../../Fonts/1830-font.otf') format('truetype');
+ 
 }
 
 @font-face {
-  font-family: "Poppins";
-  src: url("../../Fonts/Poppins-Regular.ttf") format("truetype");
-  /* Agrega más formatos y rutas para soporte de navegadores diferentes */
+  font-family: 'Poppins';
+  src: url('../../Fonts/Poppins-Regular.ttf') format('truetype');
+
 }
 
 .Carta0 {

@@ -1,237 +1,273 @@
 @font-face {
-  font-family: 'MiFuentePersonalizada';
-  src: url('../../Fonts/Bevan-Regular.ttf') format('truetype');
+  font-family: "MiFuentePersonalizada";
+  src: url("../../Fonts/Bevan-Regular.ttf") format("truetype");
 }
 
 @font-face {
-  font-family: 'Gotham Black';
-  src: url('../../Fonts/1830-font.otf') format('truetype');
+  font-family: "Gotham Black";
+  src: url("../../Fonts/1830-font.otf") format("truetype");
 }
 
 @font-face {
-  font-family: 'Poppins';
-  src: url('../../Fonts/Poppins-Regular.ttf') format('truetype');
+  font-family: "Poppins";
+  src: url("../../Fonts/Poppins-Regular.ttf") format("truetype");
 }
 
-.buttoncard14{
-display: flex;
-justify-content: space-around;
-margin-top: 40px;
-margin-bottom: 3%;
+.buttoncard14 {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 40px;
+  margin-bottom: 3%;
 }
 
-
-.text-buttoncard{
+.text-buttoncard {
   margin-left: 10px;
   margin-top: -10px;
 }
 
-.cardt2, .cardt1, .cardt3, .cardt4{
-    width: 8em;
-    font-family: Montserrat;
-    height: 8em;
-    background: #c2a747;
-    box-shadow: inset -25px -25px 0px #bd9434, 10px 10px 10px rgba(0,0,0,0.2);
-    overflow: hidden;
-    border-radius: 50%;
-    transition: .4s ease-in-out;
+.cardt2,
+.cardt1,
+.cardt3,
+.cardt4 {
+  width: 8em;
+  font-family: Montserrat;
+  height: 8em;
+  background: #c2a747;
+  box-shadow: inset -25px -25px 0px #bd9434, 10px 10px 10px rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+  border-radius: 50%;
+  transition: 0.4s ease-in-out;
+}
+
+.cardt1:before,
+.cardt2:before,
+.cardt3:before,
+.cardt4:before {
+  position: relative;
+  text-align: center;
+  color: white;
+  border-radius: 50%;
+  top: 3.4em;
+  left: 0.85em;
+  font-weight: 600;
+}
+
+.cardt1:before {
+  content: "Tratamiento Farmacológico";
+}
+
+.cardt2:before {
+  content: "Tratamiento Quirúrgico";
+}
+
+.cardt3:before {
+  content: "Estimulación Cerebral";
+}
+
+.cardt4:before {
+  content: "Tratamiento No Farmacológico";
+}
+
+.cardt1 .heading02,
+.cardt2 .heading02,
+.cardt3 .heading02,
+.cardt4 .heading02 {
+  opacity: 0;
+  transition: 0.1s ease-in-out;
+}
+.cardt1 .heading02 span,
+.cardt2 .heading02 span,
+.cardt3 .heading02 span,
+.cardt4 .heading02 span {
+  transition: 0.4s ease-in-out;
+}
+.cardt1 .heading02:hover,
+.cardt2 .heading02:hover,
+.cardt3 .heading02:hover,
+.cardt4 .heading02:hover {
+  background: linear-gradient(
+    to right,
+    #fff 20%,
+    orange 40%,
+    yellow 60%,
+    rgb(223, 178, 79) 80%,
+    #ffe4f2 100%
+  );
+  background-size: 200% auto;
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: gradient_6346 5s linear infinite;
+  letter-spacing: 1px;
+  scale: 1.01;
+}
+@keyframes gradient_6346 {
+  to {
+    background-position: 200% center;
+  }
+}
+
+.cardt1 .content-buton,
+.cardt2 .content-buton,
+.cardt3 .content-buton,
+.cardt4 .content-buton {
+  opacity: 0;
+  transition: 0.1s ease-in-out;
+}
+
+.cardt1:hover,
+.cardt2:hover,
+.cardt3:hover,
+.cardt4:hover {
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  width: 26em;
+  height: 30em;
+  padding-top: 0.4em;
+  padding-bottom: 1.5em;
+  background-color: #171717;
+  border-radius: 20px;
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 2px,
+    rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -1px 0px inset;
+  background: linear-gradient(270deg, #d9ca68, #efc930, rgb(220, 192, 6));
+  background-size: 800% 800%;
+  -webkit-animation: AnimationName 3s ease infinite;
+  -moz-animation: AnimationName 3s ease infinite;
+  animation: AnimationName 3s ease infinite;
+  transition: 0.4s ease-in-out;
+}
+
+.cardt1:hover .heading02,
+.cardt2:hover .heading02,
+.cardt3:hover .heading02,
+.cardt4:hover .heading02 {
+  opacity: 1;
+  transition: 0.8s ease-in-out;
+}
+
+.cardt1:hover .content-buton,
+.cardt2:hover .content-buton,
+.cardt3:hover .content-buton,
+.cardt4:hover .content-buton {
+  opacity: 1;
+  transition: 0.8s ease-in-out;
+}
+
+.cardt1:hover::before,
+.cardt2:hover::before,
+.cardt3:hover::before,
+.cardt4:hover::before {
+  opacity: 0;
+}
+
+.TNF {
+  margin-top: 6px;
+}
+.heading02 {
+  display: flex;
+  flex-direction: column;
+  color: white;
+  font-size: 1em;
+  text-align: center;
+
+  font-weight: bold;
+  transition: 0.4s ease-in-out;
+}
+
+.content-buton {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  padding: 15px;
+}
+
+@keyframes AnimationName {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.item {
+  font-size: 0.8em;
+  margin: 0.5em;
+  padding: 0.8em;
+  display: flex;
+  color: white;
+  align-items: center;
+  justify-content: center;
+  gap: 0.8em;
+  border-radius: 15px;
+  transition: 0.4s ease-in-out;
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px,
+    rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+}
+
+.item:hover {
+  cursor: pointer;
+  scale: 0.9;
+  box-shadow: none;
+}
+
+.item:active {
+  cursor: pointer;
+  scale: 0.8;
+  box-shadow: inset 2px 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+.item--create {
+  padding-left: 2.5em;
+  padding-right: 2.5em;
+}
+
+.item--post {
+  padding-left: 3em;
+  padding-right: 3em;
+}
+
+.item--inspire {
+  padding-left: 2.5em;
+  padding-right: 2.5em;
+}
+
+@media screen and (max-width: 700px) {
+  .buttoncard14 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
   }
 
-  .cardt1:before, .cardt2:before, .cardt3:before, .cardt4:before {
-    position: relative;
-    text-align: center;
-    color: white;
-    border-radius: 50%;
-    top: 3.4em;
-    left: 0.85em;
-    font-weight: 600;
+  .cardt1,
+  .cardt2,
+  .cardt3,
+  .cardt4 {
+    width: 100%;
+    margin-bottom: 20px;
+    transition: all 0.3s ease;
   }
 
   .cardt1:before {
     content: "Tratamiento Farmacológico";
+    margin-left: 80px;
   }
-
   .cardt2:before {
     content: "Tratamiento Quirúrgico";
+    margin-left: 90px;
   }
-
   .cardt3:before {
     content: "Estimulación Cerebral";
+    margin-left: 100px;
   }
-
   .cardt4:before {
-    content: "Tratamiento No Farmacológico";
+    content: "Estimulación Cerebral";
+    margin-left: 100px;
   }
-
-  .cardt1 .heading02, .cardt2 .heading02,  .cardt3 .heading02, .cardt4 .heading02 {
-    opacity: 0;
-    transition: .1s ease-in-out;
-  }
-  .cardt1 .heading02 span, .cardt2 .heading02 span, .cardt3 .heading02 span, .cardt4 .heading02 span {
-    transition: .4s ease-in-out;
-  }
-  .cardt1 .heading02:hover, .cardt2 .heading02:hover, .cardt3 .heading02:hover, .cardt4 .heading02:hover {
-    background: linear-gradient(to right, #fff 20%,orange 40%,yellow 60%, rgb(223, 178, 79) 80%, #FFE4F2 100%);
-    background-size: 200% auto;
-    -webkit-background-clip: text;
-    background-clip: text;
-    -webkit-text-fill-color: transparent;
-    animation: gradient_6346 5s linear infinite;
-    letter-spacing: 1px;
-    scale: 1.01;
-  }
-  @keyframes gradient_6346 {
-    to {
-      background-position: 200% center;
-    }
-  }
-
-  .cardt1 .content-buton, .cardt2 .content-buton, .cardt3 .content-buton, .cardt4 .content-buton {
-    opacity: 0;
-    transition: .1s ease-in-out;
-  }
-
-  .cardt1:hover, .cardt2:hover, .cardt3:hover, .cardt4:hover {
-    cursor: pointer;
-    display: flex;
-    flex-direction: column;
-    width: 26em;
-    height: 30em;
-    padding-top: .4em;
-    padding-bottom: 1.5em;
-    background-color: #171717;
-    border-radius: 20px;
-    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 2px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -1px 0px inset;
-    background: linear-gradient(270deg, #d9ca68, #efc930, rgb(220, 192, 6));
-    background-size: 800% 800%;
-    -webkit-animation: AnimationName 3s ease infinite;
-    -moz-animation: AnimationName 3s ease infinite;
-    animation: AnimationName 3s ease infinite;
-    transition: .4s ease-in-out;
-  }
-
-  .cardt1:hover .heading02, .cardt2:hover .heading02, .cardt3:hover .heading02, .cardt4:hover .heading02 {
-    opacity: 1;
-    transition: .8s ease-in-out;
-  }
-
-  .cardt1:hover .content-buton, .cardt2:hover .content-buton, .cardt3:hover .content-buton,  .cardt4:hover .content-buton {
-    opacity: 1;
-    transition: .8s ease-in-out;
-  }
-
-  .cardt1:hover::before, .cardt2:hover::before, .cardt3:hover::before, .cardt4:hover::before {
-    opacity: 0;
-  }
-
-  .TNF{
-    margin-top: 6px;
-  }
-  .heading02 {
-    display: flex;
-    flex-direction: column;
-    color: white;
-    font-size: 1em;
-    text-align: center;
-    font-weight: bold;
-    transition: .4s ease-in-out;
-  }
-
-  .content-buton {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    padding: 15px;
-  }
-
-  @keyframes AnimationName {
-    0% {
-      background-position: 0% 50%
-    }
-    50% {
-      background-position: 100% 50%
-    }
-    100% {
-      background-position: 0% 50%
-    }
-  }
-
-  .item {
-    font-size: 0.8em;
-    margin: 0.5em;
-    padding: 0.8em;
-    display: flex;
-    color: white;
-    align-items: center;
-    justify-content: center;
-    gap: 0.8em;
-    border-radius: 15px;
-    transition: .4s ease-in-out;
-    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
-  }
-  
-  .item:hover {
-    cursor: pointer;
-    scale: 0.9;
-    box-shadow: none;
-  }
-
-  .item:active {
-    cursor: pointer;
-    scale: 0.8;
-    box-shadow: inset 2px 5px 10px rgba(0,0,0,0.2);
-  }
-
-  .item--create {
-    padding-left: 2.5em;
-    padding-right: 2.5em;
-  }
-
-  .item--post {
-    padding-left: 3em;
-    padding-right: 3em;
-  }
-
-  .item--inspire {
-    padding-left: 2.5em;
-    padding-right: 2.5em;
-  }
-
-
-  @media screen and (max-width: 700px) {
-    .buttoncard14 {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: space-between;
-    }
-  
-    .cardt1,
-    .cardt2,
-    .cardt3,
-    .cardt4 {
-      width: 100%; 
-      margin-bottom: 20px;
-      transition: all 0.3s ease;
-    }
-
-
-    .cardt1:before {
-      content: "Tratamiento Farmacológico";
-      margin-left: 80px;
-    }
-    .cardt2:before {
-      content: "Tratamiento Quirúrgico";
-      margin-left: 90px;
-    }
-    .cardt3:before {
-      content: "Estimulación Cerebral";
-      margin-left: 100px;
-    }
-    .cardt4:before {
-      content: "Estimulación Cerebral";
-      margin-left: 100px;
-    }
-
-  }
-  
+}

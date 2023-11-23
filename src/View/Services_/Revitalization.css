@@ -1,16 +1,19 @@
 @font-face {
-  font-family: "MiFuentePersonalizada";
-  src: url("../../Fonts/Bevan-Regular.ttf") format("truetype");
+    font-family: 'MiFuentePersonalizada';
+    src: url('../../Fonts/Bevan-Regular.ttf') format('truetype');
+    
 }
 
 @font-face {
-  font-family: "Gotham Black";
-  src: url("../../Fonts/1830-font.otf") format("truetype");
+    font-family: 'Gotham Black';
+    src: url('../../Fonts/1830-font.otf') format('truetype');
+    
 }
 
 @font-face {
-  font-family: "Lexend";
-  src: url("../../Fonts/LexendMega-VariableFont_wght.ttf") format("truetype");
+    font-family: 'Poppins';
+    src: url('../../Fonts/Poppins-Regular.ttf') format('truetype');
+
 }
 
 .title-revitalization h1 {
@@ -243,6 +246,16 @@
   object-fit: cover;
   border-color: #38929f;
   border-style: groove;
+
+
+
+
+    border-radius: 100%; 
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border-color: #38929F;
+    border-style: groove;
 }
 
 .revitaliz-image1 {
@@ -255,21 +268,25 @@
 }
 
 .revitaliz-image2 {
-  border-radius: 100%;
-  border-color: #38929f;
-  border-style: groove;
-  width: 200px;
-  height: 200px;
-  object-fit: initial;
+
+
+    border-radius: 100%;
+    border-color: #38929F;
+    border-style: groove;
+    width: 200px;
+    height: 200px;
+    object-fit: initial;
 }
 
 .revitaliz-image3 {
-  border-radius: 100%;
-  border-color: #38929f;
-  border-style: groove;
-  width: 200px;
-  height: 200px;
-  object-fit: cover;
+
+
+    border-radius: 100%;
+    border-color: #38929F;
+    border-style: groove;
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
 }
 
 @media (max-width: 768px) {

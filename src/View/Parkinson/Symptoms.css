@@ -54,19 +54,16 @@
 @font-face {
   font-family: "MiFuentePersonalizada";
   src: url("../../Fonts/Bevan-Regular.ttf") format("truetype");
-  /* Agrega más formatos y rutas para soporte de navegadores diferentes */
 }
 
 @font-face {
   font-family: "Gotham Black";
   src: url("../../Fonts/1830-font.otf") format("truetype");
-  /* Agrega más formatos y rutas para soporte de navegadores diferentes */
 }
 
 @font-face {
   font-family: "Poppins";
   src: url("../../Fonts/Poppins-Regular.ttf") format("truetype");
-  /* Agrega más formatos y rutas para soporte de navegadores diferentes */
 }
 
 .demoPage {
@@ -115,10 +112,9 @@
   margin-top: -20px;
 }
 .img-book {
-  width: 50%; /* Haz que la imagen sea del ancho completo del contenedor */
+  width: 50%;
 }
 
-/* Reducir el tamaño del flipbook */
 .Bodys {
   margin-top: 3%;
   padding: 0px;
@@ -133,17 +129,16 @@
 @media screen and (max-width: 700px) {
   .parkinson-what,
   .parkinson-si {
-    margin-left: 40px; /* Adjust margin for smaller screens */
+    margin-left: 10px;
   }
 
   .parkinson-h1,
   .parkinson-li {
-    font-size: 19px; /* Adjust font size for smaller screens */
+    font-size: 18px;
   }
 
   .parkinson-p {
-    font-size: 8px;
-    margin-left: 1%; /* Adjust font size for smaller screens */
+    font-size: 16px;
   }
 
   .img-book {
@@ -165,6 +160,8 @@
   }
 
   .Bodys > HTMLFlipBook {
-    max-width: 600px;
+    width: 90%;
+    max-width: 700px;
+    margin: 0 auto;
   }
 }

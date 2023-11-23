@@ -1,16 +1,19 @@
 @font-face {
-  font-family: "MiFuentePersonalizada";
-  src: url("../../Fonts/Bevan-Regular.ttf") format("truetype");
+  font-family: 'MiFuentePersonalizada';
+  src: url('../../Fonts/Bevan-Regular.ttf') format('truetype');
+ 
 }
 
 @font-face {
-  font-family: "Gotham Black";
-  src: url("../../Fonts/1830-font.otf") format("truetype");
+  font-family: 'Gotham Black';
+  src: url('../../Fonts/1830-font.otf') format('truetype');
+  
 }
 
 @font-face {
-  font-family: "Poppins";
-  src: url("../../Fonts/Poppins-Regular.ttf") format("truetype");
+  font-family: 'Poppins';
+  src: url('../../Fonts/Poppins-Regular.ttf') format('truetype');
+ 
 }
 
 .boxDC1 {

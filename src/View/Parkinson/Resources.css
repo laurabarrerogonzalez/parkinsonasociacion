@@ -40,7 +40,7 @@
 @media screen and (max-width: 700px) {
   .resources-container1111 {
     grid-template-columns: 1fr;
-    gap: 10px;
+    gap: 10px; 
   }
 
   .file-preview1113 {
