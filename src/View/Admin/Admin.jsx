@@ -190,7 +190,7 @@ const Admin = () => {
         {isLoggedIn ? (
           <>
             <AdminNavbar handleLogout={() => setLoggedIn(false)} />
-            <div className="Admistitle">
+            <div className="Admistitle12">
               <h1>Admin</h1>
               <br />
               <br />

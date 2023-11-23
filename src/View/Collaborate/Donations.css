@@ -64,7 +64,7 @@
   background-repeat: no-repeat;
   background-size: cover;
 }
-.BOXES{
+.BOXES {
   display: flex;
   padding: 3%;
 }
@@ -85,21 +85,21 @@
   border-radius: 0;
   box-shadow: 15px 15px 15px -2.5px #fff, 15px 15px 0 0 #000;
 }
-.Pago{
+.Pago {
   margin-left: 35%;
   margin-top: 5%;
 }
-.Pago1{
+.Pago1 {
   margin-left: 45%;
   margin-top: 5%;
 }
-.datos{
+.datos {
   width: 80%;
   margin-top: 5%;
   margin-left: 8%;
   text-align: center;
 }
-.datos1{
+.datos1 {
   width: 80%;
   margin-top: 5%;
   margin-left: 10%;
@@ -116,7 +116,7 @@
 }
 .heading_8264 {
   position: absolute;
-  letter-spacing: .2em;
+  letter-spacing: 0.2em;
   font-size: 0.5em;
   top: 2em;
   left: 18.6em;
@@ -139,7 +139,7 @@
 .number {
   position: absolute;
   font-weight: bold;
-  font-size: .6em;
+  font-size: 0.6em;
   top: 8.3em;
   left: 1.6em;
 }
@@ -147,7 +147,7 @@
   position: absolute;
   font-weight: bold;
   top: 635.8em;
-  font-size: .01em;
+  font-size: 0.01em;
   left: 140.3em;
 }
 .date_8264 {
@@ -184,7 +184,7 @@
   width: 8em;
   height: 0.8em;
   top: 5em;
-  left: .8em;
+  left: 0.8em;
   border-radius: 2.5px;
 }
 .sstrip {
@@ -199,7 +199,7 @@
 .code {
   font-weight: bold;
   text-align: center;
-  margin: .2em;
+  margin: 0.2em;
   color: black;
 }
 .flip-card-inner01 {
@@ -211,7 +211,7 @@
   transform-style: preserve-3d;
 }
 .flip-card-front01 {
-  box-shadow: 0 8px 14px 0 rgba(0,0,0,0.2);
+  box-shadow: 0 8px 14px 0 rgba(0, 0, 0, 0.2);
   position: absolute;
   display: flex;
   flex-direction: column;
@@ -223,7 +223,8 @@
   border-radius: 1rem;
 }
 .flip-card-front01 {
-  box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 2px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -1px 0px inset;
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 2px,
+    rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -1px 0px inset;
   background-color: #171717;
 }
 .cardS12 {
@@ -243,7 +244,7 @@
   transition: all 1s ease;
   color: antiquewhite;
 }
-.responsive12{
+.responsive12 {
   margin-left: 0%;
   margin-top: -0.5%;
 }
@@ -268,12 +269,12 @@
   font-size: 1em;
   margin-top: -15%;
 }
-.Dinero50{
+.Dinero50 {
   display: flex;
   flex-direction: row;
   margin-top: 10%;
 }
-.Dar{
+.Dar {
   width: 30%;
   height: 50px;
   border-radius: 5px;
@@ -285,19 +286,19 @@
   text-align: center;
   background-color: rgba(255, 255, 255, 0.826);
 }
-.imagendar{
+.imagendar {
   margin-top: 4%;
   width: 55%;
 }
-.Enviar12{
+.Enviar12 {
   margin-left: 1%;
   margin-top: -1%;
 }
-.Recibir12{
+.Recibir12 {
   margin-left: 1%;
   margin-top: -1%;
 }
-.Recibir{ 
+.Recibir {
   width: 30%;
   height: 50px;
   border-radius: 5px;
@@ -309,11 +310,11 @@
   text-align: center;
   background-color: rgba(255, 255, 255, 0.826);
 }
-.imagenrecibir{
+.imagenrecibir {
   margin-top: 4%;
   width: 65%;
 }
-.destinatario{
+.destinatario {
   border: 1px rgb(0, 183, 255) solid;
   box-shadow: 1px 1px 6px skyblue;
   width: 80%;
@@ -325,11 +326,11 @@
   margin-left: 10%;
   background-color: rgba(255, 255, 255, 0.826);
 }
-.LogoBizum{
+.LogoBizum {
   margin-top: 50%;
   width: 100%;
 }
-.datostext{
+.datostext {
   margin-top: 8%;
   margin-left: 8%;
   font-size: 9px;
@@ -338,34 +339,37 @@
 
 @media screen and (max-width: 700px) {
   .flip12 {
-    width: 100%; 
-    height: 320px; 
-    margin-left: 0; 
+    width: 100%;
+    height: 320px;
+    margin-left: 0;
   }
   .texts41 {
     margin-top: -5%;
     margin-left: -5%;
     text-align: center;
-    font-size: 15px; 
+    font-size: 15px;
     width: 110%;
   }
   .BOXES {
-    flex-direction: column; 
+    flex-direction: column;
   }
 
-  .card13, .card14 {
+  .card13,
+  .card14 {
     width: 100%;
     margin-left: 0;
     text-align: center;
   }
 
-  .Pago, .Pago1 {
+  .Pago,
+  .Pago1 {
     margin-left: 0;
   }
 
-  .datos, .datos1 {
-    width: 100%; 
-    margin-left: 0; 
+  .datos,
+  .datos1 {
+    width: 100%;
+    margin-left: 0;
   }
 
   .flip-cards1 {
@@ -375,28 +379,30 @@
   }
 
   .cardS12 {
-    width: 50%; 
-    margin-left: 25%; 
+    width: 50%;
+    margin-left: 25%;
     height: 55%;
   }
-  .logo{
+  .logo {
     margin-left: 5%;
   }
-  .Dar, .Recibir {
+  .Dar,
+  .Recibir {
     width: 100%;
     height: 100%;
-    margin-left: 0; 
+    margin-left: 0;
     text-align: center;
     font-size: 10px;
   }
-  .destinatario{
+  .destinatario {
     width: 100%;
-    margin-left: 0; 
+    margin-left: 0;
     margin-top: 5%;
   }
 
-  .imagendar, .imagenrecibir {
-    width:35%;
+  .imagendar,
+  .imagenrecibir {
+    width: 35%;
   }
 
   .LogoBizum {
@@ -405,14 +411,17 @@
     margin-left: -25%;
   }
 
-  .datostext { 
+  .datostext {
     margin-left: 0;
     width: 100%;
   }
-  .number, .valid_thru, .date_8264, .name {
+  .number,
+  .valid_thru,
+  .date_8264,
+  .name {
     margin-left: 0.5%;
   }
-  .responsive12{
+  .responsive12 {
     margin-top: -1%;
   }
-} 
+}

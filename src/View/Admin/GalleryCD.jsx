@@ -30,9 +30,12 @@ export default function QuiltedImageList() {
   };
 
   const handleDelete = async () => {
-    if (selectedImageIndex !== -1 && imageList[selectedImageIndex]?.id_gallery1 !== undefined) {
+    if (
+      selectedImageIndex !== -1 &&
+      imageList[selectedImageIndex]?.id_gallery1 !== undefined
+    ) {
       try {
-        const idToDelete = imageList[selectedImageIndex].id_gallery1; // Usar id_gallery1 en lugar de id
+        const idToDelete = imageList[selectedImageIndex].id_gallery1;
         const response = await fetch(
           `https://localhost:7165/api/gallery1/${idToDelete}`,
           {
@@ -83,17 +86,17 @@ export default function QuiltedImageList() {
         </form>
 
         <ImageList
-  sx={{
-    width: 500,
-    height: "auto",
-    maxHeight: 400, // Reducir la altura máxima para activar el scroll con solo 4 imágenes
-    overflowY: "auto",
-  }}
-  variant="quilted"
-  cols={2}
-  rowHeight={200} // Ajustar la altura de las imágenes para que se muestren dos por fila
-  className="custom-image-list"
->
+          sx={{
+            width: 500,
+            height: "auto",
+            maxHeight: 400,
+            overflowY: "auto",
+          }}
+          variant="quilted"
+          cols={2}
+          rowHeight={200}
+          className="custom-image-list"
+        >
           {imageList.map((item, index) => (
             <ImageListItem
               key={index}
@@ -114,7 +117,7 @@ export default function QuiltedImageList() {
           Delete Selected Image
         </button>
       </div>
-      <Footer/>
+      <Footer />
     </>
   );
 }

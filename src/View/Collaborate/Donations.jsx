@@ -194,16 +194,30 @@ const Donations = () => {
               <span class="time12">BIZUM</span>
               <div className="Dinero50">
                 <div className="Dar">
-                  <img className="imagendar" src="https://res.cloudinary.com/da7ffijqs/image/upload/v1699569831/_67196110-95c8-423b-9512-9d65a74337ef-modified_v7r5ok.png" alt="" />
+                  <img
+                    className="imagendar"
+                    src="https://res.cloudinary.com/da7ffijqs/image/upload/v1699569831/_67196110-95c8-423b-9512-9d65a74337ef-modified_v7r5ok.png"
+                    alt=""
+                  />
                   <p className="Enviar12">Enviar</p>
                 </div>
                 <div className="Recibir">
-                  <img className="imagenrecibir" src="https://res.cloudinary.com/da7ffijqs/image/upload/v1699570477/_32c949e8-2ccf-4db2-8c35-b58d4afbaba6-modified_qxark5.png" alt="" />
+                  <img
+                    className="imagenrecibir"
+                    src="https://res.cloudinary.com/da7ffijqs/image/upload/v1699570477/_32c949e8-2ccf-4db2-8c35-b58d4afbaba6-modified_qxark5.png"
+                    alt=""
+                  />
                   <p className="Recibir12">Recibir</p>
                 </div>
               </div>
               <div className="destinatario">
-                <div><img className="LogoBizum" src="https://res.cloudinary.com/da7ffijqs/image/upload/v1699571240/Captura_de_pantalla_2023-11-10_000621-modified_d9dbyj.png" alt="" /></div>
+                <div>
+                  <img
+                    className="LogoBizum"
+                    src="https://res.cloudinary.com/da7ffijqs/image/upload/v1699571240/Captura_de_pantalla_2023-11-10_000621-modified_d9dbyj.png"
+                    alt=""
+                  />
+                </div>
                 <div className="datostext">
                   <p className="responsive12">¿A quién envías dinero?</p>
                   <p className="responsive12">674 09 45 01</p>
@@ -219,7 +233,7 @@ const Donations = () => {
       </div>
       <Footer />
       <ButtonDonate />
-      <ScrollArrow/>
+      <ScrollArrow />
     </>
   );
 };

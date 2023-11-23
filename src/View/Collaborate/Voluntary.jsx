@@ -97,7 +97,6 @@ const Voluntary = () => {
           confirmButtonColor: customColor,
         });
 
-        // Restablecer los campos del formulario después de enviar los datos
         setFormData({
           name: "",
           dni: "",
@@ -126,7 +125,7 @@ const Voluntary = () => {
   return (
     <>
       <div className="photos">
-        <Navbar/>
+        <Navbar />
         <BannerViews
           image="https://res.cloudinary.com/da7ffijqs/image/upload/v1698681283/20201119_125749_1_lmqez1.jpg"
           title="¿QUIERES SER VOLUNTARIO?"

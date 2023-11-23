@@ -6,6 +6,7 @@ import Footer from "../../Components/Footer/Footer";
 
 const NewsAdmin = () => {
   const [link, setLink] = useState("");
+  const [description, setDescription] = useState("");
   const [title, setTitle] = useState("");
   const [thumbnail, setThumbnail] = useState("");
   const [newsList, setNewsList] = useState([]);
@@ -32,27 +33,53 @@ const NewsAdmin = () => {
       const response = await axios.post("https://localhost:7165/api/News", {
         link,
         title,
+        description,
         thumbnail,
       });
 
       setLink("");
       setTitle("");
+      setDescription("");
       setThumbnail("");
 
       setNewsList([...newsList, response.data]);
+      swal.fire({
+        title: "Enviado",
+        text: "La noticia ha sido añadida.",
+        icon: "success",
+        confirmButtonColor: "rgb(236, 117, 14)",
+      });
     } catch (error) {
       console.error("Error al agregar la noticia:", error);
+      swal.fire({
+        title: "Error",
+        text: "Hubo un error al subir la noticia.",
+        icon: "error",
+        confirmButtonColor: "rgb(236, 117, 14)",
+      });
     }
   };
 
   const handleDelete = async (id) => {
     try {
       await axios.delete(`https://localhost:7165/api/News/${id}`);
-      // Después de eliminar, realizar una nueva solicitud GET para obtener las noticias actualizadas
+
       const response = await axios.get("https://localhost:7165/api/News");
       setNewsList(response.data);
+      swal.fire({
+        title: "Eliminado",
+        text: "La noticia ha sido eliminada correctamente.",
+        icon: "success",
+        confirmButtonColor: "rgb(236, 117, 14)",
+      });
     } catch (error) {
       console.error("Error al eliminar la noticia:", error);
+      swal.fire({
+        title: "Error",
+        text: "Hubo un error al eliminar la noticia.",
+        icon: "error",
+        confirmButtonColor: "rgb(236, 117, 14)",
+      });
     }
   };
 
@@ -63,15 +90,26 @@ const NewsAdmin = () => {
         updatedData
       );
 
-      // Después de actualizar, realizar una nueva solicitud GET para obtener las noticias actualizadas
       const updatedResponse = await axios.get(
         "https://localhost:7165/api/News"
       );
       setNewsList(updatedResponse.data);
 
       closeModal();
+      swal.fire({
+        title: "Enviado",
+        text: "La noticia ha sido modificada.",
+        icon: "success",
+        confirmButtonColor: "rgb(236, 117, 14)",
+      });
     } catch (error) {
       console.error("Error al actualizar la noticia:", error);
+      swal.fire({
+        title: "Error",
+        text: "Hubo un error al modificar la noticia.",
+        icon: "error",
+        confirmButtonColor: "rgb(236, 117, 14)",
+      });
     }
   };
 
@@ -114,6 +152,29 @@ const NewsAdmin = () => {
                 onChange={(e) => setTitle(e.target.value)}
               />
             </label>
+            <label
+              style={{
+                display: "flex",
+                flexDirection: "column",
+                alignItems: "flex-start",
+                margin: "10px 0",
+                fontWeight: "bold",
+              }}
+            >
+              Insertar texto:
+              <textarea
+                value={description}
+                onChange={(e) => setDescription(e.target.value)}
+                style={{
+                  marginLeft: "10px",
+                  padding: "5px",
+                  height: "auto",
+                  resize: "vertical",
+                  width: "475px",
+                }}
+                rows="4"
+              />
+            </label>
             <label>
               URL de la miniatura:
               <input
@@ -129,14 +190,11 @@ const NewsAdmin = () => {
         <div className="news-container">
           {newsList.map((news, index) => (
             <div className="news-item" key={index}>
+              <img src={news.thumbnail} alt="Thumbnail" className="thumbnail" />
               <a href={news.link} className="thumbnail-link">
-                <img
-                  src={news.thumbnail}
-                  alt="Thumbnail"
-                  className="thumbnail"
-                />
+                <h3 className="titlea">{news.title}</h3>
               </a>
-              <h3 className="titlea">{news.title}</h3>
+              <p className="titlea">{news.description}</p>
               <button onClick={() => handleDelete(news.id_News)}>
                 Eliminar
               </button>
@@ -169,6 +227,16 @@ const NewsAdmin = () => {
                 />
               </label>
               <label>
+                Título de la noticia:
+                <input
+                  type="text"
+                  value={selectedNews.description}
+                  onChange={(e) =>
+                    updateSelectedNews("description", e.target.value)
+                  }
+                />
+              </label>
+              <label>
                 URL de la miniatura:
                 <input
                   type="text"
@@ -188,7 +256,7 @@ const NewsAdmin = () => {
         )}
       </div>
 
-      <Footer/>
+      <Footer />
     </>
   );
 };

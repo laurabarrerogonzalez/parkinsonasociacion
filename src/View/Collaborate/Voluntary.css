@@ -100,14 +100,13 @@
   border-radius: 15px;
   padding: 1em;
   background-color: #ffffff;
-  box-shadow: 2px 5px 5px rgba(0,0,0,0.3);
+  box-shadow: 2px 5px 5px rgba(0, 0, 0, 0.3);
   transition: 300ms ease-in-out;
 }
 .input14:focus {
   background-color: white;
   transform: scale(1.05);
-  box-shadow: 13px 13px 100px #b0b0b0bd,
-             -13px -13px 100px #ffffff;
+  box-shadow: 13px 13px 100px #b0b0b0bd, -13px -13px 100px #ffffff;
 }
 .bn01 {
   --border-radius: 25px;
@@ -172,7 +171,7 @@
   padding: 0.9em 1.6em;
   border: none;
   outline: none;
-  color: #FFF;
+  color: #fff;
   font-family: inherit;
   font-weight: 500;
   font-size: 17px;
@@ -195,9 +194,15 @@
   content: "";
   background: linear-gradient(
     45deg,
-    #07d888, #e40851, #2f00ff, #00ff37,
-      #ec0808, #2600ff, #0bd157, #2f00ff
-);
+    #07d888,
+    #e40851,
+    #2f00ff,
+    #00ff37,
+    #ec0808,
+    #2600ff,
+    #0bd157,
+    #2f00ff
+  );
   position: absolute;
   top: -2px;
   left: -2px;
@@ -207,7 +212,7 @@
   height: calc(100% + 4px);
   filter: blur(8px);
   animation: glowing345 20s linear infinite;
-  transition: opacity .3s ease-in-out;
+  transition: opacity 0.3s ease-in-out;
   border-radius: 20px;
   opacity: 0;
 }
@@ -325,18 +330,18 @@
   white-space: nowrap;
   width: 1px;
 }
-.iconos1{
+.iconos1 {
   width: 55%;
   margin-left: 20%;
 }
-.iconos2{
+.iconos2 {
   width: 60%;
   margin-left: 20%;
 }
-.iconos3{
+.iconos3 {
   width: 55%;
   margin-left: 20%;
-  margin-top:2%;
+  margin-top: 2%;
 }
 .container40 input {
   position: absolute;
@@ -352,12 +357,11 @@
   font-size: 20px;
   user-select: none;
 }
-.Terminos{
+.Terminos {
   margin-left: 2%;
 }
 
-
-.checkbox-container{
+.checkbox-container {
   display: flex;
 }
 
@@ -387,32 +391,32 @@
     width: 100%;
     font-size: small;
   }
-  .box1{
+  .box1 {
     width: 100%;
     font-size: small;
   }
-  .text1{
+  .text1 {
     font-size: small;
     text-align: center;
     margin-top: 25%;
   }
-  .text2{
+  .text2 {
     font-size: smaller;
   }
-  .text3{
+  .text3 {
     font-size: smaller;
   }
-  .text4{
+  .text4 {
     font-size: small;
     text-align: center;
     margin-top: 20%;
   }
-  .form11{
+  .form11 {
     width: 80%;
     margin-top: 60%;
     margin-left: 3%;
   }
- 
+
   .message13,
   .title12,
   .input14,
@@ -420,13 +424,13 @@
     width: 90%;
     margin: 0 auto;
   }
-  .radio-inputs{
+  .radio-inputs {
     width: 5%;
     margin: 0 auto;
     display: flex;
     flex-direction: column;
   }
-  
+
   .iconos1,
   .iconos2,
   .iconos3 {
@@ -435,7 +439,7 @@
   .flex14 {
     margin-left: 0;
   }
-  .checkmark{
+  .checkmark {
     width: 15%;
   }
 }

@@ -6,7 +6,6 @@
   text-decoration: underline;
   text-decoration-color: #ec750e;
   text-decoration-thickness: 6px;
- 
 }
 
 .project-container {
@@ -68,9 +67,8 @@
 
 .project-image {
   margin-top: 52px;
-
 }
-  
+
 @media (max-width: 768px) {
   .project-container {
     flex-direction: column;

@@ -59,7 +59,6 @@ const ResourcesAdmin = () => {
 
         fetchResources();
 
-        // Restablecer los campos del formulario después de enviar los datos
         setFormData({
           name: "",
           url: "",
@@ -83,10 +82,9 @@ const ResourcesAdmin = () => {
       await axios.delete(
         `https://localhost:7165/ResourcesControllers/DeleteResources?name=${name}`
       );
-  
-      // Actualizar la lista de recursos después de eliminar
+
       fetchResources();
-  
+
       swal.fire({
         title: "Eliminado",
         text: "El recurso ha sido eliminado correctamente.",
@@ -151,7 +149,7 @@ const ResourcesAdmin = () => {
               ) : null}
               <button
                 className="button222"
-                onClick={() => handleDeleteResources(file.name)} 
+                onClick={() => handleDeleteResources(file.name)}
               >
                 Eliminar
               </button>
@@ -160,7 +158,7 @@ const ResourcesAdmin = () => {
         </div>
       </div>
 
-      <Footer/>
+      <Footer />
     </>
   );
 };
