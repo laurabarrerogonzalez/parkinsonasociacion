@@ -28,7 +28,7 @@ const Myths = () => {
           <div class="content">
             <div class="front1">
               <h3 class="titles">MITO</h3>
-              <p class="subtitle">
+              <p className="subtitle">
                 <strong>Es una enfermedad hereditaria</strong>
               </p>
             </div>
