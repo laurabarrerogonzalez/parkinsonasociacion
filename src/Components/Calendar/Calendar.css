@@ -52,17 +52,17 @@
     .calendar-container {
       flex-direction: column;
       align-items: center;
-      margin-left: 4px; /* Ajusta según sea necesario para centrar en pantalla pequeña */
-      margin-top: 200px; /* Ajusta según sea necesario para centrar en pantalla pequeña */
+      margin-left: 4px; 
+      margin-top: 200px; 
       
     }
   
     .calendar-wrapper {
-      margin-top: 100px; /* Ajusta según sea necesario para centrar en pantalla pequeña */
+      margin-top: 100px; 
     }
   }
   
-  /* Otros estilos (mantiene los mismos) */
+
   .highlight {
     border: 4px solid yellow;
     border-radius: 50%;

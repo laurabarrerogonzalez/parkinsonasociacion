@@ -4,6 +4,6 @@
 }
 
 .custom-image-list {
-  max-height: 450px;
-  overflow-y: auto;
-}
+    max-height: 450px; 
+    overflow-y: auto;
+  }

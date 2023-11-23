@@ -8,23 +8,15 @@
 }
 
 @font-face {
-  font-family: 'MiFuentePersonalizada';
-  src: url('../../Fonts/Bevan-Regular.ttf') format('truetype');
-  /* Agrega más formatos y rutas para soporte de navegadores diferentes */
-}
-
-
-@font-face {
-  font-family: 'Gotham Black';
-  src: url('../../Fonts/1830-font.otf') format('truetype');
-  /* Agrega más formatos y rutas para soporte de navegadores diferentes */
+  font-family: "Lexend";
+  src: url("../../Fonts/LexendMega-VariableFont_wght.ttf") format("truetype");
 }
 
 @font-face {
-  font-family: 'Poppins';
-  src: url('../../Fonts/Poppins-Regular.ttf') format('truetype');
-  /* Agrega más formatos y rutas para soporte de navegadores diferentes */
+  font-family: "stint";
+  src: url("../../Fonts/StintUltraExpanded-Regular.ttf") format("truetype");
 }
+
 .title_person_asociation {
   width: 100%;
   height: 85px;
@@ -89,8 +81,7 @@
   max-width: 100%;
   height: auto;
   display: block;
-  box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.5); /* Agrega una sombra */
-  /* Rota la imagen ligeramente en sentido antihorario */
+  box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.5); 
 }
 
 .line_work {
@@ -301,7 +292,7 @@
 }
 
 .protect_dates {
-  color: #ffffff; /* Color rosa */
+  color: #ffffff;
   position: absolute;
   left: 10px;
   top: 0px;
@@ -310,10 +301,10 @@
   transition: 0.3s ease;
 }
 
-/* Aplica la clase a ese elemento en particular */
 .form label .input + span.protect_dates {
-  color: #ffffff; /* Color rosa */
+  color: #ffffff; 
 }
+
 .form label .input:placeholder-shown + span {
   top: 12.5px;
   font-size: 0.9em;
@@ -326,6 +317,7 @@
   font-size: 0.7em;
   font-weight: 600;
 }
+
 .input {
   font-size: medium;
 }

@@ -8,7 +8,6 @@ function Mapa() {
     { position: [38.8697199, -6.9821739], info: 'Calle Godofredo Ortega y Muñoz, local 5, Badajoz' },
     { position: [39.469544607965865, -6.370549018597867], info: 'Calle La Carrera, 8, Cáceres' },
     { position: [38.9075053198031, -6.625639965973815], info: 'Calle Salzillo, Centro Cultural "El Valle", Montijo' },
-    { position: [40.0273919, -6.0888221], info: 'Calle Fernando Calvo, 2, Plasencia' },
 ];
 
   return (

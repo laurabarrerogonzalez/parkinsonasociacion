@@ -1,19 +1,16 @@
 @font-face {
   font-family: 'MiFuentePersonalizada';
   src: url('../../Fonts/Bevan-Regular.ttf') format('truetype');
-  /* Agrega más formatos y rutas para soporte de navegadores diferentes */
 }
 
 @font-face {
   font-family: 'Gotham Black';
   src: url('../../Fonts/1830-font.otf') format('truetype');
-  /* Agrega más formatos y rutas para soporte de navegadores diferentes */
 }
 
 @font-face {
   font-family: 'Poppins';
   src: url('../../Fonts/Poppins-Regular.ttf') format('truetype');
-  /* Agrega más formatos y rutas para soporte de navegadores diferentes */
 }
 
 .photobanner {
@@ -184,7 +181,6 @@ background-color: rgb(127, 204, 240);
     margin-top: 9px;
     margin-left: 20px;
     text-align: right;
-    /* color: white; */
     transform: translateZ(2rem);
     font-family: 'Poppins';
     color: black;
@@ -298,17 +294,12 @@ background-color: rgb(127, 204, 240);
   }
   
   .description {
-    /* margin-left: 100px; */
     text-align: end;
     margin-top: 10px;
     font-weight: bold;
-    /* margin-left: -30px; */
     transform: translateZ(3rem);
   }
   
-
-
-
 
 
   @media screen and (max-width: 700px) {
@@ -323,7 +314,7 @@ background-color: rgb(127, 204, 240);
 
 
     .myths{
-margin-left: 25px;
+      margin-left: 25px;
     }
 
     .vs{

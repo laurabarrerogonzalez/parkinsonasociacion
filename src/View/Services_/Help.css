@@ -60,7 +60,6 @@
 
 
 .Vibehelp {
- 
     left: 0;
     width: 100%;
     overflow: hidden;
@@ -119,6 +118,5 @@
     background-color: #ec750e;
     width: 100%;
     padding-top: 25px;
-    padding-bottom: 25px;
-    
+    padding-bottom: 25px; 
 }

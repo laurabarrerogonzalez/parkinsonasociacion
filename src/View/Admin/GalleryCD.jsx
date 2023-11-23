@@ -21,8 +21,7 @@ export default function QuiltedImageList() {
         body: JSON.stringify({ url: imageURL }),
       });
       const data = await response.json();
-      const formattedData = Array.isArray(data) ? data : [data];
-      setImageList([...imageList, ...formattedData]);
+      setImageList([data, ...imageList]);
       setImageURL("");
     } catch (error) {
       console.error("Error:", error);
@@ -58,6 +57,10 @@ export default function QuiltedImageList() {
     try {
       const response = await fetch("https://localhost:7165/api/gallery1");
       const data = await response.json();
+  
+      // Ordenar las imágenes por ID de manera descendente
+      data.sort((a, b) => b.id_gallery1 - a.id_gallery1);
+  
       setImageList(data);
     } catch (error) {
       console.error("Error fetching images:", error);

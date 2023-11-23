@@ -1,6 +1,6 @@
 .navbar{
     position: fixed;
-    top: 0; /* Lo fija en la parte superior */
+    top: 0; 
     left: 0;
     right: 0;
     z-index: 6000;
@@ -17,15 +17,14 @@
 }
 
 .navbar.scrolled {
-    background-color: #067787; /* Cambiar a tu color deseado */
-    /* Otros estilos al desplazar */
+    background-color: #067787; 
+ 
     
   }
 
 @font-face {
     font-family: 'Inter';
     src: url('../../Fonts/Inter-VariableFont_slnt\,wght.ttf') format('truetype');
-    /* Agrega más formatos y rutas para soporte de navegadores diferentes */
   }
 
  
@@ -89,7 +88,7 @@
     list-style: none;
     width: 200px;
     background-color: rgba(0, 0, 0, .5);
-    padding-left: 0; /* Agregamos transición */
+    padding-left: 0; 
     animation: fadeInDown 0.9s ease forwards; 
 }
 
@@ -99,8 +98,8 @@
       opacity: 0;
     }
     to {
-      max-height: 500px; /* Muestra el menú */
-      opacity: 1; /* Hace visible el menú */
+      max-height: 500px; 
+      opacity: 1; 
     }
   }
   
@@ -115,7 +114,7 @@
     top: 100%;
     left: 0;
     background-color: black;
-    width: 200px; /* Ajusta el ancho según sea necesario */
+    width: 200px; 
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.9);
     
     
@@ -200,16 +199,13 @@
         position: absolute;
         display: flex;
         flex-direction: column;
-        align-items:center;
-        
-        
-        
+        align-items:center;        
     }
+
     .menu-horizontal a{
-    display: flex;
-        
-        
+    display: flex;    
     }
+
     .nav_items {
         position:absolute;
         top:90px;
@@ -223,14 +219,15 @@
         transition: 0.3s ease all;
         z-index: 3;
     }
+
     .nav_items.open{
         transform: translateX(0) !important;
     }
+
     .nav_toggle{
         display: flex !important;
         flex-direction: column;
-        margin: 15px;
-        
+        margin: 15px;     
     }
 
     .nav_toggle span{
@@ -241,26 +238,19 @@
         border-radius: 2px;
         transform-origin: 5px 0px;
         transition: all 0.2s linear;
-
     }
+
     .nav_toggle.open > span{
         transform: rotate(45deg) translate(0px,0px);    
     }
+
     .nav_toggle.open >span:nth-child(2){
         display:none;
     }
+
     .nav_toggle.open > span:nth-child(3){
         transform: rotate(-45deg) translate(-5px,1px);
     }
-
-    /* .menu-vertical{
-        position: static;
-        display: none;
-        list-style: none;
-        width: auto;
-        height: auto;
-    
-    } */
 
     .menu-horizontal > li {
         position: relative;
@@ -268,17 +258,16 @@
     
       .menu-horizontal > li:hover .menu-vertical {
         display: block;
-        position: static; /* Cambiado de absolute a static */
+        position: static; 
         top: auto;
         left: auto;
         width: auto;
         border: 1px solid rgb(255, 255, 255);
-        list-style: none;
-        
+        list-style: none;      
 }
+
 .menu-vertical li {
-    background-color: rgba(0, 0, 0, 0.9); /* Color blanco con una opacidad del 90% */
-    /* Otros estilos... */
+    background-color: rgba(0, 0, 0, 0.9); 
 }
 
 
@@ -289,8 +278,7 @@
 }
 
 .menu-vertical li a {
-    color: rgb(255, 255, 255); /* Cambia el color del texto para que sea visible en el fondo blanco */
-    /* Otros estilos... */
+    color: rgb(255, 255, 255); 
 }
 
 }

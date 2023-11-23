@@ -49,7 +49,7 @@ const Work = () => {
 
     setFormsData((prevData) => ({
       ...prevData,
-      archive: value, // Almacenar la URL en lugar del archivo
+      archive: value, 
     }));
   };
 
@@ -61,7 +61,7 @@ const Work = () => {
     }
 
     if (name === "archive") {
-      setFileUrl(value); // Actualizar la URL cuando cambia el campo "archive"
+      setFileUrl(value); 
     }
 
     setFormsData((prevData) => ({
@@ -305,7 +305,7 @@ const Work = () => {
           <label>
             <span>Adjuntar Archivo (URL)</span>
             <input
-              type="text" // Cambiar el tipo a "text"
+              type="text" 
               className="input"
               placeholder="Ingrese la URL del archivo"
               value={fileUrl}

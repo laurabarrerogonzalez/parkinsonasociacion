@@ -10,7 +10,7 @@ import ScrollArrow from "../../Components/ScrollArrow/ScrollArrow";
 const Stimulation = () => {
 
     useEffect(() => {
-        // Hacer scroll al principio de la página cuando el componente se monta
+
         window.scrollTo(0, 0);
     }, []);
 

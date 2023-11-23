@@ -13,7 +13,7 @@ const Evolution = () => {
   const [stageDescription, setStageDescription] = useState("");
 
   const handleMouseEnter = (stage) => {
-    // Define las descripciones para cada etapa
+    
     const descriptions = {
       0: "En el estadío 0: Normal",
       1: "En el estadío 1: Afectación Unilateral",

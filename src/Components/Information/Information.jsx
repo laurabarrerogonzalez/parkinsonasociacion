@@ -35,16 +35,6 @@ const Information = () => {
                         06480 - Montijo (Badajoz)</p>
                 </div>
             </div>
-            {/* <div className="card card4">
-            <div className="image-container">
-                    <img src="https://res.cloudinary.com/duwenv0yr/image/upload/v1699529346/Plasencia_w71bzo.jpg" alt="Plasencia" />
-                </div>
-                <div className="card__content">
-                    <p className="card__title">Plasencia</p>
-                    <p className="card__description">Calle Fernando Calvo, 2 <br/>
-                    10600 - Plasencia (Cáceres)</p>
-                </div>
-            </div> */}
             <div className="card cardmerida">
                 <div className="image-container">
                     <img src="https://res.cloudinary.com/duwenv0yr/image/upload/v1699529346/M%C3%A9rida_lkgskb.jpg" alt="Mérida" />

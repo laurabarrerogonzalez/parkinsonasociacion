@@ -106,7 +106,7 @@
 
 @media screen and (max-width: 700px) {
   login-card {
-    width: 80%;
+    width: 80%; 
     margin-top: 20%;
   }
 
@@ -121,27 +121,27 @@
   .input123[type="text"],
   .input123[type="password"],
   .input123[type="submit"] {
-    display: block;
-    padding: 10px;
-    font-size: 14px;
-    margin-bottom: 10px;
+    display: block; 
+    padding: 10px; 
+    font-size: 14px; 
+    margin-bottom: 10px; 
   }
 
   .card-header .log {
-    font-size: 20px;
+    font-size: 20px; 
   }
 
   .label134 {
-    font-size: 16px;
+    font-size: 16px; 
   }
 
   .th14,
   .td13 {
-    padding: 6px;
-    font-size: 14px;
+    padding: 6px; 
+    font-size: 14px; 
   }
 
   .delete-btn {
-    padding: 6px 10px;
+    padding: 6px 10px; 
   }
 }
