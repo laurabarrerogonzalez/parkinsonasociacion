@@ -6,7 +6,6 @@ const AdminNavbar = ({ handleLogout }) => {
   const [isLoggedIn, setLoggedIn] = useState(false);
 
   useEffect(() => {
-    // Verificar si hay un token almacenado en el localStorage
     const token = localStorage.getItem("token");
     if (token) {
       setLoggedIn(true);

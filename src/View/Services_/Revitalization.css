@@ -1,19 +1,19 @@
 @font-face {
     font-family: 'MiFuentePersonalizada';
     src: url('../../Fonts/Bevan-Regular.ttf') format('truetype');
-    /* Agrega más formatos y rutas para soporte de navegadores diferentes */
+    
 }
 
 @font-face {
     font-family: 'Gotham Black';
     src: url('../../Fonts/1830-font.otf') format('truetype');
-    /* Agrega más formatos y rutas para soporte de navegadores diferentes */
+    
 }
 
 @font-face {
     font-family: 'Poppins';
     src: url('../../Fonts/Poppins-Regular.ttf') format('truetype');
-    /* Agrega más formatos y rutas para soporte de navegadores diferentes */
+
 }
 
 .title-revitalization h1 {
@@ -258,12 +258,9 @@
 
 
 
-    border-radius: 100%;
-    /* Hace que las imágenes sean circulares */
+    border-radius: 100%; 
     width: 200px;
-    /* Ajusta el tamaño de las imágenes según tus necesidades */
     height: 200px;
-    /* Agrega margen inferior para separar las imágenes */
     object-fit: cover;
     border-color: #38929F;
     border-style: groove;
@@ -289,7 +286,6 @@
     border-style: groove;
     width: 200px;
     height: 200px;
-    /* Agrega margen derecho entre las imágenes */
     object-fit: initial;
 }
 
@@ -301,7 +297,6 @@
     border-style: groove;
     width: 200px;
     height: 200px;
-    /* Agrega margen derecho entre las imágenes */
     object-fit: cover;
 }
 

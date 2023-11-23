@@ -77,14 +77,12 @@
 
 .banner-title {
   
-   /* Posición del título sobre la imagen */
-   /* Ajusta la posición horizontal del título */
   
-  color: white; /* Color del título */
-  font-size: 40px; /* Tamaño de fuente del título */
-  /* Coloca el título encima de la imagen */
-  font-family: 'MiFuentePersonalizada'; /* Utiliza tu fuente personalizada */
-  text-shadow: 10px 10px 10px rgba(0, 0, 0, 0.9); /* Sombra para mejorar la legibilidad */
+  
+  color: white;
+  font-size: 40px; 
+  font-family: 'MiFuentePersonalizada'; 
+  text-shadow: 10px 10px 10px rgba(0, 0, 0, 0.9); 
 margin: 0;
 margin-left: 50px;
 }
@@ -94,11 +92,6 @@ margin-left: 50px;
     .banner img {
     height: 500px;}
 
-
-/* .banner-text {
-    font-size: 20px;
-    width: 50%;
-} */
 .text-banneer{
   width: 50%;
   height: 360px;

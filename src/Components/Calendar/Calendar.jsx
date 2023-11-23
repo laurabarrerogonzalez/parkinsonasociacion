@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { Calendar, theme } from 'antd';
-import './Calendar.css'; // Importa el archivo CSS
+import './Calendar.css';
 
 const onPanelChange = (value, mode) => {
   console.log(value.format('YYYY-MM-DD'), mode);

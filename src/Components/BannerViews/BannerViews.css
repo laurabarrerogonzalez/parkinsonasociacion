@@ -65,15 +65,11 @@
 
 .banner_views_title {
   
-   /* Posición del título sobre la imagen */
-   /* Ajusta la posición horizontal del título */
-  
-  color: white; /* Color del título */
+  color: white; 
   font-weight: bold;
-  font-size: 50px; /* Tamaño de fuente del título */
-  /* Coloca el título encima de la imagen */
-  font-family: 'MiFuentePersonalizada'; /* Utiliza tu fuente personalizada */
-  text-shadow: 7px 7px 7px rgba(0, 0, 0, 1.9); /* Sombra para mejorar la legibilidad */
+  font-size: 50px; 
+  font-family: 'MiFuentePersonalizada';
+  text-shadow: 7px 7px 7px rgba(0, 0, 0, 1.9);
 margin: 0;
 }
 
@@ -87,11 +83,6 @@ margin: 0;
     height: 400px;
   object-fit: fill;}
   
-
-/* .banner-text {
-    font-size: 20px;
-    width: 50%;
-} */
 .container_content{
   width: 80%;
   height: 200px;
