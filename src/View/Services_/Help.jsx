@@ -1,10 +1,10 @@
-import React, { useEffect } from 'react';
+import React, { useEffect } from "react";
 import Navbar from "../../Components/Navbar/Navbar";
 import "../Services_/Help.css";
 import BannerViews from "../../Components/BannerViews/BannerViews";
 import Footer from "../../Components/Footer/Footer";
-import ScrollArrow from '../../Components/ScrollArrow/ScrollArrow';
-import ButtonDonate from '../../Components/ButtonDonate/ButtonDonate';
+import ScrollArrow from "../../Components/ScrollArrow/ScrollArrow";
+import ButtonDonate from "../../Components/ButtonDonate/ButtonDonate";
 
 const Help = () => {
   return (
@@ -15,52 +15,60 @@ const Help = () => {
         title="AYUDA A DOMICILIO"
       />
       <div className="containerhelp">
-      <div className="titleHelp">
-        <h1 className="help">AYUDA A DOMICILIO</h1>
-     
+        <div className="titleHelp">
+          <h1 className="help">AYUDA A DOMICILIO</h1>
+        </div>
+
+        <div>
+          <p className="text-Help">
+            Este servicio consiste en la prestación de una serie de atenciones
+            de carácter personal, doméstico y técnico a fin de que las personas
+            beneficiarias puedan seguir viviendo en su domicilio y entorno
+            evitando en la medida de lo posible trasladarse a una residencia.
+            <br></br>
+            <br></br>
+            Los beneficiarios son individuos y/o familias que se hallen en
+            situaciones en las que no es posible la realización autónoma de sus
+            actividades cotidianas de forma plena, o en aquellas otras de
+            conflicto psico-familiar. Se orienta a personas con una dependencia
+            no muy grave o, en caso de existir ésta, es decir, personas
+            encamadas y totalmente dependientes, el servicio se destina a
+            “descargar” a la familia como medida de apoyo a la misma
+          </p>
+        </div>
       </div>
 
-      <div>
-        <p className="text-Help">
-          Este servicio consiste en la prestación de una serie de atenciones de
-          carácter personal, doméstico y técnico a fin de que las personas
-          beneficiarias puedan seguir viviendo en su domicilio y entorno
-          evitando en la medida de lo posible trasladarse a una residencia.<br></br>
-          <br></br>
-          Los beneficiarios son individuos y/o familias que se hallen en situaciones en las que 
-          no es posible la realización autónoma de sus actividades cotidianas de forma plena, o en 
-          aquellas otras de conflicto psico-familiar. Se orienta a personas con una dependencia 
-          no muy grave o, en caso de existir ésta, es decir, 
-          personas encamadas y totalmente dependientes, el servicio se destina a “descargar” 
-          a la familia como medida de apoyo a la misma
-        </p>
+      <div className="text-HelpSer">
+        <h1 className="helpSer">EL SERVICIO DE AYUDA A DOMICILIO OFRECE:</h1>
       </div>
-      </div>
-      
-    <div className="text-HelpSer">
-   <h1 className="helpSer">EL SERVICIO DE AYUDA A DOMICILIO OFRECE:</h1>
-  </div>
-  <div className="titleHelpSer">
-         <ul>
-           <li>
-             <strong>Servicios relacionados con la atención<br></br>
-             de las necesidades domésticas o del hogar</strong>
-            </li>
-            <li>
-              <strong>Servicios relacionados con la atención<br></br>
-              personal en la realización de las actividades<br></br> 
-              de la vida diaria</strong>              
-            </li>     
-            <li><strong>Servicios de acompañamiento, apoyo<br></br>
+      <div className="titleHelpSer">
+        <ul>
+          <li>
+            <strong>
+              Servicios relacionados con la atención<br></br>
+              de las necesidades domésticas o del hogar
+            </strong>
+          </li>
+          <li>
+            <strong>
+              Servicios relacionados con la atención<br></br>
+              personal en la realización de las actividades<br></br>
+              de la vida diaria
+            </strong>
+          </li>
+          <li>
+            <strong>
+              Servicios de acompañamiento, apoyo<br></br>
               psicosocial, desarrollo de hábitos saludables<br></br>
               apoyo en tratamiento curativo y farmacológico,<br></br>
-              mantenimiento de capacidades funcionales.<br></br></strong>
-            </li>
-             <li>
-               <strong>Servicio ofrecido a nivel regional</strong>
-             </li>
-           </ul>
-         </div>
+              mantenimiento de capacidades funcionales.<br></br>
+            </strong>
+          </li>
+          <li>
+            <strong>Servicio ofrecido a nivel regional</strong>
+          </li>
+        </ul>
+      </div>
 
       <div className="image-container">
         <div className="help-card">
@@ -122,7 +130,7 @@ const Help = () => {
       </div>
       <Footer />
       <ButtonDonate />
-      <ScrollArrow/>
+      <ScrollArrow />
     </>
   );
 };

@@ -1,78 +1,101 @@
-.gallery1{
-    margin-top: 5%;
-    margin-left: 10%;
+.gallery1 {
+  margin-top: 5%;
+  margin-left: 10%;
 }
 
-.gallery2{
-    margin-top: 5%;
-    margin-left: 15%;
+.gallery2 {
+  margin-top: 5%;
+  margin-left: 15%;
 }
 
-.title-gallery{
-    margin-left: 100px;
-    color: rgb(0, 13, 255);
+.title-gallery {
+  margin-left: 100px;
+  color: rgb(0, 13, 255);
 }
 
-.title-gallery1{
-    margin-left: 160px;
-    color: rgb(0, 13, 255);
+.title-gallery1 {
+  margin-left: 160px;
+  color: rgb(0, 13, 255);
 }
 
 #gallery-title {
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.gallery-row {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+
+.custom-image-list {
+  width: 90%;
+  height: auto;
+  max-height: 400px;
+  overflow-y: auto;
+}
+.modal-container {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.5);
+  z-index: 1000;
+  text-align: center;
+}
+
+.modal-container img {
+  max-width: 100%;
+  max-height: 80vh;
+}
+
+.close-button {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 700px) {
+  .custom-image-list {
+    width: 90%;
+    height: 300px;
+    max-height: 300px;
+    overflow-y: auto;
   }
-  
+
   .gallery-row {
     display: flex;
-    gap: 20px;
-    align-items: center;
+    flex-direction: column;
   }
 
-  .custom-image-list{
-    width: 90%;
-    height: auto;
-    max-Height: 400px;
-    overflow-Y: auto;
+  .title-gallery {
+    margin-top: 5%;
+    margin-left: 5%;
+    text-align: center;
+    order: -1;
   }
 
-  @media screen and (max-width: 700px) {
-    .custom-image-list{
-        width: 90%;
-        height: 300px;
-        max-Height: 300px;
-        overflow-Y: auto;
-      }
-
-      .gallery-row{
-        display: flex;
-        flex-direction: column;
-      }
-
-      .title-gallery {
-        margin-top: 5%;
-        margin-left: 5%;
-        text-align: center;
-        order: -1; 
-      }
-    
-      .gallery1 {
-        margin-left: 10%;
-        order: 1;
-      }
-
-      .gallery2{
-        margin-left: 10%;
-      }
-      
-      
-      .gallery-row {
-        flex-direction: column; 
-      }
-
-      .title-gallery1{
-        margin-left: 10px;
-        text-align: center;
-      }
+  .gallery1 {
+    margin-left: 10%;
+    order: 1;
   }
+
+  .gallery2 {
+    margin-left: 10%;
+  }
+
+  .gallery-row {
+    flex-direction: column;
+  }
+
+  .title-gallery1 {
+    margin-left: 10px;
+    text-align: center;
+  }
+}

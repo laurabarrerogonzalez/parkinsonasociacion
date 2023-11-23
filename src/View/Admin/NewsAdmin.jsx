@@ -63,7 +63,7 @@ const NewsAdmin = () => {
   const handleDelete = async (id) => {
     try {
       await axios.delete(`https://localhost:7165/api/News/${id}`);
-    
+
       const response = await axios.get("https://localhost:7165/api/News");
       setNewsList(response.data);
       swal.fire({
@@ -90,7 +90,6 @@ const NewsAdmin = () => {
         updatedData
       );
 
-    
       const updatedResponse = await axios.get(
         "https://localhost:7165/api/News"
       );
@@ -139,7 +138,8 @@ const NewsAdmin = () => {
           <form onSubmit={handleSubmit}>
             <label className="labelnews">
               Enlace de la noticia:
-              <input className="inputlink"
+              <input
+                className="inputlink"
                 type="text"
                 value={link}
                 onChange={(e) => setLink(e.target.value)}
@@ -147,7 +147,8 @@ const NewsAdmin = () => {
             </label>
             <label className="labelnews">
               Título de la noticia:
-              <input className="inputtitle"
+              <input
+                className="inputtitle"
                 type="text"
                 value={title}
                 onChange={(e) => setTitle(e.target.value)}
@@ -178,13 +179,16 @@ const NewsAdmin = () => {
             </label>
             <label>
               URL de la miniatura:
-              <input className="inputurl"
+              <input
+                className="inputurl"
                 type="text"
                 value={thumbnail}
                 onChange={(e) => setThumbnail(e.target.value)}
               />
             </label>
-            <button className="button-addnews" type="submit">Agregar Noticia</button>
+            <button className="button-addnews" type="submit">
+              Agregar Noticia
+            </button>
           </form>
         </div>
 
@@ -199,7 +203,12 @@ const NewsAdmin = () => {
               <button onClick={() => handleDelete(news.id_News)}>
                 Eliminar
               </button>
-              <button className="buton-editnews" onClick={() => openModal(news)}>Editar</button>
+              <button
+                className="buton-editnews"
+                onClick={() => openModal(news)}
+              >
+                Editar
+              </button>
             </div>
           ))}
         </div>

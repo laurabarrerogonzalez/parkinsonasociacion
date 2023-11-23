@@ -6,7 +6,6 @@ import Footer from "../../Components/Footer/Footer";
 import ButtonDonate from "../../Components/ButtonDonate/ButtonDonate";
 import ScrollArrow from "../../Components/ScrollArrow/ScrollArrow";
 
-
 const Daycarecenter = () => {
   return (
     <>

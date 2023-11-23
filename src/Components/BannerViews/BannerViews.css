@@ -1,79 +1,78 @@
 .banner_views {
-    position: relative;
-  }
-  
-  .banner_views img {
-    width: 100%;
-  height: 600px;
-   object-fit:cover;
-   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.7);
-  }
-
-  @font-face {
-    font-family: 'MiFuentePersonalizada';
-    src: url('../../Fonts/Bevan-Regular.ttf') format('truetype');
-  }
-
-  @font-face {
-    font-family: 'Inria';
-    src: url('../../Fonts/InriaSans-Regular.ttf') format('truetype');
-  }
-  @font-face {
-    font-family: 'Single';
-    src: url('../../Fonts/SingleDay-Regular.ttf') format('truetype');
-  }
-  
-  .banner_views_text {
-    color: white; 
-    font-size: 30px; 
-    font-family: 'Inria';
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.9);
-    margin: 0;
+  position: relative;
 }
 
-.container_content{
+.banner_views img {
+  width: 100%;
+  height: 600px;
+  object-fit: cover;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.7);
+}
+
+@font-face {
+  font-family: "MiFuentePersonalizada";
+  src: url("../../Fonts/Bevan-Regular.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Inria";
+  src: url("../../Fonts/InriaSans-Regular.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Single";
+  src: url("../../Fonts/SingleDay-Regular.ttf") format("truetype");
+}
+
+.banner_views_text {
+  color: white;
+  font-size: 30px;
+  font-family: "Inria";
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.9);
+  margin: 0;
+}
+
+.container_content {
   position: absolute;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items:center;
+  align-items: center;
   top: 200px;
   left: 150px;
   width: 80%;
   height: 300px;
   z-index: 1;
-  text-align: center;  
+  text-align: center;
 }
 
 .banner_views_title {
-  color: white; 
+  color: white;
   font-weight: bold;
-  font-size: 50px; 
-  font-family: 'MiFuentePersonalizada'; 
-  text-shadow: 7px 7px 7px rgba(0, 0, 0, 1.9); 
+  font-size: 50px;
+  font-family: "MiFuentePersonalizada";
+  text-shadow: 7px 7px 7px rgba(0, 0, 0, 1.9);
   margin: 0;
 }
 
-
-@media(max-width:768px){
-  .banner_views{
-   width: 100%;
-   height: 400px;
-  }
-    .banner_views img {
+@media (max-width: 768px) {
+  .banner_views {
+    width: 100%;
     height: 400px;
-  object-fit: fill;}
-  
-.container_content{
-  width: 80%;
-  height: 200px;
-  left: 50px;
-}
-.banner_views_title {
-  font-size: 30px;
-}
-.banner_views_text {
-  font-size: 20px;
-}
+  }
+  .banner_views img {
+    height: 400px;
+    object-fit: fill;
+  }
 
+  .container_content {
+    width: 80%;
+    height: 200px;
+    left: 50px;
+  }
+  .banner_views_title {
+    font-size: 30px;
+  }
+  .banner_views_text {
+    font-size: 20px;
+  }
 }

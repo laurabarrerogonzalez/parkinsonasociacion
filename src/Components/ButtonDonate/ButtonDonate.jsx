@@ -1,5 +1,5 @@
-import React from 'react';
-import "../ButtonDonate/ButtonDonate.css"
+import React from "react";
+import "../ButtonDonate/ButtonDonate.css";
 
 const ButtonDonate = () => {
   return (

@@ -1,6 +1,5 @@
-import React from 'react';
-import "../BannerViews/BannerViews.css"
-
+import React from "react";
+import "../BannerViews/BannerViews.css";
 
 const BannerViews = ({ image, text, title }) => {
   return (

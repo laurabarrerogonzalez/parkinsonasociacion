@@ -6,7 +6,6 @@ const AdminNavbar = ({ handleLogout }) => {
   const [isLoggedIn, setLoggedIn] = useState(false);
 
   useEffect(() => {
-    
     const token = localStorage.getItem("token");
     if (token) {
       setLoggedIn(true);
@@ -54,7 +53,6 @@ const AdminNavbar = ({ handleLogout }) => {
       <Link to="/galleryEC">
         <button className="button333">Galería Proyectos</button>
       </Link>
-
 
       {isLoggedIn && (
         <Link to="/">

@@ -1,18 +1,18 @@
 @font-face {
-  font-family: 'MiFuentePersonalizada';
-  src: url('../../Fonts/Bevan-Regular.ttf') format('truetype');
+  font-family: "MiFuentePersonalizada";
+  src: url("../../Fonts/Bevan-Regular.ttf") format("truetype");
   /* Agrega más formatos y rutas para soporte de navegadores diferentes */
 }
 
 @font-face {
-  font-family: 'Gotham Black';
-  src: url('../../Fonts/1830-font.otf') format('truetype');
+  font-family: "Gotham Black";
+  src: url("../../Fonts/1830-font.otf") format("truetype");
   /* Agrega más formatos y rutas para soporte de navegadores diferentes */
 }
 
 @font-face {
-  font-family: 'Poppins';
-  src: url('../../Fonts/Poppins-Regular.ttf') format('truetype');
+  font-family: "Poppins";
+  src: url("../../Fonts/Poppins-Regular.ttf") format("truetype");
   /* Agrega más formatos y rutas para soporte de navegadores diferentes */
 }
 .textQ {
@@ -23,15 +23,15 @@
 
 .social-band {
   display: flex;
-  padding:1px;
+  padding: 1px;
   color: white;
-  flex-wrap: wrap; 
+  flex-wrap: wrap;
 }
 
 .left-side {
   flex: 1;
   text-align: center;
-  background: #EC750E;
+  background: #ec750e;
   padding: 10px;
   position: relative;
   display: flex;
@@ -41,10 +41,9 @@
 
 .left-side h2 {
   font-size: 30px;
-  margin-left:150px;
-  text-align: center; 
+  margin-left: 150px;
+  text-align: center;
 }
-
 
 .right-side {
   flex: 1;
@@ -55,11 +54,10 @@
   display: flex;
   align-items: center;
   bottom: 600px;
-  
 }
 
 .right-side img {
-  width: 2.5rem; 
+  width: 2.5rem;
   height: auto;
   margin: 10px;
   margin-left: 40px;
@@ -68,10 +66,10 @@
 .lower-band {
   display: flex;
   align-items: center;
-  background: #E26890;
+  background: #e26890;
   padding: 10px;
   position: relative;
-  width: 50%; 
+  width: 50%;
   bottom: 600px;
 }
 
@@ -83,20 +81,20 @@
 .lower-triangle {
   width: 0;
   height: 0;
-  border-left: 4vw solid transparent; 
+  border-left: 4vw solid transparent;
   border-right: 4vw solid transparent;
-  border-top: 4vw solid #E26890;
+  border-top: 4vw solid #e26890;
   position: absolute;
   left: 50%;
-  transform: translateX(-50%); 
-  bottom: -2.2rem; 
+  transform: translateX(-50%);
+  bottom: -2.2rem;
 }
 
 .lower-title {
   text-align: center;
   color: white;
   margin: 0;
-  font-family: 'Gotham Black';
+  font-family: "Gotham Black";
   font-size: 30px;
 }
 
@@ -106,62 +104,58 @@
 }
 
 .icon {
-  width: 2.75rem; 
+  width: 2.75rem;
   height: auto;
   margin-left: 105px;
 }
-@media(max-width:768px){
+@media (max-width: 768px) {
   .triangleF2525 {
     width: 0;
     height: 0;
-    border-left: 8vw solid transparent; 
+    border-left: 8vw solid transparent;
     border-right: 8vw solid transparent;
-    border-top: 8vw solid #EC750E;
+    border-top: 8vw solid #ec750e;
     position: absolute;
     margin-left: -48px;
     margin-bottom: -320px;
- 
+  }
 
-}
+  .lower-triangle {
+    border-left: 10vw solid transparent;
+    border-right: 10vw solid transparent;
+    border-top: 10vw solid #e26890;
+    position: absolute;
+    left: 50%;
+    margin-bottom: 7px;
+  }
+  .lower-title {
+    text-align: left;
+    color: white;
+    font-size: 1rem;
+  }
 
-.lower-triangle {
+  .lower-right-side {
+    display: flex;
+    margin-left: -95px;
+  }
+  .left-side h2 {
+    font-size: 1.2rem;
+    margin: 0;
+    text-align: center;
+  }
 
-  border-left: 10vw solid transparent; 
-  border-right: 10vw solid transparent;
-  border-top: 10vw solid #E26890;
-  position: absolute;
-  left: 50%;
-  margin-bottom:7px;
-}
-.lower-title {
-  text-align: left;
-  color: white;
-  font-size: 1rem;
-}
+  .left-side {
+    bottom: 750px;
+  }
+  .right-side {
+    bottom: 750px;
+  }
+  .lower-band {
+    bottom: 750px;
+  }
 
-.lower-right-side {
-  display: flex;
-  margin-left: -95px;
-  
-}
-.left-side h2 {
-  font-size: 1.2rem;
-  margin: 0;
-  text-align: center; 
-}
-
-.left-side {
-  bottom: 750px;
-}
-.right-side{
-  bottom: 750px;
-}
-.lower-band {
-  bottom: 750px;
-}
-
-.containers_map_inform{
-  display: flex;
-  flex-direction: column;
-}
+  .containers_map_inform {
+    display: flex;
+    flex-direction: column;
+  }
 }

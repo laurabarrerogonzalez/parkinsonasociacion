@@ -1,122 +1,114 @@
 @font-face {
-    font-family: 'MiFuentePersonalizada';
-    src: url('../../Fonts/Bevan-Regular.ttf') format('truetype');
-    /* Agrega más formatos y rutas para soporte de navegadores diferentes */
-  }
- 
-  
-  @font-face {
-    font-family: 'Gotham Black';
-    src: url('../../Fonts/1830-font.otf') format('truetype');
-    /* Agrega más formatos y rutas para soporte de navegadores diferentes */
-  }
-  
-  @font-face {
-    font-family: 'Poppins';
-    src: url('../../Fonts/Poppins-Regular.ttf') format('truetype');
-    /* Agrega más formatos y rutas para soporte de navegadores diferentes */
-  }
-
-.help{
-    font-size: 35px;
-    color: #ec750e;
-    text-align: left;
-    padding: 2%;
-    font-family: 'Gotham Black';
-
-    
-}
-.containerhelp{
-    background-color: #033239;
-    padding: 85px;
-}
-.text-Help{
-    font-size: 18px;
-    color: #ffffff;
-    margin-left: 2%;
-    line-height: 1.5;
-    font-family: 'Poppins';
- 
+  font-family: "MiFuentePersonalizada";
+  src: url("../../Fonts/Bevan-Regular.ttf") format("truetype");
+  /* Agrega más formatos y rutas para soporte de navegadores diferentes */
 }
 
-.titleHelpSer{
-    line-height: 1.8;
-    margin-left: 2%;
-    padding-left: 55px;
-    margin-bottom: 45px;
-    font-family: 'Poppins';
-    font-size: 18px;
+@font-face {
+  font-family: "Gotham Black";
+  src: url("../../Fonts/1830-font.otf") format("truetype");
+  /* Agrega más formatos y rutas para soporte de navegadores diferentes */
 }
 
-.helpSer{
-    font-size: 35px;
-    color: #067787;
-    text-align: left;
-    padding: 2%;
-    margin-left:6%;
-    font-family: 'Gotham Black';
-   
+@font-face {
+  font-family: "Poppins";
+  src: url("../../Fonts/Poppins-Regular.ttf") format("truetype");
+  /* Agrega más formatos y rutas para soporte de navegadores diferentes */
 }
 
+.help {
+  font-size: 35px;
+  color: #ec750e;
+  text-align: left;
+  padding: 2%;
+  font-family: "Gotham Black";
+}
+.containerhelp {
+  background-color: #033239;
+  padding: 85px;
+}
+.text-Help {
+  font-size: 18px;
+  color: #ffffff;
+  margin-left: 2%;
+  line-height: 1.5;
+  font-family: "Poppins";
+}
+
+.titleHelpSer {
+  line-height: 1.8;
+  margin-left: 2%;
+  padding-left: 55px;
+  margin-bottom: 45px;
+  font-family: "Poppins";
+  font-size: 18px;
+}
+
+.helpSer {
+  font-size: 35px;
+  color: #067787;
+  text-align: left;
+  padding: 2%;
+  margin-left: 6%;
+  font-family: "Gotham Black";
+}
 
 .Vibehelp {
-    left: 0;
-    width: 100%;
-    overflow: hidden;
-    line-height: 0;
-    transform: rotate(360deg);
-    
-    
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+  transform: rotate(360deg);
 }
 
 .Vibehelp svg {
-    position: relative;
-    display:flex;
-    width: calc(150% + 0.2em);
-    height: 250px;
+  position: relative;
+  display: flex;
+  width: calc(150% + 0.2em);
+  height: 250px;
 }
 
 .Vibehelp {
-    fill: #58a4af;
+  fill: #58a4af;
 }
 
 .image-container {
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
 }
 
 .help-card {
-    width: 400px;
-    border-radius: 15px;
-    overflow: hidden;
-    margin: 10px;
-    transition: transform 0.3s ease-in-out;
+  width: 400px;
+  border-radius: 15px;
+  overflow: hidden;
+  margin: 10px;
+  transition: transform 0.3s ease-in-out;
 }
 
 .help-card:hover {
-    transform: scale(1.05);
+  transform: scale(1.05);
 }
 
 .help-image {
-    width: 50%;
-    height: 50px;
-    object-fit: cover;
+  width: 50%;
+  height: 50px;
+  object-fit: cover;
 }
 
 .Vibehelp {
-    fill: #58a4af;
-    position: relative;
-    top:50px;
+  fill: #58a4af;
+  position: relative;
+  top: 50px;
 }
 
 .Vibehelp svg {
-    width: 100%;
-    height: auto;
+  width: 100%;
+  height: auto;
 }
-.image-container{
-    background-color: #ec750e;
-    width: 100%;
-    padding-top: 25px;
-    padding-bottom: 25px; 
+.image-container {
+  background-color: #ec750e;
+  width: 100%;
+  padding-top: 25px;
+  padding-bottom: 25px;
 }
