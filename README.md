@@ -21,7 +21,7 @@ The objective of this educational project is the creation of an informative blog
 
 ## Screenshots Responsive Mobile  📱
 
-<img src="image/Responsive1.png" width="auto" height="150">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="image/Responsive2.png" width="auto" height="150">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="image/Responsive3.png" width="auto" height="150">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="image/Responsive4.png" width="auto" height="150">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="image/Responsive5.png" width="auto" height="150">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="image/Responsive6.png" width="auto" height="150">
+<img src="image/Responsive1.png" width="auto" height="200">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="image/Responsive2.png" width="auto" height="200">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="image/Responsive3.png" width="auto" height="200">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="image/Responsive4.png" width="auto" height="200">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="image/Responsive5.png" width="auto" height="200">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="image/Responsive6.png" width="auto" height="200">
 
 
 
