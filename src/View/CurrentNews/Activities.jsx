@@ -17,7 +17,7 @@ const Activities = () => {
       const response = await fetch("https://localhost:7165/api/gallery1");
       const data = await response.json();
   
-      // Ordenar las imágenes por ID de manera descendente
+    
       data.sort((a, b) => b.id_gallery1 - a.id_gallery1);
   
       setImageListCD(data);
@@ -31,7 +31,7 @@ const Activities = () => {
       const response = await fetch("https://localhost:7165/api/gallery2");
       const data = await response.json();
   
-      // Ordenar las imágenes por ID de manera descendente
+     
       data.sort((a, b) => b.id_gallery2 - a.id_gallery2);
   
       setImageListEC(data);
