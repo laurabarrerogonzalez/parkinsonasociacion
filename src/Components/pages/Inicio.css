@@ -1,11 +1,10 @@
 .navbar {
-    position: absolute;
-    z-index: 3; 
-  }
-  
-  .banner {
-    position: relative;
-    z-index: 1;
-    margin-top: 0px;
-  }
-  
+  position: absolute;
+  z-index: 3;
+}
+
+.banner {
+  position: relative;
+  z-index: 1;
+  margin-top: 0px;
+}

@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import Navbar from "../../Components/Navbar/Navbar";
 import BannerViews from "../../Components/BannerViews/BannerViews";
 import Footer from "../../Components/Footer/Footer";
-import "./Proyects.css"; 
+import "./Proyects.css";
 const Proyects = () => {
   const [cardInfo1, setCardInfo1] = useState({
     title: "Imagen Fiel",
@@ -117,7 +117,6 @@ const Proyects = () => {
           />
         </div>
 
-        
         <div className="cardPR" onMouseEnter={cambiarInformacion2}>
           <p className="card-titlePR">{cardInfo2.title}</p>
           <p className="small-desc">{cardInfo2.description}</p>

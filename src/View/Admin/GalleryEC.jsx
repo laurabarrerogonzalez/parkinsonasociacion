@@ -22,7 +22,7 @@ const GalleryEC = () => {
         body: JSON.stringify({ url: imageURL }),
       });
       const data = await response.json();
-      setImageListEC([data, ...imageListEC]); 
+      setImageListEC([data, ...imageListEC]);
       setImageURL("");
     } catch (error) {
       console.error("Error:", error);
@@ -58,9 +58,9 @@ const GalleryEC = () => {
     try {
       const response = await fetch("https://localhost:7165/api/gallery2");
       const data = await response.json();
-  
+
       data.sort((a, b) => b.id_gallery2 - a.id_gallery2);
-  
+
       setImageListEC(data);
     } catch (error) {
       console.error("Error fetching images:", error);

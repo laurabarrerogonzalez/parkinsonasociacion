@@ -1,19 +1,18 @@
-
 @font-face {
-  font-family: 'MiFuentePersonalizada';
-  src: url('../../Fonts/Bevan-Regular.ttf') format('truetype');
+  font-family: "MiFuentePersonalizada";
+  src: url("../../Fonts/Bevan-Regular.ttf") format("truetype");
   /* Agrega más formatos y rutas para soporte de navegadores diferentes */
 }
 
 @font-face {
-  font-family: 'Gotham Black';
-  src: url('../../Fonts/1830-font.otf') format('truetype');
+  font-family: "Gotham Black";
+  src: url("../../Fonts/1830-font.otf") format("truetype");
   /* Agrega más formatos y rutas para soporte de navegadores diferentes */
 }
 
 @font-face {
-  font-family: 'Poppins';
-  src: url('../../Fonts/Poppins-Regular.ttf') format('truetype');
+  font-family: "Poppins";
+  src: url("../../Fonts/Poppins-Regular.ttf") format("truetype");
   /* Agrega más formatos y rutas para soporte de navegadores diferentes */
 }
 .photos {
@@ -45,26 +44,24 @@
   margin: 5.5% 5%;
   text-align: center;
   color: white;
-  font-family:'Gotham Black';
+  font-family: "Gotham Black";
   font-size: 22px;
 }
 .text2 {
   margin: 3% 5%;
   text-align: left;
   color: white;
-  
 }
 .text3 {
   margin: 3% 5%;
   text-align: end;
   color: white;
-  
 }
 .text4 {
   margin: 7% 5%;
   text-align: center;
   color: white;
-  font-family:'Gotham Black';
+  font-family: "Gotham Black";
   font-size: 22px;
 }
 .form11 {

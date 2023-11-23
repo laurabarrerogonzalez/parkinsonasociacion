@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import './Resources.css'
+import "./Resources.css";
 import Navbar from "../../Components/Navbar/Navbar";
 import Footer from "../../assets/Components/Footer/Footer.jsx";
 import BannerViews from "../../Components/BannerViews/BannerViews";
@@ -16,7 +16,9 @@ const Resources = () => {
 
   const fetchResources = async () => {
     try {
-      const response = await fetch("https://localhost:7165/ResourcesControllers/GetResources");
+      const response = await fetch(
+        "https://localhost:7165/ResourcesControllers/GetResources"
+      );
       const data = await response.json();
       setFiles(data);
     } catch (error) {
@@ -30,7 +32,7 @@ const Resources = () => {
 
   return (
     <>
-       <Navbar />
+      <Navbar />
       <BannerViews
         image="https://res.cloudinary.com/dit2zhtwz/image/upload/v1700651138/cerca-pila-libros-coloridos_23-2149082168_e1gg2y.jpg"
         title="Recursos y Pautas"

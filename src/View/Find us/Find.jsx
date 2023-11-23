@@ -9,7 +9,6 @@ import ScrollArrow from "../../Components/ScrollArrow/ScrollArrow";
 import Information from "../../Components/Information/Information";
 import CalendarComponent from "../../Components/Calendar/Calendar";
 
-
 const Find = () => {
   return (
     <>
@@ -20,15 +19,15 @@ const Find = () => {
           title="¿DÓNDE ENCONTRARNOS?"
         />
       </div>
-      <div className="containers_map_inform" style={{ display: 'flex' }}>
-        <div style={{ flex: '0 0 50%', paddingRight: '20px' }}>
+      <div className="containers_map_inform" style={{ display: "flex" }}>
+        <div style={{ flex: "0 0 50%", paddingRight: "20px" }}>
           <Mapa />
         </div>
-        <div style={{ flex: '1' }}>
+        <div style={{ flex: "1" }}>
           <Information />
         </div>
       </div>
-    
+
       <CalendarComponent />
       <div className="social-band">
         <div className="left-side">
@@ -76,7 +75,7 @@ const Find = () => {
       <ButtonDonate />
       <ScrollArrow />
     </>
-  )
-}
+  );
+};
 
 export default Find;

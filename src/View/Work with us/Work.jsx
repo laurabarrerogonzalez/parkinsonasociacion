@@ -49,7 +49,7 @@ const Work = () => {
 
     setFormsData((prevData) => ({
       ...prevData,
-      archive: value, 
+      archive: value,
     }));
   };
 
@@ -61,7 +61,7 @@ const Work = () => {
     }
 
     if (name === "archive") {
-      setFileUrl(value); 
+      setFileUrl(value);
     }
 
     setFormsData((prevData) => ({
@@ -100,13 +100,16 @@ const Work = () => {
 
   const sendFormsDataToAPI = async () => {
     try {
-      const response = await fetch("https://localhost:7165/WorkControllers/Post", {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-        },
-        body: JSON.stringify(formsData),
-      });
+      const response = await fetch(
+        "https://localhost:7165/WorkControllers/Post",
+        {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+          },
+          body: JSON.stringify(formsData),
+        }
+      );
 
       if (response.ok) {
         swal.fire({
@@ -305,7 +308,7 @@ const Work = () => {
           <label>
             <span>Adjuntar Archivo (URL)</span>
             <input
-              type="text" 
+              type="text"
               className="input"
               placeholder="Ingrese la URL del archivo"
               value={fileUrl}

@@ -1,345 +1,333 @@
 @font-face {
-    font-family: 'Sans';
-    src: url('../../Fonts/DMSans_18pt-Regular.ttf') format('truetype');
-  }
-
-  @font-face {
-    font-family: 'MiFuentePersonalizada';
-    src: url('../../Fonts/Bevan-Regular.ttf') format('truetype');
-  }
- 
-  
-  @font-face {
-    font-family: 'Gotham Black';
-    src: url('../../Fonts/1830-font.otf') format('truetype');
-    /* Agrega más formatos y rutas para soporte de navegadores diferentes */
-  }
-  
-  @font-face {
-    font-family: 'Poppins';
-    src: url('../../Fonts/Poppins-Regular.ttf') format('truetype');
-    /* Agrega más formatos y rutas para soporte de navegadores diferentes */
-  }
-
-.section_banner_new_stimulation{
-    width: 100%;
-    height: auto;
-    margin-top: 120px;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-   
-    flex-wrap: wrap;
+  font-family: "Sans";
+  src: url("../../Fonts/DMSans_18pt-Regular.ttf") format("truetype");
 }
 
-.title_stimulation{
-    width: 600px;
-    height: auto;
-    display: flex;
-    flex-direction: column;
-    align-items: center; 
-}
-.title_stimulation h1{
-    width: 100%;
-    font-family:'MiFuentePersonalizada';
-    font-size: 40px;
-    margin-top: 80px;
-    text-align: center;
+@font-face {
+  font-family: "MiFuentePersonalizada";
+  src: url("../../Fonts/Bevan-Regular.ttf") format("truetype");
 }
 
-.title_stimulation p{
-    width: 100%;
-    font-family:'Poppins';
-    font-size:18px;
-    margin-top: 40px;
+@font-face {
+  font-family: "Gotham Black";
+  src: url("../../Fonts/1830-font.otf") format("truetype");
+  /* Agrega más formatos y rutas para soporte de navegadores diferentes */
 }
 
-.img_stimulation_banner{
-    width: 600px;
-    height: 600px;
+@font-face {
+  font-family: "Poppins";
+  src: url("../../Fonts/Poppins-Regular.ttf") format("truetype");
+  /* Agrega más formatos y rutas para soporte de navegadores diferentes */
 }
 
-.img_stimulation_banner img{
-    width: 100%;
-    height: 100%;
-     object-fit:cover;
+.section_banner_new_stimulation {
+  width: 100%;
+  height: auto;
+  margin-top: 120px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+
+  flex-wrap: wrap;
 }
 
-.buttons_items{
-    width: 100%;
-    margin-top: 30px;
-    height: auto;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    flex-wrap: wrap;
+.title_stimulation {
+  width: 600px;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.title_stimulation h1 {
+  width: 100%;
+  font-family: "MiFuentePersonalizada";
+  font-size: 40px;
+  margin-top: 80px;
+  text-align: center;
+}
+
+.title_stimulation p {
+  width: 100%;
+  font-family: "Poppins";
+  font-size: 18px;
+  margin-top: 40px;
+}
+
+.img_stimulation_banner {
+  width: 600px;
+  height: 600px;
+}
+
+.img_stimulation_banner img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.buttons_items {
+  width: 100%;
+  margin-top: 30px;
+  height: auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  flex-wrap: wrap;
 }
 
 .button_1_info {
-    outline: none;
-    cursor: pointer;
-    border: none;
-    padding: 0.9rem 2rem;
-    margin: 0;
-    font-family: inherit;
-    font-size: inherit;
-    position: relative;
-    display: inline-block;
-    letter-spacing: 0.05rem;
-    font-weight: 700;
-    font-size: 17px;
-    border-radius: 500px;
-    overflow: hidden;
-    background: #FF961A;
-    color: rgb(0, 0, 0);
-    border: #000 solid 1px;
-   }
-   
-   .button_1_info span {
-    position: relative;
-    z-index: 10;
-    transition: color 0.4s;
-   }
-   
-   .button_1_info:hover span {
-    color: rgb(255, 255, 255);
-   }
-   
-   .button_1_info::before,
-   .button_1_info::after {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    z-index: 0;
-   }
-   
-   .button_1_info::before {
-    content: "";
-    background: #ffffff;
-    width: 120%;
-    left: -10%;
-    transform: skew(30deg);
-    transition: transform 0.4s cubic-bezier(0.3, 1, 0.8, 1);
-   }
-   
-   .button_1_info:hover::before {
-    transform: translate3d(100%, 0, 0);
-   }
+  outline: none;
+  cursor: pointer;
+  border: none;
+  padding: 0.9rem 2rem;
+  margin: 0;
+  font-family: inherit;
+  font-size: inherit;
+  position: relative;
+  display: inline-block;
+  letter-spacing: 0.05rem;
+  font-weight: 700;
+  font-size: 17px;
+  border-radius: 500px;
+  overflow: hidden;
+  background: #ff961a;
+  color: rgb(0, 0, 0);
+  border: #000 solid 1px;
+}
 
-   .button_2_info {
-    outline: none;
-    cursor: pointer;
-    border: none;
-    padding: 0.9rem 2rem;
-    margin: 0;
-    font-family: inherit;
-    font-size: inherit;
-    position: relative;
-    display: inline-block;
-    letter-spacing: 0.05rem;
-    font-weight: 700;
-    font-size: 17px;
-    border-radius: 500px;
-    overflow: hidden;
-    background: #1DAFCC;
-    color: ghostwhite;
-    border: #000 solid 1px;
-   }
-   
-   .button_2_info span {
-    position: relative;
-    z-index: 10;
-    transition: color 0.4s;
-   }
-   
-   .button_2_info:hover span {
-    color: black;
-   }
-   
-   .button_2_info::before,
-   .button_2_info::after {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    z-index: 0;
-   }
-   
-   .button_2_info::before {
-    content: "";
-    background: #000;
-    width: 120%;
-    left: -10%;
-    transform: skew(30deg);
-    transition: transform 0.4s cubic-bezier(0.3, 1, 0.8, 1);
-   }
-   
-   .button_2_info:hover::before {
-    transform: translate3d(100%, 0, 0);
-   }
-   
-   .custom-shape-divider-top-1699433452 {
-    position: relative;
-    top: 20;
-    left: 0;
-    width: 100%;
-    overflow: hidden;
-    line-height: 0;
+.button_1_info span {
+  position: relative;
+  z-index: 10;
+  transition: color 0.4s;
+}
+
+.button_1_info:hover span {
+  color: rgb(255, 255, 255);
+}
+
+.button_1_info::before,
+.button_1_info::after {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+}
+
+.button_1_info::before {
+  content: "";
+  background: #ffffff;
+  width: 120%;
+  left: -10%;
+  transform: skew(30deg);
+  transition: transform 0.4s cubic-bezier(0.3, 1, 0.8, 1);
+}
+
+.button_1_info:hover::before {
+  transform: translate3d(100%, 0, 0);
+}
+
+.button_2_info {
+  outline: none;
+  cursor: pointer;
+  border: none;
+  padding: 0.9rem 2rem;
+  margin: 0;
+  font-family: inherit;
+  font-size: inherit;
+  position: relative;
+  display: inline-block;
+  letter-spacing: 0.05rem;
+  font-weight: 700;
+  font-size: 17px;
+  border-radius: 500px;
+  overflow: hidden;
+  background: #1dafcc;
+  color: ghostwhite;
+  border: #000 solid 1px;
+}
+
+.button_2_info span {
+  position: relative;
+  z-index: 10;
+  transition: color 0.4s;
+}
+
+.button_2_info:hover span {
+  color: black;
+}
+
+.button_2_info::before,
+.button_2_info::after {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+}
+
+.button_2_info::before {
+  content: "";
+  background: #000;
+  width: 120%;
+  left: -10%;
+  transform: skew(30deg);
+  transition: transform 0.4s cubic-bezier(0.3, 1, 0.8, 1);
+}
+
+.button_2_info:hover::before {
+  transform: translate3d(100%, 0, 0);
+}
+
+.custom-shape-divider-top-1699433452 {
+  position: relative;
+  top: 20;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
 }
 
 .custom-shape-divider-top-1699433452 svg {
-    position: relative;
-    display: block;
-    width: calc(100% + 1.3px);
-    height: 150px;
+  position: relative;
+  display: block;
+  width: calc(100% + 1.3px);
+  height: 150px;
 }
 
 .custom-shape-divider-top-1699433452 .shape-fill {
-    fill: #ffffff;
+  fill: #ffffff;
 }
-
 
 @media (max-width: 767px) {
-    .custom-shape-divider-top-1699433452 svg {
-        width: calc(100% + 1.3px);
-        height: 79px;
-    }
+  .custom-shape-divider-top-1699433452 svg {
+    width: calc(100% + 1.3px);
+    height: 79px;
+  }
 }
 
-.section_benefits{
-    width: 100%;
-    height: auto;
-    background: #15ABC6;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
+.section_benefits {
+  width: 100%;
+  height: auto;
+  background: #15abc6;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
-.section_benefits h1{
-    width: 100%;
-    margin-top: 0px;
-    text-align: center;
-    font-size: 40px;
-    color: white;
-    font-family: 'MiFuentePersonalizada';
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
-   
+.section_benefits h1 {
+  width: 100%;
+  margin-top: 0px;
+  text-align: center;
+  font-size: 40px;
+  color: white;
+  font-family: "MiFuentePersonalizada";
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
 
 .card_benefits {
-    position: relative;
-    width: 220px;
-    height: 320px;
-    background: rgb(255, 255, 255);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 25px;
-    font-weight: bold;
-    border-radius: 15px;
-    cursor: pointer;
-    margin: 40px;
-  }
-  
-  .card_benefits::before,
-  .card_benefits::after {
-    position: absolute;
-    content: "";
-    width: 20%;
-    height: 20%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 25px;
-    font-weight: bold;
-    background-color: lightblue;
-    transition: all 0.5s;
-  }
-  
-  .card_benefits::before {
-    top: 0;
-    right: 0;
-    border-radius: 0 15px 0 100%;
-  }
-  
-  .card_benefits::after {
-    bottom: 0;
-    left: 0;
-    border-radius: 0 100%  0 15px;
-  }
-  
-  .card_benefits:hover::before,
-  .card_benefits:hover:after {
-    width: 100%;
-    height: 100%;
-    border-radius: 15px;
-    transition: all 0.5s;
-  }
-  
-  .card_benefits:hover:after {
-    content: "La estimulación cognitiva puede fortalecer la memoria a corto y largo plazo, ayudando a retener información, recordar detalles y facilitar la recuperación de datos almacenados en el cerebro.";
-    font-size: 18px;
-    text-align: center;
-    padding: 5px;
-    font-family:'Poppins';
+  position: relative;
+  width: 220px;
+  height: 320px;
+  background: rgb(255, 255, 255);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 25px;
+  font-weight: bold;
+  border-radius: 15px;
+  cursor: pointer;
+  margin: 40px;
 }
 
-  .card_benefits img{
-    width: 100%;
-    object-fit:cover;
-  }
+.card_benefits::before,
+.card_benefits::after {
+  position: absolute;
+  content: "";
+  width: 20%;
+  height: 20%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 25px;
+  font-weight: bold;
+  background-color: lightblue;
+  transition: all 0.5s;
+}
 
-  #two_benefits:hover:after{
-    content: "El desafío intelectual y la resolución de problemas pueden ayudar a liberar endorfinas, mejorando el estado de ánimo y reduciendo los niveles de estrés y ansiedad.";
-    font-size: 18px;
-    text-align: center;
-    padding: 5px;
-    font-family:'Poppins';
-    
-  }
+.card_benefits::before {
+  top: 0;
+  right: 0;
+  border-radius: 0 15px 0 100%;
+}
 
-  #three_benefits:hover:after{
-    content: "Al fomentar la conexión de diferentes áreas del cerebro, se puede potenciar la creatividad y la capacidad de encontrar soluciones innovadoras a problemas complejos.";
-    font-size: 18px;
-    text-align: center;
-    padding: 5px;
-    font-family:'Poppins';
-  }
-  #four_benefits:hover:after{
-    content: "Mantener la mente activa a lo largo de la vida puede reducir el riesgo de padecer enfermedades neurodegenerativas como el Alzheimer o la demencia, o al menos retrasar su aparición.";
-    font-size: 18px;
-    text-align:center;
-    padding: 5px;
-    font-family:'Poppins';
-  }
+.card_benefits::after {
+  bottom: 0;
+  left: 0;
+  border-radius: 0 100% 0 15px;
+}
 
-  .card_benefits p{
-    position: absolute;
-    width: 100%;
-    top: 0px;
-    text-align: center;
-    font-family:'Gotham Black';
-    font-size: 25px;
-  }
+.card_benefits:hover::before,
+.card_benefits:hover:after {
+  width: 100%;
+  height: 100%;
+  border-radius: 15px;
+  transition: all 0.5s;
+}
 
+.card_benefits:hover:after {
+  content: "La estimulación cognitiva puede fortalecer la memoria a corto y largo plazo, ayudando a retener información, recordar detalles y facilitar la recuperación de datos almacenados en el cerebro.";
+  font-size: 18px;
+  text-align: center;
+  padding: 5px;
+  font-family: "Poppins";
+}
 
+.card_benefits img {
+  width: 100%;
+  object-fit: cover;
+}
 
+#two_benefits:hover:after {
+  content: "El desafío intelectual y la resolución de problemas pueden ayudar a liberar endorfinas, mejorando el estado de ánimo y reduciendo los niveles de estrés y ansiedad.";
+  font-size: 18px;
+  text-align: center;
+  padding: 5px;
+  font-family: "Poppins";
+}
 
-  @media (max-width: 700px) {
-    .title_stimulation{
-      width: 99%;
-      height: auto;
-  
+#three_benefits:hover:after {
+  content: "Al fomentar la conexión de diferentes áreas del cerebro, se puede potenciar la creatividad y la capacidad de encontrar soluciones innovadoras a problemas complejos.";
+  font-size: 18px;
+  text-align: center;
+  padding: 5px;
+  font-family: "Poppins";
+}
+#four_benefits:hover:after {
+  content: "Mantener la mente activa a lo largo de la vida puede reducir el riesgo de padecer enfermedades neurodegenerativas como el Alzheimer o la demencia, o al menos retrasar su aparición.";
+  font-size: 18px;
+  text-align: center;
+  padding: 5px;
+  font-family: "Poppins";
+}
+
+.card_benefits p {
+  position: absolute;
+  width: 100%;
+  top: 0px;
+  text-align: center;
+  font-family: "Gotham Black";
+  font-size: 25px;
+}
+
+@media (max-width: 700px) {
+  .title_stimulation {
+    width: 99%;
+    height: auto;
   }
   .title_stimulation p {
     text-align: center;
   }
-    
 }
-
-
-
