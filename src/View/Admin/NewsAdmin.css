@@ -1,9 +1,5 @@
-<<<<<<< HEAD
-.form-newsadmin {
-=======
 .form-newsadmin{
   margin-left: 15%;
->>>>>>> origin/Laura
   margin-bottom: 5%;
 }
 .newsadmin {
@@ -11,40 +7,10 @@
 }
 .news-container {
   display: grid;
-<<<<<<< HEAD
-  grid-template-columns: repeat(4, 1fr);
-  gap: 20px;
-=======
   grid-template-columns: repeat(4, 1fr); 
   gap: 20px; 
->>>>>>> origin/Laura
 }
 .news-item {
-<<<<<<< HEAD
-  margin-bottom: 20px;
-  padding: 10px;
-  display: flex;
-  flex-direction: column;
-  text-align: center;
-}
-.thumbnail {
-  width: 300px;
-  height: 200px;
-  object-fit: cover;
-}
-.titlea {
-  font-size: 20px;
-  margin-top: 10px;
-  margin-bottom: 5px;
-}
-.link {
-  text-decoration: none;
-  color: blue;
-}
-.thumbnail-link {
-  text-decoration: none;
-}
-=======
     margin-bottom: 20px;
     padding: 10px;
     display: flex;
@@ -186,4 +152,3 @@
   
     
   }
->>>>>>> origin/Laura
