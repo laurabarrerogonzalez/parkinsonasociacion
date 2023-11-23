@@ -17,11 +17,11 @@ const Activities = () => {
 
   const openModal = (index, isCD) => {
     if (isCD) {
-      setSelectedGallery("gallery1");
+      setSelectedGallery("Servicios");
       setSelectedImageIndexCD(index);
       setSelectedImageUrl(imageListCD[index].url);
     } else {
-      setSelectedGallery("gallery2");
+      setSelectedGallery("Proyectos");
       setSelectedImageIndexEC(index);
       setSelectedImageUrl(imageListEC[index].url);
     }

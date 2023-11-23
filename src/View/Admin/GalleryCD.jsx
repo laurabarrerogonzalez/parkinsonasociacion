@@ -4,6 +4,7 @@ import ImageListItem from "@mui/material/ImageListItem";
 import "../Admin/GalleryCD.css";
 import AdminNavbar from "../../Components/AdminNavbar/AdminNavbar";
 import Footer from "../../Components/Footer/Footer";
+import swal from "sweetalert2";
 
 export default function QuiltedImageList() {
   const [imageList, setImageList] = React.useState([]);
@@ -23,8 +24,20 @@ export default function QuiltedImageList() {
       const data = await response.json();
       setImageList([data, ...imageList]);
       setImageURL("");
+      swal.fire({
+        title: "Enviado",
+        text: "La imagen ha sido añadida.",
+        icon: "success",
+        confirmButtonColor: "rgb(236, 117, 14)",
+      });
     } catch (error) {
       console.error("Error:", error);
+      swal.fire({
+        title: "Error",
+        text: "Hubo un error al subir la imagen.",
+        icon: "error",
+        confirmButtonColor: "rgb(236, 117, 14)",
+      });
     }
   };
 
@@ -46,9 +59,21 @@ export default function QuiltedImageList() {
           updatedList.splice(selectedImageIndex, 1);
           setImageList(updatedList);
           setSelectedImageIndex(-1);
+          swal.fire({
+            title: "Enviado",
+            text: "La imagen ha sido modificada.",
+            icon: "success",
+            confirmButtonColor: "rgb(236, 117, 14)",
+          });
         }
       } catch (error) {
         console.error("Error deleting image:", error);
+        swal.fire({
+          title: "Error",
+          text: "Hubo un error al eliminar la imagen.",
+          icon: "error",
+          confirmButtonColor: "rgb(236, 117, 14)",
+        });
       }
     }
   };
