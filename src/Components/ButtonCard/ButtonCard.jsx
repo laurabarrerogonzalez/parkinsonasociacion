@@ -34,7 +34,8 @@ const ButtonCard = () => {
               neurólogo.
             </p>
           </div>
-          <div class="item item--inspire">
+          <Link className="buton-aboutus" to="/members">
+             <div class="item item--inspire">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               viewBox="0 0 24 24"
@@ -48,6 +49,8 @@ const ButtonCard = () => {
             </svg>
             <span>Hazte socio</span>
           </div>
+          </Link>
+         
         </div>
         <div class="cardt2">
           <div class="heading02">
@@ -75,7 +78,8 @@ const ButtonCard = () => {
               realizarse en ambos lados del cerebro.
             </p>
           </div>
-          <div class="item item--inspire">
+          <Link className="buton-aboutus" to="/members">
+              <div class="item item--inspire">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               viewBox="0 0 24 24"
@@ -89,6 +93,8 @@ const ButtonCard = () => {
             </svg>
             <span>Hazte socio</span>
           </div>
+          </Link>
+        
         </div>
         <div class="cardt3">
           <div class="heading02">
@@ -115,7 +121,8 @@ const ButtonCard = () => {
               un profesional médico experimentado.
             </p>
           </div>
-          <div class="item item--inspire">
+          <Link className="buton-aboutus" to="/members">
+            <div class="item item--inspire">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               viewBox="0 0 24 24"
@@ -129,6 +136,8 @@ const ButtonCard = () => {
             </svg>
             <span>Hazte socio</span>
           </div>
+          </Link>
+          
         </div>
 
         <div class="cardt4">
