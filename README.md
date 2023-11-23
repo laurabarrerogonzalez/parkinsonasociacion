@@ -6,11 +6,19 @@
 
 ## Project Description 🚀
 
-This educational project aims to create an informative blog dedicated to the Parkinson Extremadura Regional Association. From scratch, we have developed a website providing detailed information about Parkinson's disease and related topics, not only focusing on the illness itself but also highlighting all the activities and services offered by the association to the general public.
+This educational project has the ambitious goal of establishing an informative blog dedicated to the Parkinson Extremadura Regional Association. From the ground up, in our ongoing quest to make a positive impact on the lives of those facing Parkinson's, we are delighted to introduce the digital platform of the "Parkinson Extremadura Regional Association." With a patient-centered focus, our website provides an informative, inclusive, and supportive experience for everyone.
 
-In addition to the informative section, we have developed different views for detailed services, including rehabilitation programs, cognitive stimulation, and home assistance services. Striving to be of service to all interested users, we have incorporated a form/application to facilitate participation, allowing them to join the association and receive regular updates from our website.
+Explore and Discover:
+- Latest News: Stay updated with the latest developments and breakthroughs related to Parkinson's, offering a reliable source of information for patients, families, and healthcare professionals.
+- Become a Member or Volunteer: Join our dedicated community to make a difference in the lives of those living with Parkinson's. Discover how you can contribute and be part of meaningful initiatives.
+- Work With Us: Explore employment and volunteer opportunities, contributing to the growth and success of our association. Your dedication and skills can make a difference.
+- Services: Obtain detailed information about the services we offer, designed to improve the quality of life for those affected by Parkinson's. From emotional support programs to physiotherapy services, we are committed to providing comprehensive support.
+- Who We Are: Learn more about our mission, vision, and the values that drive us. Discover the history of the association and the team working tirelessly to address Parkinson's in the Extremadura region.
+- What is Parkinson's?: Gain educational and comprehensive information about Parkinson's disease. Understanding the medical and emotional aspects is crucial for addressing the challenges faced by patients and their loved ones.
+- Donations: Support our cause through donations. Each contribution brings us a step closer to offering enhanced services and advancing research to find effective solutions.
+- Locations: Find our presence in different areas of Extremadura, including Mérida, Cáceres, Badajoz, and Montijo. We are committed to being accessible to those who need our support.
 
-Our mission is to provide an accessible and valuable platform for those affected by Parkinson's and their families. We are committed to sharing valuable information, resources, and support, thereby creating an informed and supportive community around this disease. Welcome to our online community!
+Our mission is to provide an accessible and useful platform for those affected by Parkinson's and their families. We are dedicated to sharing valuable information, resources, and support, thus creating an informed and supportive community around this disease. Welcome to our online community!
 
 ## Screenshots Desktop 💻
 
