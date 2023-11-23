@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import "./Admin.css";
 import axios from "axios";
 import Swal from "sweetalert2";
+import swal from "sweetalert2";
 import Footer from "../../assets/Components/Footer/Footer";
 import AdminNavbar from "../../Components/AdminNavbar/AdminNavbar";
 
@@ -154,6 +155,12 @@ const Admin = () => {
         `https://localhost:7165/VolunteersControllers/DeleteVolunteers?name=${name}`
       );
       fetchVolunteersData();
+      swal.fire({
+        title: "Enviado",
+        text: "La solicitud ha sido eliminada.",
+        icon: "success",
+        confirmButtonColor: "rgb(236, 117, 14)",
+      });
     } catch (error) {
       console.error(
         `Error al eliminar el voluntario con nombre ${name}`,
@@ -168,6 +175,12 @@ const Admin = () => {
         `https://localhost:7165/MembersControllers/DeleteMembers?name=${name}`
       );
       fetchMembersData();
+      swal.fire({
+        title: "Enviado",
+        text: "La solicitud ha sido eliminada.",
+        icon: "success",
+        confirmButtonColor: "rgb(236, 117, 14)",
+      });
     } catch (error) {
       console.error(`Error al eliminar el socio con nombre ${name}`, error);
     }
@@ -179,6 +192,12 @@ const Admin = () => {
         `https://localhost:7165/WorkControllers/DeleteWorks?name=${name}`
       );
       fetchWorkData();
+      swal.fire({
+        title: "Enviado",
+        text: "La solicitud ha sido eliminada.",
+        icon: "success",
+        confirmButtonColor: "rgb(236, 117, 14)",
+      });
     } catch (error) {
       console.error(`Error al eliminar el trabajo con ID ${name}`, error);
     }

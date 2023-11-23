@@ -3,6 +3,7 @@ import axios from "axios";
 import "../Admin/NewsAdmin.css";
 import AdminNavbar from "../../Components/AdminNavbar/AdminNavbar";
 import Footer from "../../Components/Footer/Footer";
+import swal from "sweetalert2";
 
 const NewsAdmin = () => {
   const [link, setLink] = useState("");

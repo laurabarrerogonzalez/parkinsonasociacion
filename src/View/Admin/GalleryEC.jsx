@@ -5,6 +5,7 @@ import "../Admin/GalleryEC.css";
 import "../CurrentNews/Activities.css";
 import AdminNavbar from "../../Components/AdminNavbar/AdminNavbar";
 import Footer from "../../Components/Footer/Footer";
+import swal from "sweetalert2";
 
 const GalleryEC = () => {
   const [imageListEC, setImageListEC] = React.useState([]);
@@ -24,8 +25,20 @@ const GalleryEC = () => {
       const data = await response.json();
       setImageListEC([data, ...imageListEC]);
       setImageURL("");
+      swal.fire({
+        title: "Enviado",
+        text: "La imagen ha sido añadida.",
+        icon: "success",
+        confirmButtonColor: "rgb(236, 117, 14)",
+      });
     } catch (error) {
       console.error("Error:", error);
+      swal.fire({
+        title: "Error",
+        text: "Hubo un error al subir la imagen.",
+        icon: "error",
+        confirmButtonColor: "rgb(236, 117, 14)",
+      });
     }
   };
 
@@ -47,9 +60,21 @@ const GalleryEC = () => {
           updatedList.splice(selectedImageIndexEC, 1);
           setImageListEC(updatedList);
           setSelectedImageIndexEC(-1);
+          swal.fire({
+            title: "Enviado",
+            text: "La imagen ha sido modificada.",
+            icon: "success",
+            confirmButtonColor: "rgb(236, 117, 14)",
+          });
         }
       } catch (error) {
         console.error("Error deleting image:", error);
+        swal.fire({
+          title: "Error",
+          text: "Hubo un error al modificar la imagen.",
+          icon: "error",
+          confirmButtonColor: "rgb(236, 117, 14)",
+        });
       }
     }
   };
