@@ -20,7 +20,7 @@
   
   .section1,
   .section2,
-  .section3 {
+  .section33 {
     flex: 1 0 20%;
     display: flex;
     flex-direction: column;
@@ -75,18 +75,19 @@
     height: 20px;
   }
   
-  .section3 .line_footer {
+  .section33 .line_footer {
     border-color: #FF961A;
     border-width: 2px;
     width: 100%;
     margin-right: 5px;
   }
-  .section3 h2{
+  .section33 h2{
     margin-top: 25px;
     text-align: center;
+    color: white;
   }
 
-  .section3 p{
+  .section33 p{
     margin: 4px;
   }
 
@@ -120,7 +121,7 @@
   }
 
   @media(max-width:768px){
-    .section3 .line_footer{
+    .section33 .line_footer{
       width: 50%;
       margin-right: 120px;
     }
