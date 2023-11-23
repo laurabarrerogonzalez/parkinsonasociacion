@@ -1,4 +1,4 @@
-/* Estilos para las noticias */
+
 
 .form-newsadmin{
   margin-bottom: 5%;
@@ -11,14 +11,14 @@ margin-top: 10%;
 
 .news-container {
   display: grid;
-  grid-template-columns: repeat(4, 1fr); /* Cuatro columnas por fila */
-  gap: 20px; /* Espacio entre elementos */
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px; 
 }
 
 
 .news-item {
     margin-bottom: 20px;
-    /* border: 1px solid #ccc; */
+ 
     padding: 10px;
     display: flex;
     flex-direction: column;
@@ -26,8 +26,7 @@ margin-top: 10%;
   }
   
   .thumbnail {
-    /* display: flex; */
-    /* flex-direction: ; */
+    
     width: 300px;
     height: 200px;
     object-fit: cover;

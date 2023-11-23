@@ -1,19 +1,19 @@
 @font-face {
   font-family: 'MiFuentePersonalizada';
   src: url('../../Fonts/Bevan-Regular.ttf') format('truetype');
-  /* Agrega más formatos y rutas para soporte de navegadores diferentes */
+
 }
 
 @font-face {
   font-family: 'Gotham Black';
   src: url('../../Fonts/1830-font.otf') format('truetype');
-  /* Agrega más formatos y rutas para soporte de navegadores diferentes */
+ 
 }
 
 @font-face {
   font-family: 'Poppins';
   src: url('../../Fonts/Poppins-Regular.ttf') format('truetype');
-  /* Agrega más formatos y rutas para soporte de navegadores diferentes */
+  
 }
 
 .what1{
@@ -162,11 +162,11 @@
 
 @media screen and (max-width: 700px) {
   .bodys12 {
-    height: auto; /* Cambiar la altura para adaptarse al contenido */
+    height: auto;
   }
 
   .process-wrapper {
-    padding: 0 20px; /* Ajustar el relleno para adaptarse al ancho reducido */
+    padding: 0 20px; 
   }
 
 
@@ -177,10 +177,7 @@
     flex-direction: row; 
     height: auto; 
     margin-top: -50px;
-    /* display: flex;
-    justify-content: space-between;
-    text-align: center;
-    align-items: center; */
+    
   }
 
 
@@ -190,17 +187,14 @@ p{
 }
 
 
-
-
-
   #progress-bar-container ul li {
     margin-bottom: 10px; 
     margin-right: 20px;
     font-size: 9px;
-    display: flex; /* Usar flexbox */
-    flex-direction: column; /* Cambiar la dirección a columna */
-    align-items: center; /* Centrar el contenido */
-    text-align: center; /* Centrar el texto */
+    display: flex; 
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
   }
   #progress-bar-container ul li span {
     margin-top: 20px; 
@@ -208,9 +202,9 @@ p{
 
 
   #progress-bar-container ul li:before {
-    top: initial; /* Eliminar la posición superior */
-    left: -15px; /* Ajustar la posición izquierda */
-    transform: none; /* Eliminar la transformación */
+    top: initial; 
+    left: -15px; 
+    transform: none;
   }
 
   #progress-bar-container #line {
@@ -227,7 +221,7 @@ p{
   }
 
   .section-content {
-    padding: 20px; /* Ajustar el relleno para adaptarse al ancho reducido */
+    padding: 20px;
   }
 
 

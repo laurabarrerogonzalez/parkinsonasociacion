@@ -84,7 +84,7 @@ const ResourcesAdmin = () => {
         `https://localhost:7165/ResourcesControllers/DeleteResources?name=${name}`
       );
   
-      // Actualizar la lista de recursos después de eliminar
+     
       fetchResources();
   
       swal.fire({

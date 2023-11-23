@@ -10,9 +10,9 @@ const Navbar = () => {
     const handleScroll = () => {
       const offset = window.scrollY;
       if (offset > 200) {
-        setScrolled(true); // Cambiar el estado a "true" después de desplazarse más allá de 200px
+        setScrolled(true); 
       } else {
-        setScrolled(false); // Cambiar el estado a "false" al volver a la parte superior
+        setScrolled(false); 
       }
     };
 

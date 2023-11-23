@@ -1,19 +1,18 @@
 @font-face {
   font-family: 'MiFuentePersonalizada';
   src: url('../../Fonts/Bevan-Regular.ttf') format('truetype');
-  /* Agrega más formatos y rutas para soporte de navegadores diferentes */
 }
 
 @font-face {
   font-family: 'Gotham Black';
   src: url('../../Fonts/1830-font.otf') format('truetype');
-  /* Agrega más formatos y rutas para soporte de navegadores diferentes */
+  
 }
 
 @font-face {
   font-family: 'Poppins';
   src: url('../../Fonts/Poppins-Regular.ttf') format('truetype');
-  /* Agrega más formatos y rutas para soporte de navegadores diferentes */
+  
 }
 .textQ {
   font-family: "Times New Roman", Times, serif;
@@ -25,7 +24,7 @@
   display: flex;
   padding:1px;
   color: white;
-  flex-wrap: wrap; /* Permitirá que los elementos se ajusten en pantallas más pequeñas */
+  flex-wrap: wrap; 
 }
 
 .left-side {
@@ -42,7 +41,7 @@
 .left-side h2 {
   font-size: 30px;
   margin-left:150px;
-  text-align: center; /* Alinea el texto al centro */
+  text-align: center;
   font-family: 'Gotham Black';
   color: black;
 }
@@ -61,7 +60,7 @@
 }
 
 .right-side img {
-  width: 2.5rem; /* Utiliza unidades relativas */
+  width: 2.5rem; 
   height: auto;
   margin: 10px;
   margin-left: 40px;
@@ -73,7 +72,7 @@
   background: #E26890;
   padding: 10px;
   position: relative;
-  width: 50%; /* Ocupará el ancho completo en pantallas pequeñas */
+  width: 50%; 
   bottom: 600px;
 }
 
@@ -85,13 +84,13 @@
 .lower-triangle {
   width: 0;
   height: 0;
-  border-left: 4vw solid transparent; /* Utiliza unidades relativas para hacerlo responsive */
+  border-left: 4vw solid transparent; 
   border-right: 4vw solid transparent;
   border-top: 4vw solid #E26890;
   position: absolute;
   left: 50%;
-  transform: translateX(-50%); /* Centra el triángulo horizontalmente */
-  bottom: -2.8rem; /* Ajusta la posición del triángulo */
+  transform: translateX(-50%); 
+  bottom: -2.8rem;
 }
 
 .lower-title {
@@ -108,15 +107,14 @@
 }
 
 .icon {
-  width: 2.75rem; /* Utiliza unidades relativas */
-  height: auto;
+  width: 2.75rem; 
   margin-left: 105px;
 }
 @media(max-width:768px){
   .triangleF2525 {
     width: 0;
     height: 0;
-    border-left: 8vw solid transparent; /* Utiliza unidades relativas para hacerlo responsive */
+    border-left: 8vw solid transparent;
     border-right: 8vw solid transparent;
     border-top: 8vw solid #EC750E;
     position: absolute;
@@ -128,7 +126,7 @@
 
 .lower-triangle {
 
-  border-left: 10vw solid transparent; /* Utiliza unidades relativas para hacerlo responsive */
+  border-left: 10vw solid transparent; 
   border-right: 10vw solid transparent;
   border-top: 10vw solid #E26890;
   position: absolute;
@@ -149,7 +147,7 @@
 .left-side h2 {
   font-size: 1.2rem;
   margin: 0;
-  text-align: center; /* Alinea el texto al centro */
+  text-align: center;
 }
 
 .left-side {

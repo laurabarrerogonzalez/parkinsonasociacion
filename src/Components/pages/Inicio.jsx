@@ -13,7 +13,7 @@ const Inicio = () => {
         text="Trazando juntos un camino de superación: Acompañando la lucha contra el Parkinson con determinación y esperanza."
         
       />
-      {/* Contenido específico de la vista de Inicio*/}
+      
     </div>
   );
 };

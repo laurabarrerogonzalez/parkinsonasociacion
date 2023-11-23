@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import Navbar from "../../Components/Navbar/Navbar";
 import BannerViews from "../../Components/BannerViews/BannerViews";
 import Footer from "../../Components/Footer/Footer";
-import "./Proyects.css"; // Importar los estilos CSS
+import "./Proyects.css"; 
 
 const Proyects = () => {
   const [cardInfo1, setCardInfo1] = useState({
@@ -90,7 +90,7 @@ const Proyects = () => {
       </div>
 
       <div className="project-container">
-        {/* Primera Carta e Imagen */}
+       
         <div className="cardPR" onMouseEnter={cambiarInformacion1}>
           <p className="card-titlePR">{cardInfo1.title}</p>
           <p className="small-desc">{cardInfo1.description}</p>
@@ -105,7 +105,7 @@ const Proyects = () => {
           />
         </div>
 
-        {/* Segunda Carta e Imagen */}
+       
         <div className="cardPR" onMouseEnter={cambiarInformacion2}>
           <p className="card-titlePR">{cardInfo2.title}</p>
           <p className="small-desc">{cardInfo2.description}</p>

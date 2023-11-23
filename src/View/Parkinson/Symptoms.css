@@ -12,19 +12,19 @@ margin-bottom: 5%;
 @font-face {
   font-family: "MiFuentePersonalizada";
   src: url("../../Fonts/Bevan-Regular.ttf") format("truetype");
-  /* Agrega más formatos y rutas para soporte de navegadores diferentes */
+  
 }
 
 @font-face {
   font-family: "Gotham Black";
   src: url("../../Fonts/1830-font.otf") format("truetype");
-  /* Agrega más formatos y rutas para soporte de navegadores diferentes */
+  
 }
 
 @font-face {
   font-family: "Poppins";
   src: url("../../Fonts/Poppins-Regular.ttf") format("truetype");
-  /* Agrega más formatos y rutas para soporte de navegadores diferentes */
+  
 }
 
 .what {
@@ -59,20 +59,20 @@ margin-bottom: 5%;
 @media screen and (max-width: 700px) {
   .parkinson-what,
   .parkinson-si {
-    margin-left: 10px; /* Adjust margin for smaller screens */
+    margin-left: 10px; 
   }
 
   .parkinson-h1,
   .parkinson-li {
-    font-size: 18px; /* Adjust font size for smaller screens */
+    font-size: 18px;
   }
 
   .parkinson-p {
-    font-size: 16px; /* Adjust font size for smaller screens */
+    font-size: 16px; 
   }
 
   .img-book {
-    width: 50%; /* Make the image responsive, take full width on smaller screens */
+    width: 50%; 
   }
 
   .demoPage {
@@ -90,7 +90,7 @@ margin-bottom: 5%;
   }
 
   .Bodys > HTMLFlipBook {
-    width: 90%; /* Adjust the width as needed */
+    width: 90%;
     max-width: 700px;
     margin: 0 auto;
   }

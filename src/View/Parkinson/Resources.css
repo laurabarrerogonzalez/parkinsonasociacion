@@ -39,11 +39,11 @@
 
 @media screen and (max-width: 700px) {
   .resources-container1111 {
-    grid-template-columns: 1fr; /* Cambia a una sola columna */
-    gap: 10px; /* Reduce el espacio entre elementos */
+    grid-template-columns: 1fr;
+    gap: 10px; 
   }
 
   .file-preview1113 {
-    width: 100%; /* Ocupa el ancho completo del contenedor padre */
+    width: 100%;
   }
 }
