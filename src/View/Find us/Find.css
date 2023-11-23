@@ -140,4 +140,9 @@
 .lower-band {
   bottom: 750px;
 }
+
+.containers_map_inform{
+  display: flex;
+  flex-direction: column;
+}
 }
