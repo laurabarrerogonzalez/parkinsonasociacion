@@ -88,8 +88,8 @@ The objective of this educational project is the creation of an informative blog
 <a href="https://testing-library.com/" target="_blank"><img style="margin: 5px" src="image/Testinglibrary.png" alt="Testing Library" height="50" /></a>
 
 ## Test Screenshot (Coming soon) ✔️
- Once the component installations are complete, in a new terminal, run **npm test**.
-<img src="" width="auto" height="300">
+ Once the component installations are complete, in a new terminal, run **npm test**. <br>
+<img src="image/TestFront.png" width="auto" height="300">
 
 ## Installation Process ⬆️
 
