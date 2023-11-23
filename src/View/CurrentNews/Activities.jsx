@@ -67,7 +67,7 @@ const Activities = () => {
     <>
       <Navbar />
       <BannerViews
-        image="https://res.cloudinary.com/dit2zhtwz/image/upload/v1700473022/hombre-leyendo-periodico_53876-89052_egu6c0.avif"
+        image="https://res.cloudinary.com/dit2zhtwz/image/upload/w_1000,ar_16:9,c_fill,g_auto,e_sharpen/v1700761342/persona-pintando-gouache-sobre-lienzo_23-2148037835_impazt.jpg"
         title="ACTIVIDADES DE LOS DIFERENTES SERVICIOS"
       />
       <div
