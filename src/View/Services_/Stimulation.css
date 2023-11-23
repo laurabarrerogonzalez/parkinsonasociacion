@@ -9,6 +9,19 @@
     src: url('../../Fonts/Bevan-Regular.ttf') format('truetype');
     /* Agrega más formatos y rutas para soporte de navegadores diferentes */
   }
+ 
+  
+  @font-face {
+    font-family: 'Gotham Black';
+    src: url('../../Fonts/1830-font.otf') format('truetype');
+    /* Agrega más formatos y rutas para soporte de navegadores diferentes */
+  }
+  
+  @font-face {
+    font-family: 'Poppins';
+    src: url('../../Fonts/Poppins-Regular.ttf') format('truetype');
+    /* Agrega más formatos y rutas para soporte de navegadores diferentes */
+  }
 
 .section_banner_new_stimulation{
     width: 100%;
@@ -35,8 +48,8 @@
 }
 .title_stimulation h1{
     width: 100%;
-    font-family:'Sans';
-    font-size: 45px;
+    font-family:'MiFuentePersonalizada';
+    font-size: 40px;
     margin-top: 80px;
     text-align: center;
     
@@ -46,7 +59,7 @@
 
 .title_stimulation p{
     width: 100%;
-    font-family:'Sans';
+    font-family:'Poppins';
     font-size:18px;
     margin-top: 40px;
 
@@ -226,7 +239,7 @@
     width: 100%;
     margin-top: 0px;
     text-align: center;
-    font-size: 60px;
+    font-size: 40px;
     color: white;
     font-family: 'MiFuentePersonalizada';
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
@@ -285,9 +298,10 @@
   
   .card_benefits:hover:after {
     content: "La estimulación cognitiva puede fortalecer la memoria a corto y largo plazo, ayudando a retener información, recordar detalles y facilitar la recuperación de datos almacenados en el cerebro.";
-    font-size: 20px;
+    font-size: 18px;
     text-align: center;
     padding: 5px;
+    font-family:'Poppins';
 }
 
   .card_benefits img{
@@ -297,23 +311,26 @@
 
   #two_benefits:hover:after{
     content: "El desafío intelectual y la resolución de problemas pueden ayudar a liberar endorfinas, mejorando el estado de ánimo y reduciendo los niveles de estrés y ansiedad.";
-    font-size: 20px;
+    font-size: 18px;
     text-align: center;
     padding: 5px;
+    font-family:'Poppins';
     
   }
 
   #three_benefits:hover:after{
     content: "Al fomentar la conexión de diferentes áreas del cerebro, se puede potenciar la creatividad y la capacidad de encontrar soluciones innovadoras a problemas complejos.";
-    font-size: 20px;
+    font-size: 18px;
     text-align: center;
     padding: 5px;
+    font-family:'Poppins';
   }
   #four_benefits:hover:after{
     content: "Mantener la mente activa a lo largo de la vida puede reducir el riesgo de padecer enfermedades neurodegenerativas como el Alzheimer o la demencia, o al menos retrasar su aparición.";
-    font-size: 20px;
+    font-size: 18px;
     text-align:center;
     padding: 5px;
+    font-family:'Poppins';
   }
 
   .card_benefits p{
@@ -321,8 +338,24 @@
     width: 100%;
     top: 0px;
     text-align: center;
+    font-family:'Gotham Black';
+    font-size: 25px;
   }
 
 
-   
+
+
+  @media (max-width: 700px) {
+    .title_stimulation{
+      width: 99%;
+      height: auto;
+  
+  }
+  .title_stimulation p {
+    text-align: center;
+  }
+    
+}
+
+
 

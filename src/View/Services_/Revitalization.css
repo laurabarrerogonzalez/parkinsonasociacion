@@ -11,9 +11,14 @@
 }
 
 @font-face {
-    font-family: 'Lexend';
-    src: url('../../Fonts/LexendMega-VariableFont_wght.ttf') format('truetype');
+    font-family: 'Poppins';
+    src: url('../../Fonts/Poppins-Regular.ttf') format('truetype');
     /* Agrega más formatos y rutas para soporte de navegadores diferentes */
+}
+
+.title-revitalization h1 {
+    font-family: 'MiFuentePersonalizada';
+    font-size: 40px;
 }
 
 .container_revitalization_info {
@@ -24,6 +29,11 @@
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
+}
+
+.content_revitalization p {
+    font-family: 'Poppins';
+    font-size: 18px;
 }
 
 .info_revitalization_info {
@@ -38,7 +48,7 @@
 .photografy {
     width: 50%;
     height: auto;
-    
+
     margin: 10px;
     display: flex;
     flex-direction: row;
@@ -47,66 +57,72 @@
 }
 
 @media (max-width: 700px) {
-    .info_revitalization_info{
-      width: 100%;
-      height: auto;
-      
+    .info_revitalization_info {
+        width: 100%;
+        height: auto;
+
     }
 
     .photografy {
         width: 100%;
         height: auto;
-        
-    
+
+
     }
-  }
+}
 
 .title_info_revitalization {
     width: 100%;
     height: 120px;
-    
+
 }
 
 .title_info_revitalization h2 {
     font-family: 'MiFuentePersonalizada';
     font-size: 35px;
     text-align: center;
+    color: black;
 }
 
 .one_activ {
     width: 100%;
-    height: 220px;
+    height: 300px;
     margin-top: 10px;
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
+
+
 }
 
 .one_activ h3 {
     font-family: 'Gotham Black';
-    font-size:25px;
+    font-size: 25px;
     text-align: center;
+    color: black;
 }
+
 .one_activ p {
-    font-family: Arial, Helvetica, sans-serif;
-    font-size:18px;
-    text-align: justify;
-    margin-top: 20px;
-    padding: 10px;
+    font-family: 'Poppins';
+    font-size: 18px;
+    text-align: start;
+    margin-top: 10px;
+    color: black;
     width: 80%;
 }
 
-.activ_img_revitalization{
+.activ_img_revitalization {
     width: 48%;
     height: 900px;
-    
+
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
 }
 
-.info_activ_img_revitalization{
+.info_activ_img_revitalization {
     width: 50%;
     height: auto;
     display: flex;
@@ -115,12 +131,12 @@
     justify-content: center;
 }
 
-.title_img_revitaliz{
+.title_img_revitaliz {
     width: 100%;
     height: 250px;
     border: 2px solid #067787;
     border-radius: 20px;
-    
+
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -130,56 +146,50 @@
 
 
 
-.title_img_revitaliz h3{
+.title_img_revitaliz h3 {
     font-size: 25px;
-    font-family:'Gotham Black';
+    font-family: 'Gotham Black';
     text-align: center;
+    color: black;
 }
 
-.title_img_revitaliz p{
+.title_img_revitaliz p {
     width: 80%;
-    font-size: 18px;
-    font-family:Arial, Helvetica, sans-serif;
-    text-align: justify;
+    font-size: 16px;
+    font-family: 'Poppins';
+    text-align: start;
     margin-top: 10px;
+    color: black;
 }
 
 @media (max-width: 700px) {
-    .activ_img_revitalization{
-      max-width: 45%;
-      height: 900px;
-      
+    .activ_img_revitalization {
+        max-width: 45%;
+        height: 900px;
+
     }
 
-    .info_activ_img_revitalization{
+    .info_activ_img_revitalization {
         width: 55%;
-        height: 900px;   
+        height: 900px;
     }
 
-    .title_img_revitaliz{
+    .title_img_revitaliz {
         border: none;
     }
-    .title_img_revitaliz h3{
+
+    .title_img_revitaliz h3 {
         font-size: 25px;
     }
 
-    .title_img_revitaliz p{
+    .title_img_revitaliz p {
         font-size: 15px;
     }
-  }
 
-
-
-
-
-
-
-
-
-
-
-
-
+    .one_activ p {
+        text-align: center;
+    }
+}
 
 .section_title_content_revitalization {
     width: 100%;
@@ -199,15 +209,17 @@
     text-align: center;
     margin-bottom: 10px;
     color: white;
-    font-family: 'MiFuentePersonalizada';
+    font-family: 'Gotham Black';
     font-size: 25px;
     text-shadow: 4px 4px 4px rgba(0, 0, 0, 1.9);
 }
 
+
+
 .content_revitalization {
     width: 90%;
     color: white;
-    font-family:Arial, Helvetica, sans-serif;
+    font-family: 'Poppins';
     font-size: 18px;
     text-shadow: 2px 2px 2px rgba(0, 0, 0, 1.2);
 }
@@ -216,7 +228,6 @@
     width: 100%;
     height: auto;
     margin-top: 20px;
-
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -240,15 +251,6 @@
     height: 30%;
     text-align: center;
 }
-
-.text-activ {
-    width: 100%;
-    height: 70%;
-    font-family: 'Lexend';
-    font-size: 15px;
-}
-
-
 
 
 .revitaliz-image {
@@ -335,4 +337,17 @@
     background-color: #CC9E4A;
     padding-bottom: 50px;
     margin-left: 20%;
+}
+
+@media(max-width:768px) {
+
+    .text_finish {
+        width: 95%;
+        height: auto;
+        margin-left: 20px;
+    }
+    .content_revitalization{
+        text-align: center;
+    }
+
 }

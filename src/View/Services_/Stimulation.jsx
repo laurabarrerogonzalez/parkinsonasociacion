@@ -12,7 +12,7 @@ const Stimulation = () => {
     useEffect(() => {
         // Hacer scroll al principio de la página cuando el componente se monta
         window.scrollTo(0, 0);
-      }, []);
+    }, []);
 
     return (
         <div>
@@ -42,7 +42,7 @@ const Stimulation = () => {
 
                 </div>
                 <div className="img_stimulation_banner">
-                    <img src="https://res.cloudinary.com/dit2zhtwz/image/upload/v1700599925/IMG-20231114-WA0002_jilhro.jpg" alt="" />
+                    <img src="https://res.cloudinary.com/dp7lr71t8/image/upload/v1700732465/Dise%C3%B1o_sin_t%C3%ADtulo_6_1_xd4okz.png" alt="" />
                 </div>
             </section>
 
@@ -53,24 +53,24 @@ const Stimulation = () => {
                     </svg>
                 </div>
 
-                    <h1>Beneficios</h1>
-                
+                <h1>Beneficios</h1>
+
 
                 <div class="card_benefits">
                     <p>Memoria</p>
                     <img src="https://res.cloudinary.com/dp7lr71t8/image/upload/v1699524677/que-es-estimulacion-cognitiva_hrilej.jpg" alt="" />
                 </div>
                 <div class="card_benefits" id="two_benefits">
-                <p>Ánimo</p>
+                    <p>Ánimo</p>
                     <img src="https://res.cloudinary.com/dp7lr71t8/image/upload/v1699526869/las-personas-mayores-son-mas-felices-que-las-mas-jovenes-950x797_eywa8y.jpg" alt="" />
                 </div>
                 <div class="card_benefits" id="three_benefits">
-                <p>Creatividad</p>
+                    <p>Creatividad</p>
                     <img src="https://res.cloudinary.com/dp7lr71t8/image/upload/v1699525707/questions-2519654_1280_omdaca.png" alt="" />
                 </div>
                 <div class="card_benefits" id="four_benefits">
-                <p>Deterioro
-                Cognitivo</p>
+                    <p>Deterioro
+                        Cognitivo</p>
                     <img src="https://res.cloudinary.com/dp7lr71t8/image/upload/v1699525954/deterioro-cognitivo_1_621x621_cwdwr2.jpg" alt="" />
                 </div>
 

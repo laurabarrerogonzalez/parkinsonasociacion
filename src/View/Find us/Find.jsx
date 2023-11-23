@@ -20,7 +20,7 @@ const Find = () => {
           title="¿DÓNDE ENCONTRARNOS?"
         />
       </div>
-      <div style={{ display: 'flex' }}>
+      <div className="containers_map_inform" style={{ display: 'flex' }}>
         <div style={{ flex: '0 0 50%', paddingRight: '20px' }}>
           <Mapa />
         </div>

@@ -1,3 +1,20 @@
+@font-face {
+  font-family: 'MiFuentePersonalizada';
+  src: url('../../Fonts/Bevan-Regular.ttf') format('truetype');
+  /* Agrega más formatos y rutas para soporte de navegadores diferentes */
+}
+
+@font-face {
+  font-family: 'Gotham Black';
+  src: url('../../Fonts/1830-font.otf') format('truetype');
+  /* Agrega más formatos y rutas para soporte de navegadores diferentes */
+}
+
+@font-face {
+  font-family: 'Poppins';
+  src: url('../../Fonts/Poppins-Regular.ttf') format('truetype');
+  /* Agrega más formatos y rutas para soporte de navegadores diferentes */
+}
 .textQ {
   font-family: "Times New Roman", Times, serif;
   text-align: center;
@@ -23,9 +40,11 @@
 }
 
 .left-side h2 {
-  font-size: 1.8rem;
+  font-size: 30px;
   margin-left:150px;
   text-align: center; /* Alinea el texto al centro */
+  font-family: 'Gotham Black';
+  color: black;
 }
 
 
@@ -72,13 +91,15 @@
   position: absolute;
   left: 50%;
   transform: translateX(-50%); /* Centra el triángulo horizontalmente */
-  bottom: -2.2rem; /* Ajusta la posición del triángulo */
+  bottom: -2.8rem; /* Ajusta la posición del triángulo */
 }
 
 .lower-title {
   text-align: center;
   color: white;
   margin: 0;
+  font-family: 'Gotham Black';
+  font-size: 30px;
 }
 
 .lower-right-side {
@@ -139,5 +160,10 @@
 }
 .lower-band {
   bottom: 750px;
+}
+
+.containers_map_inform{
+  display: flex;
+  flex-direction: column;
 }
 }

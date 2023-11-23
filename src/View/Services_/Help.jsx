@@ -12,7 +12,7 @@ const Help = () => {
       <Navbar />
       <BannerViews
         image="https://res.cloudinary.com/doft9ylq1/image/upload/v1700651748/Servicio_de_Ayuda_a_Domicilio_1_j1pfmk.jpg"
-        title="Ayuda a Domicilio"
+        title="AYUDA A DOMICILIO"
       />
       <div className="containerhelp">
       <div className="titleHelp">

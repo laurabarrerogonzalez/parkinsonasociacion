@@ -1,3 +1,20 @@
+@font-face {
+  font-family: 'MiFuentePersonalizada';
+  src: url('../../Fonts/Bevan-Regular.ttf') format('truetype');
+  /* Agrega más formatos y rutas para soporte de navegadores diferentes */
+}
+
+@font-face {
+  font-family: 'Gotham Black';
+  src: url('../../Fonts/1830-font.otf') format('truetype');
+  /* Agrega más formatos y rutas para soporte de navegadores diferentes */
+}
+
+@font-face {
+  font-family: 'Poppins';
+  src: url('../../Fonts/Poppins-Regular.ttf') format('truetype');
+  /* Agrega más formatos y rutas para soporte de navegadores diferentes */
+}
 .flip12 {
   box-shadow: 0 0 10px rgba(128, 128, 128, 0.5);
   width: 600px;
@@ -28,12 +45,23 @@
   right: 0;
   bottom: 0;
 }
+
+.front-12{
+
+width: 100%;
+height: auto;
+display: flex;
+flex-direction:column;
+align-items: center;
+}
 .texts40 {
-  font-size: 200%;
+  width: 80%;
+  font-size: 30px;
   text-align: center;
   margin-top: 20%;
   text-shadow: 0 0 3px black;
   color: white;
+  font-family: 'Gotham Black';
 }
 .texts41 {
   transform: translateZ(90px);
@@ -42,6 +70,7 @@
   width: 80%;
   margin-top: 3%;
   margin-left: 10%;
+  
 }
 .flip12::before,
 .flip12::after {
@@ -88,22 +117,28 @@
 .Pago {
   margin-left: 35%;
   margin-top: 5%;
+  font-family:'Gotham Black';
 }
 .Pago1 {
   margin-left: 45%;
   margin-top: 5%;
+  font-family:'Gotham Black';
 }
 .datos {
   width: 80%;
   margin-top: 5%;
   margin-left: 8%;
   text-align: center;
+  font-family:'Poppins';
+  font-size: 13px;
 }
 .datos1 {
   width: 80%;
   margin-top: 5%;
   margin-left: 10%;
   text-align: center;
+  font-size: 13px;
+  font-family:'Poppins';
 }
 .flip-cards1 {
   background-color: transparent;

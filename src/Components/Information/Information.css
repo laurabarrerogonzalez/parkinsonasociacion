@@ -1,3 +1,21 @@
+@font-face {
+  font-family: 'MiFuentePersonalizada';
+  src: url('../../Fonts/Bevan-Regular.ttf') format('truetype');
+  /* Agrega más formatos y rutas para soporte de navegadores diferentes */
+}
+
+@font-face {
+  font-family: 'Gotham Black';
+  src: url('../../Fonts/1830-font.otf') format('truetype');
+  /* Agrega más formatos y rutas para soporte de navegadores diferentes */
+}
+
+@font-face {
+  font-family: 'Poppins';
+  src: url('../../Fonts/Poppins-Regular.ttf') format('truetype');
+  /* Agrega más formatos y rutas para soporte de navegadores diferentes */
+}
+
 .card {
     position: relative;
     width: 300px;
@@ -14,7 +32,7 @@
     flex: 1 1 200px;
     margin: 10px;
   }
-  .container {
+  .containerg {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -77,6 +95,7 @@
     font-size: 24px;
     color: #333;
     font-weight: 700;
+    font-family:'Gotham Black';
   }
   
   .card:hover svg {
@@ -85,9 +104,10 @@
   
   .card__description {
     margin: 10px 0 0;
-    font-size: 14px;
+    font-size: 17px;
     color: #777;
     line-height: 1.4;
+    font-family: 'Poppins';
   }
 
   .image-container {
