@@ -91,7 +91,7 @@
   position: absolute;
   left: 50%;
   transform: translateX(-50%); /* Centra el triángulo horizontalmente */
-  bottom: -2.2rem; /* Ajusta la posición del triángulo */
+  bottom: -2.8rem; /* Ajusta la posición del triángulo */
 }
 
 .lower-title {
@@ -99,6 +99,7 @@
   color: white;
   margin: 0;
   font-family: 'Gotham Black';
+  font-size: 30px;
 }
 
 .lower-right-side {
