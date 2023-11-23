@@ -38,7 +38,7 @@ const Evolution = () => {
       <div>
         <Navbar />
         <BannerViews
-          image="https://res.cloudinary.com/dit2zhtwz/image/upload/v1699431863/e96e5008-5541-4c4c-b02c-140d8e7a1183_myzg2w.jpg"
+          image="https://res.cloudinary.com/dit2zhtwz/image/upload/v1700761130/collage-representacion-adn_23-2150239203_kczptg.jpg"
           title="EVOLUCIÓN Y TRATAMIENTO"
         />
       </div>
