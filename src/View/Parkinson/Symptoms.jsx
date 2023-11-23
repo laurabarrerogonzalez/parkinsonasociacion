@@ -3,7 +3,7 @@ import Navbar from "../../Components/Navbar/Navbar";
 import "../Parkinson/Symptoms.css";
 import Footer from "../../assets/Components/Footer/Footer";
 import BannerViews from "../../Components/BannerViews/BannerViews";
-import "../../Components/FlipBook/FlipBook.css";
+// import "../../Components/FlipBook/FlipBook.css";
 import HTMLFlipBook from "react-pageflip";
 import ButtonDonate from "../../Components/ButtonDonate/ButtonDonate";
 import ScrollArrow from "../../Components/ScrollArrow/ScrollArrow";

@@ -21,8 +21,7 @@ export default function QuiltedImageList() {
         body: JSON.stringify({ url: imageURL }),
       });
       const data = await response.json();
-      const formattedData = Array.isArray(data) ? data : [data];
-      setImageList([...imageList, ...formattedData]);
+      setImageList([data, ...imageList]);
       setImageURL("");
     } catch (error) {
       console.error("Error:", error);
@@ -30,9 +29,12 @@ export default function QuiltedImageList() {
   };
 
   const handleDelete = async () => {
-    if (selectedImageIndex !== -1 && imageList[selectedImageIndex]?.id_gallery1 !== undefined) {
+    if (
+      selectedImageIndex !== -1 &&
+      imageList[selectedImageIndex]?.id_gallery1 !== undefined
+    ) {
       try {
-        const idToDelete = imageList[selectedImageIndex].id_gallery1; 
+        const idToDelete = imageList[selectedImageIndex].id_gallery1;
         const response = await fetch(
           `https://localhost:7165/api/gallery1/${idToDelete}`,
           {
@@ -55,6 +57,10 @@ export default function QuiltedImageList() {
     try {
       const response = await fetch("https://localhost:7165/api/gallery1");
       const data = await response.json();
+  
+      // Ordenar las imágenes por ID de manera descendente
+      data.sort((a, b) => b.id_gallery1 - a.id_gallery1);
+  
       setImageList(data);
     } catch (error) {
       console.error("Error fetching images:", error);
@@ -83,17 +89,17 @@ export default function QuiltedImageList() {
         </form>
 
         <ImageList
-  sx={{
-    width: 500,
-    height: "auto",
-    maxHeight: 400, 
-    overflowY: "auto",
-  }}
-  variant="quilted"
-  cols={2}
-  rowHeight={200} 
-  className="custom-image-list"
->
+          sx={{
+            width: 500,
+            height: "auto",
+            maxHeight: 400,
+            overflowY: "auto",
+          }}
+          variant="quilted"
+          cols={2}
+          rowHeight={200}
+          className="custom-image-list"
+        >
           {imageList.map((item, index) => (
             <ImageListItem
               key={index}
@@ -114,7 +120,7 @@ export default function QuiltedImageList() {
           Delete Selected Image
         </button>
       </div>
-      <Footer/>
+      <Footer />
     </>
   );
 }
