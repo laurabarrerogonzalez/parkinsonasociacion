@@ -47,7 +47,7 @@ Our mission is to provide an accessible and useful platform for those affected b
 ● Cloudinary <br>
 ● GitHub <br>
 ● Trello <br>
-● <a href= "https://www.figma.com/file/Yqucc09W1gZa7e98yZb19U/Untitled?type=design&node-id=0-1&mode=design&t=7P4mr3TmShDTKAuL-0" target="_blank">Figma</a><br>
+● <a href= "https://www.figma.com/file/Yqucc09W1gZa7e98yZb19U/Untitled?type=design&node-id=0-1&mode=design&t=7P4mr3TmShDTKAuL-0" style="text-decoration:none" target="_blank">Figma</a><br>
 ● Slack <br>
 ● Zoom
 
