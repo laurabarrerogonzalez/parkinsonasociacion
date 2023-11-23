@@ -16,37 +16,23 @@
   @font-face {
     font-family: 'MiFuentePersonalizada';
     src: url('../../Fonts/Bevan-Regular.ttf') format('truetype');
-    /* Agrega más formatos y rutas para soporte de navegadores diferentes */
+  
   }
 
   @font-face {
     font-family: 'Anton';
     src: url('../../Fonts/Anton-Regular.ttf') format('truetype');
-    /* Agrega más formatos y rutas para soporte de navegadores diferentes */
-  }
-  @font-face {
-    font-family: 'Inria';
-    src: url('../../Fonts/InriaSans-Regular.ttf') format('truetype');
-    /* Agrega más formatos y rutas para soporte de navegadores diferentes */
-  }
-  @font-face {
-    font-family: 'Single';
-    src: url('../../Fonts/SingleDay-Regular.ttf') format('truetype');
-    /* Agrega más formatos y rutas para soporte de navegadores diferentes */
+    
   }
   
+  
   .banner-text {
-   
-    /* Ajusta la posición vertical del texto */
-     /* Posiciona el texto a 50px del borde derecho */
-    color: white; /* Color del texto */
-    font-size: 25px; /* Tamaño de fuente del texto */
-     /* Ancho del texto */
+ 
+    color: white; 
+    font-size: 25px; 
+    
    
     
-     /* Orientación vertical del texto */
-     /* Fondo negro transparente */
-    /* padding: 10px 10px 10px 10px;  */
   
     font-family:'Poppins';
     text-shadow: 4px 4px 4px rgba(0, 0, 0, 0.9);
