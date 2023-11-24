@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import axios from "axios";
 import BannerViews from "../../Components/BannerViews/BannerViews";
 import Navbar from "../../Components/Navbar/Navbar";
+import Footer from "../../Components/Footer/Footer";
 
 const News = () => {
   const [newsList, setNewsList] = useState([]);
@@ -37,6 +38,7 @@ const News = () => {
           </div>
         ))}
       </div>
+      <Footer/>
     </>
   );
 };
